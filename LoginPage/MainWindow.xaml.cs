@@ -31,6 +31,9 @@ namespace LoginPage
             {
                 MessageBox.Show("Login Successfully", "Congratulations", MessageBoxButton.OK, MessageBoxImage.Information);
                 // Go to main menu which i didnt do yet xDD
+                MainMenu MainMenu = new MainMenu();
+                MainMenu.Show();
+                this.Close();
             }
             if (LoginUser(txtUsername.Text, txtPassword.Password) == 3)
             {
@@ -73,19 +76,19 @@ namespace LoginPage
             }
         }
 
-        // X niki yani chiqish
+        // Exit
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
         }
 
-        // Ptichka 
+        // CheckBox 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
 
         }
 
-        // Buni bilmadim
+        // CheckBox Changed Color
         private void CheckBox_ColorChanged(object sender, RoutedPropertyChangedEventArgs<System.Windows.Media.Color> e)
         {
 

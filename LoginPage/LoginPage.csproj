@@ -177,6 +177,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\20230220024514_n2.cs" />
     <Compile Include="Migrations\20230220024514_n2.designer.cs">
       <DependentUpon>20230220024514_n2.cs</DependentUpon>
@@ -185,6 +188,10 @@
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Page Include="MainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -236,12 +243,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\image.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="Images\register.jpg" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\mike.jpg" />

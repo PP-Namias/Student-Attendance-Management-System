@@ -1,0 +1,29 @@
+﻿<Window x:Class="LoginPage.MainMenu"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginPage"
+        mc:Ignorable="d"
+        Title="Main Menu" Height="700" Width="1200" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+                <GradientStop  Color="#093A3E" Offset="1"/>
+                <GradientStop  Color="#3AAFB9" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <TextBlock 
+            Text="Main Menu" 
+            Margin="20" 
+            Foreground="White"
+            TextAlignment="Center" 
+            FontSize="38"  
+            FontFamily="Century">
+        </TextBlock>
+
+
+        
+    </Grid>
+</Window>

@@ -37,13 +37,13 @@ namespace LoginPage
             }
         }
 
-        // X niki yani chiqish
+        // Exit
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
             Application.Current.Shutdown();
         }
 
-        // Ptichka 
+        // CheckBox 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
 
@@ -53,15 +53,15 @@ namespace LoginPage
         public int RegisterUser(string username, string password)
         {
 
-            //Kamida 8 ta belgidan iborat bo’lishi kerak;
-            //Kamida bitta raqam qatnashishi kerak;
-            //Kamida bitta maxsus belgi qatnashishi kerak. Maxsus belgilar: !@#$%^&*()-+
+            //Must be at least 8 characters long
+            //At least one number
+            //At least one special character must be present. Special characters: !@#$%^&*()-+
 
             HashService hashService = new HashService();
 
             if (appDbContext.Users.Any(x => x.UserName == username))
             {
-                return 1; // Register database da bor
+                return 1; // Username already exist
             }
 
 
@@ -126,7 +126,6 @@ namespace LoginPage
 
         }
 
-        //Buni ham bilmadim
         private void txtUsername_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
 
