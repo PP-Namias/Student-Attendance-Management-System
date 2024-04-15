@@ -21,7 +21,7 @@
                 <Image Source="/planning.jpg"  Width="290" Height="323" Margin="30" Stretch="Uniform" />
             </StackPanel>
             <StackPanel Width="350">
-                <StackPanel Margin="20 30" Height="348">
+                <StackPanel Margin="20 30" Height="425">
                     <TextBlock Text="Registration" Margin="20" Foreground="White"
                                TextAlignment="Center" FontSize="38"  FontFamily="Century"></TextBlock>
                     <StackPanel Orientation="Horizontal" Margin="10" >
@@ -29,6 +29,10 @@
                         <TextBox x:Name="txtUsername" Margin="10 0" materialDesign:HintAssist.Hint="Enter Username" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E" TextChanged="txtUsername_TextChanged"  FontFamily="Century"/>
                     </StackPanel>
 
+                    <StackPanel Orientation="Horizontal" Margin="10" >
+                        <materialDesign:PackIcon Kind="Phone" Width="25" Height="25" Foreground="White" />
+                        <TextBox x:Name="txtPhoneNumber" Margin="10 0" materialDesign:HintAssist.Hint="Enter Phone Number" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E" TextChanged="txtUsername_TextChanged"  FontFamily="Century"/>
+                    </StackPanel>
 
                     <StackPanel Orientation="Horizontal" Margin="10" >
                         <materialDesign:PackIcon Kind="Lock" Width="25" Height="25" Foreground="White" />
@@ -36,8 +40,15 @@
                     </StackPanel>
 
 
+                    <StackPanel Orientation="Horizontal" Margin="10" >
+                        <materialDesign:PackIcon Kind="Lock" Width="25" Height="25" Foreground="White" />
+                        <PasswordBox x:Name="txtConformPassword" Margin="10 0" materialDesign:HintAssist.Hint="Conform Password" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E"  FontFamily="Century"/>
+                    </StackPanel>
+
+
+
                     <!--Register-->
-                    <StackPanel Margin="0 30 0 30" HorizontalAlignment="Center">
+                    <StackPanel Margin="50 25 0 30" HorizontalAlignment="Left">
                         <Button Width="100" Height="44" Style="{StaticResource MaterialDesignRaisedButton}"
                     materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E"  FontFamily="Century"
                     Background="#093A3E" Foreground="White" ToolTip="Registration" x:Name="btnRegister" 
@@ -57,25 +68,14 @@
         </StackPanel>
 
 
-        <StackPanel Margin="70 210 1 1" HorizontalAlignment="Center" >
-            <CheckBox
-                Width="100" Height="32" 
-                      BorderThickness="2" BorderBrush="White"   FontFamily="Century"
-                      Background="White" Content="Remember me" Cursor="Hand" IsEnabled="{DynamicResource TrueValue}" IsChecked="{DynamicResource FalseValue}" Checked="CheckBox_Checked" Foreground="White">
-                <CheckBox.Effect>
-                    <DropShadowEffect/>
-                </CheckBox.Effect>
-            </CheckBox>
-        </StackPanel>
+        <StackPanel Margin="70 210 1 1" HorizontalAlignment="Center" />
 
         <!--// Go Back-->
-        <StackPanel  Margin="250 300 0 30" HorizontalAlignment="Center">
+        <StackPanel  Margin="380 320 0 30" HorizontalAlignment="Center">
             <Button Width="100" Height="44" Style="{StaticResource MaterialDesignRaisedButton}"
                     materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#FF093A3E" FontFamily="Century"
                     Background="#093A3E" Foreground="White" ToolTip="Go Back" x:Name="btnGoBack" 
-                    Click="btnGoBack_Click" Content="GoBack">
-
-            </Button>
+                    Click="btnGoBack_Click" Content="GoBack"/>
         </StackPanel>
 
 

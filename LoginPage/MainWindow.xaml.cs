@@ -29,8 +29,7 @@ namespace LoginPage
 
             if (LoginUser(txtUsername.Text, txtPassword.Password) == 1)
             {
-                MessageBox.Show("Login Successfully", "Congratulations", MessageBoxButton.OK, MessageBoxImage.Information);
-                // Go to main menu which i didnt do yet xDD
+                MessageBox.Show("Login Successfully", "Congratulations" + txtUsername.Text, MessageBoxButton.OK, MessageBoxImage.Information);
                 MainMenu MainMenu = new MainMenu();
                 MainMenu.Show();
                 this.Close();

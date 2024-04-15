@@ -50,9 +50,8 @@ namespace LoginPage
         }
 
 
-        public int RegisterUser(string username, string password)
+        public int RegisterUser(string username, string password, string phonenumber)
         {
-
             //Must be at least 8 characters long
             //At least one number
             //At least one special character must be present. Special characters: !@#$%^&*()-+
@@ -64,6 +63,15 @@ namespace LoginPage
                 return 1; // Username already exist
             }
 
+            else if (password != txtConformPassword.Password)
+            {
+                return 2; // Passwords do not match
+            }
+
+            else if (phonenumber.Length <= 0)
+            {
+                return 3; // Enter Phone Number
+            }
 
             else
             {
@@ -92,6 +100,7 @@ namespace LoginPage
                             var user = new User()
                             {
                                 UserName = username,
+                                PhoneNumber = phonenumber,
                                 PasswordHash = hashService.GetHash(password),
                             };
 
@@ -102,19 +111,25 @@ namespace LoginPage
                     }
                 }
                 return 4;
-
-  
-
             }
         }
 
         private void btnRegister_Click(object sender, RoutedEventArgs e)
         {
-            if (RegisterUser(txtUsername.Text, txtPassword.Password) == 1)
+            int result = RegisterUser(txtUsername.Text, txtPassword.Password, txtPhoneNumber.Text);
+            if (result == 1)
             {
                 MessageBox.Show("Username is exist", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-            else if (RegisterUser(txtUsername.Text, txtPassword.Password) == 4)
+            else if (result == 2)
+            {
+                MessageBox.Show("Passwords do not match", "Please enter Login or Password", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+            else if (result == 3)
+            {
+                MessageBox.Show("Enter Phone Number", "Please enter Login or Password", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+            else if (result == 4)
             {
                 MessageBox.Show("Password is wrong", "Please enter Login or Password", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
@@ -122,8 +137,6 @@ namespace LoginPage
             {
                 MessageBox.Show("Register Successfully", "Congratulations", MessageBoxButton.OK, MessageBoxImage.Information);
             }
-
-
         }
 
         private void txtUsername_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
