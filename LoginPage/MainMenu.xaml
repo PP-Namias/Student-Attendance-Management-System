@@ -3,6 +3,7 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:LoginPage"
         mc:Ignorable="d"
         Title="Main Menu" Height="700" Width="1200" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
@@ -23,7 +24,15 @@
             FontFamily="Century">
         </TextBlock>
 
+        <StackPanel Orientation="Horizontal">
 
-        
+            <StackPanel Width="100" HorizontalAlignment="Right" Margin="1100,0,0,0">
+            <Button Margin="10 20" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                    ToolTip="Close" x:Name="btnExit1" Click="btnExit_Click1" BorderBrush="#FF3AAFB9" Width="35" Height="35" HorizontalAlignment="Center">
+                <materialDesign:PackIcon Kind="Close" Foreground="White" Width="20" Height="20" />
+            </Button>
+            </StackPanel>
+        </StackPanel>
+
     </Grid>
 </Window>

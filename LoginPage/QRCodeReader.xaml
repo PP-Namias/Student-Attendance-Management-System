@@ -1,0 +1,62 @@
+﻿<Window x:Class="LoginPage.QRCodeReader"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LoginPage"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        BorderThickness="0"
+        Title="QR/Bar Code Reader" Height="700" Width="1200" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+                <GradientStop  Color="#093A3E" Offset="1"/>
+                <GradientStop  Color="#3AAFB9" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Canvas>
+
+            <Image x:Name="videoFrame" Source="/Screen View.png" HorizontalAlignment="Left" Height="504" VerticalAlignment="Top" Width="892" RenderTransformOrigin="0.5,0.5" Stretch="Uniform" Canvas.Left="9" Canvas.Top="11" >
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1" ScaleX="1"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
+
+
+            <TextBlock x:Name="QRTextBlock"  FontSize="30" HorizontalAlignment="Left"  TextWrapping="Wrap" Text="Waiting for 2D Bar-code.." VerticalAlignment="Center" Height="62" Width="728" Canvas.Left="10" Canvas.Top="540" FontFamily="Century Gothic" FontWeight="Bold"/>
+            <TextBlock x:Name="FrameCounterTextBlock"  FontSize="20"  TextWrapping="Wrap" Text="Frames recorded: 0" VerticalAlignment="Center" Height="39" Width="315" Canvas.Left="10" Canvas.Top="594" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold"/>
+            <TextBlock x:Name="QRCounterTextBlock"  FontSize="20"  TextWrapping="Wrap" Text="BAR/QR codes decoded: 0" VerticalAlignment="Top" Height="40" Width="381" Canvas.Left="366" Canvas.Top="593" HorizontalAlignment="Center" FontFamily="Century Gothic" FontWeight="Bold"/>
+
+            <Button x:Name="StartStopButton" Background="#FF093A3E" Content="Start/Stop" FontSize="25" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="200" Height="88" Click="StartStopButton_Click" VerticalContentAlignment="Center" Cursor="Hand" Canvas.Left="960" Canvas.Top="142" BorderBrush="#FF001011" FontFamily="Century Gothic"/>
+
+            <Button x:Name="helpButton" Background="#FF093A3E" FontWeight="Bold" FontSize="45" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="94" Height="88" Click="helpButton_Click" VerticalContentAlignment="Center" Content="?" Cursor="Hand" Canvas.Left="1013" Canvas.Top="570" BorderBrush="#FF001011" FontFamily="Century Gothic"/>
+
+            <Button x:Name="camSwitchButton" ClickMode="Release"   Background="#FF093A3E"  FontSize="25" HorizontalAlignment="Left"  VerticalAlignment="Center" Width="200" Height="88" Click="camSwitchButton_Click" VerticalContentAlignment="Center" Content="Switch Cam" Cursor="Hand" Canvas.Left="960" Canvas.Top="262" BorderBrush="#FF001011" FontFamily="Century Gothic"/>
+            <Button x:Name="recordButton" FontWeight="Bold" FontSize="45" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="200" Height="99" Click="recordButton_Click" VerticalContentAlignment="Center" Content="" Cursor="Hand" Canvas.Left="960" Canvas.Top="381" BorderBrush="#FF001011">
+                <Button.Background>
+                    <ImageBrush ImageSource="/recording.png" Stretch="UniformToFill">
+                        <ImageBrush.RelativeTransform>
+                            <TransformGroup>
+                                <ScaleTransform CenterY="0.5" CenterX="0.5"/>
+                                <SkewTransform CenterY="0.5" CenterX="0.5"/>
+                                <RotateTransform CenterY="0.5" CenterX="0.5"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </ImageBrush.RelativeTransform>
+                    </ImageBrush>
+                </Button.Background>
+            </Button>
+
+            <Label x:Name="camsLabel" Content="Camera information" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="591" Height="58" FontSize="30" Canvas.Left="9" Canvas.Top="624" FontFamily="Century Gothic" FontWeight="Bold"/>
+        </Canvas>
+
+    </Grid>
+
+</Window>

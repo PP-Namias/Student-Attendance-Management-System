@@ -23,5 +23,10 @@ namespace LoginPage
         {
             InitializeComponent();
         }
+
+        private void btnExit_Click1(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
+        }
     }
 }

@@ -29,7 +29,7 @@ namespace LoginPage
 
             if (LoginUser(txtUsername.Text, txtPassword.Password) == 1)
             {
-                MessageBox.Show("Login Successfully", "Congratulations" + txtUsername.Text, MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Login Successfully", "Congratulations " + txtUsername.Text, MessageBoxButton.OK, MessageBoxImage.Information);
                 MainMenu MainMenu = new MainMenu();
                 MainMenu.Show();
                 this.Close();
@@ -104,6 +104,18 @@ namespace LoginPage
         private void txtUsername_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
         {
 
+        }
+
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void btnQRReader_Click(object sender, RoutedEventArgs e)
+        {
+            QRCodeReader QRCodeReader = new QRCodeReader();
+            QRCodeReader.Show();
+            this.Close();
         }
     }
 }
