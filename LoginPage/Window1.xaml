@@ -6,7 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:LoginPage"
         mc:Ignorable="d"
-        Title="Window1" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+        Title="Registration" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
     <Grid MouseDown="Border_MouseDown">
         <Grid.Background>
             <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
@@ -20,7 +20,7 @@
             <StackPanel Width="350">
                 <Image Source="/planning.jpg"  Width="290" Height="323" Margin="30" Stretch="Uniform" />
             </StackPanel>
-            <StackPanel Width="350">
+            <StackPanel Width="375">
                 <StackPanel Margin="20 30" Height="425">
                     <TextBlock Text="Registration" Margin="20" Foreground="White"
                                TextAlignment="Center" FontSize="38"  FontFamily="Century"></TextBlock>
@@ -59,9 +59,13 @@
                 </StackPanel>
             </StackPanel>
 
-            <StackPanel Width="100">
-                <Button Margin="10 20" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
-                    ToolTip="Close" x:Name="btnExit" Click="btnExit_Click" Width="35" Height="35" BorderBrush="#FF64E9EE">
+            <StackPanel Margin="-50,-380, 0, 0" Width="145" Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Margin="20 30" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                    ToolTip="Minimize" x:Name="btnMinimize" Click="btnMinimize_Click" BorderBrush="#FF3AAFB9" Width="35" Height="35">
+                    <materialDesign:PackIcon Kind="Minimize" Foreground="White" Width="20" Height="20" />
+                </Button>
+                <Button Margin="0 20" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                    ToolTip="Close" x:Name="btnExit" Click="btnExit_Click" BorderBrush="#FF3AAFB9" Width="35" Height="35">
                     <materialDesign:PackIcon Kind="Close" Foreground="White" Width="20" Height="20" />
                 </Button>
             </StackPanel>

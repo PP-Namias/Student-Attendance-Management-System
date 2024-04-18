@@ -6,7 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:LoginPage"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+        Title="Login Page" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
     <Grid MouseDown="Border_MouseDown">
         <Grid.Background>
             <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
@@ -20,20 +20,30 @@
             <StackPanel Width="350">
                 <Image Source="/mike.jpg"  Width="312" Height="359" Margin="30" Stretch="Uniform" />
             </StackPanel>
-            <StackPanel Width="350">
-                <StackPanel Margin="20 40">
+            <StackPanel Width="375">
+                <StackPanel Margin="20 40" Width="350">
                     <TextBlock Text="Login Page" Margin="20" Foreground="White"
                                TextAlignment="Center" FontSize="38"  FontFamily="Century"></TextBlock>
                     <StackPanel Orientation="Horizontal" Margin="10" >
                         <materialDesign:PackIcon Kind="User" Width="25" Height="25" Foreground="White" />
-                        <TextBox x:Name="txtUsername" Margin="10 0" materialDesign:HintAssist.Hint="Enter Username" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E" Background="#00000000" TextChanged="txtUsername_TextChanged" FontFamily="Century" />
+                        <TextBox x:Name="txtUsername" Margin="10 0" materialDesign:HintAssist.Hint="Enter Username" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E" Background="#00000000" FontFamily="Century" />
                     </StackPanel>
 
 
-                    <StackPanel Orientation="Horizontal" Margin="10" >
+                    <StackPanel Orientation="Horizontal" Margin="10" Width="380" >
                         <materialDesign:PackIcon Kind="Lock" Width="25" Height="25" Foreground="White" />
-                        <PasswordBox x:Name="txtPassword" Margin="10 0" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E" Password="" FontFamily="Century" />
+
+                        <TextBox x:Name="txtPasswordTextBox" Margin="10 0" Width="0" Visibility="Hidden" TabIndex="1" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E" Background="#00000000" FontFamily="Century" />
+
+                        <PasswordBox x:Name="txtPassword" Margin="-10 0" Width="250" TabIndex="2" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E" Password="" FontFamily="Century"/>
+
+
                     </StackPanel>
+
+                    <Button Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                    ToolTip="Show/Hide Password" x:Name="btnShowPassword" Click="btnShowPassword_Click" BorderBrush="#FF3AAFB9" Width="30" Height="30" Margin="280,-50,0,0">
+                        <materialDesign:PackIcon x:Name="iconShowPassword" Kind="Hide" Foreground="White" Width="18" Height="18" />
+                    </Button>
 
                     <!--Login page-->
                     <StackPanel Margin="20 35 150 40" HorizontalAlignment="Center" >
@@ -68,7 +78,7 @@
 
                 </StackPanel>
             </StackPanel>
-            <StackPanel Margin="-25,-380, 0, 0" Width="145" Orientation="Horizontal" VerticalAlignment="Center">
+            <StackPanel Margin="-50,-380, 0, 0" Width="145" Orientation="Horizontal" VerticalAlignment="Center">
                 <Button Margin="20 30" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
                     ToolTip="Minimize" x:Name="btnMinimize" Click="btnMinimize_Click" BorderBrush="#FF3AAFB9" Width="35" Height="35">
                     <materialDesign:PackIcon Kind="Minimize" Foreground="White" Width="20" Height="20" />

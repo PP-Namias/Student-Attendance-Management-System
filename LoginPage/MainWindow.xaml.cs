@@ -117,5 +117,29 @@ namespace LoginPage
             QRCodeReader.Show();
             this.Close();
         }
+
+        private void btnShowPassword_Click(object sender, RoutedEventArgs e)
+        {
+            if (txtPassword.Visibility == Visibility.Visible)
+            {
+                txtPasswordTextBox.Text = txtPassword.Password;
+                txtPasswordTextBox.Width = txtPassword.ActualWidth;
+                txtPassword.Visibility = Visibility.Hidden;
+                txtPasswordTextBox.Visibility = Visibility.Visible;
+
+                iconShowPassword.Kind = MaterialDesignThemes.Wpf.PackIconKind.Hide;
+            }
+            else
+            {
+                txtPassword.Password = txtPasswordTextBox.Text;
+
+                txtPasswordTextBox.Width = 0;
+                txtPassword.Visibility = Visibility.Visible;
+                txtPasswordTextBox.Visibility = Visibility.Hidden;
+
+                iconShowPassword.Kind = MaterialDesignThemes.Wpf.PackIconKind.Show;
+            }
+
+        }
     }
 }
