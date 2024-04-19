@@ -116,10 +116,6 @@ namespace LoginPage
         {
             QRCodeReader QRCodeReader = new QRCodeReader();
             QRCodeReader.Show();
-
-            Result Result = new Result();
-            Result.Show();
-            this.Close();
         }
 
         private void btnShowPassword_Click(object sender, RoutedEventArgs e)

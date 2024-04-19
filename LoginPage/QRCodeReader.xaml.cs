@@ -1,26 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
-/*
- Author: mamimhk@gmail.com
-
- Thanks to:
- # ZXing.Net https://github.com/micjahn/ZXing.Net
- # Aforge.Net http://www.aforgenet.com 
- */
-
-
-using System.Linq;
+﻿using System.Linq;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -76,7 +54,7 @@ namespace LoginPage
             videoDevice = new VideoCaptureDevice(videoDevices[camNumber].MonikerString);
             camsLabel.Content = "Camera" + (camNumber + 1).ToString() + "/" + videoDevices.Count.ToString() + ": " + videoDevices[camNumber].Name;
             videoCapabilities = videoDevice.VideoCapabilities;
-            videoDevice.VideoResolution = ((from VideoCapabilities vidcap in videoCapabilities where (vidcap.FrameSize.Height >= 600 && vidcap.FrameSize.Width >= 800) orderby vidcap.FrameSize.Height descending select vidcap)).ToList()[0];
+            videoDevice.VideoResolution = (from VideoCapabilities vidcap in videoCapabilities where (vidcap.FrameSize.Height >= 600 && vidcap.FrameSize.Width >= 800) orderby vidcap.FrameSize.Height descending select vidcap).ToList()[0];
         }
 
         void onOff()
@@ -98,6 +76,9 @@ namespace LoginPage
                 videoDevice.NewFrame -= VideoDevice_NewFrame;
                 videoDevice.SignalToStop();
                 videoDevice = null;
+
+                BitmapImage bitmapImage = new BitmapImage(new Uri("/Screen View.jpg", UriKind.RelativeOrAbsolute));
+                videoFrame.Source = bitmapImage;
             }
         }
 
@@ -164,6 +145,13 @@ namespace LoginPage
                 decodedCount++;
                 Dispatcher.Invoke(new ThreadStart(delegate { QRTextBlock.Text = barcodeResult.BarcodeFormat.ToString() + " " + barcodeResult.Text; }));
                 Dispatcher.Invoke(new ThreadStart(delegate { QRCounterTextBlock.Text = "BAR/QR codes decoded: " + decodedCount.ToString(); }));
+
+
+                // Create an instance of ValidationForm
+                // Result validationForm = new Result();
+                // validationForm.ValidateBarcode(barcodeResult.Text);
+                // validationForm.Show();
+
 
                 // barcodeResult.Text
                 // Result Result = new Result();

@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("screen%20view.png")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("take-it.jpg")]
 
 

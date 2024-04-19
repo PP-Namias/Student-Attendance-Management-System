@@ -207,5 +207,14 @@
   <ItemGroup>
     <Resource Include="Screen View.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Jhon Keneth Namias.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Malkist.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Take-it.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

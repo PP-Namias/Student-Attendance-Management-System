@@ -16,9 +16,8 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Center" Height="310" Margin="0,100,0,0" VerticalAlignment="Top" Width="310">
-            <Image HorizontalAlignment="Center" Height="300" VerticalAlignment="Center" Width="300" Source="/mike.jpg" Stretch="UniformToFill"/>
+            <Image x:Name="imgProfile" HorizontalAlignment="Center" Height="300" VerticalAlignment="Center" Width="300" Source="/Take-it.jpg" Stretch="UniformToFill"/>
         </Border>
-        <Label x:Name="Name" Content="Jhon Keneth Namias" HorizontalAlignment="Center" Margin="0,450,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="310" FontSize="30"/>
         <Label x:Name="lblDate" Content="Date:" HorizontalAlignment="Left" Margin="145,505,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="90" FontSize="30"/>
         <Label x:Name="lblTime" Content="Time:" HorizontalAlignment="Left" Margin="145,560,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="90" FontSize="30"/>
         <TextBlock x:Name="txtDate" HorizontalAlignment="Left" Margin="240,509,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="215" FontSize="30"/>
@@ -42,6 +41,7 @@
                 <materialDesign:PackIcon Kind="Close" Foreground="White" Width="20" Height="20" />
             </Button>
         </StackPanel>
+        <TextBlock x:Name="txtName" HorizontalAlignment="Center" Margin="0,450,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="310" FontSize="30"/>
 
     </Grid>
 </Window>
