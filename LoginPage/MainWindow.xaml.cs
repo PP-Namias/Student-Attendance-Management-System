@@ -3,6 +3,7 @@ using LoginPage.Services;
 using System.Linq;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace LoginPage
 {
@@ -115,6 +116,9 @@ namespace LoginPage
         {
             QRCodeReader QRCodeReader = new QRCodeReader();
             QRCodeReader.Show();
+
+            Result Result = new Result();
+            Result.Show();
             this.Close();
         }
 
@@ -127,7 +131,8 @@ namespace LoginPage
                 txtPassword.Visibility = Visibility.Hidden;
                 txtPasswordTextBox.Visibility = Visibility.Visible;
 
-                iconShowPassword.Kind = MaterialDesignThemes.Wpf.PackIconKind.Hide;
+                iconShowPassword.Kind = MaterialDesignThemes.Wpf.PackIconKind.Show;
+                btnShowPassword.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF02545A"));
             }
             else
             {
@@ -137,7 +142,8 @@ namespace LoginPage
                 txtPassword.Visibility = Visibility.Visible;
                 txtPasswordTextBox.Visibility = Visibility.Hidden;
 
-                iconShowPassword.Kind = MaterialDesignThemes.Wpf.PackIconKind.Show;
+                iconShowPassword.Kind = MaterialDesignThemes.Wpf.PackIconKind.Hide;
+                btnShowPassword.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF001011"));
             }
 
         }

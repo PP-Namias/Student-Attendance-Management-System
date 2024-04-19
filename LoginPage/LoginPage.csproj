@@ -76,6 +76,9 @@
     <Compile Include="QRCodeReader.xaml.cs">
       <DependentUpon>QRCodeReader.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Result.xaml.cs">
+      <DependentUpon>Result.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Services\HashService.cs" />
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
@@ -99,6 +102,10 @@
       <SubType>Code</SubType>
     </Compile>
     <Page Include="QRCodeReader.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Result.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -1,0 +1,47 @@
+﻿<Window x:Class="LoginPage.Result"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:LoginPage"
+        mc:Ignorable="d"
+        Title="Result" Height="800" Width="600" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+    <Grid>
+
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+                <GradientStop  Color="#093A3E" Offset="1"/>
+                <GradientStop  Color="#3AAFB9" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Center" Height="310" Margin="0,100,0,0" VerticalAlignment="Top" Width="310">
+            <Image HorizontalAlignment="Center" Height="300" VerticalAlignment="Center" Width="300" Source="/mike.jpg" Stretch="UniformToFill"/>
+        </Border>
+        <Label x:Name="Name" Content="Jhon Keneth Namias" HorizontalAlignment="Center" Margin="0,450,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="310" FontSize="30"/>
+        <Label x:Name="lblDate" Content="Date:" HorizontalAlignment="Left" Margin="145,505,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="90" FontSize="30"/>
+        <Label x:Name="lblTime" Content="Time:" HorizontalAlignment="Left" Margin="145,560,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="90" FontSize="30"/>
+        <TextBlock x:Name="txtDate" HorizontalAlignment="Left" Margin="240,509,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="215" FontSize="30"/>
+        <TextBlock x:Name="txtTime" HorizontalAlignment="Left" Margin="240,564,0,0" TextWrapping="Wrap" Text="Time" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="215" FontSize="30"/>
+
+
+        <Button Height="44" Style="{StaticResource MaterialDesignRaisedButton}"
+                    materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E"  FontFamily="Century"
+                    Background="#093A3E" Foreground="White" ToolTip="Refresh" x:Name="btnRefresh" 
+                    Click="btnRefresh_Click" Content="Refresh" Margin="225,685,225,71"/>
+
+
+
+        <StackPanel Width="145" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <Button Margin="20 30" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                    ToolTip="Minimize" x:Name="btnMinimize" Click="btnMinimize_Click" BorderBrush="#FF3AAFB9" Width="35" Height="35">
+                <materialDesign:PackIcon Kind="Minimize" Foreground="White" Width="20" Height="20" />
+            </Button>
+            <Button Margin="0 20" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                    ToolTip="Close" x:Name="btnExit" Click="btnExit_Click" BorderBrush="#FF3AAFB9" Width="35" Height="35">
+                <materialDesign:PackIcon Kind="Close" Foreground="White" Width="20" Height="20" />
+            </Button>
+        </StackPanel>
+
+    </Grid>
+</Window>

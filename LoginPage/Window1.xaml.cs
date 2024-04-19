@@ -70,7 +70,7 @@ namespace LoginPage
 
             else if (phonenumber.Length <= 0)
             {
-                return 3; // Enter Phone Number
+                return 5; // Enter Phone Number
             }
 
             else
@@ -106,7 +106,7 @@ namespace LoginPage
 
                             appDbContext.Users.Add(user);
                             appDbContext.SaveChanges();
-                            return 3;// Register to the database
+                            return 3; // Register to the database
                         }
                     }
                 }
@@ -125,7 +125,7 @@ namespace LoginPage
             {
                 MessageBox.Show("Passwords do not match", "Please enter Login or Password", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
-            else if (result == 3)
+            else if (result == 5)
             {
                 MessageBox.Show("Enter Phone Number", "Please enter Login or Password", MessageBoxButton.OK, MessageBoxImage.Warning);
             }

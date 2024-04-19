@@ -40,7 +40,7 @@
 
                     </StackPanel>
 
-                    <Button Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                    <Button Style="{StaticResource MaterialDesignFloatingActionButton}" Background="#FF001011"
                     ToolTip="Show/Hide Password" x:Name="btnShowPassword" Click="btnShowPassword_Click" BorderBrush="#FF3AAFB9" Width="30" Height="30" Margin="280,-50,0,0">
                         <materialDesign:PackIcon x:Name="iconShowPassword" Kind="Hide" Foreground="White" Width="18" Height="18" />
                     </Button>

@@ -58,6 +58,16 @@
             <Label x:Name="camsLabel" Content="Camera information" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="591" Height="58" FontSize="30" Canvas.Left="9" Canvas.Top="624" FontFamily="Century Gothic" FontWeight="Bold"/>
         </Canvas>
 
+        <StackPanel Width="145" Orientation="Horizontal" VerticalAlignment="Top" HorizontalAlignment="Right">
+            <Button Margin="20 30" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                    ToolTip="Minimize" x:Name="btnMinimize" Click="btnMinimize_Click" BorderBrush="#FF3AAFB9" Width="35" Height="35">
+                <materialDesign:PackIcon Kind="Minimize" Foreground="White" Width="20" Height="20" />
+            </Button>
+            <Button Margin="0 20" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                    ToolTip="Close" x:Name="btnExit" Click="btnExit_Click" BorderBrush="#FF3AAFB9" Width="35" Height="35">
+                <materialDesign:PackIcon Kind="Close" Foreground="White" Width="20" Height="20" />
+            </Button>
+        </StackPanel>
     </Grid>
 
 </Window>

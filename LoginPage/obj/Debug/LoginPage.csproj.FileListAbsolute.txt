@@ -334,3 +334,5 @@ C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\LoginPage.c
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\LoginPage.csproj.CopyComplete
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\LoginPage.exe
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\LoginPage.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\Result.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\Result.baml

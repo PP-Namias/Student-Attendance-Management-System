@@ -165,6 +165,10 @@ namespace LoginPage
                 Dispatcher.Invoke(new ThreadStart(delegate { QRTextBlock.Text = barcodeResult.BarcodeFormat.ToString() + " " + barcodeResult.Text; }));
                 Dispatcher.Invoke(new ThreadStart(delegate { QRCounterTextBlock.Text = "BAR/QR codes decoded: " + decodedCount.ToString(); }));
 
+                // barcodeResult.Text
+                // Result Result = new Result();
+                // Result.Show();
+                // this.Close();
             }
         }
 
@@ -187,6 +191,16 @@ namespace LoginPage
         private void recordButton_Click(object sender, RoutedEventArgs e)
         {
             record = !record;
+        }
+
+        private void btnMinimize_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void btnExit_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.Shutdown();
         }
 
         void switchCam()
