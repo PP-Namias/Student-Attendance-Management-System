@@ -65,7 +65,7 @@
                         </Button>
                     </StackPanel>
 
-                    <!--Register-->
+                    
                     <StackPanel Margin="0 0 0 34" HorizontalAlignment="Center">
                         <Button Width="125" Height="35" Style="{StaticResource MaterialDesignRaisedButton}"
                                 materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E" FontFamily="Century" 

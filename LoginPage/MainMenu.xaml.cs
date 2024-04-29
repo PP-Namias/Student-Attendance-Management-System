@@ -28,5 +28,16 @@ namespace LoginPage
         {
             Application.Current.Shutdown();
         }
+
+        private void btnQRReader_Click(object sender, RoutedEventArgs e)
+        {
+            QRCodeReader QRCodeReader = new QRCodeReader();
+            QRCodeReader.Show();
+        }
+
+        private void StackPanel_Initialized()
+        {
+
+        }
     }
 }

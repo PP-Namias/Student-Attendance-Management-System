@@ -6,7 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:LoginPage"
         mc:Ignorable="d"
-        Title="Result" Height="800" Width="600" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+        Title="Result" Height="690" Width="600" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
     <Grid>
 
         <Grid.Background>
@@ -15,8 +15,8 @@
                 <GradientStop  Color="#3AAFB9" Offset="0"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Center" Height="310" Margin="0,100,0,0" VerticalAlignment="Top" Width="310">
-            <Image x:Name="imgProfile" HorizontalAlignment="Center" Height="300" VerticalAlignment="Center" Width="300" Source="/Take-it.jpg" Stretch="UniformToFill"/>
+        <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="310" Margin="150,95,0,0" VerticalAlignment="Top" Width="310">
+            <Image x:Name="imgProfile" HorizontalAlignment="Center" Height="300" VerticalAlignment="Center" Width="300" Source="/malkist photo.jpg" Cursor="Hand" Stretch="UniformToFill"/>
         </Border>
         <Label x:Name="lblDate" Content="Date:" HorizontalAlignment="Left" Margin="145,505,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="90" FontSize="30"/>
         <Label x:Name="lblTime" Content="Time:" HorizontalAlignment="Left" Margin="145,560,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="90" FontSize="30"/>
@@ -25,9 +25,9 @@
 
 
         <Button Height="44" Style="{StaticResource MaterialDesignRaisedButton}"
-                    materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E"  FontFamily="Century"
-                    Background="#093A3E" Foreground="White" ToolTip="Refresh" x:Name="btnRefresh" 
-                    Click="btnRefresh_Click" Content="Refresh" Margin="225,685,225,71"/>
+                materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E"  FontFamily="Century"
+                Background="#093A3E" Foreground="White" ToolTip="Refresh" x:Name="btnRefresh" 
+                Click="btnRefresh_Click" Content="Refresh" Margin="225,619,225,27"/>
 
 
 
@@ -41,7 +41,7 @@
                 <materialDesign:PackIcon Kind="Close" Foreground="White" Width="20" Height="20" />
             </Button>
         </StackPanel>
-        <TextBlock x:Name="txtName" HorizontalAlignment="Center" Margin="0,450,0,0" TextWrapping="Wrap" Text="Name" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="310" FontSize="30"/>
+        <TextBlock x:Name="txtName" HorizontalAlignment="Center" Margin="0,425,0,0" TextWrapping="Wrap" Text="Malkist Sugar Flavoured Cracker Biscuits" VerticalAlignment="Top" FontFamily="Century Gothic" Height="75" Width="310" FontSize="30" TextAlignment="Center"/>
 
     </Grid>
 </Window>

@@ -17,7 +17,7 @@ namespace LoginPage
     /// <summary>
     /// Interaction logic for Result.xaml
     /// </summary>
-    public partial class Result : Window    
+    public partial class Result : Window
     {
 
         public Result()
@@ -31,8 +31,11 @@ namespace LoginPage
 
             txtTime.Text = currentDateTime.ToString("T");
             txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
+
+
         }
 
+        /*
         public void ValidateBarcode(string barcodeText)
         {
             // Use the Dispatcher to execute the UI-related code on the UI thread
@@ -64,6 +67,7 @@ namespace LoginPage
                 }
             });
         }
+        */
 
         private void btnMinimize_Click(object sender, RoutedEventArgs e)
         {

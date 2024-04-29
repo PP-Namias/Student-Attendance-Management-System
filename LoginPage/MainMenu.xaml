@@ -17,7 +17,7 @@
 
         <TextBlock 
             Text="Main Menu" 
-            Margin="20" 
+            Margin="20,20,20,620" 
             Foreground="White"
             TextAlignment="Center" 
             FontSize="38"  
@@ -25,14 +25,28 @@
         </TextBlock>
 
         <StackPanel Orientation="Horizontal">
-
             <StackPanel Width="100" HorizontalAlignment="Right" Margin="1100,0,0,0">
-            <Button Margin="10 20" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                <Button Margin="10 20" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
                     ToolTip="Close" x:Name="btnExit1" Click="btnExit_Click1" BorderBrush="#FF3AAFB9" Width="35" Height="35" HorizontalAlignment="Center">
-                <materialDesign:PackIcon Kind="Close" Foreground="White" Width="20" Height="20" />
-            </Button>
+                    <materialDesign:PackIcon Kind="Close" Foreground="White" Width="20" Height="20" />
+                </Button>
             </StackPanel>
         </StackPanel>
+
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Height="100" Width="350">
+            <Button Width="300" Height="99" Style="{StaticResource MaterialDesignRaisedButton}"
+                    materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E" FontFamily="Century" 
+                    Background="#093A3E" Foreground="White" ToolTip="QRReader" x:Name="btnQRReader" 
+                    Click="btnQRReader_Click" Content="QR/Bar Code Reader" HorizontalAlignment="Center" FontSize="24"/>
+        </StackPanel>
+        <TextBlock 
+            Text="QR/Bar Code Reader Prototype" 
+            Margin="10,225,30,425" 
+            Foreground="White"
+            TextAlignment="Center" 
+            FontSize="38"  
+            FontFamily="Century"/>
 
     </Grid>
 </Window>

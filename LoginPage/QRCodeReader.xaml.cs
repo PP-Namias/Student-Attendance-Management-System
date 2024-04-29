@@ -76,9 +76,6 @@ namespace LoginPage
                 videoDevice.NewFrame -= VideoDevice_NewFrame;
                 videoDevice.SignalToStop();
                 videoDevice = null;
-
-                BitmapImage bitmapImage = new BitmapImage(new Uri("/Screen View.jpg", UriKind.RelativeOrAbsolute));
-                videoFrame.Source = bitmapImage;
             }
         }
 
@@ -151,6 +148,18 @@ namespace LoginPage
                 // Result validationForm = new Result();
                 // validationForm.ValidateBarcode(barcodeResult.Text);
                 // validationForm.Show();
+
+                bool result = false;
+
+                if (result == false)
+                {
+                    // Create an instance of ValidationForm
+                    Result Result = new Result();
+                    Result.Show();
+
+                    result = true;
+                }
+
 
 
                 // barcodeResult.Text
