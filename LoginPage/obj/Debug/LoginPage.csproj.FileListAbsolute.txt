@@ -336,3 +336,5 @@ C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\LoginPage.e
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\LoginPage.pdb
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\Result.g.cs
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\Result.baml
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\Login.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\Login.baml

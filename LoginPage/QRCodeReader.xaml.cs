@@ -223,5 +223,15 @@ namespace LoginPage
                 refreshCam(currentCam);
             }
         }
+
+
+        private void btnRefresh_Click(object sender, RoutedEventArgs e)
+        {
+            DateTime currentDateTime = DateTime.Now;
+
+            txtTime.Text = currentDateTime.ToString("T");
+            txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
+        }
+
     }
 }

@@ -20,14 +20,11 @@ namespace LoginPage
         {
             InitializeComponent();
             appDbContext = new AppDbContext();
-
         }
 
         // Login 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-
-
             if (LoginUser(txtUsername.Text, txtPassword.Password) == 1)
             {
                 MessageBox.Show("Login Successfully", "Congratulations " + txtUsername.Text, MessageBoxButton.OK, MessageBoxImage.Information);
@@ -82,17 +79,6 @@ namespace LoginPage
             Application.Current.Shutdown();
         }
 
-        // CheckBox 
-        private void CheckBox_Checked(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        // CheckBox Changed Color
-        private void CheckBox_ColorChanged(object sender, RoutedPropertyChangedEventArgs<System.Windows.Media.Color> e)
-        {
-
-        }
 
         // Register
         private void btnRegister_Click(object sender, RoutedEventArgs e)
@@ -100,11 +86,6 @@ namespace LoginPage
             Window1 window1 = new Window1();
             window1.Show();
             this.Close();
-        }
-
-        private void txtUsername_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
-        {
-
         }
 
         private void btnMinimize_Click(object sender, RoutedEventArgs e)

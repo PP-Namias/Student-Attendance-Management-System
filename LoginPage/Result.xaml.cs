@@ -31,8 +31,6 @@ namespace LoginPage
 
             txtTime.Text = currentDateTime.ToString("T");
             txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
-
-
         }
 
         /*
