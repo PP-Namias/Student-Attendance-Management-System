@@ -61,19 +61,23 @@
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="WindowsBase" />
-    <Reference Include="PresentationCore" />
-    <Reference Include="PresentationFramework" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Login.xaml.cs">
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainMenu.xaml.cs">
       <DependentUpon>MainMenu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MessageDialog.xaml.cs">
+      <DependentUpon>MessageDialog.xaml</DependentUpon>
     </Compile>
     <Compile Include="Migrations\20230220024514_n2.cs" />
     <Compile Include="Migrations\20230220024514_n2.designer.cs">
@@ -86,9 +90,16 @@
       <DependentUpon>Result.xaml</DependentUpon>
     </Compile>
     <Compile Include="Services\HashService.cs" />
+    <Compile Include="StudentAttendance.xaml.cs">
+      <DependentUpon>StudentAttendance.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Page Include="Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -111,11 +122,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="MessageDialog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="QRCodeReader.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Result.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StudentAttendance.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -190,8 +209,32 @@
     <PackageReference Include="AForge.Video.DirectShow">
       <Version>2.2.5</Version>
     </PackageReference>
+    <PackageReference Include="BCrypt.Net">
+      <Version>0.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Dragablz">
+      <Version>0.0.3.234</Version>
+    </PackageReference>
+    <PackageReference Include="EntityFramework">
+      <Version>6.4.4</Version>
+    </PackageReference>
+    <PackageReference Include="EntityFramework.SqlServerCompact">
+      <Version>6.4.4</Version>
+    </PackageReference>
+    <PackageReference Include="EPP.PresentationCore">
+      <Version>1.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="MahApps.Metro">
+      <Version>2.4.10</Version>
+    </PackageReference>
+    <PackageReference Include="MaterialDesignColors">
+      <Version>3.0.0</Version>
+    </PackageReference>
     <PackageReference Include="MaterialDesignThemes">
       <Version>4.7.1</Version>
+    </PackageReference>
+    <PackageReference Include="MaterialDesignThemes.Wpf">
+      <Version>1.0.1</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools">
       <Version>3.1.32</Version>
@@ -201,11 +244,23 @@
     <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL">
       <Version>3.1.18</Version>
     </PackageReference>
+    <PackageReference Include="PresentationFramework">
+      <Version>4.6.0</Version>
+    </PackageReference>
     <PackageReference Include="System.Configuration.ConfigurationManager">
       <Version>7.0.0</Version>
     </PackageReference>
+    <PackageReference Include="System.Core">
+      <Version>3.5.21022.801</Version>
+    </PackageReference>
     <PackageReference Include="System.Drawing.Common">
       <Version>8.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="System.Runtime.Serialization.Primitives">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Windows.Forms.Ribbon35">
+      <Version>3.5.8</Version>
     </PackageReference>
     <PackageReference Include="ZXing.Net">
       <Version>0.14.0.1</Version>
@@ -234,6 +289,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="qr-code scanner.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Student Attendance Management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="qr-code scanner.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -8,6 +8,6 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("qr-code%20scanner.ico")]
+[assembly: System.Windows.Resources.AssemblyAssociatedContentFileAttribute("qr-code%20scanner.png")]
 
 

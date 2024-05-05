@@ -32,7 +32,7 @@ namespace LoginPage
             {
                 MessageBox.Show("Login Successfully", "Congratulations " + txtUsername.Text, MessageBoxButton.OK, MessageBoxImage.Information);
                 MainMenu MainMenu = new MainMenu();
-                MainMenu.Show();
+                //MainMenu.Show();
                 this.Close();
             }
             if (LoginUser(txtUsername.Text, txtPassword.Password) == 3)

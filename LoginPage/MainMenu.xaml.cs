@@ -1,41 +1,295 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
+﻿using System.Windows;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+using MahApps.Metro.Controls;
+using System.Diagnostics;
+using MaterialDesignThemes.Wpf;
+using MahApps.Metro.Controls.Dialogs;
 
 namespace LoginPage
 {
     /// <summary>
-    /// Interaction logic for MainMenu.xaml
+    /// Interaction logic for Home.xaml
     /// </summary>
-    public partial class MainMenu : Window
+    public partial class MainMenu : MetroWindow
     {
         public MainMenu()
         {
             InitializeComponent();
         }
 
-        private void btnExit_Click1(object sender, RoutedEventArgs e)
+        //Executing after loading window
+        private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            Home x = new Home();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
-        private void btnQRReader_Click(object sender, RoutedEventArgs e)
+        //private void TextBox_MouseDown(object sender, MouseButtonEventArgs e)
+        //{
+        //    this.Hide();
+        //    var obj = new AddAttendance();
+        //    obj.Show();
+        //    this.Close();
+        //}
+
+        #region main-buttons
+
+        //private void ButtonLogins_Click(object sender, RoutedEventArgs e)
+        //{
+
+        //}
+
+        //private void ButtonAttendances_Click(object sender, RoutedEventArgs e)
+        //{
+
+        //}
+
+        //private void ButtonSystem_Click(object sender, RoutedEventArgs e)
+        //{
+
+        //}
+
+        //private void ButtonReportss_Click(object sender, RoutedEventArgs e)
+        //{
+
+        //}
+
+        //private void ButtonPurchaseSelling_Click(object sender, RoutedEventArgs e)
+        //{
+
+        //}
+
+        #endregion
+
+        #region diaglog-socialbuttons-informationlinks
+
+        // About message dialog
+        private void MenuPopupAboutButton_OnClick(object sender, RoutedEventArgs e)
         {
-            QRCodeReader QRCodeReader = new QRCodeReader();
-            QRCodeReader.Show();
+            var sMessageDialog = new MessageDialog
+            {
+                //Message = { Text = ((ButtonBase)sender).Content.ToString() }
+                Message = { Text =
+                    "Student Attendance Management System" +
+                    "\nFinal Reports on " +
+                    "\nHCI and Programming Languages" +
+                    "\n" +
+                    "\nMembers:" +
+                    "\nChristian Perez" +
+                    "\nJhon Keneth Ryan B. Namias" +
+                    "\nKarl Miranda" +
+                    "\nMark Acedo" +
+                    "\nMike Caram" +
+                    "\n" +
+
+                    "\nMade with ♡ BSCS 2A"
+                }
+            };
+
+            DialogHost.Show(sMessageDialog, "RootDialog");
         }
 
-        private void StackPanel_Initialized()
+        // Social Buttons
+        private void TwitterButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            /*Process.Start("http://twitter.com/PP_Namias");*/
+        }
+
+        private void ChatButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            /*Process.Start("https://github.com/PP-Namias");*/
+        }
+
+        private void EmailButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            /*Process.Start("mailto://jkrbn99@gmail.com");*/
+        }
+
+        // Information Links
+        private void TextBlock_WebOrdersMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*Process.Start("http://PP-Namias.Github.io/");*/
+        }
+
+        private void TextBlock_FaxOrdersMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+           
+        }
+
+        private void TextBlock_PhoneNumbersMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+         
+
+        }
+        #endregion
+
+
+        #region treeitems
+        private void TreeItem_AttendanceAdd_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            AttendanceAddNew x = new AttendanceAddNew();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+            */
+        }
+
+        private void TreeItem_AttendanceEdit_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            AttendanceEdit x = new AttendanceEdit();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+            */
+        }
+
+        private void TreeItem_AttendancePartList_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            PartList x = new PartList();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+            */
+        }
+
+        private void TreeItem_AttendancePanelList_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            PanelList x = new PanelList();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+            */
+        }
+
+        private void TreeItem_SystemAdd_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            CompanyAddNew x = new CompanyAddNew();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+            */
+        }
+        private void TreeItem_SystemList_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            CompanyList x = new CompanyList();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+            */
+        }
+
+        private void TreeItem_Home_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            Home x = new Home();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+        }
+
+        private void TreeItem_LoginAdd_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            LoginAddNew x = new LoginAddNew();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+            */
+        }
+
+        private void TreeItem_LoginList_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            LoginList x = new LoginList();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+            */
+        }
+
+        private void TreeItem_LoginEdit_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            LoginEdit x = new LoginEdit();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+            */
+        }
+
+        private void TreeItem_SystemEdit_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            CompanyEdit x = new CompanyEdit();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+            */
+        }
+
+        private void TreeItem_ReportsAdd_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            ReportsAddNew x = new ReportsAddNew();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+            */
+        }
+
+        private void TreeItem_ReportsEdit_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            ReportsEdit x = new ReportsEdit();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+            */
+        }
+
+        private void TreeItem_ReportsList_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+            /*
+            ReportsList x = new ReportsList();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+            */
+        }
+
+        #endregion
+
+        #region topbar
+        private void TextBlock_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
+        {
+            // Student Attendance Management
+        }
+
+        private void TextBlock_MouseLeftButtonDown_2(object sender, MouseButtonEventArgs e)
+        {
+            // Login Logs Management
+        }
+
+        private void TextBlock_MouseLeftButtonDown_3(object sender, MouseButtonEventArgs e)
+        {
+            // Reports and Analytics
+        }
+
+        private void TextBlock_MouseLeftButtonDown_4(object sender, MouseButtonEventArgs e)
+        {
+            // System Administration
+        }
+
+        private void TextBlock_MouseLeftButtonDown_5(object sender, MouseButtonEventArgs e)
+        {
+            // Log Out
+        }
+        #endregion
+
+        private void MenuPopupLogoutButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            /*
+            this.Hide();
+            LoggedInUser.Instance.RemoveData();
+            Login x = new Login();
+            x.Show();
+            this.Close();
+            */
+        }
+
+        private void MenuToggleButton_Checked(object sender, RoutedEventArgs e)
         {
 
         }

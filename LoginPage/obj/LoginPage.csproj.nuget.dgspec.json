@@ -58,9 +58,41 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
+            "BCrypt.Net": {
+              "target": "Package",
+              "version": "[0.1.0, )"
+            },
+            "Dragablz": {
+              "target": "Package",
+              "version": "[0.0.3.234, )"
+            },
+            "EPP.PresentationCore": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "EntityFramework": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "EntityFramework.SqlServerCompact": {
+              "target": "Package",
+              "version": "[6.4.4, )"
+            },
+            "MahApps.Metro": {
+              "target": "Package",
+              "version": "[2.4.10, )"
+            },
+            "MaterialDesignColors": {
+              "target": "Package",
+              "version": "[3.0.0, )"
+            },
             "MaterialDesignThemes": {
               "target": "Package",
               "version": "[4.7.1, )"
+            },
+            "MaterialDesignThemes.Wpf": {
+              "target": "Package",
+              "version": "[1.0.1, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -72,13 +104,29 @@
               "target": "Package",
               "version": "[3.1.18, )"
             },
+            "PresentationFramework": {
+              "target": "Package",
+              "version": "[4.6.0, )"
+            },
             "System.Configuration.ConfigurationManager": {
               "target": "Package",
               "version": "[7.0.0, )"
             },
+            "System.Core": {
+              "target": "Package",
+              "version": "[3.5.21022.801, )"
+            },
             "System.Drawing.Common": {
               "target": "Package",
               "version": "[8.0.4, )"
+            },
+            "System.Runtime.Serialization.Primitives": {
+              "target": "Package",
+              "version": "[4.3.0, )"
+            },
+            "System.Windows.Forms.Ribbon35": {
+              "target": "Package",
+              "version": "[3.5.8, )"
             },
             "ZXing.Net": {
               "target": "Package",

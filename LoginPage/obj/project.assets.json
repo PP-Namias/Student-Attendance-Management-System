@@ -60,7 +60,130 @@
           "lib/AForge.Video.DirectShow.dll": {}
         }
       },
-      "MaterialDesignColors/2.1.1": {
+      "BCrypt.Net/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net35/BCrypt.Net.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net35/BCrypt.Net.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ControlzEx/4.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.19"
+        },
+        "frameworkAssemblies": [
+          "System.Web",
+          "System.Web.Extensions"
+        ],
+        "compile": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Dragablz/0.0.3.234": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Dragablz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Dragablz.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "EntityFramework.SqlServerCompact/6.4.4": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "Microsoft.SqlServer.Compact": "4.0.8876.1"
+        },
+        "compile": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EPP.PresentationCore/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/PresentationCore.dll": {}
+        },
+        "runtime": {
+          "lib/PresentationCore.dll": {}
+        }
+      },
+      "MahApps.Metro/2.4.10": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[4.4.0, 6.0.0)"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net47/MahApps.Metro.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net47/MahApps.Metro.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/net47/de/MahApps.Metro.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "MaterialDesignColors/3.0.0": {
         "type": "package",
         "compile": {
           "lib/net462/MaterialDesignColors.dll": {
@@ -91,6 +214,20 @@
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.Wpf/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.0.1",
+          "Microsoft.CSharp": "4.6.0",
+          "System.Data.DataSetExtensions": "4.6.0-preview3.19128.7"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -412,6 +549,15 @@
           }
         }
       },
+      "Microsoft.SqlServer.Compact/4.0.8876.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        }
+      },
       "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
         "type": "package",
         "frameworkAssemblies": [
@@ -468,6 +614,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        }
+      },
+      "PresentationFramework/4.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/PresentationFramework.dll": {}
+        },
+        "runtime": {
+          "lib/PresentationFramework.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -542,6 +700,27 @@
         },
         "build": {
           "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Core/3.5.21022.801": {
+        "type": "package",
+        "compile": {
+          "lib/net20/System.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net20/System.Core.dll": {}
+        }
+      },
+      "System.Data.DataSetExtensions/4.6.0-preview3.19128.7": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data.DataSetExtensions"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/4.7.1": {
@@ -633,6 +812,19 @@
           "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Runtime.Serialization.Primitives/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime.Serialization",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Runtime.Serialization.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
       "System.Security.AccessControl/6.0.0": {
@@ -783,6 +975,15 @@
           "lib/net47/System.ValueTuple.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Windows.Forms.Ribbon35/3.5.8": {
+        "type": "package",
+        "compile": {
+          "lib/net35/System.Windows.Forms.Ribbon35.dll": {}
+        },
+        "runtime": {
+          "lib/net35/System.Windows.Forms.Ribbon35.dll": {}
         }
       },
       "ZXing.Net/0.14.0.1": {
@@ -864,7 +1065,130 @@
           "lib/AForge.Video.DirectShow.dll": {}
         }
       },
-      "MaterialDesignColors/2.1.1": {
+      "BCrypt.Net/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net35/BCrypt.Net.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net35/BCrypt.Net.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ControlzEx/4.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.19"
+        },
+        "frameworkAssemblies": [
+          "System.Web",
+          "System.Web.Extensions"
+        ],
+        "compile": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Dragablz/0.0.3.234": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Dragablz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Dragablz.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "EntityFramework.SqlServerCompact/6.4.4": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "Microsoft.SqlServer.Compact": "4.0.8876.1"
+        },
+        "compile": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EPP.PresentationCore/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/PresentationCore.dll": {}
+        },
+        "runtime": {
+          "lib/PresentationCore.dll": {}
+        }
+      },
+      "MahApps.Metro/2.4.10": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[4.4.0, 6.0.0)"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net47/MahApps.Metro.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net47/MahApps.Metro.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/net47/de/MahApps.Metro.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "MaterialDesignColors/3.0.0": {
         "type": "package",
         "compile": {
           "lib/net462/MaterialDesignColors.dll": {
@@ -895,6 +1219,20 @@
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.Wpf/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.0.1",
+          "Microsoft.CSharp": "4.6.0",
+          "System.Data.DataSetExtensions": "4.6.0-preview3.19128.7"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -1216,6 +1554,15 @@
           }
         }
       },
+      "Microsoft.SqlServer.Compact/4.0.8876.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        }
+      },
       "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
         "type": "package",
         "frameworkAssemblies": [
@@ -1272,6 +1619,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        }
+      },
+      "PresentationFramework/4.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/PresentationFramework.dll": {}
+        },
+        "runtime": {
+          "lib/PresentationFramework.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -1346,6 +1705,27 @@
         },
         "build": {
           "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Core/3.5.21022.801": {
+        "type": "package",
+        "compile": {
+          "lib/net20/System.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net20/System.Core.dll": {}
+        }
+      },
+      "System.Data.DataSetExtensions/4.6.0-preview3.19128.7": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data.DataSetExtensions"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/4.7.1": {
@@ -1437,6 +1817,19 @@
           "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Runtime.Serialization.Primitives/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime.Serialization",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Runtime.Serialization.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
       "System.Security.AccessControl/6.0.0": {
@@ -1577,6 +1970,15 @@
           }
         }
       },
+      "System.Windows.Forms.Ribbon35/3.5.8": {
+        "type": "package",
+        "compile": {
+          "lib/net35/System.Windows.Forms.Ribbon35.dll": {}
+        },
+        "runtime": {
+          "lib/net35/System.Windows.Forms.Ribbon35.dll": {}
+        }
+      },
       "ZXing.Net/0.14.0.1": {
         "type": "package",
         "compile": {
@@ -1656,7 +2058,130 @@
           "lib/AForge.Video.DirectShow.dll": {}
         }
       },
-      "MaterialDesignColors/2.1.1": {
+      "BCrypt.Net/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net35/BCrypt.Net.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net35/BCrypt.Net.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ControlzEx/4.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.19"
+        },
+        "frameworkAssemblies": [
+          "System.Web",
+          "System.Web.Extensions"
+        ],
+        "compile": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Dragablz/0.0.3.234": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Dragablz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Dragablz.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "EntityFramework.SqlServerCompact/6.4.4": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "Microsoft.SqlServer.Compact": "4.0.8876.1"
+        },
+        "compile": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EPP.PresentationCore/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/PresentationCore.dll": {}
+        },
+        "runtime": {
+          "lib/PresentationCore.dll": {}
+        }
+      },
+      "MahApps.Metro/2.4.10": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[4.4.0, 6.0.0)"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net47/MahApps.Metro.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net47/MahApps.Metro.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/net47/de/MahApps.Metro.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "MaterialDesignColors/3.0.0": {
         "type": "package",
         "compile": {
           "lib/net462/MaterialDesignColors.dll": {
@@ -1687,6 +2212,20 @@
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.Wpf/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.0.1",
+          "Microsoft.CSharp": "4.6.0",
+          "System.Data.DataSetExtensions": "4.6.0-preview3.19128.7"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -2008,6 +2547,15 @@
           }
         }
       },
+      "Microsoft.SqlServer.Compact/4.0.8876.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        }
+      },
       "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
         "type": "package",
         "frameworkAssemblies": [
@@ -2064,6 +2612,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        }
+      },
+      "PresentationFramework/4.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/PresentationFramework.dll": {}
+        },
+        "runtime": {
+          "lib/PresentationFramework.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -2138,6 +2698,27 @@
         },
         "build": {
           "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Core/3.5.21022.801": {
+        "type": "package",
+        "compile": {
+          "lib/net20/System.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net20/System.Core.dll": {}
+        }
+      },
+      "System.Data.DataSetExtensions/4.6.0-preview3.19128.7": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data.DataSetExtensions"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/4.7.1": {
@@ -2229,6 +2810,19 @@
           "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Runtime.Serialization.Primitives/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime.Serialization",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Runtime.Serialization.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
       "System.Security.AccessControl/6.0.0": {
@@ -2367,6 +2961,15 @@
           "lib/net47/System.ValueTuple.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Windows.Forms.Ribbon35/3.5.8": {
+        "type": "package",
+        "compile": {
+          "lib/net35/System.Windows.Forms.Ribbon35.dll": {}
+        },
+        "runtime": {
+          "lib/net35/System.Windows.Forms.Ribbon35.dll": {}
         }
       },
       "ZXing.Net/0.14.0.1": {
@@ -2448,7 +3051,130 @@
           "lib/AForge.Video.DirectShow.dll": {}
         }
       },
-      "MaterialDesignColors/2.1.1": {
+      "BCrypt.Net/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net35/BCrypt.Net.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net35/BCrypt.Net.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ControlzEx/4.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.19"
+        },
+        "frameworkAssemblies": [
+          "System.Web",
+          "System.Web.Extensions"
+        ],
+        "compile": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Dragablz/0.0.3.234": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Dragablz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Dragablz.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "EntityFramework.SqlServerCompact/6.4.4": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "Microsoft.SqlServer.Compact": "4.0.8876.1"
+        },
+        "compile": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EPP.PresentationCore/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/PresentationCore.dll": {}
+        },
+        "runtime": {
+          "lib/PresentationCore.dll": {}
+        }
+      },
+      "MahApps.Metro/2.4.10": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[4.4.0, 6.0.0)"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net47/MahApps.Metro.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net47/MahApps.Metro.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/net47/de/MahApps.Metro.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "MaterialDesignColors/3.0.0": {
         "type": "package",
         "compile": {
           "lib/net462/MaterialDesignColors.dll": {
@@ -2479,6 +3205,20 @@
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.Wpf/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.0.1",
+          "Microsoft.CSharp": "4.6.0",
+          "System.Data.DataSetExtensions": "4.6.0-preview3.19128.7"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -2800,6 +3540,15 @@
           }
         }
       },
+      "Microsoft.SqlServer.Compact/4.0.8876.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        }
+      },
       "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
         "type": "package",
         "frameworkAssemblies": [
@@ -2856,6 +3605,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        }
+      },
+      "PresentationFramework/4.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/PresentationFramework.dll": {}
+        },
+        "runtime": {
+          "lib/PresentationFramework.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -2930,6 +3691,27 @@
         },
         "build": {
           "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Core/3.5.21022.801": {
+        "type": "package",
+        "compile": {
+          "lib/net20/System.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net20/System.Core.dll": {}
+        }
+      },
+      "System.Data.DataSetExtensions/4.6.0-preview3.19128.7": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data.DataSetExtensions"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/4.7.1": {
@@ -3021,6 +3803,19 @@
           "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Runtime.Serialization.Primitives/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime.Serialization",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Runtime.Serialization.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
       "System.Security.AccessControl/6.0.0": {
@@ -3159,6 +3954,15 @@
           "lib/net47/System.ValueTuple.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Windows.Forms.Ribbon35/3.5.8": {
+        "type": "package",
+        "compile": {
+          "lib/net35/System.Windows.Forms.Ribbon35.dll": {}
+        },
+        "runtime": {
+          "lib/net35/System.Windows.Forms.Ribbon35.dll": {}
         }
       },
       "ZXing.Net/0.14.0.1": {
@@ -3240,7 +4044,130 @@
           "lib/AForge.Video.DirectShow.dll": {}
         }
       },
-      "MaterialDesignColors/2.1.1": {
+      "BCrypt.Net/0.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/net35/BCrypt.Net.dll": {
+            "related": ".XML"
+          }
+        },
+        "runtime": {
+          "lib/net35/BCrypt.Net.dll": {
+            "related": ".XML"
+          }
+        }
+      },
+      "ControlzEx/4.4.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Xaml.Behaviors.Wpf": "1.1.19"
+        },
+        "frameworkAssemblies": [
+          "System.Web",
+          "System.Web.Extensions"
+        ],
+        "compile": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net462/ControlzEx.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "Dragablz/0.0.3.234": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Dragablz.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/Dragablz.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "EntityFramework/6.4.4": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations"
+        ],
+        "compile": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "related": ".xml"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "related": ".SqlServer.xml;.xml"
+          }
+        },
+        "build": {
+          "buildTransitive/EntityFramework.props": {},
+          "buildTransitive/EntityFramework.targets": {}
+        }
+      },
+      "EntityFramework.SqlServerCompact/6.4.4": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "Microsoft.SqlServer.Compact": "4.0.8876.1"
+        },
+        "compile": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServerCompact.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "EPP.PresentationCore/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/PresentationCore.dll": {}
+        },
+        "runtime": {
+          "lib/PresentationCore.dll": {}
+        }
+      },
+      "MahApps.Metro/2.4.10": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[4.4.0, 6.0.0)"
+        },
+        "frameworkAssemblies": [
+          "System.ComponentModel.DataAnnotations",
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net47/MahApps.Metro.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net47/MahApps.Metro.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "resource": {
+          "lib/net47/de/MahApps.Metro.resources.dll": {
+            "locale": "de"
+          }
+        }
+      },
+      "MaterialDesignColors/3.0.0": {
         "type": "package",
         "compile": {
           "lib/net462/MaterialDesignColors.dll": {
@@ -3271,6 +4198,20 @@
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.Wpf/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.0.1",
+          "Microsoft.CSharp": "4.6.0",
+          "System.Data.DataSetExtensions": "4.6.0-preview3.19128.7"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
         }
       },
       "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -3592,6 +4533,15 @@
           }
         }
       },
+      "Microsoft.SqlServer.Compact/4.0.8876.1": {
+        "type": "package",
+        "compile": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        },
+        "runtime": {
+          "lib/net40/System.Data.SqlServerCe.dll": {}
+        }
+      },
       "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
         "type": "package",
         "frameworkAssemblies": [
@@ -3648,6 +4598,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {}
+        }
+      },
+      "PresentationFramework/4.6.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "WindowsBase"
+        ],
+        "compile": {
+          "lib/PresentationFramework.dll": {}
+        },
+        "runtime": {
+          "lib/PresentationFramework.dll": {}
         }
       },
       "System.Buffers/4.5.1": {
@@ -3722,6 +4684,27 @@
         },
         "build": {
           "buildTransitive/net462/_._": {}
+        }
+      },
+      "System.Core/3.5.21022.801": {
+        "type": "package",
+        "compile": {
+          "lib/net20/System.Core.dll": {}
+        },
+        "runtime": {
+          "lib/net20/System.Core.dll": {}
+        }
+      },
+      "System.Data.DataSetExtensions/4.6.0-preview3.19128.7": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Data.DataSetExtensions"
+        ],
+        "compile": {
+          "ref/net45/_._": {}
+        },
+        "runtime": {
+          "lib/net45/_._": {}
         }
       },
       "System.Diagnostics.DiagnosticSource/4.7.1": {
@@ -3813,6 +4796,19 @@
           "lib/net461/System.Runtime.CompilerServices.Unsafe.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Runtime.Serialization.Primitives/4.3.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Runtime.Serialization",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/System.Runtime.Serialization.Primitives.dll": {}
+        },
+        "runtime": {
+          "lib/net46/System.Runtime.Serialization.Primitives.dll": {}
         }
       },
       "System.Security.AccessControl/6.0.0": {
@@ -3951,6 +4947,15 @@
           "lib/net47/System.ValueTuple.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "System.Windows.Forms.Ribbon35/3.5.8": {
+        "type": "package",
+        "compile": {
+          "lib/net35/System.Windows.Forms.Ribbon35.dll": {}
+        },
+        "runtime": {
+          "lib/net35/System.Windows.Forms.Ribbon35.dll": {}
         }
       },
       "ZXing.Net/0.14.0.1": {
@@ -4040,10 +5045,478 @@
         "lib/AForge.Video.DirectShow.xml"
       ]
     },
-    "MaterialDesignColors/2.1.1": {
-      "sha512": "eHGBycBIDoe6nh0F0IJ2MEtfBe+F7AjS85WzhJlLGiGuX5AEV/jZZAmXeJ3FV9YA47ZybvmshnS6dABnbmQ1TA==",
+    "BCrypt.Net/0.1.0": {
+      "sha512": "sST2w361Dxt9GGMfpOTiK50wXGV64Ybb1hiX3xjEWnhVYZNF43NuySGwADJa7X1R+bA53NsFR+tuDxcYiJeIOA==",
       "type": "package",
-      "path": "materialdesigncolors/2.1.1",
+      "path": "bcrypt.net/0.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "bcrypt.net.0.1.0.nupkg.sha512",
+        "bcrypt.net.nuspec",
+        "lib/net35/BCrypt.Net.XML",
+        "lib/net35/BCrypt.Net.dll"
+      ]
+    },
+    "ControlzEx/4.4.0": {
+      "sha512": "pZ5z4hYWwE4R13UMCVs6vII//nL7hz+Nwn4oJlnsZJRGqJNy6Z9KnJiTZfly6lKFu0pMc1aWBZpx+VqFTQKP1Q==",
+      "type": "package",
+      "path": "controlzex/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "controlzex.4.4.0.nupkg.sha512",
+        "controlzex.nuspec",
+        "lib/net45/ControlzEx.dll",
+        "lib/net45/ControlzEx.pdb",
+        "lib/net45/ControlzEx.xml",
+        "lib/net462/ControlzEx.dll",
+        "lib/net462/ControlzEx.pdb",
+        "lib/net462/ControlzEx.xml",
+        "lib/netcoreapp3.0/ControlzEx.dll",
+        "lib/netcoreapp3.0/ControlzEx.pdb",
+        "lib/netcoreapp3.0/ControlzEx.xml",
+        "lib/netcoreapp3.1/ControlzEx.dll",
+        "lib/netcoreapp3.1/ControlzEx.pdb",
+        "lib/netcoreapp3.1/ControlzEx.xml",
+        "logo-mini.png"
+      ]
+    },
+    "Dragablz/0.0.3.234": {
+      "sha512": "soq8laPTrPWSA3vC3fnfU/gye2VejTbRXTuXzmVoHIySHWe5MhSIqR9KvFRmwk8xglsjVnnaa+su/10cFieuTw==",
+      "type": "package",
+      "path": "dragablz/0.0.3.234",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "dragablz.0.0.3.234.nupkg.sha512",
+        "dragablz.nuspec",
+        "lib/net40/Dragablz.dll",
+        "lib/net40/Dragablz.pdb",
+        "lib/net40/Dragablz.xml",
+        "lib/net45/Dragablz.dll",
+        "lib/net45/Dragablz.pdb",
+        "lib/net45/Dragablz.xml",
+        "lib/netcoreapp3.0/Dragablz.dll",
+        "lib/netcoreapp3.0/Dragablz.pdb",
+        "lib/netcoreapp3.0/Dragablz.xml",
+        "src/net40/CanvasOrganiser.cs",
+        "src/net40/ContainerCustomisations.cs",
+        "src/net40/Converters/BooleanAndToVisibilityConverter.cs",
+        "src/net40/Converters/EqualityToBooleanConverter.cs",
+        "src/net40/Converters/EqualityToVisibilityConverter.cs",
+        "src/net40/Converters/ShowDefaultCloseButtonConverter.cs",
+        "src/net40/Core/CollectionTeaser.cs",
+        "src/net40/Core/Extensions.cs",
+        "src/net40/Core/FuncComparer.cs",
+        "src/net40/Core/HitTest.cs",
+        "src/net40/Core/InterTabTransfer.cs",
+        "src/net40/Core/MultiComparer.cs",
+        "src/net40/Core/Native.cs",
+        "src/net40/Core/SystemCommand.cs",
+        "src/net40/Core/TabHeaderDragStartInformation.cs",
+        "src/net40/Core/WindowMessage.cs",
+        "src/net40/DefaultInterLayoutClient.cs",
+        "src/net40/DefaultInterTabClient.cs",
+        "src/net40/Dockablz/Branch.cs",
+        "src/net40/Dockablz/BranchAccessor.cs",
+        "src/net40/Dockablz/BranchItem.cs",
+        "src/net40/Dockablz/BranchResult.cs",
+        "src/net40/Dockablz/CouldBeHeaderedStyleSelector.cs",
+        "src/net40/Dockablz/DropZone.cs",
+        "src/net40/Dockablz/DropZoneLocation.cs",
+        "src/net40/Dockablz/Extensions.cs",
+        "src/net40/Dockablz/Finder.cs",
+        "src/net40/Dockablz/FloatRequestedEvent.cs",
+        "src/net40/Dockablz/FloatTransfer.cs",
+        "src/net40/Dockablz/FloatingItemSnapShot.cs",
+        "src/net40/Dockablz/Layout.cs",
+        "src/net40/Dockablz/LayoutAccessor.cs",
+        "src/net40/Dockablz/LocationReport.cs",
+        "src/net40/Dockablz/LocationReportBuilder.cs",
+        "src/net40/Dockablz/LocationReportException.cs",
+        "src/net40/Dockablz/LocationSnapShot.cs",
+        "src/net40/Dockablz/Tiler.cs",
+        "src/net40/Dockablz/TilerCalculator.cs",
+        "src/net40/DragablzColors.cs",
+        "src/net40/DragablzDragCompletedEventArgs.cs",
+        "src/net40/DragablzDragDeltaEventArgs.cs",
+        "src/net40/DragablzDragStartedEventArgs.cs",
+        "src/net40/DragablzIcon.cs",
+        "src/net40/DragablzItem.cs",
+        "src/net40/DragablzItemEventArgs.cs",
+        "src/net40/DragablzItemsControl.cs",
+        "src/net40/DragablzWindow.cs",
+        "src/net40/EmptyHeaderSizingHint.cs",
+        "src/net40/HeaderedDragablzItem.cs",
+        "src/net40/HeaderedItemViewModel.cs",
+        "src/net40/HorizontalOrganiser.cs",
+        "src/net40/HorizontalPositionMonitor.cs",
+        "src/net40/IInterLayoutClient.cs",
+        "src/net40/IInterTabClient.cs",
+        "src/net40/IItemsOrganiser.cs",
+        "src/net40/IManualInterTabClient.cs",
+        "src/net40/INewTabHost.cs",
+        "src/net40/InterTabController.cs",
+        "src/net40/ItemActionCallbackArgs.cs",
+        "src/net40/LocationChangedEventArgs.cs",
+        "src/net40/LocationHint.cs",
+        "src/net40/MoveItemRequest.cs",
+        "src/net40/NewTabHost.cs",
+        "src/net40/OrderChangedEventArgs.cs",
+        "src/net40/PositionMonitor.cs",
+        "src/net40/Properties/AssemblyInfo.cs",
+        "src/net40/Properties/Resources.Designer.cs",
+        "src/net40/Properties/Settings.Designer.cs",
+        "src/net40/Referenceless/AnonymousDisposable.cs",
+        "src/net40/Referenceless/DefaultDisposable.cs",
+        "src/net40/Referenceless/Disposable.cs",
+        "src/net40/Referenceless/ICancelable.cs",
+        "src/net40/Referenceless/SerialDisposable.cs",
+        "src/net40/StackOrganiser.cs",
+        "src/net40/StackPositionMonitor.cs",
+        "src/net40/StoryboardCompletionListener.cs",
+        "src/net40/TabEmptiedResponse.cs",
+        "src/net40/TabablzControl.cs",
+        "src/net40/TabablzHeaderSizeConverter.cs",
+        "src/net40/TabablzItemStyleSelector.cs",
+        "src/net40/Themes/BrushToRadialGradientBrushConverter.cs",
+        "src/net40/Themes/MaterialDesignAssist.cs",
+        "src/net40/Themes/Ripple.cs",
+        "src/net40/Themes/RippleAssist.cs",
+        "src/net40/Themes/SystemCommandIcon.cs",
+        "src/net40/Trapezoid.cs",
+        "src/net40/VerticalOrganiser.cs",
+        "src/net40/VerticalPositionMonitor.cs",
+        "src/net40/obj/Release/net40/.NETFramework,Version=v4.0.AssemblyAttributes.cs",
+        "src/net40/obj/Release/net40/GeneratedInternalTypeHelper.g.cs",
+        "src/net40/obj/Release/net45/.NETFramework,Version=v4.5.AssemblyAttributes.cs",
+        "src/net40/obj/Release/net45/GeneratedInternalTypeHelper.g.cs",
+        "src/net40/obj/Release/net5.0-windows/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs",
+        "src/net40/obj/Release/net5.0-windows/GeneratedInternalTypeHelper.g.cs",
+        "src/net40/obj/Release/netcoreapp3.0/.NETCoreApp,Version=v3.0.AssemblyAttributes.cs",
+        "src/net40/obj/Release/netcoreapp3.0/GeneratedInternalTypeHelper.g.cs",
+        "src/net45/CanvasOrganiser.cs",
+        "src/net45/ContainerCustomisations.cs",
+        "src/net45/Converters/BooleanAndToVisibilityConverter.cs",
+        "src/net45/Converters/EqualityToBooleanConverter.cs",
+        "src/net45/Converters/EqualityToVisibilityConverter.cs",
+        "src/net45/Converters/ShowDefaultCloseButtonConverter.cs",
+        "src/net45/Core/CollectionTeaser.cs",
+        "src/net45/Core/Extensions.cs",
+        "src/net45/Core/FuncComparer.cs",
+        "src/net45/Core/HitTest.cs",
+        "src/net45/Core/InterTabTransfer.cs",
+        "src/net45/Core/MultiComparer.cs",
+        "src/net45/Core/Native.cs",
+        "src/net45/Core/SystemCommand.cs",
+        "src/net45/Core/TabHeaderDragStartInformation.cs",
+        "src/net45/Core/WindowMessage.cs",
+        "src/net45/DefaultInterLayoutClient.cs",
+        "src/net45/DefaultInterTabClient.cs",
+        "src/net45/Dockablz/Branch.cs",
+        "src/net45/Dockablz/BranchAccessor.cs",
+        "src/net45/Dockablz/BranchItem.cs",
+        "src/net45/Dockablz/BranchResult.cs",
+        "src/net45/Dockablz/CouldBeHeaderedStyleSelector.cs",
+        "src/net45/Dockablz/DropZone.cs",
+        "src/net45/Dockablz/DropZoneLocation.cs",
+        "src/net45/Dockablz/Extensions.cs",
+        "src/net45/Dockablz/Finder.cs",
+        "src/net45/Dockablz/FloatRequestedEvent.cs",
+        "src/net45/Dockablz/FloatTransfer.cs",
+        "src/net45/Dockablz/FloatingItemSnapShot.cs",
+        "src/net45/Dockablz/Layout.cs",
+        "src/net45/Dockablz/LayoutAccessor.cs",
+        "src/net45/Dockablz/LocationReport.cs",
+        "src/net45/Dockablz/LocationReportBuilder.cs",
+        "src/net45/Dockablz/LocationReportException.cs",
+        "src/net45/Dockablz/LocationSnapShot.cs",
+        "src/net45/Dockablz/Tiler.cs",
+        "src/net45/Dockablz/TilerCalculator.cs",
+        "src/net45/DragablzColors.cs",
+        "src/net45/DragablzDragCompletedEventArgs.cs",
+        "src/net45/DragablzDragDeltaEventArgs.cs",
+        "src/net45/DragablzDragStartedEventArgs.cs",
+        "src/net45/DragablzIcon.cs",
+        "src/net45/DragablzItem.cs",
+        "src/net45/DragablzItemEventArgs.cs",
+        "src/net45/DragablzItemsControl.cs",
+        "src/net45/DragablzWindow.cs",
+        "src/net45/EmptyHeaderSizingHint.cs",
+        "src/net45/HeaderedDragablzItem.cs",
+        "src/net45/HeaderedItemViewModel.cs",
+        "src/net45/HorizontalOrganiser.cs",
+        "src/net45/HorizontalPositionMonitor.cs",
+        "src/net45/IInterLayoutClient.cs",
+        "src/net45/IInterTabClient.cs",
+        "src/net45/IItemsOrganiser.cs",
+        "src/net45/IManualInterTabClient.cs",
+        "src/net45/INewTabHost.cs",
+        "src/net45/InterTabController.cs",
+        "src/net45/ItemActionCallbackArgs.cs",
+        "src/net45/LocationChangedEventArgs.cs",
+        "src/net45/LocationHint.cs",
+        "src/net45/MoveItemRequest.cs",
+        "src/net45/NewTabHost.cs",
+        "src/net45/OrderChangedEventArgs.cs",
+        "src/net45/PositionMonitor.cs",
+        "src/net45/Properties/AssemblyInfo.cs",
+        "src/net45/Properties/Resources.Designer.cs",
+        "src/net45/Properties/Settings.Designer.cs",
+        "src/net45/Referenceless/AnonymousDisposable.cs",
+        "src/net45/Referenceless/DefaultDisposable.cs",
+        "src/net45/Referenceless/Disposable.cs",
+        "src/net45/Referenceless/ICancelable.cs",
+        "src/net45/Referenceless/SerialDisposable.cs",
+        "src/net45/StackOrganiser.cs",
+        "src/net45/StackPositionMonitor.cs",
+        "src/net45/StoryboardCompletionListener.cs",
+        "src/net45/TabEmptiedResponse.cs",
+        "src/net45/TabablzControl.cs",
+        "src/net45/TabablzHeaderSizeConverter.cs",
+        "src/net45/TabablzItemStyleSelector.cs",
+        "src/net45/Themes/BrushToRadialGradientBrushConverter.cs",
+        "src/net45/Themes/MaterialDesignAssist.cs",
+        "src/net45/Themes/Ripple.cs",
+        "src/net45/Themes/RippleAssist.cs",
+        "src/net45/Themes/SystemCommandIcon.cs",
+        "src/net45/Trapezoid.cs",
+        "src/net45/VerticalOrganiser.cs",
+        "src/net45/VerticalPositionMonitor.cs",
+        "src/net45/obj/Release/net40/.NETFramework,Version=v4.0.AssemblyAttributes.cs",
+        "src/net45/obj/Release/net40/GeneratedInternalTypeHelper.g.cs",
+        "src/net45/obj/Release/net45/.NETFramework,Version=v4.5.AssemblyAttributes.cs",
+        "src/net45/obj/Release/net45/GeneratedInternalTypeHelper.g.cs",
+        "src/net45/obj/Release/net5.0-windows/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs",
+        "src/net45/obj/Release/net5.0-windows/GeneratedInternalTypeHelper.g.cs",
+        "src/net45/obj/Release/netcoreapp3.0/.NETCoreApp,Version=v3.0.AssemblyAttributes.cs",
+        "src/net45/obj/Release/netcoreapp3.0/GeneratedInternalTypeHelper.g.cs",
+        "src/netcoreapp3.0/CanvasOrganiser.cs",
+        "src/netcoreapp3.0/ContainerCustomisations.cs",
+        "src/netcoreapp3.0/Converters/BooleanAndToVisibilityConverter.cs",
+        "src/netcoreapp3.0/Converters/EqualityToBooleanConverter.cs",
+        "src/netcoreapp3.0/Converters/EqualityToVisibilityConverter.cs",
+        "src/netcoreapp3.0/Converters/ShowDefaultCloseButtonConverter.cs",
+        "src/netcoreapp3.0/Core/CollectionTeaser.cs",
+        "src/netcoreapp3.0/Core/Extensions.cs",
+        "src/netcoreapp3.0/Core/FuncComparer.cs",
+        "src/netcoreapp3.0/Core/HitTest.cs",
+        "src/netcoreapp3.0/Core/InterTabTransfer.cs",
+        "src/netcoreapp3.0/Core/MultiComparer.cs",
+        "src/netcoreapp3.0/Core/Native.cs",
+        "src/netcoreapp3.0/Core/SystemCommand.cs",
+        "src/netcoreapp3.0/Core/TabHeaderDragStartInformation.cs",
+        "src/netcoreapp3.0/Core/WindowMessage.cs",
+        "src/netcoreapp3.0/DefaultInterLayoutClient.cs",
+        "src/netcoreapp3.0/DefaultInterTabClient.cs",
+        "src/netcoreapp3.0/Dockablz/Branch.cs",
+        "src/netcoreapp3.0/Dockablz/BranchAccessor.cs",
+        "src/netcoreapp3.0/Dockablz/BranchItem.cs",
+        "src/netcoreapp3.0/Dockablz/BranchResult.cs",
+        "src/netcoreapp3.0/Dockablz/CouldBeHeaderedStyleSelector.cs",
+        "src/netcoreapp3.0/Dockablz/DropZone.cs",
+        "src/netcoreapp3.0/Dockablz/DropZoneLocation.cs",
+        "src/netcoreapp3.0/Dockablz/Extensions.cs",
+        "src/netcoreapp3.0/Dockablz/Finder.cs",
+        "src/netcoreapp3.0/Dockablz/FloatRequestedEvent.cs",
+        "src/netcoreapp3.0/Dockablz/FloatTransfer.cs",
+        "src/netcoreapp3.0/Dockablz/FloatingItemSnapShot.cs",
+        "src/netcoreapp3.0/Dockablz/Layout.cs",
+        "src/netcoreapp3.0/Dockablz/LayoutAccessor.cs",
+        "src/netcoreapp3.0/Dockablz/LocationReport.cs",
+        "src/netcoreapp3.0/Dockablz/LocationReportBuilder.cs",
+        "src/netcoreapp3.0/Dockablz/LocationReportException.cs",
+        "src/netcoreapp3.0/Dockablz/LocationSnapShot.cs",
+        "src/netcoreapp3.0/Dockablz/Tiler.cs",
+        "src/netcoreapp3.0/Dockablz/TilerCalculator.cs",
+        "src/netcoreapp3.0/DragablzColors.cs",
+        "src/netcoreapp3.0/DragablzDragCompletedEventArgs.cs",
+        "src/netcoreapp3.0/DragablzDragDeltaEventArgs.cs",
+        "src/netcoreapp3.0/DragablzDragStartedEventArgs.cs",
+        "src/netcoreapp3.0/DragablzIcon.cs",
+        "src/netcoreapp3.0/DragablzItem.cs",
+        "src/netcoreapp3.0/DragablzItemEventArgs.cs",
+        "src/netcoreapp3.0/DragablzItemsControl.cs",
+        "src/netcoreapp3.0/DragablzWindow.cs",
+        "src/netcoreapp3.0/EmptyHeaderSizingHint.cs",
+        "src/netcoreapp3.0/HeaderedDragablzItem.cs",
+        "src/netcoreapp3.0/HeaderedItemViewModel.cs",
+        "src/netcoreapp3.0/HorizontalOrganiser.cs",
+        "src/netcoreapp3.0/HorizontalPositionMonitor.cs",
+        "src/netcoreapp3.0/IInterLayoutClient.cs",
+        "src/netcoreapp3.0/IInterTabClient.cs",
+        "src/netcoreapp3.0/IItemsOrganiser.cs",
+        "src/netcoreapp3.0/IManualInterTabClient.cs",
+        "src/netcoreapp3.0/INewTabHost.cs",
+        "src/netcoreapp3.0/InterTabController.cs",
+        "src/netcoreapp3.0/ItemActionCallbackArgs.cs",
+        "src/netcoreapp3.0/LocationChangedEventArgs.cs",
+        "src/netcoreapp3.0/LocationHint.cs",
+        "src/netcoreapp3.0/MoveItemRequest.cs",
+        "src/netcoreapp3.0/NewTabHost.cs",
+        "src/netcoreapp3.0/OrderChangedEventArgs.cs",
+        "src/netcoreapp3.0/PositionMonitor.cs",
+        "src/netcoreapp3.0/Properties/AssemblyInfo.cs",
+        "src/netcoreapp3.0/Properties/Resources.Designer.cs",
+        "src/netcoreapp3.0/Properties/Settings.Designer.cs",
+        "src/netcoreapp3.0/Referenceless/AnonymousDisposable.cs",
+        "src/netcoreapp3.0/Referenceless/DefaultDisposable.cs",
+        "src/netcoreapp3.0/Referenceless/Disposable.cs",
+        "src/netcoreapp3.0/Referenceless/ICancelable.cs",
+        "src/netcoreapp3.0/Referenceless/SerialDisposable.cs",
+        "src/netcoreapp3.0/StackOrganiser.cs",
+        "src/netcoreapp3.0/StackPositionMonitor.cs",
+        "src/netcoreapp3.0/StoryboardCompletionListener.cs",
+        "src/netcoreapp3.0/TabEmptiedResponse.cs",
+        "src/netcoreapp3.0/TabablzControl.cs",
+        "src/netcoreapp3.0/TabablzHeaderSizeConverter.cs",
+        "src/netcoreapp3.0/TabablzItemStyleSelector.cs",
+        "src/netcoreapp3.0/Themes/BrushToRadialGradientBrushConverter.cs",
+        "src/netcoreapp3.0/Themes/MaterialDesignAssist.cs",
+        "src/netcoreapp3.0/Themes/Ripple.cs",
+        "src/netcoreapp3.0/Themes/RippleAssist.cs",
+        "src/netcoreapp3.0/Themes/SystemCommandIcon.cs",
+        "src/netcoreapp3.0/Trapezoid.cs",
+        "src/netcoreapp3.0/VerticalOrganiser.cs",
+        "src/netcoreapp3.0/VerticalPositionMonitor.cs",
+        "src/netcoreapp3.0/obj/Release/net40/.NETFramework,Version=v4.0.AssemblyAttributes.cs",
+        "src/netcoreapp3.0/obj/Release/net40/GeneratedInternalTypeHelper.g.cs",
+        "src/netcoreapp3.0/obj/Release/net45/.NETFramework,Version=v4.5.AssemblyAttributes.cs",
+        "src/netcoreapp3.0/obj/Release/net45/GeneratedInternalTypeHelper.g.cs",
+        "src/netcoreapp3.0/obj/Release/net5.0-windows/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs",
+        "src/netcoreapp3.0/obj/Release/net5.0-windows/GeneratedInternalTypeHelper.g.cs",
+        "src/netcoreapp3.0/obj/Release/netcoreapp3.0/.NETCoreApp,Version=v3.0.AssemblyAttributes.cs",
+        "src/netcoreapp3.0/obj/Release/netcoreapp3.0/GeneratedInternalTypeHelper.g.cs"
+      ]
+    },
+    "EntityFramework/6.4.4": {
+      "sha512": "yj1+/4tci7Panu3jKDHYizxwVm0Jvm7b7m057b5h4u8NUHGCR8WIWirBTw+8EptRffwftIWPBeIRGNKD1ewEMQ==",
+      "type": "package",
+      "path": "entityframework/6.4.4",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "build/EntityFramework.DefaultItems.props",
+        "build/EntityFramework.props",
+        "build/EntityFramework.targets",
+        "build/Microsoft.Data.Entity.Build.Tasks.dll",
+        "build/netcoreapp3.0/EntityFramework.props",
+        "build/netcoreapp3.0/EntityFramework.targets",
+        "buildTransitive/EntityFramework.props",
+        "buildTransitive/EntityFramework.targets",
+        "buildTransitive/netcoreapp3.0/EntityFramework.props",
+        "buildTransitive/netcoreapp3.0/EntityFramework.targets",
+        "content/net40/App.config.install.xdt",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.install.xdt",
+        "content/net40/Web.config.transform",
+        "entityframework.6.4.4.nupkg.sha512",
+        "entityframework.nuspec",
+        "lib/net40/EntityFramework.SqlServer.dll",
+        "lib/net40/EntityFramework.SqlServer.xml",
+        "lib/net40/EntityFramework.dll",
+        "lib/net40/EntityFramework.xml",
+        "lib/net45/EntityFramework.SqlServer.dll",
+        "lib/net45/EntityFramework.SqlServer.xml",
+        "lib/net45/EntityFramework.dll",
+        "lib/net45/EntityFramework.xml",
+        "lib/netstandard2.1/EntityFramework.SqlServer.dll",
+        "lib/netstandard2.1/EntityFramework.SqlServer.xml",
+        "lib/netstandard2.1/EntityFramework.dll",
+        "lib/netstandard2.1/EntityFramework.xml",
+        "tools/EntityFramework6.PS2.psd1",
+        "tools/EntityFramework6.PS2.psm1",
+        "tools/EntityFramework6.psd1",
+        "tools/EntityFramework6.psm1",
+        "tools/about_EntityFramework6.help.txt",
+        "tools/init.ps1",
+        "tools/install.ps1",
+        "tools/net40/any/ef6.exe",
+        "tools/net40/any/ef6.pdb",
+        "tools/net40/win-x86/ef6.exe",
+        "tools/net40/win-x86/ef6.pdb",
+        "tools/net45/any/ef6.exe",
+        "tools/net45/any/ef6.pdb",
+        "tools/net45/win-x86/ef6.exe",
+        "tools/net45/win-x86/ef6.pdb",
+        "tools/netcoreapp3.0/any/ef6.dll",
+        "tools/netcoreapp3.0/any/ef6.pdb",
+        "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
+      ]
+    },
+    "EntityFramework.SqlServerCompact/6.4.4": {
+      "sha512": "AOwZQosl08v6SuDKugstNOUpFVMutKwlLM1A1nnX/hf5Ecakv4pSG2U2z8k00p51dXE0s4NE0au7RX4ohXn7/g==",
+      "type": "package",
+      "path": "entityframework.sqlservercompact/6.4.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "content/net40/App.config.install.xdt",
+        "content/net40/App.config.transform",
+        "content/net40/Web.config.install.xdt",
+        "content/net40/Web.config.transform",
+        "entityframework.sqlservercompact.6.4.4.nupkg.sha512",
+        "entityframework.sqlservercompact.nuspec",
+        "lib/net40/EntityFramework.SqlServerCompact.dll",
+        "lib/net40/EntityFramework.SqlServerCompact.xml",
+        "lib/net45/EntityFramework.SqlServerCompact.dll",
+        "lib/net45/EntityFramework.SqlServerCompact.xml"
+      ]
+    },
+    "EPP.PresentationCore/1.0.0": {
+      "sha512": "ttSZCunyGyOsL20FBZxM3K/7wMvWQ9vel+IidzFYdK02RIEx+EsV3Vc0Yeo8YslOp7G08unjNrtZEtWfLXJy4Q==",
+      "type": "package",
+      "path": "epp.presentationcore/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "epp.presentationcore.1.0.0.nupkg.sha512",
+        "epp.presentationcore.nuspec",
+        "lib/PresentationCore.dll"
+      ]
+    },
+    "MahApps.Metro/2.4.10": {
+      "sha512": "45exHKJCVYaD1/rNr3ekZPECEBM4uHOt6aYp6yNaJbliFMUo+d3z8Gi1xG+qEkbiHKITX+dlz+BW1FOsjAbl/w==",
+      "type": "package",
+      "path": "mahapps.metro/2.4.10",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net452/MahApps.Metro.dll",
+        "lib/net452/MahApps.Metro.pdb",
+        "lib/net452/MahApps.Metro.xml",
+        "lib/net452/de/MahApps.Metro.resources.dll",
+        "lib/net46/MahApps.Metro.dll",
+        "lib/net46/MahApps.Metro.pdb",
+        "lib/net46/MahApps.Metro.xml",
+        "lib/net46/de/MahApps.Metro.resources.dll",
+        "lib/net47/MahApps.Metro.dll",
+        "lib/net47/MahApps.Metro.pdb",
+        "lib/net47/MahApps.Metro.xml",
+        "lib/net47/de/MahApps.Metro.resources.dll",
+        "lib/netcoreapp3.0/MahApps.Metro.dll",
+        "lib/netcoreapp3.0/MahApps.Metro.pdb",
+        "lib/netcoreapp3.0/MahApps.Metro.xml",
+        "lib/netcoreapp3.0/de/MahApps.Metro.resources.dll",
+        "lib/netcoreapp3.1/MahApps.Metro.dll",
+        "lib/netcoreapp3.1/MahApps.Metro.pdb",
+        "lib/netcoreapp3.1/MahApps.Metro.xml",
+        "lib/netcoreapp3.1/de/MahApps.Metro.resources.dll",
+        "mahapps.metro.2.4.10.nupkg.sha512",
+        "mahapps.metro.logo.png",
+        "mahapps.metro.nuspec",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "MaterialDesignColors/3.0.0": {
+      "sha512": "yIAqOd9RYY7JUnspmBaL/PK+NEbRFFMCS43AT1YWM5MBkGAU5rUYh9q11zzEfqFcz2jDO6Zaf9W+m4Y1dGhatQ==",
+      "type": "package",
+      "path": "materialdesigncolors/3.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4054,9 +5527,7 @@
         "lib/net6.0/MaterialDesignColors.pdb",
         "lib/net7.0/MaterialDesignColors.dll",
         "lib/net7.0/MaterialDesignColors.pdb",
-        "lib/netcoreapp3.1/MaterialDesignColors.dll",
-        "lib/netcoreapp3.1/MaterialDesignColors.pdb",
-        "materialdesigncolors.2.1.1.nupkg.sha512",
+        "materialdesigncolors.3.0.0.nupkg.sha512",
         "materialdesigncolors.nuspec"
       ]
     },
@@ -4103,6 +5574,19 @@
         "materialdesignthemes.4.7.1.nupkg.sha512",
         "materialdesignthemes.nuspec",
         "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "MaterialDesignThemes.Wpf/1.0.1": {
+      "sha512": "goEShYguOoPYJ+oBtWWMEsZFK5CL+524m2fekyLQaMkcECu2K9mYv0yJiXARQM6qr6YdF6iDuR0Bx9BunrLFzQ==",
+      "type": "package",
+      "path": "materialdesignthemes.wpf/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/MaterialDesignThemes.Wpf.dll",
+        "lib/netcoreapp3.0/MaterialDesignThemes.Wpf.dll",
+        "materialdesignthemes.wpf.1.0.1.nupkg.sha512",
+        "materialdesignthemes.wpf.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/1.1.1": {
@@ -4500,6 +5984,43 @@
         "microsoft.extensions.primitives.nuspec"
       ]
     },
+    "Microsoft.SqlServer.Compact/4.0.8876.1": {
+      "sha512": "CKh6YxPd7/FApB3y5/mZyqkTVKDkbYFUf/tbDAwHlKLrIKRlJ7/VPLMqHX0izl4B0Yey+qMIVo7izGTSi/9ang==",
+      "type": "package",
+      "path": "microsoft.sqlserver.compact/4.0.8876.1",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Content/web.config.transform",
+        "NativeBinaries/amd64/Microsoft.VC90.CRT/Microsoft.VC90.CRT.manifest",
+        "NativeBinaries/amd64/Microsoft.VC90.CRT/README_ENU.txt",
+        "NativeBinaries/amd64/Microsoft.VC90.CRT/msvcr90.dll",
+        "NativeBinaries/amd64/sqlceca40.dll",
+        "NativeBinaries/amd64/sqlcecompact40.dll",
+        "NativeBinaries/amd64/sqlceer40EN.dll",
+        "NativeBinaries/amd64/sqlceme40.dll",
+        "NativeBinaries/amd64/sqlceqp40.dll",
+        "NativeBinaries/amd64/sqlcese40.dll",
+        "NativeBinaries/x86/Microsoft.VC90.CRT/Microsoft.VC90.CRT.manifest",
+        "NativeBinaries/x86/Microsoft.VC90.CRT/README_ENU.txt",
+        "NativeBinaries/x86/Microsoft.VC90.CRT/msvcr90.dll",
+        "NativeBinaries/x86/sqlceca40.dll",
+        "NativeBinaries/x86/sqlcecompact40.dll",
+        "NativeBinaries/x86/sqlceer40EN.dll",
+        "NativeBinaries/x86/sqlceme40.dll",
+        "NativeBinaries/x86/sqlceqp40.dll",
+        "NativeBinaries/x86/sqlcese40.dll",
+        "SQLCE_EULA_ENU.rtf",
+        "lib/net40/System.Data.SqlServerCe.dll",
+        "microsoft.sqlserver.compact.4.0.8876.1.nupkg.sha512",
+        "microsoft.sqlserver.compact.nuspec",
+        "tools/Install.ps1",
+        "tools/Uninstall.ps1",
+        "tools/VS.psd1",
+        "tools/VS.psm1"
+      ]
+    },
     "Microsoft.Xaml.Behaviors.Wpf/1.1.39": {
       "sha512": "8PZKqw9QOcu42xk8puY4P1+EXHL9YGOR9b7qhaYx5cILHul456H073tj99vyPcCt0W0781T9RwHqkx507ZyUpQ==",
       "type": "package",
@@ -4556,6 +6077,18 @@
         "npgsql.entityframeworkcore.postgresql.3.1.18.nupkg.sha512",
         "npgsql.entityframeworkcore.postgresql.nuspec",
         "postgresql.png"
+      ]
+    },
+    "PresentationFramework/4.6.0": {
+      "sha512": "37FpU6XcB1Hgr5X03MgUOxvzWLJYKJP72J3g5hnZHi/DXsTxpJEu4brCGW+TmplVWfntuysO/uRcZcPS9YK0Bw==",
+      "type": "package",
+      "path": "presentationframework/4.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/PresentationFramework.dll",
+        "presentationframework.4.6.0.nupkg.sha512",
+        "presentationframework.nuspec"
       ]
     },
     "System.Buffers/4.5.1": {
@@ -4731,6 +6264,38 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "System.Core/3.5.21022.801": {
+      "sha512": "QPzEPxDOY7zdWl4hpGcTCuMiTZa83YER1MO99l3pbj+Rn3Wp47kCTJBEUsoYu1ohiUdxsbjVENNP77Qr1MLvZQ==",
+      "type": "package",
+      "path": "system.core/3.5.21022.801",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20/System.Core.dll",
+        "system.core.3.5.21022.801.nupkg.sha512",
+        "system.core.nuspec"
+      ]
+    },
+    "System.Data.DataSetExtensions/4.6.0-preview3.19128.7": {
+      "sha512": "ZFJYYi41Wf4xlFKuuRUblw8yThgzBTYeZTs7eGU7sDiu+X+BmeIdT3pstCrmLpDyflDIBuKX1VYmBCGKo14h6w==",
+      "type": "package",
+      "path": "system.data.datasetextensions/4.6.0-preview3.19128.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/net45/_._",
+        "lib/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "lib/netstandard2.0/System.Data.DataSetExtensions.xml",
+        "ref/net45/_._",
+        "ref/netstandard2.0/System.Data.DataSetExtensions.dll",
+        "system.data.datasetextensions.4.6.0-preview3.19128.7.nupkg.sha512",
+        "system.data.datasetextensions.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Diagnostics.DiagnosticSource/4.7.1": {
       "sha512": "j81Lovt90PDAq8kLpaJfJKV/rWdWuEk6jfV+MBkee33vzYLEUsy4gXK8laa9V2nZlLM9VM9yA/OOQxxPEJKAMw==",
       "type": "package",
@@ -4895,6 +6460,79 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "System.Runtime.Serialization.Primitives/4.3.0": {
+      "sha512": "Wz+0KOukJGAlXjtKr+5Xpuxf8+c8739RI1C+A2BoQZT+wMCCoMDDdO8/4IRHfaVINqL78GO8dW8G2lW/e45Mcw==",
+      "type": "package",
+      "path": "system.runtime.serialization.primitives/4.3.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "ThirdPartyNotices.txt",
+        "dotnet_library_license.txt",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net46/System.Runtime.Serialization.Primitives.dll",
+        "lib/netcore50/System.Runtime.Serialization.Primitives.dll",
+        "lib/netstandard1.3/System.Runtime.Serialization.Primitives.dll",
+        "lib/portable-net45+win8+wp8+wpa81/_._",
+        "lib/win8/_._",
+        "lib/wp80/_._",
+        "lib/wpa81/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net46/System.Runtime.Serialization.Primitives.dll",
+        "ref/netcore50/System.Runtime.Serialization.Primitives.dll",
+        "ref/netcore50/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/de/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/es/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/fr/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/it/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/ja/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/ko/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/ru/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/zh-hans/System.Runtime.Serialization.Primitives.xml",
+        "ref/netcore50/zh-hant/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/System.Runtime.Serialization.Primitives.dll",
+        "ref/netstandard1.0/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/de/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/es/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/fr/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/it/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/ja/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/ko/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/ru/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/zh-hans/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.0/zh-hant/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/System.Runtime.Serialization.Primitives.dll",
+        "ref/netstandard1.3/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/de/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/es/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/fr/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/it/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/ja/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/ko/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/ru/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/zh-hans/System.Runtime.Serialization.Primitives.xml",
+        "ref/netstandard1.3/zh-hant/System.Runtime.Serialization.Primitives.xml",
+        "ref/portable-net45+win8+wp8+wpa81/_._",
+        "ref/win8/_._",
+        "ref/wp80/_._",
+        "ref/wpa81/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "runtimes/aot/lib/netcore50/System.Runtime.Serialization.Primitives.dll",
+        "system.runtime.serialization.primitives.4.3.0.nupkg.sha512",
+        "system.runtime.serialization.primitives.nuspec"
       ]
     },
     "System.Security.AccessControl/6.0.0": {
@@ -5131,6 +6769,19 @@
         "version.txt"
       ]
     },
+    "System.Windows.Forms.Ribbon35/3.5.8": {
+      "sha512": "eCT9IcJyU/NDrDA7Obp40Ata7hvPTVrtKjcofJe4LC/qjx7MNpOR0vNDfc5IDEzZi5bP5wGfJpVOWnnFeL2AUQ==",
+      "type": "package",
+      "path": "system.windows.forms.ribbon35/3.5.8",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "content/Updates.txt",
+        "lib/net35/System.Windows.Forms.Ribbon35.dll",
+        "system.windows.forms.ribbon35.3.5.8.nupkg.sha512",
+        "system.windows.forms.ribbon35.nuspec"
+      ]
+    },
     "ZXing.Net/0.14.0.1": {
       "sha512": "XnYnyNARozhoRJwdioHTcsJFMsIbYj/wwecL9sGq0mhmEA7LbElzLiVLUMuZRFbrHiElGbVCjD2GbeQG3tzZ7Q==",
       "type": "package",
@@ -5204,11 +6855,23 @@
       "AForge.Math >= 2.2.5",
       "AForge.Video >= 2.2.5",
       "AForge.Video.DirectShow >= 2.2.5",
+      "BCrypt.Net >= 0.1.0",
+      "Dragablz >= 0.0.3.234",
+      "EPP.PresentationCore >= 1.0.0",
+      "EntityFramework >= 6.4.4",
+      "EntityFramework.SqlServerCompact >= 6.4.4",
+      "MahApps.Metro >= 2.4.10",
+      "MaterialDesignColors >= 3.0.0",
       "MaterialDesignThemes >= 4.7.1",
+      "MaterialDesignThemes.Wpf >= 1.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.32",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 3.1.18",
+      "PresentationFramework >= 4.6.0",
       "System.Configuration.ConfigurationManager >= 7.0.0",
+      "System.Core >= 3.5.21022.801",
       "System.Drawing.Common >= 8.0.4",
+      "System.Runtime.Serialization.Primitives >= 4.3.0",
+      "System.Windows.Forms.Ribbon35 >= 3.5.8",
       "ZXing.Net >= 0.14.0.1"
     ]
   },
@@ -5270,9 +6933,41 @@
             "target": "Package",
             "version": "[2.2.5, )"
           },
+          "BCrypt.Net": {
+            "target": "Package",
+            "version": "[0.1.0, )"
+          },
+          "Dragablz": {
+            "target": "Package",
+            "version": "[0.0.3.234, )"
+          },
+          "EPP.PresentationCore": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "EntityFramework": {
+            "target": "Package",
+            "version": "[6.4.4, )"
+          },
+          "EntityFramework.SqlServerCompact": {
+            "target": "Package",
+            "version": "[6.4.4, )"
+          },
+          "MahApps.Metro": {
+            "target": "Package",
+            "version": "[2.4.10, )"
+          },
+          "MaterialDesignColors": {
+            "target": "Package",
+            "version": "[3.0.0, )"
+          },
           "MaterialDesignThemes": {
             "target": "Package",
             "version": "[4.7.1, )"
+          },
+          "MaterialDesignThemes.Wpf": {
+            "target": "Package",
+            "version": "[1.0.1, )"
           },
           "Microsoft.EntityFrameworkCore.Tools": {
             "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
@@ -5284,13 +6979,29 @@
             "target": "Package",
             "version": "[3.1.18, )"
           },
+          "PresentationFramework": {
+            "target": "Package",
+            "version": "[4.6.0, )"
+          },
           "System.Configuration.ConfigurationManager": {
             "target": "Package",
             "version": "[7.0.0, )"
           },
+          "System.Core": {
+            "target": "Package",
+            "version": "[3.5.21022.801, )"
+          },
           "System.Drawing.Common": {
             "target": "Package",
             "version": "[8.0.4, )"
+          },
+          "System.Runtime.Serialization.Primitives": {
+            "target": "Package",
+            "version": "[4.3.0, )"
+          },
+          "System.Windows.Forms.Ribbon35": {
+            "target": "Package",
+            "version": "[3.5.8, )"
           },
           "ZXing.Net": {
             "target": "Package",
