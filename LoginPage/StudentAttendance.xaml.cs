@@ -1,27 +1,36 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Diagnostics;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Shapes;
+
+//using DevExpress.Xpf.Printing;
 
 namespace LoginPage
 {
     /// <summary>
-    /// Interaction logic for StudentAttendance.xaml
+    /// Interaction logic for Home.xaml
     /// </summary>
-    public partial class StudentAttendance : Window
+    public partial class StudentAttendance : UserControl
     {
         public StudentAttendance()
         {
             InitializeComponent();
+            //WelcomeMessage.Text = "Welcome " + LoggedInUser.Instance.Info.Name + "!";
+        }
+
+        private void AttendanceEntry_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BarcodeScanner_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void PrintAttendance_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

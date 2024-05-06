@@ -361,3 +361,9 @@ C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\Home.baml
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\StudentAttendance.baml
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\MessageDialog.baml
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\MessageDialog.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\LoginLogs.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\LoginLogs.baml
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\ReportsandAnalytics.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\ReportsandAnalytics.baml
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\SystemAdministration.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\SystemAdministration.baml

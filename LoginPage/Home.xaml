@@ -88,19 +88,21 @@
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
                             <Image Source="/Student Attendance Management.png" Grid.RowSpan="5" StretchDirection="Both" Stretch="UniformToFill" Margin="0,0,2,0" />
-                            <TextBlock Grid.Column="1" Margin="16 16 16 2" Text="Student Attendance" HorizontalAlignment="Center" FontSize="36"/>
-                            <TextBlock Grid.Column="1" Margin="16 46 16 2" Text="Management System"  HorizontalAlignment="Center" FontSize="36"/>
+                            <TextBlock Grid.Column="1" Margin="16 16 16 2" Text="Home" HorizontalAlignment="Center" FontSize="36"/>
+                            <TextBlock Grid.Column="1" Margin="16 46 16 2" Text="Dashboard"  HorizontalAlignment="Center" FontSize="36"/>
                             <TextBlock Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Margin="16 0 16 8" Foreground="{DynamicResource MaterialDesignBodyLight}"
                                                        VerticalAlignment="Center"/>
+                            <TextBlock Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Margin="16 0 16 8" Foreground="DarkGray"
+                                                       VerticalAlignment="Center" Text="**DASHBOARD SAMPLE TEXT idk what to add T-T**" HorizontalAlignment="Center"/>
                             <Border Grid.Column="1" Grid.Row="2" BorderThickness="0 1 0 0" BorderBrush="{DynamicResource MaterialDesignDivider}" Margin="0 8 0 0">
                                 <Grid Margin="8">
-                                    <Button Foreground="#093A3E" FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Left" x:Name="ButtonLogins" Click="ButtonEmployees_Click">
+                                    <Button Foreground="#093A3E" FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Left" x:Name="StudentAttendance" Click="StudentAttendance_Click">
                                         <StackPanel Orientation="Horizontal">
                                             <materialDesign:PackIcon Kind="AccountStudent" />
                                             <TextBlock Margin="8 0 0 0"  VerticalAlignment="Center"><Run Text="Student Attendance"/></TextBlock>
                                         </StackPanel>
                                     </Button>
-                                    <Button Foreground="#093A3E" FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Right" x:Name="ButtonAttendances" Click="ButtonProducts_Click">
+                                    <Button Foreground="#093A3E" FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Right" x:Name="SystemAdministration" Click="SystemAdministration_Click">
                                         <StackPanel Orientation="Horizontal">
                                             <materialDesign:PackIcon Kind="SecurityAccount" />
                                             <TextBlock Margin="8 0 0 0" VerticalAlignment="Center"><Run Text="System Administration"/></TextBlock>
@@ -110,13 +112,13 @@
                             </Border>
                             <Border Grid.Column="1" Grid.Row="3" BorderThickness="0 1 0 0" BorderBrush="{DynamicResource MaterialDesignDivider}">
                                 <Grid Margin="8">
-                                    <Button Foreground="#093A3E" FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Left" x:Name="ButtonSystem" Click="ButtonCompanies_Click">
+                                    <Button Foreground="#093A3E" FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Left" x:Name="LoginLogs" Click="LoginLogs_Click">
                                         <StackPanel Orientation="Horizontal">
                                             <materialDesign:PackIcon Kind="LoginVariant" />
                                             <TextBlock Margin="8 0 0 0" VerticalAlignment="Center"><Run Text="Login Logs"/></TextBlock>
                                         </StackPanel>
                                     </Button>
-                                    <Button Foreground="#093A3E" FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Right" x:Name="ButtonReportss" Click="ButtonProjects_Click">
+                                    <Button Foreground="#093A3E" FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Right" x:Name="ReportsandAnalytics" Click="ReportsandAnalytics_Click">
                                         <StackPanel Orientation="Horizontal">
                                             <materialDesign:PackIcon Kind="ChartLine" />
                                             <TextBlock Margin="8 0 5 0" VerticalAlignment="Center"><Run Text="Reports and Analytics"/></TextBlock>
@@ -126,7 +128,7 @@
                             </Border>
                             <Border Grid.Column="1" Grid.Row="4" BorderThickness="0 1 0 0" BorderBrush="{DynamicResource MaterialDesignDivider}">
                                 <Grid Margin="8">
-                                    <Button Foreground="#093A3E" FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Left" x:Name="ButtonPurchaseSelling" Click="ButtonPurchaseSelling_Click">
+                                    <Button Foreground="#093A3E" FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Left" x:Name="Logout" Click="Logout_Click">
                                         <StackPanel Orientation="Horizontal">
                                             <materialDesign:PackIcon Kind="Logout" />
                                             <TextBlock Margin="8 0 0 0" VerticalAlignment="Center"><Run Text="Logout"/></TextBlock>
@@ -149,21 +151,11 @@
             HorizontalAlignment="Right"
             VerticalAlignment="Bottom" Margin="32">
             <StackPanel>
-                <Button ToolTip="Twitter" Click="TwitterButton_OnClick" Background="{DynamicResource PrimaryHueMidBrush}" Foreground="{DynamicResource PrimaryHueMidForegroundBrush}">
-                    <materialDesign:PackIcon Kind="Twitter" />
-                </Button>
-                <Button ToolTip="Chat" Click="ChatButton_OnClick">
-                    <!-- mix up the colours by brinking in a named palette (see merged dictionaries at top) -->
-                    <Button.Background>
-                        <SolidColorBrush Color="{StaticResource GreenPrimary500}" />
-                    </Button.Background>
-                    <Button.Foreground>
-                        <SolidColorBrush Color="{StaticResource GreenPrimary500Foreground}" />
-                    </Button.Foreground>
-                    <materialDesign:PackIcon Kind="Message" />
+                <Button ToolTip="Github" Click="GithubButton_OnClick" Background="White" Foreground="{DynamicResource PrimaryHueMidForegroundBrush}">
+                    <materialDesign:PackIcon Kind="Github" Width="30" Height="30" />
                 </Button>
                 <Button ToolTip="Email" Click="EmailButton_OnClick" Background="{DynamicResource SecondaryAccentBrush}" Foreground="{DynamicResource SecondaryAccentForegroundBrush}">
-                    <materialDesign:PackIcon Kind="Email" />
+                    <materialDesign:PackIcon Kind="Email"  Width="25" Height="25"/>
                 </Button>
             </StackPanel>
         </materialDesign:PopupBox>

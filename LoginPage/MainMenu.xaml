@@ -18,10 +18,11 @@
                  GlowBrush="{DynamicResource AccentColorBrush}"
                  
                  Height="700"
-                 Width="1200"     
+                 Width="1200"
+                 MinWidth="1050"
                  Loaded="Window_Loaded"
                  WindowStartupLocation="CenterScreen"
-                 Icon="/icon.ico">
+                 Icon="/icon.ico" MinHeight="700">
     <UserControl>
         <UserControl.Resources>
             <ResourceDictionary>
@@ -46,7 +47,6 @@
                                     HorizontalAlignment="Right" Margin="16"
                                     IsChecked="{Binding IsChecked, ElementName=MenuToggleButton, Mode=TwoWay}" />
                         <TreeView MinWidth="220">
-                            <TreeViewItem PreviewMouseLeftButtonDown="TreeItem_Home_PreviewMouseLeftButtonDown" Header="Home"/>
                             <TreeViewItem>
                                 <TreeViewItem.Header >
                                     <StackPanel Orientation="Horizontal">
@@ -265,12 +265,12 @@
                             <RowDefinition Height="*" />
                         </Grid.RowDefinitions>
                         <!-- start information links -->
-                        <StackPanel Grid.Row="0" Margin="16 5 16 5" Orientation="Horizontal">
+                        <StackPanel Grid.Row="0" Margin="16 5 16 5" Orientation="Horizontal" HorizontalAlignment="Center">
                             <StackPanel Orientation="Horizontal">
                                 <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Home">
                                     <StackPanel Orientation="Horizontal">
                                         <materialDesign:PackIcon Kind="Home" VerticalAlignment="Center" Foreground="#093A3E" />
-                                        <TextBlock MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_1"><Run TextBlock.FontWeight="Regular" TextBlock.FontSize="14" Foreground="#093A3E" Text=" Home"/></TextBlock>
+                                        <TextBlock MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_0"><Run TextBlock.FontWeight="Regular" TextBlock.FontSize="14" Foreground="#093A3E" Text=" Home"/></TextBlock>
                                     </StackPanel>
                                 </Button>
 

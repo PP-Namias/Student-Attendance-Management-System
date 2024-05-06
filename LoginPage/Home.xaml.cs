@@ -34,66 +34,58 @@ namespace LoginPage
 
         #region main-buttons
 
-        private void ButtonEmployees_Click(object sender, RoutedEventArgs e)
+        private void StudentAttendance_Click(object sender, RoutedEventArgs e)
         {
             this.mainscrollviewer.Visibility = Visibility.Collapsed;
             this.topgrid.Visibility = Visibility.Collapsed;
             this.homePopupBox.Visibility = Visibility.Collapsed;
 
-            /*
-            HomeEmployees x = new HomeEmployees();
+            StudentAttendance x = new StudentAttendance();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
-            */
         }
 
-        private void ButtonProducts_Click(object sender, RoutedEventArgs e)
+        private void SystemAdministration_Click(object sender, RoutedEventArgs e)
         {
             this.mainscrollviewer.Visibility = Visibility.Collapsed;
             this.topgrid.Visibility = Visibility.Collapsed;
             this.homePopupBox.Visibility = Visibility.Collapsed;
 
-            /*
-            HomeProducts x = new HomeProducts();
+            SystemAdministration x = new SystemAdministration();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
-            */
         }
 
-        private void ButtonCompanies_Click(object sender, RoutedEventArgs e)
+        private void LoginLogs_Click(object sender, RoutedEventArgs e)
         {
             this.mainscrollviewer.Visibility = Visibility.Collapsed;
             this.topgrid.Visibility = Visibility.Collapsed;
             this.homePopupBox.Visibility = Visibility.Collapsed;
 
-            /*
-            HomeCompanies x = new HomeCompanies();
+            LoginLogs x = new LoginLogs();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
-            */
         }
 
-        private void ButtonProjects_Click(object sender, RoutedEventArgs e)
+        private void ReportsandAnalytics_Click(object sender, RoutedEventArgs e)
         {
             this.mainscrollviewer.Visibility = Visibility.Collapsed;
             this.topgrid.Visibility = Visibility.Collapsed;
             this.homePopupBox.Visibility = Visibility.Collapsed;
 
-            /*
-            HomeProjects x = new HomeProjects();
+            ReportsandAnalytics x = new ReportsandAnalytics();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
-            */
         }
 
-        private void ButtonPurchaseSelling_Click(object sender, RoutedEventArgs e)
+        private void Logout_Click(object sender, RoutedEventArgs e)
         {
+            /*
             this.mainscrollviewer.Visibility = Visibility.Collapsed;
             this.topgrid.Visibility = Visibility.Collapsed;
             this.homePopupBox.Visibility = Visibility.Collapsed;
 
-            /*
-            HomePurchaseSelling x = new HomePurchaseSelling();
+            Logout x = new Logout();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
             */
@@ -103,25 +95,14 @@ namespace LoginPage
         #region socialbuttons
 
         // Social Buttons
-        private void TwitterButton_OnClick(object sender, RoutedEventArgs e)
+        private void GithubButton_OnClick(object sender, RoutedEventArgs e)
         {
-            //Process.Start("http://twitter.com/shuayb_ashraf");
-        }
-
-        private void ChatButton_OnClick(object sender, RoutedEventArgs e)
-        {
-            //Process.Start("https://gitter.im/shuayb_ashraf");
+            Process.Start("https://github.com/PP-Namias/Student-Attendance-Management-System");
         }
 
         private void EmailButton_OnClick(object sender, RoutedEventArgs e)
         {
-            //Process.Start("mailto://shuayb@gmx.com");
-        }
-
-        // Information Links
-        private void TextBlock_WebOrdersMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-            //Process.Start("http://alphaelectric.shuayb.me/");
+            Process.Start("mailto://jkrbn99@gmail.com");
         }
         #endregion
     }

@@ -124,5 +124,17 @@ namespace LoginPage
             }
 
         }
+
+        private void btnLogin_Initialized(object sender, System.EventArgs e)
+        {
+            MainMenu MainMenu = new MainMenu();
+            MainMenu.Show();
+            this.Close();
+        }
+
+        private void Window_Initialized(object sender, System.EventArgs e)
+        {
+
+        }
     }
 }

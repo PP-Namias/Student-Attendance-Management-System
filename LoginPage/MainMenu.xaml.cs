@@ -55,7 +55,7 @@ namespace LoginPage
 
         //}
 
-        //private void ButtonPurchaseSelling_Click(object sender, RoutedEventArgs e)
+        //private void Logout_Click(object sender, RoutedEventArgs e)
         //{
 
         //}
@@ -91,36 +91,25 @@ namespace LoginPage
         }
 
         // Social Buttons
-        private void TwitterButton_OnClick(object sender, RoutedEventArgs e)
+        private void GithubButton_OnClick(object sender, RoutedEventArgs e)
         {
-            /*Process.Start("http://twitter.com/PP_Namias");*/
+            Process.Start("http://Github.com/PP_Namias");
         }
 
         private void ChatButton_OnClick(object sender, RoutedEventArgs e)
         {
-            /*Process.Start("https://github.com/PP-Namias");*/
+            Process.Start("https://github.com/PP-Namias");
         }
 
         private void EmailButton_OnClick(object sender, RoutedEventArgs e)
         {
-            /*Process.Start("mailto://jkrbn99@gmail.com");*/
+            Process.Start("mailto://jkrbn99@gmail.com");
         }
 
         // Information Links
         private void TextBlock_WebOrdersMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            /*Process.Start("http://PP-Namias.Github.io/");*/
-        }
-
-        private void TextBlock_FaxOrdersMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-           
-        }
-
-        private void TextBlock_PhoneNumbersMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
-        {
-         
-
+            Process.Start("http://PP-Namias.Github.io/");
         }
         #endregion
 
@@ -252,24 +241,48 @@ namespace LoginPage
         #endregion
 
         #region topbar
+        private void TextBlock_MouseLeftButtonDown_0(object sender, MouseButtonEventArgs e)
+        {
+            // Home
+
+            Home x = new Home();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+        }
         private void TextBlock_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
         {
             // Student Attendance Management
+
+            StudentAttendance x = new StudentAttendance();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void TextBlock_MouseLeftButtonDown_2(object sender, MouseButtonEventArgs e)
         {
             // Login Logs Management
+
+            LoginLogs x = new LoginLogs();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void TextBlock_MouseLeftButtonDown_3(object sender, MouseButtonEventArgs e)
         {
             // Reports and Analytics
+
+            ReportsandAnalytics x = new ReportsandAnalytics();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void TextBlock_MouseLeftButtonDown_4(object sender, MouseButtonEventArgs e)
         {
             // System Administration
+
+            SystemAdministration x = new SystemAdministration();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void TextBlock_MouseLeftButtonDown_5(object sender, MouseButtonEventArgs e)

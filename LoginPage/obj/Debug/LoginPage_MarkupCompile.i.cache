@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\App.xaml
-9-487515287
+12-956683192
 
-23-495377269
+26-810735040
 80242637773
-Home.xaml;Login.xaml;MainMenu.xaml;MainWindow.xaml;MessageDialog.xaml;QRCodeReader.xaml;Result.xaml;StudentAttendance.xaml;Window1.xaml;
+Home.xaml;Login.xaml;LoginLogs.xaml;MainMenu.xaml;MainWindow.xaml;MessageDialog.xaml;QRCodeReader.xaml;ReportsandAnalytics.xaml;Result.xaml;StudentAttendance.xaml;SystemAdministration.xaml;Window1.xaml;
 
-False
+True
 
