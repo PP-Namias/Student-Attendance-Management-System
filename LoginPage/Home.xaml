@@ -149,7 +149,10 @@
             Grid.Row="3" 
             Style="{StaticResource MaterialDesignMultiFloatingActionPopupBox}" 
             HorizontalAlignment="Right"
-            VerticalAlignment="Bottom" Margin="32">
+            VerticalAlignment="Bottom" 
+            Margin="32"
+            Background="#093A3E"
+            Foreground="White">
             <StackPanel>
                 <Button ToolTip="Github" Click="GithubButton_OnClick" Background="White" Foreground="{DynamicResource PrimaryHueMidForegroundBrush}">
                     <materialDesign:PackIcon Kind="Github" Width="30" Height="30" />

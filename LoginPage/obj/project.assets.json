@@ -149,15 +149,6 @@
           }
         }
       },
-      "EPP.PresentationCore/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/PresentationCore.dll": {}
-        },
-        "runtime": {
-          "lib/PresentationCore.dll": {}
-        }
-      },
       "MahApps.Metro/2.4.10": {
         "type": "package",
         "dependencies": {
@@ -1154,15 +1145,6 @@
           }
         }
       },
-      "EPP.PresentationCore/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/PresentationCore.dll": {}
-        },
-        "runtime": {
-          "lib/PresentationCore.dll": {}
-        }
-      },
       "MahApps.Metro/2.4.10": {
         "type": "package",
         "dependencies": {
@@ -2145,15 +2127,6 @@
           "lib/net45/EntityFramework.SqlServerCompact.dll": {
             "related": ".xml"
           }
-        }
-      },
-      "EPP.PresentationCore/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/PresentationCore.dll": {}
-        },
-        "runtime": {
-          "lib/PresentationCore.dll": {}
         }
       },
       "MahApps.Metro/2.4.10": {
@@ -3140,15 +3113,6 @@
           }
         }
       },
-      "EPP.PresentationCore/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/PresentationCore.dll": {}
-        },
-        "runtime": {
-          "lib/PresentationCore.dll": {}
-        }
-      },
       "MahApps.Metro/2.4.10": {
         "type": "package",
         "dependencies": {
@@ -4131,15 +4095,6 @@
           "lib/net45/EntityFramework.SqlServerCompact.dll": {
             "related": ".xml"
           }
-        }
-      },
-      "EPP.PresentationCore/1.0.0": {
-        "type": "package",
-        "compile": {
-          "lib/PresentationCore.dll": {}
-        },
-        "runtime": {
-          "lib/PresentationCore.dll": {}
         }
       },
       "MahApps.Metro/2.4.10": {
@@ -5465,18 +5420,6 @@
         "lib/net40/EntityFramework.SqlServerCompact.xml",
         "lib/net45/EntityFramework.SqlServerCompact.dll",
         "lib/net45/EntityFramework.SqlServerCompact.xml"
-      ]
-    },
-    "EPP.PresentationCore/1.0.0": {
-      "sha512": "ttSZCunyGyOsL20FBZxM3K/7wMvWQ9vel+IidzFYdK02RIEx+EsV3Vc0Yeo8YslOp7G08unjNrtZEtWfLXJy4Q==",
-      "type": "package",
-      "path": "epp.presentationcore/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "epp.presentationcore.1.0.0.nupkg.sha512",
-        "epp.presentationcore.nuspec",
-        "lib/PresentationCore.dll"
       ]
     },
     "MahApps.Metro/2.4.10": {
@@ -6857,7 +6800,6 @@
       "AForge.Video.DirectShow >= 2.2.5",
       "BCrypt.Net >= 0.1.0",
       "Dragablz >= 0.0.3.234",
-      "EPP.PresentationCore >= 1.0.0",
       "EntityFramework >= 6.4.4",
       "EntityFramework.SqlServerCompact >= 6.4.4",
       "MahApps.Metro >= 2.4.10",
@@ -6940,10 +6882,6 @@
           "Dragablz": {
             "target": "Package",
             "version": "[0.0.3.234, )"
-          },
-          "EPP.PresentationCore": {
-            "target": "Package",
-            "version": "[1.0.0, )"
           },
           "EntityFramework": {
             "target": "Package",

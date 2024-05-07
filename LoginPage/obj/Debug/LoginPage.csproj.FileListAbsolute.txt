@@ -276,7 +276,6 @@ C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\bin\Debug\Dragablz.pd
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\bin\Debug\EntityFramework.dll
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\bin\Debug\EntityFramework.SqlServerCompact.dll
-C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\bin\Debug\PresentationCore.dll
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\bin\Debug\MahApps.Metro.dll
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\bin\Debug\MahApps.Metro.pdb
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\bin\Debug\de\MahApps.Metro.resources.dll
@@ -367,3 +366,7 @@ C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\ReportsandA
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\ReportsandAnalytics.baml
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\SystemAdministration.g.cs
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\SystemAdministration.baml
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\LoginLogsViewer.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\LoginLogsViewer.baml
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\AddNewLog.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\AddNewLog.baml

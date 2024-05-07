@@ -66,10 +66,6 @@
               "target": "Package",
               "version": "[0.0.3.234, )"
             },
-            "EPP.PresentationCore": {
-              "target": "Package",
-              "version": "[1.0.0, )"
-            },
             "EntityFramework": {
               "target": "Package",
               "version": "[6.4.4, )"

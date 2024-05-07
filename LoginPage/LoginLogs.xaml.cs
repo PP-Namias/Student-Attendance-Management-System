@@ -18,7 +18,13 @@ namespace LoginPage
 
         private void LoginLogsViewer_Click(object sender, RoutedEventArgs e)
         {
+            //  LoginLogsViewer
+            this.topgrid.Visibility = Visibility.Collapsed;
+            this.mainscrollviewer.Visibility = Visibility.Collapsed;
 
+            LoginLogsViewer x = new LoginLogsViewer();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void AddNewLog_Click(object sender, RoutedEventArgs e)

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "A2KebDLU/ZWzSYDxLuHbsogtIRQl92SMkgn/y6uzxuiavwj3A1i5zW1LUsyYi5xYSdupp5bTg52i0u72z+iJlQ==",
+  "dgSpecHash": "v2NwN6fXf7NshnpA02bDSZbCr6GGypzyRMgEUBfx7/gzaeCTf4a0jTk5jvkLH0syhk/UR1C/PKvw7nn7ZICBPg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Indios-in-Paris\\LoginPage\\LoginPage.csproj",
   "expectedPackageFiles": [
@@ -14,7 +14,6 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\dragablz\\0.0.3.234\\dragablz.0.0.3.234.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\entityframework.sqlservercompact\\6.4.4\\entityframework.sqlservercompact.6.4.4.nupkg.sha512",
-    "C:\\Users\\ADMIN\\.nuget\\packages\\epp.presentationcore\\1.0.0\\epp.presentationcore.1.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\mahapps.metro\\2.4.10\\mahapps.metro.2.4.10.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\materialdesigncolors\\3.0.0\\materialdesigncolors.3.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\materialdesignthemes\\4.7.1\\materialdesignthemes.4.7.1.nupkg.sha512",
