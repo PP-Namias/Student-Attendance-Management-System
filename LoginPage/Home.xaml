@@ -50,7 +50,7 @@
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Image Source="/qr-code scanner.png" Stretch="Uniform" Width="80" Height="80" />
+            <Image Source="/Images/qr-code scanner.png" Stretch="Uniform" Width="80" Height="80" />
             <StackPanel Grid.Column="1" Margin="24 0 0 0" VerticalAlignment="Center">
                 <!--<TextBlock Style="{StaticResource MaterialDesignDisplay1TextBlock}" TextWrapping="Wrap"><Run Text="Welcome User_Name!"/></TextBlock>-->
                 <TextBlock TextWrapping="Wrap"  Name="WelcomeMessage"/>
@@ -87,7 +87,7 @@
                                 <ColumnDefinition Width="250" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <Image Source="/Student Attendance Management.png" Grid.RowSpan="5" StretchDirection="Both" Stretch="UniformToFill" Margin="0,0,2,0" />
+                            <Image Source="/Images/Student Attendance Management.png" Grid.RowSpan="5" StretchDirection="Both" Stretch="UniformToFill" Margin="0,0,2,0" />
                             <TextBlock Grid.Column="1" Margin="16 16 16 2" Text="Home" HorizontalAlignment="Center" FontSize="36"/>
                             <TextBlock Grid.Column="1" Margin="16 46 16 2" Text="Dashboard"  HorizontalAlignment="Center" FontSize="36"/>
                             <TextBlock Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Margin="16 0 16 8" Foreground="{DynamicResource MaterialDesignBodyLight}"
@@ -131,7 +131,8 @@
                                     <Button Foreground="#093A3E" FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Left" x:Name="Logout" Click="Logout_Click">
                                         <StackPanel Orientation="Horizontal">
                                             <materialDesign:PackIcon Kind="Logout" />
-                                            <TextBlock Margin="8 0 0 0" VerticalAlignment="Center"><Run Text="Logout"/></TextBlock>
+                                            <TextBlock Margin="8 0 0 0" VerticalAlignment="Center"><Run Text="Developer Mode
+                                                                                                        "/></TextBlock>
                                         </StackPanel>
                                     </Button>
                                 </Grid>

@@ -22,7 +22,7 @@
                  MinWidth="1050"
                  Loaded="Window_Loaded"
                  WindowStartupLocation="CenterScreen"
-                 Icon="/icon.ico" MinHeight="700">
+                 Icon="/Images/icon.ico" MinHeight="700">
     <UserControl>
         <UserControl.Resources>
             <ResourceDictionary>
@@ -246,16 +246,13 @@
                     <materialDesign:ColorZone Background="#093A3E" Padding="16" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth2" Mode="PrimaryMid" DockPanel.Dock="Top">
                         <DockPanel>
                             <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False" x:Name="MenuToggleButton" Checked="MenuToggleButton_Checked"/>
-                            <materialDesign:PopupBox PopupMode="Click" DockPanel.Dock="Right" PlacementMode="BottomAndAlignRightEdges" StaysOpen="False">
-                                <StackPanel>
-                                    <Button Content="Log Out" Click="MenuPopupLogoutButton_OnClick"/>
-                                    <Separator/>
-                                    <!--<Button Content="Can't Touch This" IsEnabled="False" />-->
-                                    <Button Content="About" Click="MenuPopupAboutButton_OnClick"/>
 
+                            <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="White" x:Name="btn_About" DockPanel.Dock="Right" Height="37" Click="MenuPopupAboutButton_OnClick" Width="37" Padding="0">
+                                <StackPanel Orientation="Horizontal" Height="37" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <materialDesign:PackIcon x:Name="About1" Kind="InformationCircle" Width="37" Height="37" DockPanel.Dock="Right" />
                                 </StackPanel>
-                                <!-- end navigation links -->
-                            </materialDesign:PopupBox>
+                            </Button>
+
                             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" Text="Student Attendance Management System"/>
                         </DockPanel>
                     </materialDesign:ColorZone>
@@ -302,12 +299,6 @@
                                     </StackPanel>
                                 </Button>
 
-                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_LogOut">
-                                    <StackPanel Orientation="Horizontal">
-                                        <materialDesign:PackIcon Kind="Logout" VerticalAlignment="Center" Foreground="#093A3E" />
-                                        <TextBlock MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_5"><Run TextBlock.FontWeight="Regular" TextBlock.FontSize="14" Foreground="#093A3E" Text=" Log Out"/></TextBlock>
-                                    </StackPanel>
-                                </Button>
                             </StackPanel>
                         </StackPanel>
                         <Border BorderBrush="{DynamicResource MaterialDesignDivider}" BorderThickness="0 0 0 1" />

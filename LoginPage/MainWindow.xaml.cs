@@ -27,7 +27,7 @@ namespace LoginPage
         {
             if (LoginUser(txtUsername.Text, txtPassword.Password) == 1)
             {
-                MessageBox.Show("Login Successfully", "Congratulations " + txtUsername.Text, MessageBoxButton.OK, MessageBoxImage.Information);
+                //MessageBox.Show("Login Successfully", "Congratulations " + txtUsername.Text, MessageBoxButton.OK, MessageBoxImage.Information);
                 MainMenu MainMenu = new MainMenu();
                 MainMenu.Show();
                 this.Close();
@@ -125,16 +125,11 @@ namespace LoginPage
 
         }
 
-        private void btnLogin_Initialized(object sender, System.EventArgs e)
+        private void Window_Initialized(object sender, System.EventArgs e)
         {
             MainMenu MainMenu = new MainMenu();
             MainMenu.Show();
             this.Close();
-        }
-
-        private void Window_Initialized(object sender, System.EventArgs e)
-        {
-
         }
     }
 }

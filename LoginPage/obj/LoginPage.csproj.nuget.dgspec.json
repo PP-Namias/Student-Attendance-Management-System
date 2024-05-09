@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Indios-in-Paris\\LoginPage\\LoginPage.csproj": {}
+    "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\LoginPage\\LoginPage.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Indios-in-Paris\\LoginPage\\LoginPage.csproj": {
+    "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\LoginPage\\LoginPage.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Indios-in-Paris\\LoginPage\\LoginPage.csproj",
+        "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\LoginPage\\LoginPage.csproj",
         "projectName": "LoginPage",
-        "projectPath": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Indios-in-Paris\\LoginPage\\LoginPage.csproj",
+        "projectPath": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\LoginPage\\LoginPage.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Indios-in-Paris\\LoginPage\\obj\\",
+        "outputPath": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\LoginPage\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [

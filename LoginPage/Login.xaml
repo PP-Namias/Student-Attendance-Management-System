@@ -24,7 +24,7 @@
         </Border>
         <StackPanel Orientation="Horizontal">
             <StackPanel Width="350">
-                <Image Source="/mike.jpg"  Width="312" Height="359" Margin="30" Stretch="Uniform" />
+                <Image Source="/Images/mike.jpg"  Width="312" Height="359" Margin="30" Stretch="Uniform" />
             </StackPanel>
             <StackPanel Width="375">
                 <StackPanel Margin="20 40" Width="350">

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "v2NwN6fXf7NshnpA02bDSZbCr6GGypzyRMgEUBfx7/gzaeCTf4a0jTk5jvkLH0syhk/UR1C/PKvw7nn7ZICBPg==",
+  "dgSpecHash": "KsNQ9plnwI/GwSGNztMRO18ve3qPUsmAsQGGq9tEQEyNkuqLAu5Wbr3N3TmX1Y7GVAVc+8X1pP0/5vFTb+tABQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Indios-in-Paris\\LoginPage\\LoginPage.csproj",
+  "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\LoginPage\\LoginPage.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ADMIN\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\aforge.imaging\\2.2.5\\aforge.imaging.2.2.5.nupkg.sha512",

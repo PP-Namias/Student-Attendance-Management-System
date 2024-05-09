@@ -370,3 +370,227 @@ C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\LoginLogsVi
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\LoginLogsViewer.baml
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\AddNewLog.g.cs
 C:\Users\ADMIN\Desktop\PP Namias\Indios-in-Paris\LoginPage\obj\Debug\AddNewLog.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\LoginPage.exe.config
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\LoginPage.exe
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\LoginPage.pdb
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\AForge.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\AForge.Imaging.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\AForge.Math.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\AForge.Video.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\BCrypt.Net.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\ControlzEx.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\ControlzEx.pdb
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Dragablz.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Dragablz.pdb
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\MahApps.Metro.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\MahApps.Metro.pdb
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\de\MahApps.Metro.resources.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\MaterialDesignColors.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\MaterialDesignColors.pdb
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Npgsql.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\PresentationFramework.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Buffers.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Drawing.Common.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Drawing.Common.pdb
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Memory.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Security.AccessControl.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Security.Permissions.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Text.Json.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.ValueTuple.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\System.Windows.Forms.Ribbon35.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\zxing.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\zxing.pdb
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\zxing.presentation.dll
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\bin\Debug\zxing.presentation.pdb
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginPage.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginPage.csproj.SuggestedBindingRedirects.cache
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginPage.exe.config
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\Home.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\MainMenu.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\MessageDialog.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\AddNewLog.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\Home.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\Login.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginLogs.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginLogsViewer.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\MainMenu.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\MessageDialog.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\QRCodeReader.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\ReportsandAnalytics.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\Result.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\StudentAttendance.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\SystemAdministration.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\Window1.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\App.g.cs
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginPage_MarkupCompile.cache
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginPage_MarkupCompile.lref
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\App.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\AddNewLog.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\Login.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginLogs.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginLogsViewer.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\QRCodeReader.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\ReportsandAnalytics.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\Result.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\StudentAttendance.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\SystemAdministration.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\Window1.baml
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginPage.g.resources
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginPage.Properties.Resources.resources
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginPage.csproj.GenerateResource.cache
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginPage.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginPage.csproj.CopyComplete
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginPage.exe
+C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main\Student-Attendance-Management-System-main\LoginPage\obj\Debug\LoginPage.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\LoginPage.exe.config
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\LoginPage.exe
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\LoginPage.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\AForge.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\AForge.Imaging.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\AForge.Math.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\AForge.Video.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\BCrypt.Net.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\ControlzEx.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\ControlzEx.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Dragablz.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Dragablz.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\EntityFramework.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\MahApps.Metro.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\MahApps.Metro.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\de\MahApps.Metro.resources.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\MaterialDesignColors.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\MaterialDesignColors.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Npgsql.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\PresentationFramework.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Buffers.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Collections.Immutable.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Drawing.Common.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Drawing.Common.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Memory.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Security.AccessControl.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Security.Permissions.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Text.Json.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.ValueTuple.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\System.Windows.Forms.Ribbon35.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\zxing.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\zxing.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\zxing.presentation.dll
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\zxing.presentation.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.csproj.SuggestedBindingRedirects.cache
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.exe.config
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Home.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\MainMenu.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\MessageDialog.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\AddNewLog.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Home.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Login.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginLogs.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginLogsViewer.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\MainMenu.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\MainWindow.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\MessageDialog.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\QRCodeReader.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\ReportsandAnalytics.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Result.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\StudentAttendance.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\SystemAdministration.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Window1.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\App.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage_MarkupCompile.cache
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage_MarkupCompile.lref
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\App.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\AddNewLog.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Login.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginLogs.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginLogsViewer.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\MainWindow.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\QRCodeReader.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\ReportsandAnalytics.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Result.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\StudentAttendance.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\SystemAdministration.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Window1.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.g.resources
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.exe
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\DefineColor.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\HoverAnimationResources.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Developer.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Developer.g.cs

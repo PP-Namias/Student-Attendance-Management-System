@@ -48,7 +48,7 @@
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*" />
             </Grid.ColumnDefinitions>
-            <Image Source="/qr-code scanner.png" Stretch="Uniform" Width="80" Height="80" />
+            <Image Source="/Images/qr-code scanner.png" Stretch="Uniform" Width="80" Height="80" />
             <StackPanel Grid.Column="1" Margin="24 0 0 0" VerticalAlignment="Center">
                 <!--<TextBlock Style="{StaticResource MaterialDesignDisplay1TextBlock}" TextWrapping="Wrap"><Run Text="Welcome User_Name!"/></TextBlock>-->
                 <TextBlock TextWrapping="Wrap"  Name="WelcomeMessage"/>
@@ -86,7 +86,7 @@
                                 <ColumnDefinition Width="250" />
                                 <ColumnDefinition Width="*" />
                             </Grid.ColumnDefinitions>
-                            <Image Source="/Student Attendance Management.png" Grid.RowSpan="5" StretchDirection="Both" Stretch="UniformToFill" Margin="0,0,2,0" />
+                            <Image Source="/Images/Student Attendance Management.png" Grid.RowSpan="5" StretchDirection="Both" Stretch="UniformToFill" Margin="0,0,2,0" />
                             <TextBlock Grid.Column="1" Margin="16 16 16 2" Text="Reports and Analytics" HorizontalAlignment="Center" FontSize="36"/>
                             <TextBlock Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Margin="16 0 16 8" Foreground="DarkGray"
                                                        VerticalAlignment="Center" Text="Manage all the Reports and Analytics through the below options. " HorizontalAlignment="Center"/>

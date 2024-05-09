@@ -16,7 +16,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="310" Margin="150,95,0,0" VerticalAlignment="Top" Width="310">
-            <Image x:Name="imgProfile" HorizontalAlignment="Center" Height="300" VerticalAlignment="Center" Width="300" Source="/malkist photo.jpg" Cursor="Hand" Stretch="UniformToFill"/>
+            <Image x:Name="imgProfile" HorizontalAlignment="Center" Height="300" VerticalAlignment="Center" Width="300" Source="/Images/malkist photo.jpg" Cursor="Hand" Stretch="UniformToFill"/>
         </Border>
         <Label x:Name="lblDate" Content="Date:" HorizontalAlignment="Left" Margin="145,505,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="90" FontSize="30"/>
         <Label x:Name="lblTime" Content="Time:" HorizontalAlignment="Left" Margin="145,560,0,0" VerticalAlignment="Top" FontFamily="Century Gothic" Height="50" Width="90" FontSize="30"/>

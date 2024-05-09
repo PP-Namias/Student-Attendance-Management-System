@@ -42,7 +42,7 @@
                            FontSize="10"
                            FontFamily="Century">
                 </TextBlock>
-                <Image Source="/mike.jpg"  Width="250" Height="269" Margin="30" Stretch="Uniform" />
+                <Image Source="/Images/mike.jpg"  Width="250" Height="269" Margin="30" Stretch="Uniform" />
             </StackPanel>
             <StackPanel Width="375">
                 <StackPanel Margin="20 40" Width="350">
@@ -73,9 +73,7 @@
                     <StackPanel Margin="20 35 150 40" HorizontalAlignment="Center" >
                         <Button Width="100" Height="35" Style="{StaticResource MaterialDesignRaisedButton}"
                                 materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E" FontFamily="Century" 
-                                Background="#093A3E" Foreground="White" ToolTip="Login" x:Name="btnLogin" Click="btnLogin_Click" Content="Login" Initialized="btnLogin_Initialized">
-
-                        </Button>
+                                Background="#093A3E" Foreground="White" ToolTip="Login" x:Name="btnLogin" Click="btnLogin_Click" Content="Login"/>
                     </StackPanel>
 
 

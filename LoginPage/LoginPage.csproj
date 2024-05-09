@@ -37,7 +37,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>qr-code scanner.ico</ApplicationIcon>
+    <ApplicationIcon>Images\qr-code scanner.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="PresentationCore" />
@@ -70,6 +70,9 @@
     </ApplicationDefinition>
     <Compile Include="AddNewLog.xaml.cs">
       <DependentUpon>AddNewLog.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Developer.xaml.cs">
+      <DependentUpon>Developer.xaml</DependentUpon>
     </Compile>
     <Compile Include="Home.xaml.cs">
       <DependentUpon>Home.xaml</DependentUpon>
@@ -116,9 +119,21 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="DefineColor.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Developer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Home.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="HoverAnimationResources.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Login.xaml">
       <SubType>Designer</SubType>
@@ -215,19 +230,13 @@
     <Resource Include="Images\mike.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="mike.jpg" />
-  </ItemGroup>
-  <ItemGroup>
     <Resource Include="Images\planning.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="planning.jpg" />
+    <Resource Include="Images\videoFirstFrame.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="videoFirstFrame.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="record.png" />
+    <Resource Include="Images\record.png" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="AForge">
@@ -300,37 +309,37 @@
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="recording.png" />
+    <Resource Include="Images\recording.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Screen View.png" />
+    <Resource Include="Images\Screen View.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Jhon Keneth Namias.jpg" />
+    <Resource Include="Images\Jhon Keneth Namias.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Malkist.jpg" />
+    <Resource Include="Images\Malkist.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Take-it.jpg" />
+    <Resource Include="Images\Take-it.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Malkist - Copy.jpg" />
+    <Resource Include="Images\Malkist - Copy.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="malkist photo.jpg" />
+    <Resource Include="Images\malkist photo.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="qr-code scanner.ico" />
+    <Resource Include="Images\qr-code scanner.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="icon.ico" />
+    <Resource Include="Images\icon.ico" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Student Attendance Management.png" />
+    <Resource Include="Images\Student Attendance Management.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="qr-code scanner.png" />
+    <Resource Include="Images\qr-code scanner.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

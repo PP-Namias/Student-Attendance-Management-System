@@ -25,7 +25,7 @@
 
         <Canvas Grid.ColumnSpan="2" Margin="0,0,26,0">
 
-            <Image x:Name="videoFrame" Source="/Screen View.png" HorizontalAlignment="Left" Height="504" VerticalAlignment="Top" Width="892" RenderTransformOrigin="0.5,0.5" Stretch="Uniform" Canvas.Left="9" Canvas.Top="11" >
+            <Image x:Name="videoFrame" Source="/Images/Screen View.png" HorizontalAlignment="Left" Height="504" VerticalAlignment="Top" Width="892" RenderTransformOrigin="0.5,0.5" Stretch="Uniform" Canvas.Left="9" Canvas.Top="11" >
                 <Image.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform ScaleY="1" ScaleX="1"/>
@@ -46,7 +46,7 @@
             <Button x:Name="camSwitchButton" ClickMode="Release"   Background="#FF093A3E"  FontSize="25" HorizontalAlignment="Center"  VerticalAlignment="Top" Width="200" Height="88" Click="camSwitchButton_Click" VerticalContentAlignment="Center" Content="Switch Cam" Cursor="Hand" Canvas.Left="275" Canvas.Top="657" BorderBrush="#FF001011" FontFamily="Century Gothic"/>
             <Button x:Name="recordButton" FontWeight="Bold" FontSize="45" HorizontalAlignment="Left"  VerticalAlignment="Top" Width="176" Height="88" Click="recordButton_Click" VerticalContentAlignment="Center" Content="" Cursor="Hand" Canvas.Left="512" Canvas.Top="657" BorderBrush="#FF001011">
                 <Button.Background>
-                    <ImageBrush ImageSource="/recording.png" Stretch="UniformToFill">
+                    <ImageBrush ImageSource="/Images/recording.png" Stretch="UniformToFill">
                         <ImageBrush.RelativeTransform>
                             <TransformGroup>
                                 <ScaleTransform CenterY="0.5" CenterX="0.5"/>
@@ -63,7 +63,7 @@
             <StackPanel Background="LightBlue" Height="598" Canvas.Left="914" Canvas.Top="80" Width="358" HorizontalAlignment="Center" VerticalAlignment="Top">
 
                 <Border BorderBrush="Black" BorderThickness="2" HorizontalAlignment="Left" Height="310" Margin="25,25,0,0" VerticalAlignment="Top" Width="310">
-                    <Image x:Name="imgProfile" HorizontalAlignment="Center" Height="300" VerticalAlignment="Center" Width="300" Source="/malkist photo.jpg" Cursor="Hand" Stretch="UniformToFill"/>
+                    <Image x:Name="imgProfile" HorizontalAlignment="Center" Height="300" VerticalAlignment="Center" Width="300" Source="/Images/malkist photo.jpg" Cursor="Hand" Stretch="UniformToFill"/>
                 </Border>
 
                 <TextBlock x:Name="txtName" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Malkist Sugar Flavoured Cracker Biscuits" VerticalAlignment="Top" FontFamily="Century Gothic" Height="75" Width="310" FontSize="30" TextAlignment="Center"/>

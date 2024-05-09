@@ -80,6 +80,9 @@ namespace LoginPage
 
         private void Logout_Click(object sender, RoutedEventArgs e)
         {
+            Developer Developer = new Developer();
+            Developer.Show();
+
             /*
             this.mainscrollviewer.Visibility = Visibility.Collapsed;
             this.topgrid.Visibility = Visibility.Collapsed;
