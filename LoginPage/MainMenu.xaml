@@ -306,7 +306,7 @@
 
                         <!--<ContentControl Margin="16" Content="{Binding ElementName=DemoItemsListBox, Path=SelectedItem.Content}"
                                     Grid.Row="1" />-->
-                        <Grid Grid.Row="1" Name="UserPages" Margin="20,0,20,0"></Grid>
+                        <Grid Grid.Row="1" Name="UserPages" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"></Grid>
 
                         <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" x:Name="MainSnackbar"
                                              Grid.Row="1" />

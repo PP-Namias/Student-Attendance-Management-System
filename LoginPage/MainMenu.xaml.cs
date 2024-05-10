@@ -20,7 +20,7 @@ namespace LoginPage
         //Executing after loading window
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            Home x = new Home();
+            BarcodeScanningInterface x = new BarcodeScanningInterface();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
         }

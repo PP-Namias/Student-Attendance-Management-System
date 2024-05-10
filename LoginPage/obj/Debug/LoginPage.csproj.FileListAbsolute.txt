@@ -594,3 +594,5 @@ C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\HoverAnimationResources.baml
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Developer.baml
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Developer.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\BarcodeScanningInterface.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\BarcodeScanningInterface.g.cs

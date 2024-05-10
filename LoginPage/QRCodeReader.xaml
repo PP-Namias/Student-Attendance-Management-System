@@ -8,9 +8,9 @@
         mc:Ignorable="d"
         Loaded="Window_Loaded"
         BorderThickness="0"
-        Title="QR/Bar Code Reader" Height="780" Width="1250" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
+        Title="QR/Bar Code Reader" Height="780" Width="1290" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
 
-    <Grid Margin="0,0,-35,0">
+    <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="975.976"/>
             <ColumnDefinition Width="334.024"/>

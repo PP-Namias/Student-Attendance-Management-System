@@ -71,6 +71,9 @@
     <Compile Include="AddNewLog.xaml.cs">
       <DependentUpon>AddNewLog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BarcodeScanningInterface.xaml.cs">
+      <DependentUpon>BarcodeScanningInterface.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Developer.xaml.cs">
       <DependentUpon>Developer.xaml</DependentUpon>
     </Compile>
@@ -116,6 +119,10 @@
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
     <Page Include="AddNewLog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BarcodeScanningInterface.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
