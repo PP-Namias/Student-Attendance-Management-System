@@ -7,7 +7,7 @@
                  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
                  xmlns:src="http://metro.mahapps.com/winfx/xaml/controls"
                  
-                 Background="Black"
+                 Background="White"
                  FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
                  TextElement.Foreground="{DynamicResource MaterialDesignBody}"
                  TextElement.FontWeight="Regular"
@@ -32,7 +32,7 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid Height="537" Background="Blue" Margin="10,12,10,11">
+    <Grid Height="537" Background="White" Margin="10,12,10,11">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="120" />
@@ -85,14 +85,10 @@
                         </Image>
 
 
-                        <TextBlock x:Name="QRTextBlock"             FontSize="30" TextWrapping="Wrap" Text="Waiting for 2D Bar-code.."  VerticalAlignment="Top" Height="29" Width="892" Canvas.Left="10"  Canvas.Top="300" FontFamily="Century Gothic" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        <TextBlock x:Name="QRTextBlock"             FontSize="30" TextWrapping="Wrap" Text="Waiting for 2D Bar-code.."  VerticalAlignment="Center" Height="46" Width="510" Canvas.Left="10"  Canvas.Top="300" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold"/>
                         <TextBlock x:Name="FrameCounterTextBlock"   FontSize="20" TextWrapping="Wrap" Text="Frames recorded: 0"         VerticalAlignment="Top" Height="33" Width="315" Canvas.Left="9"   Canvas.Top="337" FontFamily="Century Gothic" HorizontalAlignment="Center" FontWeight="Bold"/>
                         <TextBlock x:Name="QRCounterTextBlock"      FontSize="20" TextWrapping="Wrap" Text="BAR/QR codes decoded: 0"    VerticalAlignment="Top" Height="40" Width="381" Canvas.Left="375" Canvas.Top="337" FontFamily="Century Gothic" HorizontalAlignment="Center" FontWeight="Bold"/>
-
-                        <Label x:Name="camsLabel" Content="Camera information" FontSize="30"                                            VerticalAlignment="Top" Height="58" Width="591" Canvas.Left="10"  Canvas.Top="355" FontFamily="Century Gothic" HorizontalAlignment="Center" FontWeight="Bold"/>
-
-
-
+                        <Label x:Name="camsLabel" Content="Camera information" FontSize="30"                                            VerticalAlignment="Top" Height="44" Width="591"  Canvas.Top="357" FontFamily="Century Gothic" HorizontalAlignment="Center" FontWeight="Bold"/>
                         <Button x:Name="StartStopButton"    Background="#FF093A3E" Content="Start/Stop" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Width="156" Height="54" Click="StartStopButton_Click" VerticalContentAlignment="Center"  Cursor="Hand" Canvas.Left="532" Canvas.Top="11"  BorderBrush="#FF001011" FontFamily="Century Gothic" FontWeight="Bold"/>
                         <Button x:Name="camSwitchButton"    Background="#FF093A3E" Content="Switch Cam" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Width="156" Height="54" Click="camSwitchButton_Click" VerticalContentAlignment="Center"  Cursor="Hand" Canvas.Left="532" Canvas.Top="70"  BorderBrush="#FF001011" FontFamily="Century Gothic" FontWeight="Bold" ClickMode="Release"  />
                         <Button x:Name="helpButton"         Background="#FF093A3E" Content="?"          FontSize="45" HorizontalAlignment="Center" VerticalAlignment="Top" Width="60"  Height="60" Click="helpButton_Click"      VerticalContentAlignment="Center"  Cursor="Hand" Canvas.Left="580" Canvas.Top="217" BorderBrush="#FF001011" FontFamily="Century Gothic" FontWeight="Bold"/>
@@ -110,33 +106,19 @@
                                 </ImageBrush>
                             </Button.Background>
                         </Button>
-
-
-                        <StackPanel Background="LightBlue" Height="399.7" Canvas.Left="693" Canvas.Top="1" Width="300" HorizontalAlignment="Center" VerticalAlignment="Top">
-
+                        <StackPanel Background="White" Height="400" Canvas.Left="693" Canvas.Top="1" Width="300" HorizontalAlignment="Center" VerticalAlignment="Top">
                             <Border BorderBrush="Black" BorderThickness="3" HorizontalAlignment="Left" Height="200" Margin="50,0,0,0" VerticalAlignment="Top" Width="200">
-                                <Image x:Name="imgProfile" HorizontalAlignment="Center" Height="240" VerticalAlignment="Center" Width="240" Source="/Images/mike.jpg" Cursor="Hand" Stretch="UniformToFill"/>
+                                <Image x:Name="imgProfile" HorizontalAlignment="Center" Height="240" VerticalAlignment="Center" Width="240" Source="/Images/profile.png" Cursor="Hand" Stretch="UniformToFill"/>
                             </Border>
-
-                            <TextBlock x:Name="txtName" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" Text="Mikeru" FontFamily="Century Gothic" Height="24" Width="310" FontSize="20" TextAlignment="Center"/>
-
-
-
-                            <TextBlock x:Name="lblStudentId" Text="Student Id:" FontFamily="Century Gothic" HorizontalAlignment="Left" Margin="25,0,0,0"    Height="25" Width="175" FontSize="20"/>
-                            <TextBlock x:Name="txtStudentId" Text="Student Id"  FontFamily="Century Gothic" HorizontalAlignment="Left" Margin="130,-25,0,0" Height="25" Width="175" FontSize="20"/>
-                            <TextBlock x:Name="lblClass"     Text="Class:"      FontFamily="Century Gothic" HorizontalAlignment="Left" Margin="25,0,0,0"    Height="25" Width="175" FontSize="20"/>
-                            <TextBlock x:Name="txtClass"     Text="Class"       FontFamily="Century Gothic" HorizontalAlignment="Left" Margin="85,-25,0,0"  Height="25" Width="175" FontSize="20"/>
-                            <TextBlock x:Name="lblDate"      Text="Date:"       FontFamily="Century Gothic" HorizontalAlignment="Left" Margin="25,0,0,0"    Height="25" Width="175" FontSize="20"/>
-                            <TextBlock x:Name="txtDate"      Text="Date"        FontFamily="Century Gothic" HorizontalAlignment="Left" Margin="85,-25,0,0"  Height="25" Width="175" FontSize="20"/>
-                            <TextBlock x:Name="lblTime"      Text="Time:"       FontFamily="Century Gothic" HorizontalAlignment="Left" Margin="25,0,0,0"    Height="25" Width="175" FontSize="20"/>
-                            <TextBlock x:Name="txtTime"      Text="Time"        FontFamily="Century Gothic" HorizontalAlignment="Left" Margin="85,-25,0,0"  Height="25" Width="175" FontSize="20"/>
-                          
-
-
+                            <TextBlock x:Name="txtName"      Text="Name"                FontFamily="Century Gothic" HorizontalAlignment="Center" Margin="0,10,0,0" TextAlignment="Center" Height="24" Width="300" FontSize="20"/>
+                            <TextBlock x:Name="txtStudentId" Text="Student Id"          FontFamily="Century Gothic" HorizontalAlignment="Center" Margin="0,0,0,0" TextAlignment="Center" Height="25" Width="300" FontSize="20"/>
+                            <TextBlock x:Name="txtClass"     Text="Year &#38; Section"  FontFamily="Century Gothic" HorizontalAlignment="Center" Margin="0,0,0,0" TextAlignment="Center" Height="25" Width="300" FontSize="20"/>
+                            <TextBlock x:Name="txtDate"      Text="Date"                FontFamily="Century Gothic" HorizontalAlignment="Center" Margin="0,0,0,0" TextAlignment="Center" Height="25" Width="300" FontSize="20"/>
+                            <TextBlock x:Name="txtTime"      Text="Time"                FontFamily="Century Gothic" HorizontalAlignment="Center" Margin="0,0,0,0" TextAlignment="Center" Height="25" Width="300" FontSize="20"/>
                             <Button Height="44" Style="{StaticResource MaterialDesignRaisedButton}"
                                     materialDesign:ButtonAssist.CornerRadius="20" BorderThickness="2" BorderBrush="#093A3E"  FontFamily="Century"
                                     Background="#093A3E" Foreground="White" ToolTip="Refresh" x:Name="btnRefresh" 
-                                    Click="btnRefresh_Click" Content="Confirm" Width="180" Margin="0,10,0,0"/>
+                                    Click="btnConfirm_Click" Content="Confirm" Width="180" Margin="0,10,0,0"/>
 
 
                         </StackPanel>

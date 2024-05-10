@@ -225,7 +225,7 @@ namespace LoginPage
         }
 
 
-        private void btnRefresh_Click(object sender, RoutedEventArgs e)
+        private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {
             DateTime currentDateTime = DateTime.Now;
 

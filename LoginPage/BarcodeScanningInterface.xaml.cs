@@ -211,10 +211,77 @@ namespace LoginPage
             var barcodeResult = barcodeReader.Decode(img);
             if (barcodeResult != null)
             {
+                DateTime currentDateTime = DateTime.Now;
+
                 decodedCount++;
                 Dispatcher.Invoke(new ThreadStart(delegate { QRTextBlock.Text = barcodeResult.BarcodeFormat.ToString() + " " + barcodeResult.Text; }));
+                Dispatcher.Invoke(new ThreadStart(delegate { txtStudentId.Text = barcodeResult.Text; }));
                 Dispatcher.Invoke(new ThreadStart(delegate { QRCounterTextBlock.Text = "BAR/QR codes decoded: " + decodedCount.ToString(); }));
 
+                Application.Current.Dispatcher.Invoke(() =>
+                {
+                    string studentId = txtStudentId.Text;
+                    switch (studentId)
+                    {
+                        case "20220313-N":
+                            txtName.Text = "Namias, Jhon Keneth Ryan B.";
+                            txtClass.Text = "BSCS-2A";
+                            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Jhon Keneth Namias.jpg"));
+
+                            txtTime.Text = currentDateTime.ToString("T");
+                            txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
+                            break;
+
+                        case "20220679-N":
+                            txtName.Text = "Caram II, Mike Rufino J.";
+                            txtClass.Text = "BSCS-2A";
+                            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/mike.jpg"));
+
+                            txtTime.Text = currentDateTime.ToString("T");
+                            txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
+                            break;
+
+
+
+                        case "20220060-N":
+                            txtName.Text = "Acedo, Mark Relan Gercee";
+                            txtClass.Text = "BSCS-2A";
+                            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Acedo.jpg"));
+
+                            txtTime.Text = currentDateTime.ToString("T");
+                            txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
+                            break;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                        // Add more cases for other student IDs
+                        default:
+                                txtName.Text = "Unknown Student";
+                                txtClass.Text = "Unknown Class";
+                                imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/profile.png"));
+                                break;
+                        }
+                    
+                });
 
                 // Create an instance of ValidationForm
                 // Result validationForm = new Result();
@@ -287,7 +354,7 @@ namespace LoginPage
         }
 
 
-        private void btnRefresh_Click(object sender, RoutedEventArgs e)
+        private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {
             DateTime currentDateTime = DateTime.Now;
 

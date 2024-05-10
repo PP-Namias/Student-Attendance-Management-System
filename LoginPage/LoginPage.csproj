@@ -109,6 +109,9 @@
     <Compile Include="StudentAttendance.xaml.cs">
       <DependentUpon>StudentAttendance.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StudentLogs.xaml.cs">
+      <DependentUpon>StudentLogs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SystemAdministration.xaml.cs">
       <DependentUpon>SystemAdministration.xaml</DependentUpon>
     </Compile>
@@ -182,6 +185,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="StudentAttendance.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StudentLogs.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -340,6 +347,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\qr-code scanner.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Acedo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Acedo.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -16,7 +16,7 @@
                  TextOptions.TextRenderingMode="Auto" 
                  
                  Height="560"
-                 Width="1050"     
+                 Width="1100"     
                  Loaded="Window_Loaded">
     <UserControl.Resources>
         <ResourceDictionary>
@@ -32,7 +32,7 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid Height="537" Width="861" Background="white">
+    <Grid Height="560" Width="1100" Background="white">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="120" />
@@ -96,7 +96,7 @@
                                                        VerticalAlignment="Center" Text="**DASHBOARD SAMPLE TEXT idk what to add T-T**" HorizontalAlignment="Center"/>
                             <Border Grid.Column="1" Grid.Row="2" BorderThickness="0 1 0 0" BorderBrush="{DynamicResource MaterialDesignDivider}" Margin="0 8 0 0">
                                 <Grid Margin="8">
-                                    <Button Foreground="#093A3E" FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Left" x:Name="StudentAttendance" Click="StudentAttendance_Click">
+                                    <Button Foreground="#093A3E" FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Left" x:Name="StudentAttendance" Click="StudentAttendance_Click" ToolTipOpening="StudentAttendance_ToolTipOpening">
                                         <StackPanel Orientation="Horizontal">
                                             <materialDesign:PackIcon Kind="AccountStudent" />
                                             <TextBlock Margin="8 0 0 0"  VerticalAlignment="Center"><Run Text="Student Attendance"/></TextBlock>

@@ -75,7 +75,7 @@
                 <Button Height="44" Style="{StaticResource MaterialDesignRaisedButton}"
                 materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E"  FontFamily="Century"
                 Background="#093A3E" Foreground="White" ToolTip="Refresh" x:Name="btnRefresh" 
-                Click="btnRefresh_Click" Content="Refresh" Width="180"/>
+                Click="btnConfirm_Click" Content="Refresh" Width="180"/>
 
 
             </StackPanel>
