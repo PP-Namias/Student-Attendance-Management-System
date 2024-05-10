@@ -15,8 +15,8 @@
                  TextOptions.TextFormattingMode="Ideal" 
                  TextOptions.TextRenderingMode="Auto" 
                  
-                 Height="Auto"
-                 Width="Auto"     
+                 Height="560"
+                 Width="1050"     
                  Loaded="Window_Loaded">
     <UserControl.Resources>
         <ResourceDictionary>

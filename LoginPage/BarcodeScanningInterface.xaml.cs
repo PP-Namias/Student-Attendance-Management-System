@@ -226,10 +226,10 @@ namespace LoginPage
                 if (result == false)
                 {
                     // Create an instance of ValidationForm
-                    Result Result = new Result();
-                    Result.Show();
+                    //Result Result = new Result();
+                    //Result.Show();
 
-                    result = true;
+                    //result = true;
                 }
 
 

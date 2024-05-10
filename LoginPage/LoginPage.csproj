@@ -105,9 +105,6 @@
     <Compile Include="ReportsandAnalytics.xaml.cs">
       <DependentUpon>ReportsandAnalytics.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Result.xaml.cs">
-      <DependentUpon>Result.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Services\HashService.cs" />
     <Compile Include="StudentAttendance.xaml.cs">
       <DependentUpon>StudentAttendance.xaml</DependentUpon>
@@ -181,10 +178,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ReportsandAnalytics.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Result.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

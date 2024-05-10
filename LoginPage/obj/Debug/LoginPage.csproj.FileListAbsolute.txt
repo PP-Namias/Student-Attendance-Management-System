@@ -564,7 +564,6 @@ C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\MessageDialog.g.cs
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\QRCodeReader.g.cs
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\ReportsandAnalytics.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Result.g.cs
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\StudentAttendance.g.cs
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\SystemAdministration.g.cs
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Window1.g.cs
@@ -579,7 +578,6 @@ C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\MainWindow.baml
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\QRCodeReader.baml
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\ReportsandAnalytics.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Result.baml
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\StudentAttendance.baml
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\SystemAdministration.baml
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Window1.baml

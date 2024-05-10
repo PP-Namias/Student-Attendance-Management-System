@@ -92,6 +92,11 @@ namespace LoginPage
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
             */
+
+
+            BarcodeScanningInterface x = new BarcodeScanningInterface();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
         #endregion
 
