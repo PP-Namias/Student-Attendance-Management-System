@@ -37,10 +37,6 @@ namespace LoginPage
         int frameCounter = 0;
         bool record = false;
 
-
-
-
-
         public BarcodeScanningInterface()
         {
             InitializeComponent();
@@ -92,20 +88,6 @@ namespace LoginPage
             Process.Start("mailto://jkrbn99@gmail.com");
         }
         #endregion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         private void StartStopButton_Click(object sender, RoutedEventArgs e)
         {
@@ -228,7 +210,7 @@ namespace LoginPage
                             txtClass.Text = "BSCS-2A";
                             imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Jhon Keneth Namias.jpg"));
 
-                            txtTime.Text = currentDateTime.ToString("T");
+                            txtTime.Text = currentDateTime.ToString("h:mm tt");
                             txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
                             break;
 
@@ -237,41 +219,27 @@ namespace LoginPage
                             txtClass.Text = "BSCS-2A";
                             imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/mike.jpg"));
 
-                            txtTime.Text = currentDateTime.ToString("T");
+                            txtTime.Text = currentDateTime.ToString("h:mm tt");
                             txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
                             break;
-
-
 
                         case "20220060-N":
                             txtName.Text = "Acedo, Mark Relan Gercee";
                             txtClass.Text = "BSCS-2A";
                             imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Acedo.jpg"));
 
-                            txtTime.Text = currentDateTime.ToString("T");
+                            txtTime.Text = currentDateTime.ToString("h:mm tt");
                             txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
                             break;
 
+                        case "20220464-N":
+                            txtName.Text = "Miranda, Karl Mathew L.";
+                            txtClass.Text = "BSCS-2A";
+                            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Miranda.jpg"));
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+                            txtTime.Text = currentDateTime.ToString("h:mm tt");
+                            txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
+                            break;
 
                         // Add more cases for other student IDs
                         default:
@@ -358,7 +326,7 @@ namespace LoginPage
         {
             DateTime currentDateTime = DateTime.Now;
 
-            txtTime.Text = currentDateTime.ToString("T");
+            txtTime.Text = currentDateTime.ToString("h:mm tt");
             txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
         }
 

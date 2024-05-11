@@ -74,6 +74,10 @@
               "target": "Package",
               "version": "[6.4.4, )"
             },
+            "LiveCharts.Wpf": {
+              "target": "Package",
+              "version": "[0.9.7, )"
+            },
             "MahApps.Metro": {
               "target": "Package",
               "version": "[2.4.10, )"
@@ -85,6 +89,10 @@
             "MaterialDesignThemes": {
               "target": "Package",
               "version": "[4.7.1, )"
+            },
+            "MaterialDesignThemes.MahApps": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "MaterialDesignThemes.Wpf": {
               "target": "Package",

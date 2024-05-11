@@ -21,6 +21,7 @@ using MahApps.Metro.Converters;
 using MahApps.Metro.Markup;
 using MahApps.Metro.Theming;
 using MahApps.Metro.ValueBoxes;
+using MaterialDesignThemes.MahApps;
 using MaterialDesignThemes.Wpf;
 using MaterialDesignThemes.Wpf.Converters;
 using MaterialDesignThemes.Wpf.Transitions;

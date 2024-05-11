@@ -6,7 +6,7 @@
         xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
         xmlns:local="clr-namespace:LoginPage"
         mc:Ignorable="d"
-        Title="Login Page" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize" Initialized="Window_Initialized">
+        Title="Login Page" Height="450" Width="800" WindowStartupLocation="CenterScreen" WindowStyle="None" ResizeMode="NoResize">
     <Grid MouseDown="Border_MouseDown">
         <Grid.Background>
             <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
@@ -83,16 +83,24 @@
                                 materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E" FontFamily="Century" 
                                 Background="#093A3E" Foreground="White" ToolTip="Registration" x:Name="btnRegister" 
                                 Click="btnRegister_Click" Content="Register">
-
                         </Button>
                     </StackPanel>
 
 
-                    <StackPanel Margin="0 0 0 34" HorizontalAlignment="Center">
+                    <StackPanel Margin="0,0,0,10" HorizontalAlignment="Center">
                         <Button Width="125" Height="35" Style="{StaticResource MaterialDesignRaisedButton}"
                                 materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E" FontFamily="Century" 
-                                Background="#093A3E" Foreground="White" ToolTip="QRReader" x:Name="btnQRReader" 
-                                Click="btnQRReader_Click" Content="QR Reader">
+                                Background="#093A3E" Foreground="White" ToolTip="MainMenu1" x:Name="btnMainMenu1" 
+                                Click="btnMainMenu1_Click" Content="Main Menu 1">
+                        </Button>
+                    </StackPanel>
+
+
+                    <StackPanel Margin="0 0 0 0" HorizontalAlignment="Center">
+                        <Button Width="125" Height="35" Style="{StaticResource MaterialDesignRaisedButton}"
+                                materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E" FontFamily="Century" 
+                                Background="#093A3E" Foreground="White" ToolTip="MainMenu2" x:Name="btnMainMenu2" 
+                                Click="btnMainMenu2_Click" Content="Main Menu 2">
 
                         </Button>
                     </StackPanel>

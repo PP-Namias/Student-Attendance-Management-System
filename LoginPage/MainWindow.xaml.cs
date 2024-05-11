@@ -18,6 +18,7 @@ namespace LoginPage
 
         public MainWindow()
         {
+
             InitializeComponent();
             appDbContext = new AppDbContext();
         }
@@ -95,8 +96,8 @@ namespace LoginPage
 
         private void btnQRReader_Click(object sender, RoutedEventArgs e)
         {
-            QRCodeReader QRCodeReader = new QRCodeReader();
-            QRCodeReader.Show();
+            MainMenu MainMenu = new MainMenu();
+            MainMenu.Show();
         }
 
         private void btnShowPassword_Click(object sender, RoutedEventArgs e)
@@ -125,11 +126,16 @@ namespace LoginPage
 
         }
 
-        private void Window_Initialized(object sender, System.EventArgs e)
+        private void btnMainMenu1_Click(object sender, RoutedEventArgs e)
         {
             MainMenu MainMenu = new MainMenu();
             MainMenu.Show();
-            this.Close();
+        }
+
+        private void btnMainMenu2_Click(object sender, RoutedEventArgs e)
+        {
+            MainMenu2 MainMenu2 = new MainMenu2();
+            MainMenu2.Show();
         }
     }
 }

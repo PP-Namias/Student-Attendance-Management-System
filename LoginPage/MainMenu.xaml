@@ -18,11 +18,12 @@
                  GlowBrush="{DynamicResource AccentColorBrush}"
                  
                  Height="700"
-                 Width="1200"
+                 Width="1200" 
+                 MinHeight="700"
                  MinWidth="1050"
                  Loaded="Window_Loaded"
                  WindowStartupLocation="CenterScreen"
-                 Icon="/Images/icon.ico" MinHeight="700">
+                 Icon="/Images/icon.ico">
     <UserControl>
         <UserControl.Resources>
             <ResourceDictionary>
@@ -256,6 +257,7 @@
                             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" Text="Student Attendance Management System"/>
                         </DockPanel>
                     </materialDesign:ColorZone>
+                    
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto" />

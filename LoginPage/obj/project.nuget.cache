@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "KsNQ9plnwI/GwSGNztMRO18ve3qPUsmAsQGGq9tEQEyNkuqLAu5Wbr3N3TmX1Y7GVAVc+8X1pP0/5vFTb+tABQ==",
+  "dgSpecHash": "zKlJIvKue3DvZEhEGHyQD0qnCgnQ2EmcEbPr0BTLnef+StwmkT4NRdG3HGQttfOdjC69sQWQS+WYICHMFir9Tg==",
   "success": true,
   "projectFilePath": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\LoginPage\\LoginPage.csproj",
   "expectedPackageFiles": [
@@ -14,9 +14,12 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\dragablz\\0.0.3.234\\dragablz.0.0.3.234.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\entityframework.sqlservercompact\\6.4.4\\entityframework.sqlservercompact.6.4.4.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\livecharts\\0.9.7\\livecharts.0.9.7.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\livecharts.wpf\\0.9.7\\livecharts.wpf.0.9.7.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\mahapps.metro\\2.4.10\\mahapps.metro.2.4.10.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\materialdesigncolors\\3.0.0\\materialdesigncolors.3.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\materialdesignthemes\\4.7.1\\materialdesignthemes.4.7.1.nupkg.sha512",
+    "C:\\Users\\ADMIN\\.nuget\\packages\\materialdesignthemes.mahapps\\1.0.0\\materialdesignthemes.mahapps.1.0.0.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\materialdesignthemes.wpf\\1.0.1\\materialdesignthemes.wpf.1.0.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.1\\microsoft.bcl.hashcode.1.1.1.nupkg.sha512",
@@ -65,5 +68,20 @@
     "C:\\Users\\ADMIN\\.nuget\\packages\\system.windows.forms.ribbon35\\3.5.8\\system.windows.forms.ribbon35.3.5.8.nupkg.sha512",
     "C:\\Users\\ADMIN\\.nuget\\packages\\zxing.net\\0.14.0.1\\zxing.net.0.14.0.1.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: MaterialDesignThemes from 5.0.0 to 4.7.1. Reference the package directly from the project to select a different version. \r\n LoginPage -> MaterialDesignThemes.MahApps 1.0.0 -> MaterialDesignThemes (>= 5.0.0) \r\n LoginPage -> MaterialDesignThemes (>= 4.7.1)",
+      "libraryId": "MaterialDesignThemes",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-arm64",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
 }

@@ -149,6 +149,35 @@
           }
         }
       },
+      "LiveCharts/0.9.7": {
+        "type": "package",
+        "compile": {
+          "lib/net45/LiveCharts.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "LiveCharts.Wpf/0.9.7": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.9.7"
+        },
+        "compile": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
       "MahApps.Metro/2.4.10": {
         "type": "package",
         "dependencies": {
@@ -205,6 +234,24 @@
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.MahApps/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MahApps.Metro": "2.0.0",
+          "MaterialDesignColors": "3.0.0",
+          "MaterialDesignThemes": "5.0.0"
+        },
+        "compile": {
+          "lib/net462/MaterialDesignThemes.MahApps.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net462/MaterialDesignThemes.MahApps.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "MaterialDesignThemes.Wpf/1.0.1": {
@@ -1145,6 +1192,35 @@
           }
         }
       },
+      "LiveCharts/0.9.7": {
+        "type": "package",
+        "compile": {
+          "lib/net45/LiveCharts.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "LiveCharts.Wpf/0.9.7": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.9.7"
+        },
+        "compile": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
       "MahApps.Metro/2.4.10": {
         "type": "package",
         "dependencies": {
@@ -1201,6 +1277,24 @@
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.MahApps/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MahApps.Metro": "2.0.0",
+          "MaterialDesignColors": "3.0.0",
+          "MaterialDesignThemes": "5.0.0"
+        },
+        "compile": {
+          "lib/net462/MaterialDesignThemes.MahApps.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net462/MaterialDesignThemes.MahApps.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "MaterialDesignThemes.Wpf/1.0.1": {
@@ -2129,6 +2223,35 @@
           }
         }
       },
+      "LiveCharts/0.9.7": {
+        "type": "package",
+        "compile": {
+          "lib/net45/LiveCharts.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "LiveCharts.Wpf/0.9.7": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.9.7"
+        },
+        "compile": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
       "MahApps.Metro/2.4.10": {
         "type": "package",
         "dependencies": {
@@ -2185,6 +2308,24 @@
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.MahApps/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MahApps.Metro": "2.0.0",
+          "MaterialDesignColors": "3.0.0",
+          "MaterialDesignThemes": "5.0.0"
+        },
+        "compile": {
+          "lib/net462/MaterialDesignThemes.MahApps.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net462/MaterialDesignThemes.MahApps.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "MaterialDesignThemes.Wpf/1.0.1": {
@@ -3113,6 +3254,35 @@
           }
         }
       },
+      "LiveCharts/0.9.7": {
+        "type": "package",
+        "compile": {
+          "lib/net45/LiveCharts.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "LiveCharts.Wpf/0.9.7": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.9.7"
+        },
+        "compile": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
       "MahApps.Metro/2.4.10": {
         "type": "package",
         "dependencies": {
@@ -3169,6 +3339,24 @@
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.MahApps/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MahApps.Metro": "2.0.0",
+          "MaterialDesignColors": "3.0.0",
+          "MaterialDesignThemes": "5.0.0"
+        },
+        "compile": {
+          "lib/net462/MaterialDesignThemes.MahApps.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net462/MaterialDesignThemes.MahApps.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "MaterialDesignThemes.Wpf/1.0.1": {
@@ -4097,6 +4285,35 @@
           }
         }
       },
+      "LiveCharts/0.9.7": {
+        "type": "package",
+        "compile": {
+          "lib/net45/LiveCharts.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      },
+      "LiveCharts.Wpf/0.9.7": {
+        "type": "package",
+        "dependencies": {
+          "LiveCharts": "0.9.7"
+        },
+        "compile": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "related": ".pdb;.XML"
+          }
+        },
+        "runtime": {
+          "lib/net45/LiveCharts.Wpf.dll": {
+            "related": ".pdb;.XML"
+          }
+        }
+      },
       "MahApps.Metro/2.4.10": {
         "type": "package",
         "dependencies": {
@@ -4153,6 +4370,24 @@
         },
         "build": {
           "build/MaterialDesignThemes.targets": {}
+        }
+      },
+      "MaterialDesignThemes.MahApps/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "MahApps.Metro": "2.0.0",
+          "MaterialDesignColors": "3.0.0",
+          "MaterialDesignThemes": "5.0.0"
+        },
+        "compile": {
+          "lib/net462/MaterialDesignThemes.MahApps.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/net462/MaterialDesignThemes.MahApps.dll": {
+            "related": ".pdb"
+          }
         }
       },
       "MaterialDesignThemes.Wpf/1.0.1": {
@@ -5422,6 +5657,46 @@
         "lib/net45/EntityFramework.SqlServerCompact.xml"
       ]
     },
+    "LiveCharts/0.9.7": {
+      "sha512": "p4xyBrUaNNfkWZSNsIle0r51cyVyFg0Yi0uBRZM5GQtdFiA/7guZHlffFyNUILIdux10Ch2hUaJpcZENVU9aaQ==",
+      "type": "package",
+      "path": "livecharts/0.9.7",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/LiveCharts.dll",
+        "lib/net40/LiveCharts.pdb",
+        "lib/net40/LiveCharts.xml",
+        "lib/net45/LiveCharts.dll",
+        "lib/net45/LiveCharts.pdb",
+        "lib/net45/LiveCharts.xml",
+        "lib/portable-net45+win8+wp8/LiveCharts.XML",
+        "lib/portable-net45+win8+wp8/LiveCharts.dll",
+        "lib/portable-net45+win8+wp8/LiveCharts.pdb",
+        "livecharts.0.9.7.nupkg.sha512",
+        "livecharts.nuspec",
+        "readme.txt"
+      ]
+    },
+    "LiveCharts.Wpf/0.9.7": {
+      "sha512": "lv6YZoK0B4yWykMq5b9grZXtIbTj+OWu4sVN9GDpdgV6zffu64m4d5CW8KSjfSl9rB8VU649x1NZvhoU67hCDg==",
+      "type": "package",
+      "path": "livecharts.wpf/0.9.7",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/LiveCharts.Wpf.XML",
+        "lib/net40/LiveCharts.Wpf.dll",
+        "lib/net40/LiveCharts.Wpf.pdb",
+        "lib/net45/LiveCharts.Wpf.XML",
+        "lib/net45/LiveCharts.Wpf.dll",
+        "lib/net45/LiveCharts.Wpf.pdb",
+        "livecharts.wpf.0.9.7.nupkg.sha512",
+        "livecharts.wpf.nuspec",
+        "tools/install.ps1"
+      ]
+    },
     "MahApps.Metro/2.4.10": {
       "sha512": "45exHKJCVYaD1/rNr3ekZPECEBM4uHOt6aYp6yNaJbliFMUo+d3z8Gi1xG+qEkbiHKITX+dlz+BW1FOsjAbl/w==",
       "type": "package",
@@ -5517,6 +5792,24 @@
         "materialdesignthemes.4.7.1.nupkg.sha512",
         "materialdesignthemes.nuspec",
         "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "MaterialDesignThemes.MahApps/1.0.0": {
+      "sha512": "3EoUyXSwtby5jJG7dgPqEYmzIiqYQ4YYHk/cWLeGk+4q8QRYKcKW7Acqc82+/D3rkFzWkQUqdpbcOqjbYcEcPg==",
+      "type": "package",
+      "path": "materialdesignthemes.mahapps/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "images/MaterialDesignThemes.MahApps.Icon.png",
+        "lib/net462/MaterialDesignThemes.MahApps.dll",
+        "lib/net462/MaterialDesignThemes.MahApps.pdb",
+        "lib/net6.0/MaterialDesignThemes.MahApps.dll",
+        "lib/net6.0/MaterialDesignThemes.MahApps.pdb",
+        "lib/net7.0/MaterialDesignThemes.MahApps.dll",
+        "lib/net7.0/MaterialDesignThemes.MahApps.pdb",
+        "materialdesignthemes.mahapps.1.0.0.nupkg.sha512",
+        "materialdesignthemes.mahapps.nuspec"
       ]
     },
     "MaterialDesignThemes.Wpf/1.0.1": {
@@ -6802,9 +7095,11 @@
       "Dragablz >= 0.0.3.234",
       "EntityFramework >= 6.4.4",
       "EntityFramework.SqlServerCompact >= 6.4.4",
+      "LiveCharts.Wpf >= 0.9.7",
       "MahApps.Metro >= 2.4.10",
       "MaterialDesignColors >= 3.0.0",
       "MaterialDesignThemes >= 4.7.1",
+      "MaterialDesignThemes.MahApps >= 1.0.0",
       "MaterialDesignThemes.Wpf >= 1.0.1",
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.32",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 3.1.18",
@@ -6891,6 +7186,10 @@
             "target": "Package",
             "version": "[6.4.4, )"
           },
+          "LiveCharts.Wpf": {
+            "target": "Package",
+            "version": "[0.9.7, )"
+          },
           "MahApps.Metro": {
             "target": "Package",
             "version": "[2.4.10, )"
@@ -6902,6 +7201,10 @@
           "MaterialDesignThemes": {
             "target": "Package",
             "version": "[4.7.1, )"
+          },
+          "MaterialDesignThemes.MahApps": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "MaterialDesignThemes.Wpf": {
             "target": "Package",
@@ -6962,5 +7265,21 @@
         "#import": []
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1605",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Detected package downgrade: MaterialDesignThemes from 5.0.0 to 4.7.1. Reference the package directly from the project to select a different version. \r\n LoginPage -> MaterialDesignThemes.MahApps 1.0.0 -> MaterialDesignThemes (>= 5.0.0) \r\n LoginPage -> MaterialDesignThemes (>= 4.7.1)",
+      "libraryId": "MaterialDesignThemes",
+      "targetGraphs": [
+        ".NETFramework,Version=v4.7.2",
+        ".NETFramework,Version=v4.7.2/win",
+        ".NETFramework,Version=v4.7.2/win-arm64",
+        ".NETFramework,Version=v4.7.2/win-x64",
+        ".NETFramework,Version=v4.7.2/win-x86"
+      ]
+    }
+  ]
 }
