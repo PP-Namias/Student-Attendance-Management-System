@@ -7,7 +7,12 @@
              xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              xmlns:local="clr-namespace:LoginPage"
              mc:Ignorable="d" 
-             d:DesignHeight="850" d:DesignWidth="1100">
+             d:DesignHeight="850" d:DesignWidth="1100"
+             
+             
+                 Height="760"
+                 Width="1050"     
+             >
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="8*" />

@@ -27,6 +27,14 @@
                             <Button Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
                              BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black">
                                 <StackPanel Margin="-5">
+                                    <materialDesign:PackIcon Kind="ReorderHorizontal"/>
+                                </StackPanel>
+                            </Button>
+                        </ListViewItem>
+                        <ListViewItem HorizontalAlignment="Center" Margin="0">
+                            <Button Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
+                             BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black">
+                                <StackPanel Margin="-5">
                                     <materialDesign:PackIcon Kind="Home"/>
                                 </StackPanel>
                             </Button>
@@ -63,7 +71,7 @@
                                 </StackPanel>
                             </Button>
                         </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0 60 0 0">
+                        <ListViewItem HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Bottom">
                             <Button Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
                              BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" x:Name="btnExit" Click="btnExit_Click">
                                 <StackPanel Margin="-5">

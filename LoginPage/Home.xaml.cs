@@ -97,7 +97,7 @@ namespace LoginPage
             this.topgrid.Visibility = Visibility.Collapsed;
             this.homePopupBox.Visibility = Visibility.Collapsed;
 
-            BarcodeScanningInterface x = new BarcodeScanningInterface();
+            Dashboard x = new Dashboard();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
         }
