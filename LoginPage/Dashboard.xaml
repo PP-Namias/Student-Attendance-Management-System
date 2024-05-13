@@ -10,8 +10,6 @@
              d:DesignHeight="850" d:DesignWidth="1100"
              
              
-                 Height="760"
-                 Width="1050"     
              >
     <Grid>
         <Grid.ColumnDefinitions>
@@ -26,13 +24,26 @@
         </Grid.Resources>
         <Grid Grid.Column="0" Background="#F6F6F8">
             <StackPanel Margin="10">
-                <Grid Height="60">
-                    <Button Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
-                     BorderBrush="{x:Null}" Background="{x:Null}">
-                        <StackPanel Margin="-5">
-                            <materialDesign:PackIcon Kind="ReorderHorizontal" Foreground="Gray" />
-                        </StackPanel>
-                    </Button>
+
+                <materialDesign:Card materialDesign:ShadowAssist.ShadowDepth="Depth0" UniformCornerRadius="15" BorderThickness="5"
+    BorderBrush="White" Height="60" Background="#97C8EB">
+                    <StackPanel Margin="10">
+                        <materialDesign:PackIcon Kind="AccountStudentOutline" Foreground="#29A3EC" />
+
+                        <ComboBox HorizontalAlignment="Right" Width="100" materialDesign:HintAssist.Hint="Last 15 Days" Margin="0,-22,0,0">
+                            <ComboBoxItem>
+                                <TextBlock Text="Last 15 Days" />
+                            </ComboBoxItem>
+                            <ComboBoxItem>
+                                <TextBlock Text="Last 30 Days" />
+                            </ComboBoxItem>
+                        </ComboBox>
+                        
+                    </StackPanel>
+                </materialDesign:Card>
+                
+                <Grid Height="60" Background="#093A3E" Margin="0,10,0,0">
+
                     <ComboBox HorizontalAlignment="Right" Width="100" materialDesign:HintAssist.Hint="Last 15 Days">
                         <ComboBoxItem>
                             <TextBlock Text="Last 15 Days" />
@@ -207,7 +218,8 @@
             <Border Margin="40 10" CornerRadius="20" Background="#FFFFEEFA">
                 <Image Source="Images/cartoon-woman-pretty.png"  Stretch="Uniform" x:Name="ImgCartoon" Height="150" />
             </Border>
-            <Calendar Margin="45 10" />
+            <Calendar materialDesign:CalendarAssist.Orientation="Horizontal" Background="Blue" Foreground="Black" />
+
             <materialDesign:Card Margin="20 10" Padding="5" UniformCornerRadius="20" HorizontalAlignment="Center">
                 <WrapPanel Margin="10">
                     <materialDesign:PackIcon Kind="HandPeace" Foreground="#FFC83D" VerticalAlignment="Center" Margin="10 0" />

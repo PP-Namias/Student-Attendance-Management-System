@@ -105,6 +105,7 @@
     <Compile Include="Migrations\20230220024514_n2.designer.cs">
       <DependentUpon>20230220024514_n2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\LoginLog.cs" />
     <Compile Include="QRCodeReader.xaml.cs">
       <DependentUpon>QRCodeReader.xaml</DependentUpon>
     </Compile>

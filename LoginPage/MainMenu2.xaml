@@ -9,7 +9,11 @@
         Height="850" Width="1200" WindowStartupLocation="CenterScreen"
         WindowStyle="None" ResizeMode="NoResize" Background="{x:Null}" AllowsTransparency="True" Loaded="Window_Loaded">
     <Grid>
+        
+        
+        
         <materialDesign:Card Margin="10" UniformCornerRadius="15">
+            
             <Grid>
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
@@ -21,65 +25,102 @@
                         <Setter Property="Height" Value="30"></Setter>
                     </Style>
                 </Grid.Resources>
-                <Grid Grid.Column="0">
-                    <ListView Margin="0 15">
-                        <ListViewItem HorizontalAlignment="Center" Margin="0 10">
-                            <Button Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
-                             BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="ReorderHorizontal"/>
-                                </StackPanel>
-                            </Button>
-                        </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0">
-                            <Button Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
-                             BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="Home"/>
-                                </StackPanel>
-                            </Button>
-                        </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0">
-                            <Button Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
-                             BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="AccountStudent"/>
-                                </StackPanel>
-                            </Button>
-                        </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0 10">
-                            <Button Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
-                             BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="LoginVariant"/>
-                                </StackPanel>
-                            </Button>
-                        </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0">
-                            <Button Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
-                             BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="ChartLine"/>
-                                </StackPanel>
-                            </Button>
-                        </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0 10">
-                            <Button Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
-                             BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="SecurityAccount"/>
-                                </StackPanel>
-                            </Button>
-                        </ListViewItem>
-                        <ListViewItem HorizontalAlignment="Center" Margin="0,80,0,0" VerticalAlignment="Bottom">
-                            <Button Style="{StaticResource MaterialDesignFloatingActionButton}" HorizontalAlignment="Left"
-                             BorderBrush="{x:Null}" Background="{x:Null}" Foreground="Black" x:Name="btnExit" Click="btnExit_Click">
-                                <StackPanel Margin="-5">
-                                    <materialDesign:PackIcon Kind="Logout"/>
-                                </StackPanel>
-                            </Button>
-                        </ListViewItem>
-                    </ListView>
+                <Grid Grid.Column="0" HorizontalAlignment="Center" >
+
+
+                    <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False" x:Name="MenuToggleButton" VerticalAlignment="Top"/>
+
+
+                    
+                    <materialDesign:Card VerticalAlignment="Center">
+                        <TabControl
+                            VerticalContentAlignment="Bottom"
+                            materialDesign:ColorZoneAssist.Mode="PrimaryMid"
+                            Style="{StaticResource MaterialDesignNavigationRailTabControl}">
+                            <TabItem>
+                                <TabItem.Header>
+                                    <StackPanel
+                                        Width="auto"
+                                        Height="auto">
+                                        <materialDesign:PackIcon
+                                            Width="37"
+                                            Height="37"
+                                            HorizontalAlignment="Center"
+                                            Kind="Home" />
+                                    </StackPanel>
+                                </TabItem.Header>
+                            </TabItem>
+                            <TabItem>
+                                <TabItem.Header>
+                                    <StackPanel
+                                        Width="auto"
+                                        Height="auto">
+                                        <materialDesign:PackIcon
+                                            Width="37"
+                                            Height="37"
+                                            HorizontalAlignment="Center"
+                                            Kind="AccountStudent" />
+                                    </StackPanel>
+                                </TabItem.Header>
+                            </TabItem>
+                            <TabItem>
+                                <TabItem.Header>
+                                    <StackPanel
+                                        Width="auto"
+                                        Height="auto">
+                                        <materialDesign:PackIcon
+                                        Width="37"
+                                        Height="37"
+                                        HorizontalAlignment="Center"
+                                        Kind="LoginVariant" />
+                                    </StackPanel>
+                                </TabItem.Header>
+                            </TabItem>
+
+
+
+                            <TabItem>
+                                <TabItem.Header>
+                                    <StackPanel
+                                        Width="auto"
+                                        Height="auto">
+                                        <materialDesign:PackIcon
+                                        Width="37"
+                                        Height="37"
+                                        HorizontalAlignment="Center"
+                                        Kind="ChartLine" />
+                                    </StackPanel>
+                                </TabItem.Header>
+                            </TabItem>
+
+                            <TabItem>
+                                <TabItem.Header>
+                                    <StackPanel
+                                        Width="auto"
+                                        Height="auto">
+                                        <materialDesign:PackIcon
+                                        Width="37"
+                                        Height="37"
+                                        HorizontalAlignment="Center"
+                                        Kind="SecurityAccount" />
+                                    </StackPanel>
+                                </TabItem.Header>
+                            </TabItem>
+                            <TabItem>
+                                <TabItem.Header>
+                                    <StackPanel
+                                        Width="auto"
+                                        Height="auto">
+                                        <materialDesign:PackIcon
+                                        Width="37"
+                                        Height="37"
+                                        HorizontalAlignment="Center"
+                                        Kind="BarcodeScan" />
+                                    </StackPanel>
+                                </TabItem.Header>
+                            </TabItem>
+                        </TabControl>
+                    </materialDesign:Card>  
                 </Grid>
                 <Grid Grid.Column="1" Background="#F6F5F8" Name="RenderPages">
 

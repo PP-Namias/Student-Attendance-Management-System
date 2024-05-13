@@ -17,7 +17,7 @@
                  TextOptions.TextRenderingMode="Auto" 
                  GlowBrush="{DynamicResource AccentColorBrush}"
                  
-                 Height="700"
+                 Height="900"
                  Width="1200" 
                  MinHeight="900"
                  MinWidth="1050"
@@ -50,192 +50,160 @@
                         <TreeView MinWidth="220">
                             <TreeViewItem>
                                 <TreeViewItem.Header >
-                                    <StackPanel Orientation="Horizontal">
-                                        <Viewbox Width="16" Height="16">
-                                            <Canvas Width="15" Height="15">
-                                                <materialDesign:PackIcon Kind="Home" VerticalAlignment="Center" />
-                                            </Canvas>
+                                    <StackPanel Orientation="Horizontal" Height="35">
+                                        <Viewbox Width="35" Height="35">
+                                            <materialDesign:PackIcon Kind="Home" VerticalAlignment="Center" />
                                         </Viewbox>
-                                        <TextBlock PreviewMouseLeftButtonDown="TreeItem_Home_PreviewMouseLeftButtonDown" Margin="8 0 0 0">Home</TextBlock>
+                                        <TextBlock PreviewMouseLeftButtonDown="TreeItem_Home_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">Home</TextBlock>
                                     </StackPanel>
                                 </TreeViewItem.Header>
                             </TreeViewItem>
                             <TreeViewItem  IsExpanded="True">
                                 <TreeViewItem.Header >
-                                    <StackPanel Orientation="Horizontal">
-                                        <Viewbox Width="16" Height="16">
-                                            <Canvas Width="15" Height="15">
-                                                <materialDesign:PackIcon Kind="AccountSchool" VerticalAlignment="Center" />
-                                            </Canvas>
+                                    <StackPanel Orientation="Horizontal" Height="35">
+                                        <Viewbox Width="35" Height="35">
+                                            <materialDesign:PackIcon Kind="AccountSchool" VerticalAlignment="Center" />
                                         </Viewbox>
-                                        <TextBlock Margin="8 0 0 0">Student Attendance Management</TextBlock>
+                                        <TextBlock Margin="8 0 0 0" VerticalAlignment="Center">Student Attendance Management</TextBlock>
                                     </StackPanel>
                                 </TreeViewItem.Header>
                                 <TreeViewItem>
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal">
-                                            <Viewbox Width="16" Height="16">
-                                                <Canvas Width="15" Height="15">
-                                                    <materialDesign:PackIcon Kind="BadgeAccountHorizontal" VerticalAlignment="Center" />
-                                                </Canvas>
+                                        <StackPanel Orientation="Horizontal" Height="35">
+                                            <Viewbox Width="35" Height="35">
+                                                <materialDesign:PackIcon Kind="BadgeAccountHorizontal" VerticalAlignment="Center" />
                                             </Viewbox>
-                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_AttendanceAdd_PreviewMouseLeftButtonDown" Margin="8 0 0 0">Attendance Entry Form</TextBlock>
+                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_AttendanceAdd_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">Attendance Entry Form</TextBlock>
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
                                 <TreeViewItem>
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal">
-                                            <Viewbox Width="16" Height="16">
-                                                <Canvas Width="15" Height="15">
-                                                    <materialDesign:PackIcon Kind="BarcodeScan" VerticalAlignment="Center" />
-                                                </Canvas>
+                                        <StackPanel Orientation="Horizontal" Height="35">
+                                            <Viewbox Width="35" Height="35">
+                                                <materialDesign:PackIcon Kind="BarcodeScan" VerticalAlignment="Center" />
                                             </Viewbox>
-                                            <TextBlock PreviewMouseLeftButtonDown="TreeItem_AttendanceEdit_PreviewMouseLeftButtonDown" Margin="8 0 0 0">Barcode Scanning Interface</TextBlock>
+                                            <TextBlock PreviewMouseLeftButtonDown="TreeItem_AttendanceEdit_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">Barcode Scanning Interface</TextBlock>
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
                             </TreeViewItem>
                             <TreeViewItem>
                                 <TreeViewItem.Header>
-                                    <StackPanel Orientation="Horizontal">
-                                        <Viewbox Width="16" Height="16">
-                                            <Canvas Width="15" Height="15">
-                                                <materialDesign:PackIcon Kind="LoginVariant" VerticalAlignment="Center" />
-                                            </Canvas>
+                                    <StackPanel Orientation="Horizontal" Height="35">
+                                        <Viewbox Width="35" Height="35">
+                                            <materialDesign:PackIcon Kind="LoginVariant" VerticalAlignment="Center" />
                                         </Viewbox>
-                                        <TextBlock Margin="8 0 0 0">Login Logs Management</TextBlock>
+                                        <TextBlock Margin="8 0 0 0" VerticalAlignment="Center">Login Logs Management</TextBlock>
                                     </StackPanel>
                                 </TreeViewItem.Header>
                                 <TreeViewItem>
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal">
-                                            <Viewbox Width="16" Height="16">
-                                                <Canvas Width="15" Height="15">
-                                                    <materialDesign:PackIcon Kind="TableAccount" VerticalAlignment="Center" />
-                                                </Canvas>
+                                        <StackPanel Orientation="Horizontal" Height="35">
+                                            <Viewbox Width="35" Height="35">
+                                                <materialDesign:PackIcon Kind="TableAccount" VerticalAlignment="Center" />
                                             </Viewbox>
-                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_LoginList_PreviewMouseLeftButtonDown" Margin="8 0 0 0">Login Logs Viewer</TextBlock>
+                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_LoginList_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">Login Logs Viewer</TextBlock>
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
                                 <TreeViewItem>
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal">
-                                            <Viewbox Width="16" Height="16">
-                                                <Canvas Width="15" Height="15">
-                                                    <materialDesign:PackIcon Kind="AccountMultiplePlus" VerticalAlignment="Center" />
-                                                </Canvas>
+                                        <StackPanel Orientation="Horizontal" Height="35">
+                                            <Viewbox Width="35" Height="35">
+                                                <materialDesign:PackIcon Kind="AccountMultiplePlus" VerticalAlignment="Center" />
                                             </Viewbox>
-                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_LoginAdd_PreviewMouseLeftButtonDown" Margin="8 0 0 0">Add New Log</TextBlock>
+                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_LoginAdd_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">Add New Log</TextBlock>
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
                                 <TreeViewItem>
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal">
-                                            <Viewbox Width="16" Height="16">
-                                                <Canvas Width="15" Height="15">
-                                                    <materialDesign:PackIcon Kind="BookEdit" VerticalAlignment="Center" />
-                                                </Canvas>
+                                        <StackPanel Orientation="Horizontal" Height="35">
+                                            <Viewbox Width="35" Height="35">
+                                                <materialDesign:PackIcon Kind="BookEdit" VerticalAlignment="Center" />
                                             </Viewbox>
-                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_LoginEdit_PreviewMouseLeftButtonDown" Margin="8 0 0 0">Modify Log</TextBlock>
+                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_LoginEdit_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">Modify Log</TextBlock>
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
                             </TreeViewItem>
                             <TreeViewItem>
                                 <TreeViewItem.Header>
-                                    <StackPanel Orientation="Horizontal">
-                                        <Viewbox Width="16" Height="16">
-                                            <Canvas Width="15" Height="15">
-                                                <materialDesign:PackIcon Kind="ChartLine" VerticalAlignment="Center" />
-                                            </Canvas>
+                                    <StackPanel Orientation="Horizontal" Height="35">
+                                        <Viewbox Width="35" Height="35">
+                                            <materialDesign:PackIcon Kind="ChartLine" VerticalAlignment="Center" />
                                         </Viewbox>
-                                        <TextBlock Margin="8 0 0 0">Reports and Analytics</TextBlock>
+                                        <TextBlock Margin="8 0 0 0" VerticalAlignment="Center">Reports and Analytics</TextBlock>
                                     </StackPanel>
                                 </TreeViewItem.Header>
                                 <TreeViewItem>
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal">
-                                            <Viewbox Width="16" Height="16">
-                                                <Canvas Width="15" Height="15">
-                                                    <materialDesign:PackIcon Kind="FileChart" VerticalAlignment="Center" />
-                                                </Canvas>
+                                        <StackPanel Orientation="Horizontal" Height="35">
+                                            <Viewbox Width="35" Height="35">
+                                                <materialDesign:PackIcon Kind="FileChart" VerticalAlignment="Center" />
                                             </Viewbox>
-                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_ReportsAdd_PreviewMouseLeftButtonDown" Margin="8 0 0 0">Attendance Reports Form</TextBlock>
+                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_ReportsAdd_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">Attendance Reports Form</TextBlock>
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
                                 <TreeViewItem>
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal">
-                                            <Viewbox Width="16" Height="16">
-                                                <Canvas Width="15" Height="15">
-                                                    <materialDesign:PackIcon Kind="ChartBoxPlusOutline" VerticalAlignment="Center" />
-                                                </Canvas>
+                                        <StackPanel Orientation="Horizontal" Height="35">
+                                            <Viewbox Width="35" Height="35">
+                                                <materialDesign:PackIcon Kind="ChartBoxPlusOutline" VerticalAlignment="Center" />
                                             </Viewbox>
-                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_ReportsEdit_PreviewMouseLeftButtonDown" Margin="8 0 0 0">Absenteeism Analysis Module</TextBlock>
+                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_ReportsEdit_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">Absenteeism Analysis Module</TextBlock>
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
                                 <TreeViewItem>
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal">
-                                            <Viewbox Width="16" Height="16">
-                                                <Canvas Width="15" Height="15">
-                                                    <materialDesign:PackIcon Kind="ListStatus" VerticalAlignment="Center" />
-                                                </Canvas>
+                                        <StackPanel Orientation="Horizontal" Height="35">
+                                            <Viewbox Width="35" Height="35">
+                                                <materialDesign:PackIcon Kind="ListStatus" VerticalAlignment="Center" />
                                             </Viewbox>
-                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_ReportsList_PreviewMouseLeftButtonDown" Margin="8 0 0 0">Report List</TextBlock>
+                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_ReportsList_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">Report List</TextBlock>
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
                             </TreeViewItem>
                             <TreeViewItem>
                                 <TreeViewItem.Header>
-                                    <StackPanel Orientation="Horizontal">
-                                        <Viewbox Width="16" Height="16">
-                                            <Canvas Width="15" Height="15">
-                                                <materialDesign:PackIcon Kind="Security" VerticalAlignment="Center" />
-                                            </Canvas>
+                                    <StackPanel Orientation="Horizontal" Height="35">
+                                        <Viewbox Width="35" Height="35">
+                                            <materialDesign:PackIcon Kind="Security" VerticalAlignment="Center" />
                                         </Viewbox>
                                         <TextBlock Margin="8 0 0 0">System Administration</TextBlock>
                                     </StackPanel>
                                 </TreeViewItem.Header>
                                 <TreeViewItem>
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal">
-                                            <Viewbox Width="16" Height="16">
-                                                <Canvas Width="15" Height="15">
-                                                    <materialDesign:PackIcon Kind="AccountMultiplePlus" VerticalAlignment="Center" />
-                                                </Canvas>
+                                        <StackPanel Orientation="Horizontal" Height="35">
+                                            <Viewbox Width="35" Height="35">
+                                                <materialDesign:PackIcon Kind="AccountMultiplePlus" VerticalAlignment="Center" />
                                             </Viewbox>
-                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_SystemAdd_PreviewMouseLeftButtonDown" Margin="8 0 0 0">Add New User Account</TextBlock>
+                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_SystemAdd_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">Add New User Account</TextBlock>
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
                                 <TreeViewItem>
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal">
-                                            <Viewbox Width="16" Height="16">
-                                                <Canvas Width="15" Height="15">
-                                                    <materialDesign:PackIcon Kind="AccountWrench" VerticalAlignment="Center" />
-                                                </Canvas>
+                                        <StackPanel Orientation="Horizontal" Height="35">
+                                            <Viewbox Width="35" Height="35">
+                                                <materialDesign:PackIcon Kind="AccountWrench" VerticalAlignment="Center" />
                                             </Viewbox>
-                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_SystemEdit_PreviewMouseLeftButtonDown" Margin="8 0 0 0">User Account Management</TextBlock>
+                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_SystemEdit_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">User Account Management</TextBlock>
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
                                 <TreeViewItem>
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal">
-                                            <Viewbox Width="16" Height="16">
-                                                <Canvas Width="15" Height="15">
-                                                    <materialDesign:PackIcon Kind="Cogs" VerticalAlignment="Center" />
-                                                </Canvas>
+                                        <StackPanel Orientation="Horizontal" Height="35">
+                                            <Viewbox Width="35" Height="35">
+                                                <materialDesign:PackIcon Kind="Cogs" VerticalAlignment="Center" />
                                             </Viewbox>
-                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_SystemList_PreviewMouseLeftButtonDown" Margin="8 0 0 0">System Settings Form</TextBlock>
+                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_SystemList_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">System Settings Form</TextBlock>
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
@@ -257,47 +225,45 @@
                             <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" Text="Student Attendance Management System"/>
                         </DockPanel>
                     </materialDesign:ColorZone>
-                    
+
                     <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto" />
-                            <RowDefinition Height="*" />
-                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+
+                            <ColumnDefinition Width="1*" />
+                            <ColumnDefinition Width="15*" />
+
+                        </Grid.ColumnDefinitions>
+
                         <!-- start information links -->
-                        <StackPanel Grid.Row="0" Margin="16 5 16 5" Orientation="Horizontal" HorizontalAlignment="Center">
-                            <StackPanel Orientation="Horizontal">
-                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Home">
-                                    <StackPanel Orientation="Horizontal">
-                                        <materialDesign:PackIcon Kind="Home" VerticalAlignment="Center" Foreground="#093A3E" />
-                                        <TextBlock MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_0"><Run TextBlock.FontWeight="Regular" TextBlock.FontSize="14" Foreground="#093A3E" Text=" Home"/></TextBlock>
+                        <StackPanel Grid.Column="0" Margin="0,5,0,5" Orientation="Vertical" HorizontalAlignment="Center" Width="75"  Background="LightBlue">
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Home"                 Width="75" Height="75" Click="btn_Home_Click">
+                                    <StackPanel Width="50" Height="50">
+                                        <materialDesign:PackIcon x:Name="btnHome"           Kind="Home"                  VerticalAlignment="Center" Foreground="#093A3E" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 
-                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_StudentAttendance">
-                                    <StackPanel Orientation="Horizontal">
-                                        <materialDesign:PackIcon Kind="AccountStudent" VerticalAlignment="Center" Foreground="#093A3E" />
-                                        <TextBlock MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_1"><Run TextBlock.FontWeight="Regular" TextBlock.FontSize="14" Foreground="#093A3E" Text=" Student Attendance Management"/></TextBlock>
+                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_StudentAttendance"    Width="75" Height="75" Click="btn_StudentAttendance_Click">
+                                    <StackPanel Width="50" Height="50">
+                                        <materialDesign:PackIcon x:Name="btnBarcodeScan"    Kind="BarcodeScan"           VerticalAlignment="Center" Foreground="#093A3E" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 
-                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_LoginLogs">
-                                    <StackPanel Orientation="Horizontal">
-                                        <materialDesign:PackIcon Kind="LoginVariant" VerticalAlignment="Center" Foreground="#093A3E" />
-                                        <TextBlock MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_2"><Run TextBlock.FontWeight="Regular" TextBlock.FontSize="14" Foreground="#093A3E" Text=" Login Logs Management"/></TextBlock>
+                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_LoginLogs"            Width="75" Height="75" Click="btn_LoginLogs_Click">
+                                    <StackPanel Width="50" Height="50">
+                                        <materialDesign:PackIcon x:Name="btnLoginLogs"   Kind="LoginVariant"             VerticalAlignment="Center" Foreground="#093A3E" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 
-                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Reports">
-                                    <StackPanel Orientation="Horizontal">
-                                        <materialDesign:PackIcon Kind="ChartLine" VerticalAlignment="Center" Foreground="#093A3E" />
-                                        <TextBlock MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_3"><Run TextBlock.FontWeight="Regular" TextBlock.FontSize="14" Foreground="#093A3E" Text=" Reports and Analytics"/></TextBlock>
+                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Reports"          Width="75" Height="75" Click="btn_Reports_Click">
+                                    <StackPanel Width="50" Height="50">
+                                        <materialDesign:PackIcon x:Name="btnReports"      Kind="ChartLine"               VerticalAlignment="Center" Foreground="#093A3E" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 
-                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_SystemAdministration">
-                                    <StackPanel Orientation="Horizontal">
-                                        <materialDesign:PackIcon Kind="SecurityAccount" VerticalAlignment="Center" Foreground="#093A3E" />
-                                        <TextBlock MouseLeftButtonDown="TextBlock_MouseLeftButtonDown_4"><Run TextBlock.FontWeight="Regular" TextBlock.FontSize="14" Foreground="#093A3E" Text=" System Administration"/></TextBlock>
+                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_SystemAdministration" Width="75" Height="75" Click="btn_SystemAdministration_Click">
+                                    <StackPanel Width="50" Height="50">
+                                        <materialDesign:PackIcon x:Name="btnSystemAdministration" Kind="SecurityAccount" VerticalAlignment="Center" Foreground="#093A3E" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 
@@ -308,7 +274,7 @@
 
                         <!--<ContentControl Margin="16" Content="{Binding ElementName=DemoItemsListBox, Path=SelectedItem.Content}"
                                     Grid.Row="1" />-->
-                        <Grid Grid.Row="1" Name="UserPages" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"></Grid>
+                        <Grid Grid.Column="1" Name="UserPages" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"></Grid>
 
                         <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" x:Name="MainSnackbar"
                                              Grid.Row="1" />

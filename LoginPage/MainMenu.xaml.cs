@@ -240,6 +240,71 @@ namespace LoginPage
 
         #endregion
 
+        private void MenuPopupLogoutButton_OnClick(object sender, RoutedEventArgs e)
+        {
+            /*
+            this.Hide();
+            LoggedInUser.Instance.RemoveData();
+            Login x = new Login();
+            x.Show();
+            this.Close();
+            */
+        }
+
+        private void MenuToggleButton_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btn_Home_Click(object sender, RoutedEventArgs e)
+        {
+            // Home
+
+            Home x = new Home();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+
+        }
+
+        private void btn_StudentAttendance_Click(object sender, RoutedEventArgs e)
+        {
+            // Student Attendance Management
+
+            StudentAttendance x = new StudentAttendance();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+        }
+
+        private void btn_LoginLogs_Click(object sender, RoutedEventArgs e)
+        {
+            // Login Logs Management
+
+            LoginLogs x = new LoginLogs();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+        }
+
+        private void btn_Reports_Click(object sender, RoutedEventArgs e)
+        {
+            // Reports and Analytics
+
+            ReportsandAnalytics x = new ReportsandAnalytics();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+        }
+
+        private void btn_SystemAdministration_Click(object sender, RoutedEventArgs e)
+        {
+            // System Administration
+
+            SystemAdministration x = new SystemAdministration();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+        }
+
+
+
+
         #region topbar
         private void TextBlock_MouseLeftButtonDown_0(object sender, MouseButtonEventArgs e)
         {
@@ -291,20 +356,7 @@ namespace LoginPage
         }
         #endregion
 
-        private void MenuPopupLogoutButton_OnClick(object sender, RoutedEventArgs e)
-        {
-            /*
-            this.Hide();
-            LoggedInUser.Instance.RemoveData();
-            Login x = new Login();
-            x.Show();
-            this.Close();
-            */
-        }
 
-        private void MenuToggleButton_Checked(object sender, RoutedEventArgs e)
-        {
 
-        }
     }
 }

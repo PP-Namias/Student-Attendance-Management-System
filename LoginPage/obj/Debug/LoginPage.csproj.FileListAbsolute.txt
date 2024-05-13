@@ -566,6 +566,7 @@ C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\MessageDialog.baml
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\AddNewLog.g.cs
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\BarcodeScanningInterface.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Dashboard.g.cs
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Developer.g.cs
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Home.g.cs
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Login.g.cs
@@ -586,6 +587,7 @@ C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage_MarkupCompile.lref
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\App.baml
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\AddNewLog.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Dashboard.baml
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Login.baml
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginLogs.baml
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginLogsViewer.baml
@@ -604,5 +606,3 @@ C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.csproj.CopyComplete
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.exe
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Dashboard.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\Dashboard.baml

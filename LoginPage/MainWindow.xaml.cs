@@ -1,6 +1,9 @@
 ﻿using LoginPage.DbContexts;
+using LoginPage.Interfaces;
+using LoginPage.Models;
 using LoginPage.Services;
 using System.Linq;
+using System.Net.PeerToPeer;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
@@ -28,6 +31,53 @@ namespace LoginPage
         {
             if (LoginUser(txtUsername.Text, txtPassword.Password) == 1)
             {
+
+                /*
+                 * 
+                 * wtih this code as example
+                var user = new LoginLog()
+                {
+                    UserName = username,
+                    PhoneNumber = phonenumber,
+                    PasswordHash = hashService.GetHash(password),
+                };
+
+                appDbContext.Users.Add(user);
+                appDbContext.SaveChanges();
+
+                make an record for login logs 
+                and save it to the database
+
+                -- Table: LoginLogs
+                CREATE TABLE LoginLogs (
+                    Id SERIAL PRIMARY KEY,
+                    UserId INTEGER REFERENCES Users(Id),
+                    Username VARCHAR,
+                    LoginTime TIMESTAMP,
+                    LogoutTime TIMESTAMP,
+                    Date DATE,
+                    Role VARCHAR,
+                    Remark VARCHAR
+                );
+
+                
+
+                 
+                var LoginLogss = new LoginUser()
+                {
+                    Username = txtUsername.Text,
+                    LoginTime = System.DateTime.Now,
+                    Date = System.DateTime.Now,
+                    Role = "User",
+                    Remark = "Login Successfully"
+                };
+
+                appDbContext.LoginLogs.Add(LoginLogss);
+                appDbContext.SaveLoginLog();
+
+                                */
+
+
                 //MessageBox.Show("Login Successfully", "Congratulations " + txtUsername.Text, MessageBoxButton.OK, MessageBoxImage.Information);
                 MainMenu MainMenu = new MainMenu();
                 MainMenu.Show();
