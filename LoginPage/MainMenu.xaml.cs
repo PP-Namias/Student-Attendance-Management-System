@@ -20,7 +20,7 @@ namespace LoginPage
         //Executing after loading window
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            BarcodeScanningInterface x = new BarcodeScanningInterface();
+            Dashboard x = new Dashboard();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
         }
@@ -256,11 +256,11 @@ namespace LoginPage
 
         }
 
-        private void btn_Home_Click(object sender, RoutedEventArgs e)
+        private void btn_Dashboard_Click(object sender, RoutedEventArgs e)
         {
-            // Home
+            // Dashboard
 
-            Home x = new Home();
+            Dashboard x = new Dashboard();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
 
@@ -270,7 +270,7 @@ namespace LoginPage
         {
             // Student Attendance Management
 
-            StudentAttendance x = new StudentAttendance();
+            BarcodeScanningInterface x = new BarcodeScanningInterface();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
         }
@@ -279,7 +279,7 @@ namespace LoginPage
         {
             // Login Logs Management
 
-            LoginLogs x = new LoginLogs();
+            LoginLogsViewer x = new LoginLogsViewer();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
         }

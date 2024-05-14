@@ -18,9 +18,9 @@
                  GlowBrush="{DynamicResource AccentColorBrush}"
                  
                  Height="900"
-                 Width="1200" 
+                 Width="1200"
                  MinHeight="900"
-                 MinWidth="1050"
+                 MinWidth="1200"
                  Loaded="Window_Loaded"
                  WindowStartupLocation="CenterScreen"
                  Icon="/Images/icon.ico">
@@ -46,9 +46,10 @@
                         <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" 
                                     DockPanel.Dock="Top"
                                     HorizontalAlignment="Right" Margin="16"
-                                    IsChecked="{Binding IsChecked, ElementName=MenuToggleButton, Mode=TwoWay}" />
+                                    IsChecked="{Binding IsChecked, ElementName=MenuToggleButton, Mode=TwoWay}" 
+                                    Cursor="Hand"/>
                         <TreeView MinWidth="220">
-                            <TreeViewItem>
+                            <TreeViewItem Cursor="Hand">
                                 <TreeViewItem.Header >
                                     <StackPanel Orientation="Horizontal" Height="35">
                                         <Viewbox Width="35" Height="35">
@@ -59,7 +60,7 @@
                                 </TreeViewItem.Header>
                             </TreeViewItem>
                             <TreeViewItem  IsExpanded="True">
-                                <TreeViewItem.Header >
+                                <TreeViewItem.Header>
                                     <StackPanel Orientation="Horizontal" Height="35">
                                         <Viewbox Width="35" Height="35">
                                             <materialDesign:PackIcon Kind="AccountSchool" VerticalAlignment="Center" />
@@ -67,7 +68,7 @@
                                         <TextBlock Margin="8 0 0 0" VerticalAlignment="Center">Student Attendance Management</TextBlock>
                                     </StackPanel>
                                 </TreeViewItem.Header>
-                                <TreeViewItem>
+                                <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
                                         <StackPanel Orientation="Horizontal" Height="35">
                                             <Viewbox Width="35" Height="35">
@@ -77,7 +78,7 @@
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
-                                <TreeViewItem>
+                                <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
                                         <StackPanel Orientation="Horizontal" Height="35">
                                             <Viewbox Width="35" Height="35">
@@ -97,7 +98,7 @@
                                         <TextBlock Margin="8 0 0 0" VerticalAlignment="Center">Login Logs Management</TextBlock>
                                     </StackPanel>
                                 </TreeViewItem.Header>
-                                <TreeViewItem>
+                                <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
                                         <StackPanel Orientation="Horizontal" Height="35">
                                             <Viewbox Width="35" Height="35">
@@ -107,7 +108,7 @@
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
-                                <TreeViewItem>
+                                <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
                                         <StackPanel Orientation="Horizontal" Height="35">
                                             <Viewbox Width="35" Height="35">
@@ -117,7 +118,7 @@
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
-                                <TreeViewItem>
+                                <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
                                         <StackPanel Orientation="Horizontal" Height="35">
                                             <Viewbox Width="35" Height="35">
@@ -137,7 +138,7 @@
                                         <TextBlock Margin="8 0 0 0" VerticalAlignment="Center">Reports and Analytics</TextBlock>
                                     </StackPanel>
                                 </TreeViewItem.Header>
-                                <TreeViewItem>
+                                <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
                                         <StackPanel Orientation="Horizontal" Height="35">
                                             <Viewbox Width="35" Height="35">
@@ -147,7 +148,7 @@
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
-                                <TreeViewItem>
+                                <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
                                         <StackPanel Orientation="Horizontal" Height="35">
                                             <Viewbox Width="35" Height="35">
@@ -157,7 +158,7 @@
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
-                                <TreeViewItem>
+                                <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
                                         <StackPanel Orientation="Horizontal" Height="35">
                                             <Viewbox Width="35" Height="35">
@@ -174,10 +175,10 @@
                                         <Viewbox Width="35" Height="35">
                                             <materialDesign:PackIcon Kind="Security" VerticalAlignment="Center" />
                                         </Viewbox>
-                                        <TextBlock Margin="8 0 0 0">System Administration</TextBlock>
+                                        <TextBlock Margin="8 0 0 0" VerticalAlignment="Center">System Administration</TextBlock>
                                     </StackPanel>
                                 </TreeViewItem.Header>
-                                <TreeViewItem>
+                                <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
                                         <StackPanel Orientation="Horizontal" Height="35">
                                             <Viewbox Width="35" Height="35">
@@ -187,7 +188,7 @@
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
-                                <TreeViewItem>
+                                <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
                                         <StackPanel Orientation="Horizontal" Height="35">
                                             <Viewbox Width="35" Height="35">
@@ -197,7 +198,7 @@
                                         </StackPanel>
                                     </TreeViewItem.Header>
                                 </TreeViewItem>
-                                <TreeViewItem>
+                                <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
                                         <StackPanel Orientation="Horizontal" Height="35">
                                             <Viewbox Width="35" Height="35">
@@ -214,15 +215,15 @@
                 <DockPanel>
                     <materialDesign:ColorZone Background="#093A3E" Padding="16" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth2" Mode="PrimaryMid" DockPanel.Dock="Top">
                         <DockPanel>
-                            <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False" x:Name="MenuToggleButton" Checked="MenuToggleButton_Checked"/>
+                            <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False" x:Name="MenuToggleButton" Checked="MenuToggleButton_Checked" Width="50" Height="48" Cursor="Hand"/>
 
-                            <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="White" x:Name="btn_About" DockPanel.Dock="Right" Height="37" Click="MenuPopupAboutButton_OnClick" Width="37" Padding="0">
-                                <StackPanel Orientation="Horizontal" Height="37" HorizontalAlignment="Center" VerticalAlignment="Center">
-                                    <materialDesign:PackIcon x:Name="About1" Kind="InformationCircle" Width="37" Height="37" DockPanel.Dock="Right" />
+                            <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="White" x:Name="btn_About" DockPanel.Dock="Right" Height="50" Click="MenuPopupAboutButton_OnClick" Width="50" Padding="0">
+                                <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center">
+                                    <materialDesign:PackIcon x:Name="About1" Kind="InformationCircle" Width="50" Height="50" DockPanel.Dock="Right" />
                                 </StackPanel>
                             </Button>
 
-                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="22" Text="Student Attendance Management System"/>
+                            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="24" Text="Student Attendance Management System"/>
                         </DockPanel>
                     </materialDesign:ColorZone>
 
@@ -235,9 +236,9 @@
                         </Grid.ColumnDefinitions>
 
                         <!-- start information links -->
-                        <StackPanel Grid.Column="0" Margin="0,5,0,5" Orientation="Vertical" HorizontalAlignment="Center" Width="75"  Background="LightBlue">
+                        <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" Width="75"  Background="LightBlue">
                             <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
-                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Home"                 Width="75" Height="75" Click="btn_Home_Click">
+                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Dashboard"                 Width="75" Height="75" Click="btn_Dashboard_Click">
                                     <StackPanel Width="50" Height="50">
                                         <materialDesign:PackIcon x:Name="btnHome"           Kind="Home"                  VerticalAlignment="Center" Foreground="#093A3E" Width="40" Height="40" />
                                     </StackPanel>
@@ -269,12 +270,11 @@
 
                             </StackPanel>
                         </StackPanel>
-                        <Border BorderBrush="{DynamicResource MaterialDesignDivider}" BorderThickness="0 0 0 1" />
                         <!-- end information links -->
 
                         <!--<ContentControl Margin="16" Content="{Binding ElementName=DemoItemsListBox, Path=SelectedItem.Content}"
                                     Grid.Row="1" />-->
-                        <Grid Grid.Column="1" Name="UserPages" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center"></Grid>
+                        <Grid Grid.Column="1" Name="UserPages" Margin="0" HorizontalAlignment="Center" VerticalAlignment="Center" Width="1125" Height="804"></Grid>
 
                         <materialDesign:Snackbar MessageQueue="{materialDesign:MessageQueue}" x:Name="MainSnackbar"
                                              Grid.Row="1" />

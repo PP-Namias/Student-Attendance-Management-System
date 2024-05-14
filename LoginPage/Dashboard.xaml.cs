@@ -90,9 +90,6 @@ namespace LoginPage
             DataContext = this;
             string imgCartoon = $"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.ToString()}\\Images\\Mike.jpg";
             string imgavatar = $"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.ToString()}\\Images\\Acedo.jpg";
-            //ImgCartoon.Source = new BitmapImage(new Uri(imgCartoon));
-            //avatar1.Source = new BitmapImage(new Uri(imgavatar));
-            //avatar2.Source = new BitmapImage(new Uri(imgavatar));
 
             ImgCartoon.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Student Attendance Management.png"));
             avatar1.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Mike.jpg"));

@@ -321,6 +321,10 @@ namespace LoginPage
             }
         }
 
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
 
         private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {

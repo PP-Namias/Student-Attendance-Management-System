@@ -62,7 +62,8 @@ namespace LoginPage
 
                 
 
-                 
+
+
                 var LoginLogss = new LoginUser()
                 {
                     Username = txtUsername.Text,
@@ -76,7 +77,6 @@ namespace LoginPage
                 appDbContext.SaveLoginLog();
 
                                 */
-
 
                 //MessageBox.Show("Login Successfully", "Congratulations " + txtUsername.Text, MessageBoxButton.OK, MessageBoxImage.Information);
                 MainMenu MainMenu = new MainMenu();
