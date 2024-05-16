@@ -236,7 +236,7 @@
                         </Grid.ColumnDefinitions>
 
                         <!-- start information links -->
-                        <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" Width="75"  Background="LightBlue">
+                        <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" Width="75"  Background="White">
                             <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                                 <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Dashboard"                 Width="75" Height="75" Click="btn_Dashboard_Click">
                                     <StackPanel Width="50" Height="50">

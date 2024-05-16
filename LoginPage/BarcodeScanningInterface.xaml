@@ -7,7 +7,7 @@
                  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
                  xmlns:src="http://metro.mahapps.com/winfx/xaml/controls"
                 
-                 Background="Blue"
+                 Background="LightBlue"
                  FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
                  TextElement.Foreground="{DynamicResource MaterialDesignBody}"
                  TextElement.FontWeight="Regular"
@@ -34,7 +34,7 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid Height="800" Background="Black" Margin="10,12,10,11">
+    <Grid Height="800" Background="LightBlue" Margin="10,12,10,11">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" />
             <RowDefinition Height="Auto" />
@@ -45,7 +45,7 @@
         </Grid>
 
         <!-- end top bar -->
-        <ScrollViewer Background="Violet" Grid.Row="1" Name="mainscrollviewer"   HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled"
+        <ScrollViewer Background="LightBlue" Grid.Row="1" Name="mainscrollviewer"   HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Disabled"
                       HorizontalAlignment="Center"
                       VerticalAlignment="Center" Width="1084" Height="754">
 
@@ -64,10 +64,10 @@
                                 BorderThickness="10" 
                                 CornerRadius="30" 
                                 HorizontalAlignment="Center" 
-                                Height="709" 
+                                Height="728" 
                                 VerticalAlignment="Top" 
                                 Canvas.Left="10" 
-                                Canvas.Top="12">
+                                Canvas.Top="12" Width="725">
 
                             <Grid>
                                 <TextBlock x:Name="BarCodeScanner"             
@@ -85,14 +85,14 @@
                                            Margin="16,20,0,0"/>
                                 <Border Canvas.Left="55" 
                                         BorderBrush="#FF3B5998"
-                                        Background="Blue"
+                                        Background="DodgerBlue"
                                         CornerRadius="5"
-                                        Margin="10,70,10,612"/>
+                                        Margin="15,74,13,627" Height="7"/>
 
                                 <Border Canvas.Left="55"
                                     Canvas.Top="30"
                                     Height="Auto"
-                                    Margin="10,90,10,0"
+                                    Margin="15,90,13,0"
                                     VerticalAlignment="Top"
                                     BorderBrush="#FF3B5998"
                                     BorderThickness=".5"
@@ -138,15 +138,107 @@
                                 </Border>
 
 
-                                <TextBlock x:Name="QRTextBlock"             FontSize="30" TextWrapping="Wrap" Text="Waiting for 2D Bar-code.."  VerticalAlignment="Top" Height="39" Width="616" Canvas.Left="26"  Canvas.Top="396" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold" Margin="16,479,0,0"/>
-                                <TextBlock x:Name="FrameCounterTextBlock"   FontSize="20" TextWrapping="Wrap" Text="Frames recorded: 0"         VerticalAlignment="Top" Height="30" Width="315" Canvas.Left="26"   Canvas.Top="435" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold" Margin="367,523,0,0"/>
-                                <TextBlock x:Name="QRCounterTextBlock"      FontSize="20" TextWrapping="Wrap" Text="BAR/QR codes decoded: ________"    VerticalAlignment="Top" Height="30" Width="346" Canvas.Left="351" Canvas.Top="435" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold" Margin="16,523,0,0"/>
-                                <Label x:Name="camsLabel" Content="Camera information" FontSize="30"                                            VerticalAlignment="Top" Height="44" Width="591"  Canvas.Top="465" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold" Canvas.Left="26" Margin="16,553,0,0"/>
+                                <TextBlock x:Name="QRTextBlock"             FontSize="30" TextWrapping="Wrap" Text="Waiting for Bar/QR Code..."  VerticalAlignment="Top" Height="39" Width="676" Canvas.Left="26"  Canvas.Top="396" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold" Margin="16,501,0,0"/>
+                                <TextBlock x:Name="FrameCounterTextBlock"   FontSize="20" TextWrapping="Wrap" Text="Frames recorded: 0"         VerticalAlignment="Top" Height="30" Width="315" Canvas.Left="26"   Canvas.Top="435" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold" Margin="367,540,0,0"/>
+                                <TextBlock x:Name="QRCounterTextBlock"      FontSize="20" TextWrapping="Wrap" Text="BAR/QR codes decoded: ________"    VerticalAlignment="Top" Height="30" Width="346" Canvas.Left="351" Canvas.Top="435" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold" Margin="15,545,0,0"/>
+                                <Label x:Name="camsLabel" Content="Camera Information" FontSize="30"                                            VerticalAlignment="Top" Height="44" Width="591"  Canvas.Top="465" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold" Canvas.Left="26" Margin="16,575,0,0"/>
 
-                                <Button x:Name="StartStopButton"    Background="#FF093A3E" Content="Start/Stop" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="156" Height="54" Click="StartStopButton_Click" VerticalContentAlignment="Center"  Cursor="Hand" Canvas.Left="26" Canvas.Top="514"  BorderBrush="#FF001011" FontFamily="Century Gothic" FontWeight="Bold" Margin="16,597,0,0"/>
-                                <Button x:Name="camSwitchButton"    Background="#FF093A3E" Content="Switch Cam" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" Width="156" Height="54" Click="camSwitchButton_Click" VerticalContentAlignment="Center"  Cursor="Hand" Canvas.Left="198" Canvas.Top="514"  BorderBrush="#FF001011" FontFamily="Century Gothic" FontWeight="Bold" ClickMode="Release" Margin="190,597,0,0"  />
-                                <Button x:Name="helpButton"         Background="#FF093A3E" Content="?"          FontSize="45" HorizontalAlignment="Left" VerticalAlignment="Top" Width="54"  Height="54" Click="helpButton_Click"      VerticalContentAlignment="Center"  Cursor="Hand" Canvas.Left="512" Canvas.Top="514" BorderBrush="#FF001011" FontFamily="Century Gothic" FontWeight="Bold" Margin="547,597,0,0"/>
-                                <Button x:Name="recordButton"                                                     FontSize="45" HorizontalAlignment="Left" VerticalAlignment="Top" Width="104" Height="54" Click="recordButton_Click"    VerticalContentAlignment="Center"  Cursor="Hand" Canvas.Left="371" Canvas.Top="514" BorderBrush="#FF001011" FontFamily="Century Gothic" FontWeight="Bold" Margin="380,597,0,0">
+
+
+                                <Button x:Name="StartStopButton" 
+                                        Background="LightBlue" 
+                                        materialDesign:ButtonAssist.CornerRadius="10"
+                                        Foreground="Black" 
+                                        FontSize="20" 
+                                        HorizontalAlignment="Left" 
+                                        VerticalAlignment="Top" 
+                                        Width="201" 
+                                        Height="60" 
+                                        Click="StartStopButton_Click" 
+                                        VerticalContentAlignment="Center"  
+                                        Cursor="Hand" 
+                                        Canvas.Left="26" 
+                                        Canvas.Top="514"  
+                                        BorderBrush="DodgerBlue" 
+                                        BorderThickness="2"                                        
+                                        FontFamily="Century Gothic" 
+                                        FontWeight="Bold" 
+                                        Margin="16,638,0,0">
+                                    <WrapPanel HorizontalAlignment="Center">
+                                        <materialDesign:PackIcon 
+                                            Kind="PlayCircleOutline" 
+                                            Width="45" 
+                                            Height="45" />
+                                        <TextBlock Text="Start/Stop" 
+                                                   VerticalAlignment="Center" 
+                                                   FontWeight="SemiBold" 
+                                                   Margin="10 0" />
+                                    </WrapPanel>
+                                </Button>
+
+
+
+
+
+                                <Button x:Name="camSwitchButton" 
+                                        Background="LightBlue" 
+                                        materialDesign:ButtonAssist.CornerRadius="10"
+                                        Foreground="Black" 
+                                        FontSize="20" 
+                                        HorizontalAlignment="Center" 
+                                        VerticalAlignment="Top" 
+                                        Width="214" 
+                                        Height="60" 
+                                        Click="camSwitchButton_Click" 
+                                        VerticalContentAlignment="Center"  
+                                        Cursor="Hand" 
+                                        Canvas.Left="26" 
+                                        Canvas.Top="514"  
+                                        BorderBrush="DodgerBlue" 
+                                        BorderThickness="2"
+                                        FontFamily="Century Gothic" 
+                                        FontWeight="Bold" 
+                                        Margin="0,638,0,0">
+                                    <WrapPanel HorizontalAlignment="Center">
+                                        <materialDesign:PackIcon 
+                                            Kind="SwitchCamera" 
+                                            Width="45" 
+                                            Height="45" />
+                                        <TextBlock Text="Switch Cam" 
+                                                   VerticalAlignment="Center" 
+                                                   FontWeight="SemiBold" 
+                                                   Margin="10 0" />
+                                    </WrapPanel>
+                                </Button>
+
+                                <Button x:Name="helpButton" 
+                                        Background="LightBlue" 
+                                        materialDesign:ButtonAssist.CornerRadius="10"
+                                        Foreground="Black" 
+                                        FontSize="20" 
+                                        HorizontalAlignment="Left" 
+                                        VerticalAlignment="Top" 
+                                        Width="64" 
+                                        Height="60" 
+                                        Click="helpButton_Click" 
+                                        VerticalContentAlignment="Center"  
+                                        Cursor="Hand" 
+                                        Canvas.Left="26" 
+                                        Canvas.Top="514"  
+                                        BorderBrush="DodgerBlue" 
+                                        BorderThickness="2"
+                                        FontFamily="Century Gothic" 
+                                        FontWeight="Bold" 
+                                        Margin="618,638,0,0" Padding="0,0,0,0">
+                                    <WrapPanel HorizontalAlignment="Center">
+                                        <materialDesign:PackIcon 
+                                            Kind="QuestionMarkCircleOutline" 
+                                            Width="50" 
+                                            Height="50" />
+                                    </WrapPanel>
+                                </Button>
+
+                                <Button x:Name="recordButton" FontSize="45" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Height="60" Click="recordButton_Click"    VerticalContentAlignment="Center"  Cursor="Hand" Canvas.Left="371" Canvas.Top="514" BorderBrush="#FF001011" FontFamily="Century Gothic" FontWeight="Bold" Margin="474,638,0,0">
                                     <Button.Background>
                                         <ImageBrush ImageSource="/Images/recording.png" Stretch="UniformToFill">
                                             <ImageBrush.RelativeTransform>
@@ -160,6 +252,20 @@
                                         </ImageBrush>
                                     </Button.Background>
                                 </Button>
+                                <Border 
+                                    BorderBrush="#FF3B5998"
+                                    Background="DodgerBlue"
+                                    CornerRadius="5"
+                                    Margin="15,489,13,212" RenderTransformOrigin="0.5,0.5" Height="7">
+                                    <Border.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform ScaleY="-1"/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Border.RenderTransform>
+                                </Border>
 
 
                             </Grid>
@@ -174,39 +280,115 @@
                                 BorderThickness="10" 
                                 CornerRadius="30" 
                                 HorizontalAlignment="Center" 
-                                Height="709" 
+                                Height="725" 
                                 VerticalAlignment="Top" 
                                 Canvas.Left="750" 
                                 Canvas.Top="12">
 
-                            <StackPanel Background="LightBlue" 
+                            <StackPanel Background="White" 
                                         Canvas.Left="756" 
                                         Canvas.Top="50" 
                                         Width="300" 
                                         HorizontalAlignment="Center" 
                                         VerticalAlignment="Top" 
-                                        Margin="0 20">
-                                <Border BorderBrush="Black" BorderThickness="3" Height="250" Width="250" Margin="0 25">
-                                    <Image x:Name="imgProfile" HorizontalAlignment="Center" Height="240" VerticalAlignment="Center" Width="240" Source="/Images/MIKE.JPG" Cursor="Hand" Stretch="UniformToFill"/>
-                                </Border>
+                                        Margin="0,20,0,0" Height="662">
+                                <TextBlock x:Name="BarCodeS1canner"             
+            FontSize="40" 
+            TextWrapping="Wrap" 
+            Text="STUDENT INFO" 
+            Height="40" 
+            Width="268" 
+            FontFamily="Century Gothic" 
+            FontWeight="Bold" 
+            />
+                                <Border 
+         BorderBrush="#FF3B5998"
+         Background="DodgerBlue"
+         CornerRadius="5"
+         Height="7" Width="275" Margin="0,14,0,0"/>
+
+
+
+
+
+                                <Grid>
+                                    <Border Canvas.Left="55"
+                                            Canvas.Top="30"
+                                            Width="250"
+                                            Height="250"
+                                            Margin="0 10"
+                                            VerticalAlignment="Top"
+                                            BorderBrush="#FF3B5998"
+                                            BorderThickness=".5"
+                                            CornerRadius="18">
+                                        <Border.Effect>
+                                            <DropShadowEffect BlurRadius="5"
+                                                              Opacity=".5"
+                                                              ShadowDepth="3" />
+                                        </Border.Effect>
+                                        <Border x:Name="ReceiverC9olor"
+                                                BorderBrush="#FF96B2E4"
+                                                BorderThickness="6"
+                                                CornerRadius="15">
+                                            <Grid>
+                                                <Border x:Name="Ma9sk"
+                                                        Background="White"
+                                                        BorderBrush="#FF3B5998"
+                                                        BorderThickness=".5"
+                                                        CornerRadius="13"/>
+                                                <StackPanel>
+
+                                                    <StackPanel.OpacityMask>
+                                                        <VisualBrush Visual="{Binding ElementName=Mask}" />
+                                                    </StackPanel.OpacityMask>
+                                                    <Image x:Name="imgProfile" 
+                                                           HorizontalAlignment="Center" 
+                                                           Height="240" 
+                                                           Width="240" 
+                                                           Source="/Images/MIKE.JPG"
+                                                           Stretch="UniformToFill"/>
+
+                                                </StackPanel>
+                                            </Grid>
+                                        </Border>
+                                    </Border>
+                                </Grid>
+
                                 <TextBlock x:Name="txtName"      Text="Name"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
+
                                 <TextBlock x:Name="txtStudentId" Text="Student Id"          FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
                                 <TextBlock x:Name="txtClass"     Text="Year &amp; Section"  FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
                                 <TextBlock x:Name="txtDate"      Text="Date"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" Margin="0,25,0,0"/>
                                 <TextBlock x:Name="txtTime"      Text="Time"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
-                                <Button Height="44" Style="{StaticResource MaterialDesignRaisedButton}"
-                                        materialDesign:ButtonAssist.CornerRadius="20" 
-                                        BorderThickness="5" 
-                                        BorderBrush="#093A3E"  
-                                        FontFamily="Century"
-                                        Background="#093A3E" 
-                                        Foreground="White" 
+
+                                <Button x:Name="btnRefresh" 
                                         ToolTip="Confirm" 
-                                        x:Name="btnRefresh" 
+                                        Background="LightBlue" 
+                                        materialDesign:ButtonAssist.CornerRadius="10"
+                                        Foreground="Black" 
+                                        FontSize="20" 
+                                        Width="200" 
+                                        Height="60" 
                                         Click="btnConfirm_Click" 
-                                        Content="Confirm" 
-                                        Width="180" 
-                                        Margin="0 20"/>
+                                        VerticalContentAlignment="Center"  
+                                        Cursor="Hand"  
+                                        BorderBrush="DodgerBlue" 
+                                        BorderThickness="2"
+                                        FontFamily="Century Gothic" 
+                                        FontWeight="Bold" Margin="0,60,0,0" >
+                                    <WrapPanel HorizontalAlignment="Center">
+
+                                        <TextBlock Text="CONFIRM" 
+                                                   VerticalAlignment="Center" 
+                                                   FontWeight="SemiBold" 
+                                                   Margin="10 0" />
+                                        <materialDesign:PackIcon 
+                                                   Kind="CalendarCheck" 
+                                                   Width="45" 
+                                                   Height="45" />
+                                    </WrapPanel>
+                                </Button>
+
 
                             </StackPanel>
                         </Border>

@@ -91,7 +91,7 @@ namespace LoginPage
             string imgCartoon = $"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.ToString()}\\Images\\Mike.jpg";
             string imgavatar = $"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.ToString()}\\Images\\Acedo.jpg";
 
-            ImgCartoon.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Student Attendance Management.png"));
+            //sample code for image source on notification and avatar
             avatar1.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Mike.jpg"));
             avatar2.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Acedo.jpg"));
 

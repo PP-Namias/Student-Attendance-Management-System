@@ -45,6 +45,7 @@
     <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Net" />
@@ -52,6 +53,7 @@
     <Reference Include="System.Security" />
     <Reference Include="System.ServiceProcess" />
     <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -389,6 +391,13 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\shigure-ui-ui.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\absent.png" />
+    <Resource Include="Images\boy.png" />
+    <Resource Include="Images\graduated.png" />
+    <Resource Include="Images\sapiens.png" />
+    <Resource Include="Images\woman.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
