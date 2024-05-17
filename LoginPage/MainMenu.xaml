@@ -8,7 +8,7 @@
                  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
                  xmlns:src="http://metro.mahapps.com/winfx/xaml/controls"
                  
-                 Background="{DynamicResource MaterialDesignPaper}"
+                 Background="#D5CEA3"
                  FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
                  TextElement.Foreground="{DynamicResource MaterialDesignBody}"
                  TextElement.FontWeight="Regular"
@@ -42,13 +42,14 @@
         <materialDesign:DialogHost Identifier="RootDialog" SnackbarMessageQueue="{Binding MessageQueue, ElementName=MainSnackbar}">
             <materialDesign:DrawerHost IsLeftDrawerOpen="{Binding IsChecked, ElementName=MenuToggleButton}">
                 <materialDesign:DrawerHost.LeftDrawerContent>
-                    <DockPanel MinWidth="212">
+                    <DockPanel MinWidth="212" Background="#1A120B">
                         <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" 
                                     DockPanel.Dock="Top"
                                     HorizontalAlignment="Right" Margin="16"
                                     IsChecked="{Binding IsChecked, ElementName=MenuToggleButton, Mode=TwoWay}" 
-                                    Cursor="Hand"/>
-                        <TreeView MinWidth="220">
+                                    Cursor="Hand"
+                                    Foreground="#E5E5CB"/>
+                        <TreeView MinWidth="220" Foreground="#E5E5CB">
                             <TreeViewItem Cursor="Hand">
                                 <TreeViewItem.Header >
                                     <StackPanel Orientation="Horizontal" Height="35">
@@ -213,11 +214,11 @@
                     </DockPanel>
                 </materialDesign:DrawerHost.LeftDrawerContent>
                 <DockPanel>
-                    <materialDesign:ColorZone Background="#093A3E" Padding="16" Foreground="White" materialDesign:ShadowAssist.ShadowDepth="Depth2" Mode="PrimaryMid" DockPanel.Dock="Top">
+                    <materialDesign:ColorZone Background="#1A120B" Padding="16" Foreground="#E5E5CB" materialDesign:ShadowAssist.ShadowDepth="Depth2" Mode="PrimaryMid" DockPanel.Dock="Top">
                         <DockPanel>
                             <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False" x:Name="MenuToggleButton" Checked="MenuToggleButton_Checked" Width="50" Height="48" Cursor="Hand"/>
 
-                            <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="White" x:Name="btn_About" DockPanel.Dock="Right" Height="50" Click="MenuPopupAboutButton_OnClick" Width="50" Padding="0">
+                            <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="#E5E5CB" x:Name="btn_About" DockPanel.Dock="Right" Height="50" Click="MenuPopupAboutButton_OnClick" Width="50" Padding="0">
                                 <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center">
                                     <materialDesign:PackIcon x:Name="About1" Kind="InformationCircle" Width="50" Height="50" DockPanel.Dock="Right" />
                                 </StackPanel>
@@ -236,35 +237,35 @@
                         </Grid.ColumnDefinitions>
 
                         <!-- start information links -->
-                        <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" Width="75"  Background="White">
+                        <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" Width="75" Background="#3C2A21" >
                             <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
                                 <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Dashboard"                 Width="75" Height="75" Click="btn_Dashboard_Click">
                                     <StackPanel Width="50" Height="50">
-                                        <materialDesign:PackIcon x:Name="btnHome"           Kind="Home"                  VerticalAlignment="Center" Foreground="#093A3E" Width="40" Height="40" />
+                                        <materialDesign:PackIcon x:Name="btnHome"           Kind="Home"                  VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 
                                 <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_StudentAttendance"    Width="75" Height="75" Click="btn_StudentAttendance_Click">
                                     <StackPanel Width="50" Height="50">
-                                        <materialDesign:PackIcon x:Name="btnBarcodeScan"    Kind="BarcodeScan"           VerticalAlignment="Center" Foreground="#093A3E" Width="40" Height="40" />
+                                        <materialDesign:PackIcon x:Name="btnBarcodeScan"    Kind="BarcodeScan"           VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 
                                 <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_LoginLogs"            Width="75" Height="75" Click="btn_LoginLogs_Click">
                                     <StackPanel Width="50" Height="50">
-                                        <materialDesign:PackIcon x:Name="btnLoginLogs"   Kind="LoginVariant"             VerticalAlignment="Center" Foreground="#093A3E" Width="40" Height="40" />
+                                        <materialDesign:PackIcon x:Name="btnLoginLogs"   Kind="LoginVariant"             VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 
                                 <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Reports"          Width="75" Height="75" Click="btn_Reports_Click">
                                     <StackPanel Width="50" Height="50">
-                                        <materialDesign:PackIcon x:Name="btnReports"      Kind="ChartLine"               VerticalAlignment="Center" Foreground="#093A3E" Width="40" Height="40" />
+                                        <materialDesign:PackIcon x:Name="btnReports"      Kind="ChartLine"               VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 
                                 <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_SystemAdministration" Width="75" Height="75" Click="btn_SystemAdministration_Click">
                                     <StackPanel Width="50" Height="50">
-                                        <materialDesign:PackIcon x:Name="btnSystemAdministration" Kind="SecurityAccount" VerticalAlignment="Center" Foreground="#093A3E" Width="40" Height="40" />
+                                        <materialDesign:PackIcon x:Name="btnSystemAdministration" Kind="SecurityAccount" VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 

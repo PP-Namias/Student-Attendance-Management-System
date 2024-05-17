@@ -52,8 +52,14 @@
             </StackPanel>
             <StackPanel Width="375">
                 <StackPanel Margin="20 40" Width="350">
-                    <TextBlock Text="Login Page" Margin="20" Foreground="White"
-                               TextAlignment="Center" FontSize="38"  FontFamily="Century"></TextBlock>
+                    <TextBlock Text="Login Page" 
+                               Margin="20" 
+                               Foreground="White"
+                               TextAlignment="Center" 
+                               FontSize="38"  
+                               FontFamily="Century"></TextBlock>
+
+
                     <StackPanel Orientation="Horizontal" Margin="10" >
                         <materialDesign:PackIcon Kind="User" Width="25" Height="25" Foreground="White" />
                         <TextBox x:Name="txtUsername" Margin="10 0" materialDesign:HintAssist.Hint="Enter Username" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E" Background="#00000000" FontFamily="Century" />

@@ -61,7 +61,7 @@
 
                         <Border Background="White" 
                                 BorderBrush="#FF000000" 
-                                BorderThickness="10" 
+                                BorderThickness="5" 
                                 CornerRadius="30" 
                                 HorizontalAlignment="Center" 
                                 Height="728" 
@@ -277,35 +277,35 @@
 
                         <Border Background="White" 
                                 BorderBrush="#FF000000" 
-                                BorderThickness="10" 
+                                BorderThickness="5" 
                                 CornerRadius="30" 
                                 HorizontalAlignment="Center" 
                                 Height="725" 
                                 VerticalAlignment="Top" 
                                 Canvas.Left="750" 
-                                Canvas.Top="12">
+                                Canvas.Top="12" Width="310">
 
                             <StackPanel Background="White" 
                                         Canvas.Left="756" 
                                         Canvas.Top="50" 
-                                        Width="300" 
+                                        Width="290" 
                                         HorizontalAlignment="Center" 
                                         VerticalAlignment="Top" 
-                                        Margin="0,20,0,0" Height="662">
+                                        Margin="0,20,0,0" Height="683">
                                 <TextBlock x:Name="BarCodeS1canner"             
-            FontSize="40" 
-            TextWrapping="Wrap" 
-            Text="STUDENT INFO" 
-            Height="40" 
-            Width="268" 
-            FontFamily="Century Gothic" 
-            FontWeight="Bold" 
-            />
-                                <Border 
-         BorderBrush="#FF3B5998"
-         Background="DodgerBlue"
-         CornerRadius="5"
-         Height="7" Width="275" Margin="0,14,0,0"/>
+                                            FontSize="40" 
+                                            TextWrapping="Wrap" 
+                                            Text="STUDENT INFO" 
+                                            Height="40" 
+                                            Width="268" 
+                                            FontFamily="Century Gothic" 
+                                            FontWeight="Bold" 
+                                            />
+                                                                <Border 
+                                         BorderBrush="#FF3B5998"
+                                         Background="DodgerBlue"
+                                         CornerRadius="5"
+                                         Height="7" Width="275" Margin="0,14,0,0"/>
 
 
 
@@ -355,8 +355,8 @@
                                 </Grid>
 
                                 <TextBlock x:Name="txtName"      Text="Name"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
-
                                 <TextBlock x:Name="txtStudentId" Text="Student Id"          FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
+                                <TextBlock x:Name="txtCourse"    Text="Course"              FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
                                 <TextBlock x:Name="txtClass"     Text="Year &amp; Section"  FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
                                 <TextBlock x:Name="txtDate"      Text="Date"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" Margin="0,25,0,0"/>
                                 <TextBlock x:Name="txtTime"      Text="Time"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
@@ -375,7 +375,7 @@
                                         BorderBrush="DodgerBlue" 
                                         BorderThickness="2"
                                         FontFamily="Century Gothic" 
-                                        FontWeight="Bold" Margin="0,60,0,0" >
+                                        FontWeight="Bold" Margin="0,41,0,0" >
                                     <WrapPanel HorizontalAlignment="Center">
 
                                         <TextBlock Text="CONFIRM" 

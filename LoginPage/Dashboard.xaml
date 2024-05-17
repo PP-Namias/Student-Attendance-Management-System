@@ -7,9 +7,9 @@
              xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
              xmlns:local="clr-namespace:LoginPage"
              mc:Ignorable="d" 
-             d:DesignHeight="800" d:DesignWidth="1125"
+             d:DesignHeight="785" d:DesignWidth="1125"
              
-             Background="Black" MinHeight="800" MinWidth="1125"
+             Background="Black" MinHeight="785" MinWidth="1125"
              >
     <Grid Background="Gray">
         <Grid.ColumnDefinitions>
@@ -22,13 +22,14 @@
                 <Setter Property="Height" Value="30"></Setter>
             </Style>
         </Grid.Resources>
-        <Grid Grid.Column="0" Background="LightBlue">
-            <StackPanel Margin="10" Background="LightBlue">
+        <Grid Grid.Column="0" Background="#3C2A21">
+    
+            <StackPanel Margin="10">
 
                 <WrapPanel HorizontalAlignment="Center" Margin="0,10,0,0">
-                    <Border BorderThickness="5" Margin="0 0" CornerRadius="15">
-                        <materialDesign:Card materialDesign:ShadowAssist.ShadowDepth="Depth2" UniformCornerRadius="15" BorderThickness="5"
-                         BorderBrush="White" Width="150" Height="120" Background="#EEF7FF">
+                    <Border BorderThickness="2" Margin="10 0" CornerRadius="15" BorderBrush="White">
+                        <materialDesign:Card  UniformCornerRadius="15" BorderThickness="5"
+                         BorderBrush="White" Width="150" Height="120" Background="#1A120B" Foreground="#E5E5CB">
                             <StackPanel Margin="10">
                                 <Image Source="Images/graduated.png" Width="40" Height="40" Margin="10 0" x:Name="a1vatar2" />
                                 <TextBlock FontWeight="SemiBold" FontSize="25" Text="420" Margin="0,5,0,0" HorizontalAlignment="Center" />
@@ -36,9 +37,9 @@
                             </StackPanel>
                         </materialDesign:Card>
                     </Border>
-                    <Border BorderThickness="5" Margin="0 0" CornerRadius="15">
-                        <materialDesign:Card materialDesign:ShadowAssist.ShadowDepth="Depth2" UniformCornerRadius="15" BorderThickness="5"
-                         BorderBrush="White" Width="150" Height="120" Background="#EEF7FF">
+                    <Border BorderThickness="2" Margin="10 0" CornerRadius="15" BorderBrush="White">
+                        <materialDesign:Card  UniformCornerRadius="15" BorderThickness="5"
+                         BorderBrush="White" Width="150" Height="120" Background="#1A120B" Foreground="#E5E5CB">
                             <StackPanel Margin="10">
                                 <Image Source="Images/boy.png" Width="40" Height="40" Margin="10 0" x:Name="a11vatar2" />
                                 <TextBlock FontWeight="SemiBold" FontSize="25" Text="69" Margin="0,5,0,0" HorizontalAlignment="Center" />
@@ -46,9 +47,9 @@
                             </StackPanel>
                         </materialDesign:Card>
                     </Border>
-                    <Border BorderThickness="5" Margin="0 0" CornerRadius="15">
-                        <materialDesign:Card materialDesign:ShadowAssist.ShadowDepth="Depth2" UniformCornerRadius="15" BorderThickness="5"
-                         BorderBrush="White" Width="150" Height="120" Background="#EEF7FF">
+                    <Border BorderThickness="2" Margin="10 0" CornerRadius="15" BorderBrush="White">
+                        <materialDesign:Card  UniformCornerRadius="15" BorderThickness="5"
+                         BorderBrush="White" Width="150" Height="120" Background="#1A120B" Foreground="#E5E5CB">
                             <StackPanel Margin="10">
                                 <Image Source="Images/woman.png" Width="40" Height="40" Margin="10 0" x:Name="a1111vatar2" />
                                 <TextBlock FontWeight="SemiBold" FontSize="25" Text="96" Margin="0,5,0,0" HorizontalAlignment="Center" />
@@ -56,9 +57,9 @@
                             </StackPanel>
                         </materialDesign:Card>
                     </Border>
-                    <Border BorderThickness="5" Margin="0 0" CornerRadius="15">
-                        <materialDesign:Card materialDesign:ShadowAssist.ShadowDepth="Depth2" UniformCornerRadius="15" BorderThickness="5"
-                         BorderBrush="White" Width="150" Height="120" Background="#EEF7FF">
+                    <Border BorderThickness="2" Margin="10 0" CornerRadius="15" BorderBrush="White">
+                        <materialDesign:Card  UniformCornerRadius="15" BorderThickness="5"
+                         BorderBrush="White" Width="150" Height="120" Background="#1A120B" Foreground="#E5E5CB">
                             <StackPanel Margin="10">
                                 <Image Source="Images/absent.png" Width="40" Height="40" Margin="10 0" x:Name="a111vatar2" />
                                 <TextBlock FontWeight="SemiBold" FontSize="25" Text="420" Margin="0,5,0,0" HorizontalAlignment="Center" />
@@ -67,7 +68,8 @@
                         </materialDesign:Card>
                     </Border>
                 </WrapPanel>
-                <materialDesign:Card Margin="30 20" UniformCornerRadius="20" Height="296">
+                <Border BorderThickness="2" CornerRadius="15" BorderBrush="White" Margin="30 20">
+                    <materialDesign:Card UniformCornerRadius="20" Height="296" Background="#1A120B" Foreground="#E5E5CB" BorderBrush="White">
                     <StackPanel>
                         <Grid>
                             <TextBlock Margin="20" HorizontalAlignment="Left"  FontWeight="SemiBold" Text="Students Attendance" FontSize="20"/>
@@ -88,95 +90,105 @@
                         </lvc:CartesianChart>
                     </StackPanel>
                 </materialDesign:Card>
-                <WrapPanel HorizontalAlignment="Center">
-                    <materialDesign:Card UniformCornerRadius="20" Padding="10" Height="265" Width="303">
-                        <StackPanel>
-                            <TextBlock Text="Students Attendance Reports" Margin="10" FontWeight="SemiBold" HorizontalAlignment="Center" FontSize="18" Width="260" />
-                            <Grid Height="150">
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="65*" />
-                                    <ColumnDefinition Width="218*" />
-                                </Grid.ColumnDefinitions>
-                                <Grid.RowDefinitions>
-                                    <RowDefinition />
-                                    <RowDefinition />
-                                    <RowDefinition />
-                                    <RowDefinition />
-                                </Grid.RowDefinitions>
-                                <TextBlock Text="Today" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="16" Height="21" Width="42" />
-                                <TextBlock Text="Boys" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="16" Height="21" Width="34" />
-                                <TextBlock Text="Girls" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="16" Height="21" Width="32" />
-                                <TextBlock Text="Absent" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="16" Height="21" Width="50" />
-                                <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Height="16" Width="158">
-                                    <TextBlock Text="10K" FontWeight="SemiBold" Margin="5 0" />
-                                    <ProgressBar Margin="5 0" Width="100" Height="8" Foreground="#FFFFFF13" Background="#FFE8E8E8" BorderBrush="#FFF3F349" Value="53" />
-                                    <TextBlock Text="12K" FontWeight="SemiBold" />
-                                </StackPanel>
-                                <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Height="16" Width="158">
-                                    <TextBlock Text="10K" FontWeight="SemiBold" Margin="5 0" />
-                                    <ProgressBar Margin="5 0" Width="100" Height="8" Foreground="#FFFFFF13" Background="#FFE8E8E8" BorderBrush="#FFF3F349" Value="38" />
-                                    <TextBlock Text="12K" FontWeight="SemiBold" />
-                                </StackPanel>
-                                <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Height="16" Width="158">
-                                    <TextBlock Text="10K" FontWeight="SemiBold" Margin="5 0" />
-                                    <ProgressBar Margin="5 0" Width="100" Height="8" Foreground="SeaGreen" Background="#FFE8E8E8" BorderBrush="SeaGreen" Value="78" />
-                                    <TextBlock Text="12K" FontWeight="SemiBold" />
-                                </StackPanel>
-                                <StackPanel Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Height="16" Width="158">
-                                    <TextBlock Text="10K" FontWeight="SemiBold" Margin="5 0" />
-                                    <ProgressBar Margin="5 0" Width="100" Height="8" Foreground="SeaGreen" Background="#FFE8E8E8" BorderBrush="SeaGreen" Value="18" />
-                                    <TextBlock Text="12K" FontWeight="SemiBold" />
-                                </StackPanel>
-                            </Grid>
-                        </StackPanel>
-                    </materialDesign:Card>
-                    <materialDesign:Card UniformCornerRadius="20" Background="#633648" Height="265" Margin="10">
-                        <StackPanel Margin="10">
-                            <TextBlock Text="Total Users" FontSize="14" Foreground="White" TextAlignment="Center" />
-                            <TextBlock Text="69,420" TextAlignment="Center" Margin="0 5" Foreground="White" FontSize="18" />
-                            <lvc:CartesianChart Margin="0 5" Series="{Binding LastHourSeries}" Hoverable="False" DataTooltip="{x:Null}" Height="160" Width="160">
-                                <lvc:CartesianChart.AxisX>
-                                    <lvc:Axis MinValue="0" />
-                                </lvc:CartesianChart.AxisX>
-                            </lvc:CartesianChart>
-                            <materialDesign:PackIcon Kind="ArrowUp" HorizontalAlignment="Center" Margin="0 5" Width="20" Height="20" Foreground="#62A78B" />
-                        </StackPanel>
-                    </materialDesign:Card>
-                    <materialDesign:Card UniformCornerRadius="20" Background="#633648" Height="265" Margin="0,10,10,10">
-                        <StackPanel Margin="10">
-                            <TextBlock Text="Login Logs" FontSize="14" Foreground="White" TextAlignment="Center" />
-                            <TextBlock Text="67,420" TextAlignment="Center" Margin="0 5" Foreground="White" FontSize="18" />
-                            <lvc:CartesianChart Margin="0 5" Series="{Binding LastHourSeries1}" Hoverable="False" DataTooltip="{x:Null}" Height="160" Width="160">
-                                <lvc:CartesianChart.AxisX>
-                                    <lvc:Axis MinValue="0" />
-                                </lvc:CartesianChart.AxisX>
-                            </lvc:CartesianChart>
-                            <materialDesign:PackIcon Kind="ArrowUp" HorizontalAlignment="Center" Margin="0 5" Width="20" Height="20" Foreground="#62A78B" />
-                        </StackPanel>
-                    </materialDesign:Card>
+                </Border>
+                <WrapPanel HorizontalAlignment="Center" Width="708">
+                    <Border BorderThickness="2" CornerRadius="15" BorderBrush="White" Margin="10" Background="#1A120B">
+                        <materialDesign:Card UniformCornerRadius="20" Height="229" Width="262" Background="#1A120B" Foreground="#E5E5CB" BorderBrush="White">
+                            <StackPanel>
+                                <TextBlock Text="Students Attendance Reports" Margin="10" FontWeight="SemiBold" HorizontalAlignment="Center" FontSize="16" Width="210" />
+                                <Grid Height="166">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="31*" />
+                                        <ColumnDefinition Width="100*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                        <RowDefinition />
+                                    </Grid.RowDefinitions>
+                                    <TextBlock Text="Today" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="16" Height="21" Width="42" />
+                                    <TextBlock Text="Boys" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="16" Height="21" Width="34" />
+                                    <TextBlock Text="Girls" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="16" Height="21" Width="32" />
+                                    <TextBlock Text="Absent" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="16" Height="21" Width="50" />
+                                    <StackPanel Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Height="16" Width="158">
+                                        <TextBlock Text="10K" FontWeight="SemiBold" Margin="5 0" />
+                                        <ProgressBar Margin="5 0" Width="100" Height="8" Foreground="#FFFFFF13" Background="#FFE8E8E8" BorderBrush="#FFF3F349" Value="53" />
+                                        <TextBlock Text="12K" FontWeight="SemiBold" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Height="16" Width="158">
+                                        <TextBlock Text="10K" FontWeight="SemiBold" Margin="5 0" />
+                                        <ProgressBar Margin="5 0" Width="100" Height="8" Foreground="#FFFFFF13" Background="#FFE8E8E8" BorderBrush="#FFF3F349" Value="38" />
+                                        <TextBlock Text="12K" FontWeight="SemiBold" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Height="16" Width="158">
+                                        <TextBlock Text="10K" FontWeight="SemiBold" Margin="5 0" />
+                                        <ProgressBar Margin="5 0" Width="100" Height="8" Foreground="SeaGreen" Background="#FFE8E8E8" BorderBrush="SeaGreen" Value="78" />
+                                        <TextBlock Text="12K" FontWeight="SemiBold" />
+                                    </StackPanel>
+                                    <StackPanel Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" Orientation="Horizontal" Height="16" Width="158">
+                                        <TextBlock Text="10K" FontWeight="SemiBold" Margin="5 0" />
+                                        <ProgressBar Margin="5 0" Width="100" Height="8" Foreground="SeaGreen" Background="#FFE8E8E8" BorderBrush="SeaGreen" Value="18" />
+                                        <TextBlock Text="12K" FontWeight="SemiBold" />
+                                    </StackPanel>
+                                </Grid>
+                            </StackPanel>
+                        </materialDesign:Card>
+                    </Border>
+                    <Border BorderThickness="2" CornerRadius="15" BorderBrush="White" Margin="10">
+                        <materialDesign:Card UniformCornerRadius="20" Background="#1A120B">
+                            <StackPanel Margin="10">
+                                <TextBlock Text="Total Users" FontSize="14" Foreground="#E5E5CB" TextAlignment="Center" />
+                                <TextBlock Text="69,420" TextAlignment="Center" Margin="0 5" Foreground="#E5E5CB" FontSize="18" />
+                                <lvc:CartesianChart Margin="0 5" Series="{Binding LastHourSeries}" Hoverable="False" DataTooltip="{x:Null}" Height="160" Width="160">
+                                    <lvc:CartesianChart.AxisX>
+                                        <lvc:Axis MinValue="0" />
+                                    </lvc:CartesianChart.AxisX>
+                                </lvc:CartesianChart>
+                                <materialDesign:PackIcon Kind="ArrowUp" HorizontalAlignment="Center" Margin="0 5" Width="20" Height="20" Foreground="#62A78B" />
+                            </StackPanel>
+                        </materialDesign:Card>
+                    </Border>
+                    <Border BorderThickness="2" CornerRadius="15" BorderBrush="White" Margin="10">
+                        <materialDesign:Card UniformCornerRadius="20" Background="#1A120B">
+                            <StackPanel Margin="10">
+                                <TextBlock Text="Total Log-Ins" FontSize="14" Foreground="#E5E5CB" TextAlignment="Center" />
+                                <TextBlock Text="67,420" TextAlignment="Center" Margin="0 5" Foreground="#E5E5CB" FontSize="18" />
+                                <lvc:CartesianChart Margin="0 5" Series="{Binding LastHourSeries1}" Hoverable="False" DataTooltip="{x:Null}" Height="160" Width="160">
+                                    <lvc:CartesianChart.AxisX>
+                                        <lvc:Axis MinValue="0" />
+                                    </lvc:CartesianChart.AxisX>
+                                </lvc:CartesianChart>
+                                <materialDesign:PackIcon Kind="ArrowUp" HorizontalAlignment="Center" Margin="0 5" Width="20" Height="20" Foreground="#62A78B" />
+                            </StackPanel>
+                        </materialDesign:Card>
+                    </Border>
                 </WrapPanel>
             </StackPanel>
         </Grid>
-        <StackPanel Grid.Column="1" Background="White">
+        <StackPanel Grid.Column="1" Background="#1A120B">
+            <!-- WrapPanel
+            
             <WrapPanel VerticalAlignment="Top" Margin="20 20 20 10">
                 <Button Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black">
                     <StackPanel Margin="-5">
-                        <materialDesign:PackIcon Kind="BellOutline" Width="40" Height="40" />
+                        <materialDesign:PackIcon Foreground="#E5E5CB" Kind="BellOutline" Width="40" Height="40" />
                     </StackPanel>
                 </Button>
-                <Button Background="#FFFFEEFA" BorderBrush="#FFFFEEFA" Foreground="#FFF0689E" Margin="10 0" Height="40">
+                <Button Background="#3C2A21" BorderBrush="#3C2A21" Foreground="#D5CEA3" Margin="10 0" Height="40">
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon Kind="GiftOutline" Width="25" Height="25" />
-                        <TextBlock Text="2 NEW UPDATES" VerticalAlignment="Center" FontWeight="SemiBold" Margin="10 0" />
+                        <TextBlock Text="2 New Updates!" VerticalAlignment="Center" FontWeight="SemiBold" Margin="10 0" />
                     </WrapPanel>
                 </Button>
                 <Button Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black">
                     <StackPanel Margin="-5">
-                        <materialDesign:PackIcon Kind="UserOutline" Width="40" Height="40" />
+                        <materialDesign:PackIcon Foreground="#E5E5CB" Kind="UserOutline" Width="40" Height="40" />
                     </StackPanel>
                 </Button>
             </WrapPanel>
-            <Image Source="Images/sapiens.png"  Stretch="Uniform" Margin="0,-11,0,0" Height="181" Width="300"  />
+             -->
+            <Image Source="Images/sapiens.png"  Stretch="Uniform" Margin="0,10,0,0" Height="247" Width="300"  />
 
 
             <Grid
@@ -207,39 +219,53 @@
                                 Value="Black" />
                     </Style>
                 </Grid.Resources>
+
+
+
                 <Calendar
-                        materialDesign:CalendarAssist.HeaderBackground="#A2E9FF"
-                        materialDesign:CalendarAssist.HeaderForeground="Black"
-                        Background="#343C3F"
-                        CalendarButtonStyle="{StaticResource CustomCalendarButton}"
-                        CalendarDayButtonStyle="{StaticResource CustomCalendarDayButton}"
-                        Foreground="White" Width="300"
-                        />
+                    materialDesign:CalendarAssist.HeaderBackground="#3C2A21"
+                    materialDesign:CalendarAssist.HeaderForeground="#E5E5CB"
+                    Background="#3C2A21"
+                    CalendarButtonStyle="{StaticResource CustomCalendarButton}"
+                    CalendarDayButtonStyle="{StaticResource CustomCalendarDayButton}"
+                    Foreground="#E5E5CB" Width="300"
+                    BorderBrush="White" BorderThickness="2" Margin="0,10,0,0" IsHitTestVisible="False" Focusable="False" 
+                  
+                />
             </Grid>
-            <materialDesign:Card Margin="20 10" Padding="5" UniformCornerRadius="20" HorizontalAlignment="Center">
-                <WrapPanel Margin="10">
-                    <materialDesign:PackIcon Kind="HandPeace" Foreground="#FFC83D" VerticalAlignment="Center" Margin="10 0" />
-                    <TextBlock Margin="10 0" VerticalAlignment="Center">
+            <materialDesign:Card Margin="20 10" Padding="5" UniformCornerRadius="20" HorizontalAlignment="Center" Background="#3C2A21" Foreground="#E5E5CB">
+                <WrapPanel Margin="10" Width="275">
+                    <materialDesign:PackIcon Kind="HandWave" Foreground="#FFC83D" VerticalAlignment="Center" Margin="10 0" />
+                    <TextBlock Margin="10 0" VerticalAlignment="Center" FontSize="16">
                         <TextBlock.Inlines>
-                            <Run Text="Say Hi to" />
-                            <Run Text="Mike Caram" FontWeight="SemiBold" FontSize="14" />
+                            <Run Text="Logged as " />
+                            <Run Text="'{Username}'" FontWeight="SemiBold" FontSize="14" />
                         </TextBlock.Inlines>
                     </TextBlock>
-                    <Image Source="Images/mike.jpg" Width="40" Height="40" Margin="10 0" x:Name="avatar1" />
                 </WrapPanel>
             </materialDesign:Card>
-            <materialDesign:Card Margin="20 10" Padding="5" UniformCornerRadius="20" HorizontalAlignment="Center">
-                <WrapPanel Margin="10">
-                    <materialDesign:PackIcon Kind="HandPeace" Foreground="#FFC83D" VerticalAlignment="Center" Margin="10 0" />
-                    <TextBlock Margin="10 0" VerticalAlignment="Center">
+            <materialDesign:Card Margin="20 10" Padding="5" UniformCornerRadius="20" HorizontalAlignment="Center" Background="#3C2A21" Foreground="#E5E5CB">
+                <WrapPanel Margin="10" Width="275">
+                    <materialDesign:PackIcon Kind="AboutCircleOutline" Foreground="#FFC83D" VerticalAlignment="Center" Margin="10 0"  />
+                    <TextBlock Margin="10 0" VerticalAlignment="Center" FontSize="16">
                         <TextBlock.Inlines>
-                            <Run Text="Say Hi to" />
-                            <Run Text="Mark Acedo" FontWeight="SemiBold" FontSize="14" />
+                            <Run Text="About" />
+                            <Run Text="US" FontWeight="SemiBold" FontSize="14" />
                         </TextBlock.Inlines>
                     </TextBlock>
-                    <Image Source="Images/acedo.jpg" Width="40" Height="40" Margin="10 0" x:Name="avatar2" />
                 </WrapPanel>
             </materialDesign:Card>
         </StackPanel>
+
+        <Border Canvas.Left="55" 
+         BorderBrush="#FF3B5998"
+         Background="#D5CEA3"
+         Margin="0,-5,0,793" Grid.ColumnSpan="2"/>
+
+        <Border Canvas.Left="55" 
+         BorderBrush="#FF3B5998"
+         Background="#D5CEA3"
+         Margin="0,0,748,0"/>
+
     </Grid>
 </UserControl>

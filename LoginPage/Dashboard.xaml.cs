@@ -88,13 +88,7 @@ namespace LoginPage
             Labels = new[] { "May 10", "May 11", "May 12", "May 13" };
             Formatter = value => value.ToString();
             DataContext = this;
-            string imgCartoon = $"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.ToString()}\\Images\\Mike.jpg";
-            string imgavatar = $"{Directory.GetParent(Directory.GetCurrentDirectory()).Parent.Parent.ToString()}\\Images\\Acedo.jpg";
-
-            //sample code for image source on notification and avatar
-            avatar1.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Mike.jpg"));
-            avatar2.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Acedo.jpg"));
-
+        
         }
     }
 }

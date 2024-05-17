@@ -297,7 +297,7 @@ namespace LoginPage
         {
             // System Administration
 
-            SystemAdministration x = new SystemAdministration();
+            UserManagement x = new UserManagement();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
         }

@@ -206,8 +206,9 @@ namespace LoginPage
                     switch (studentId)
                     {
                         case "20220313-N":
-                            txtName.Text = "Namias, Jhon Keneth Ryan B.";
-                            txtClass.Text = "BSCS-2A";
+                            txtName.Text   = "Namias, Jhon Keneth Ryan B.";
+                            txtCourse.Text = "BSCS";
+                            txtClass.Text  = "2" + "-" + "A";
                             imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Jhon Keneth Namias.jpg"));
 
                             txtTime.Text = currentDateTime.ToString("h:mm tt");
@@ -215,8 +216,9 @@ namespace LoginPage
                             break;
 
                         case "20220679-N":
-                            txtName.Text = "Caram II, Mike Rufino J.";
-                            txtClass.Text = "BSCS-2A";
+                            txtName.Text   = "Caram II, Mike Rufino J.";
+                            txtCourse.Text = "BSCS";
+                            txtClass.Text  = "2" + "-" + "A";
                             imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/mike.jpg"));
 
                             txtTime.Text = currentDateTime.ToString("h:mm tt");
@@ -224,8 +226,9 @@ namespace LoginPage
                             break;
 
                         case "20220060-N":
-                            txtName.Text = "Acedo, Mark Relan Gercee";
-                            txtClass.Text = "BSCS-2A";
+                            txtName.Text   = "Acedo, Mark Relan Gercee";
+                            txtCourse.Text = "BSCS";
+                            txtClass.Text  = "2" + "-" + "A";
                             imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Acedo.jpg"));
 
                             txtTime.Text = currentDateTime.ToString("h:mm tt");
@@ -233,8 +236,9 @@ namespace LoginPage
                             break;
 
                         case "20220464-N":
-                            txtName.Text = "Miranda, Karl Mathew L.";
-                            txtClass.Text = "BSCS-2A";
+                            txtName.Text   = "Miranda, Karl Mathew L.";
+                            txtCourse.Text = "BSCS";
+                            txtClass.Text  = "2" + "-" + "A";
                             imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Miranda.jpg"));
 
                             txtTime.Text = currentDateTime.ToString("h:mm tt");
@@ -243,10 +247,11 @@ namespace LoginPage
 
                         // Add more cases for other student IDs
                         default:
-                                txtName.Text = "Unknown Student";
-                                txtClass.Text = "Unknown Class";
-                                imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/profile.png"));
-                                break;
+                            txtName.Text = "Unknown Student";
+                            txtCourse.Text = "Unknown Course";
+                            txtClass.Text = "Unknown Class";
+                            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/profile.png"));
+                            break;
                         }
                     
                 });
