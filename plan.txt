@@ -1,0 +1,38 @@
+Login Logs {
+	ID, User_ID, Username, Log_In_Time, Log_Out_Time, Date, Role, Remark
+	filter by:
+	All dates [ all logs basically ]
+	selected dates [ on horizontal calendar filter ]
+	>only when selected_dates = check shows the calendar
+	
+	Archived Button
+	Export-ish [if possible on timeline]
+}
+
+Archived Login Logs {
+	Basically copy pasted form of 'login logs' with dark red background for suspense xD
+	have 'Back Button' to go back to login logs 
+	have Recovery Button to Unarchived 
+	Archiving is just boolean 
+	if Archived = true {
+		dont show to Login Logs
+		only show in Archived Login Logs 
+	}
+	else {
+		do opposite lmao
+	}
+}
+
+Report Analysis {
+	Basically copy pasted form of 'login logs' with green background to differentiate
+	Student Attendance '1st column present:absent'
+	Sample: 
+	Present Jhon Keneth Namias BSCS 2 A May 17 11:55 PM
+	
+	Checkbox Absentees highlights-ish [ on the top right corner ]
+	shows students who have more than 3 absetees (really just a filter :skull:)
+}
+
+System Administrator {
+	User Account Management (we added this so we dont add 'forgot password' or some complicated personal user management )
+}
