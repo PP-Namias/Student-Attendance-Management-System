@@ -139,7 +139,6 @@
 
 
                                 <TextBlock x:Name="QRTextBlock"             FontSize="30" TextWrapping="Wrap" Text="Waiting for Bar/QR Code..."  VerticalAlignment="Top" Height="39" Width="676" Canvas.Left="26"  Canvas.Top="396" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold" Margin="16,501,0,0"/>
-                                <TextBlock x:Name="FrameCounterTextBlock"   FontSize="20" TextWrapping="Wrap" Text="Frames recorded: 0"         VerticalAlignment="Top" Height="30" Width="315" Canvas.Left="26"   Canvas.Top="435" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold" Margin="367,540,0,0"/>
                                 <TextBlock x:Name="QRCounterTextBlock"      FontSize="20" TextWrapping="Wrap" Text="BAR/QR codes decoded: ________"    VerticalAlignment="Top" Height="30" Width="346" Canvas.Left="351" Canvas.Top="435" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold" Margin="15,545,0,0"/>
                                 <Label x:Name="camsLabel" Content="Camera Information" FontSize="30"                                            VerticalAlignment="Top" Height="44" Width="591"  Canvas.Top="465" FontFamily="Century Gothic" HorizontalAlignment="Left" FontWeight="Bold" Canvas.Left="26" Margin="16,575,0,0"/>
 
@@ -165,8 +164,8 @@
                                         FontWeight="Bold" 
                                         Margin="16,638,0,0">
                                     <WrapPanel HorizontalAlignment="Center">
-                                        <materialDesign:PackIcon 
-                                            Kind="PlayCircleOutline" 
+                                        <materialDesign:PackIcon x:Name="StartStop" 
+                                            Kind="Play" 
                                             Width="45" 
                                             Height="45" />
                                         <TextBlock Text="Start/Stop" 
@@ -237,21 +236,6 @@
                                             Height="50" />
                                     </WrapPanel>
                                 </Button>
-
-                                <Button x:Name="recordButton" FontSize="45" HorizontalAlignment="Left" VerticalAlignment="Top" Width="124" Height="60" Click="recordButton_Click"    VerticalContentAlignment="Center"  Cursor="Hand" Canvas.Left="371" Canvas.Top="514" BorderBrush="#FF001011" FontFamily="Century Gothic" FontWeight="Bold" Margin="474,638,0,0">
-                                    <Button.Background>
-                                        <ImageBrush ImageSource="/Images/recording.png" Stretch="UniformToFill">
-                                            <ImageBrush.RelativeTransform>
-                                                <TransformGroup>
-                                                    <ScaleTransform CenterY="0.5" CenterX="0.5"/>
-                                                    <SkewTransform CenterY="0.5" CenterX="0.5"/>
-                                                    <RotateTransform CenterY="0.5" CenterX="0.5"/>
-                                                    <TranslateTransform/>
-                                                </TransformGroup>
-                                            </ImageBrush.RelativeTransform>
-                                        </ImageBrush>
-                                    </Button.Background>
-                                </Button>
                                 <Border 
                                     BorderBrush="#FF3B5998"
                                     Background="DodgerBlue"
@@ -279,16 +263,17 @@
                                 BorderBrush="#FF000000" 
                                 BorderThickness="5" 
                                 CornerRadius="30" 
-                                HorizontalAlignment="Center" 
+                                HorizontalAlignment="Left" 
                                 Height="725" 
-                                VerticalAlignment="Top" 
+                                VerticalAlignment="Center" 
                                 Canvas.Left="750" 
-                                Canvas.Top="12" Width="310">
+                                Canvas.Top="12" 
+                                Width="330">
 
                             <StackPanel Background="White" 
                                         Canvas.Left="756" 
                                         Canvas.Top="50" 
-                                        Width="290" 
+                                        Width="310" 
                                         HorizontalAlignment="Center" 
                                         VerticalAlignment="Top" 
                                         Margin="0,20,0,0" Height="683">
@@ -301,7 +286,7 @@
                                             FontFamily="Century Gothic" 
                                             FontWeight="Bold" 
                                             />
-                                                                <Border 
+                                <Border 
                                          BorderBrush="#FF3B5998"
                                          Background="DodgerBlue"
                                          CornerRadius="5"
@@ -354,12 +339,11 @@
                                     </Border>
                                 </Grid>
 
-                                <TextBlock x:Name="txtName"      Text="Name"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
-                                <TextBlock x:Name="txtStudentId" Text="Student Id"          FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
-                                <TextBlock x:Name="txtCourse"    Text="Course"              FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
-                                <TextBlock x:Name="txtClass"     Text="Year &amp; Section"  FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
-                                <TextBlock x:Name="txtDate"      Text="Date"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" Margin="0,25,0,0"/>
-                                <TextBlock x:Name="txtTime"      Text="Time"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30"/>
+                                <TextBlock x:Name="txtName"      Text="Name"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" LineStackingStrategy="BlockLineHeight" TextWrapping="Wrap"/>
+                                <TextBlock x:Name="txtStudentId" Text="Student Id"          FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" TextWrapping="Wrap"/>
+                                <TextBlock x:Name="txtClass"     Text="Year &amp; Section"  FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" TextWrapping="Wrap"/>
+                                <TextBlock x:Name="txtDate"      Text="Date"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" TextWrapping="Wrap"/>
+                                <TextBlock x:Name="txtTime"      Text="Time"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" TextWrapping="Wrap"/>
 
                                 <Button x:Name="btnRefresh" 
                                         ToolTip="Confirm" 
@@ -375,7 +359,9 @@
                                         BorderBrush="DodgerBlue" 
                                         BorderThickness="2"
                                         FontFamily="Century Gothic" 
-                                        FontWeight="Bold" Margin="0,41,0,0" >
+                                        FontWeight="Bold" 
+                                        VerticalAlignment="Bottom"
+                                        Canvas.Top="100" Margin="0,100,0,0">
                                     <WrapPanel HorizontalAlignment="Center">
 
                                         <TextBlock Text="CONFIRM" 

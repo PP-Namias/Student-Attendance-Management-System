@@ -17,6 +17,7 @@ using System;
 using System.Linq;
 using System.Windows.Threading;
 using ZXing;
+using Color = System.Drawing.Color;
 
 
 namespace LoginPage
@@ -35,7 +36,6 @@ namespace LoginPage
         bool showFrames = false;
         int camCount, currentCam = 0;
         int frameCounter = 0;
-        bool record = false;
 
         public BarcodeScanningInterface()
         {
@@ -115,35 +115,36 @@ namespace LoginPage
         {
             if (!showFrames)
             {
-                recordButton.Opacity = 1.00;
-                StartStopButton.Background = new SolidColorBrush(System.Windows.Media.Color.FromRgb(58, 175, 185));
+                StartStopButton.Background = new SolidColorBrush(System.Windows.Media.Color.FromRgb(30, 144, 255));
                 showFrames = !showFrames;
                 refreshCam(currentCam);
                 videoDevice.NewFrame += VideoDevice_NewFrame;
                 videoDevice.Start();
+
+
+                StartStop.Kind = MaterialDesignThemes.Wpf.PackIconKind.Stop;
+                StartStopButton.Background = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#1e90ff"));
+                StartStopButton.BorderBrush = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#add8e6"));
             }
             else
             {
-                recordButton.Opacity = 0.25;
-                StartStopButton.Background = new SolidColorBrush(System.Windows.Media.Color.FromRgb(9, 58, 62));
+                StartStopButton.Background = new SolidColorBrush(System.Windows.Media.Color.FromRgb(173, 216, 230));
                 showFrames = !showFrames;
                 videoDevice.NewFrame -= VideoDevice_NewFrame;
                 videoDevice.SignalToStop();
                 videoDevice = null;
+
+                StartStop.Kind = MaterialDesignThemes.Wpf.PackIconKind.Play;
+                StartStopButton.Background = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#add8e6"));
+                StartStopButton.BorderBrush = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#1e90ff"));
             }
         }
 
         private void VideoDevice_NewFrame(object sender, NewFrameEventArgs eventArgs)
         {
             decodeframe(eventArgs.Frame);
-            string picFile = @".\frame_" + frameCounter.ToString() + "_" + DateTime.Now.ToString(@"MM_dd_yyyy_HH_mm") + ".png";
-            Dispatcher.Invoke(new ThreadStart(delegate { FrameCounterTextBlock.Text = "frames recorded: " + frameCounter.ToString(); }));
             BitmapImage bi = new BitmapImage();
-            if (record)
-            {
-                frameCounter++;
-                eventArgs.Frame.Save(picFile, ImageFormat.Png);
-            }
+
             bi = BitmapToImageSource(eventArgs.Frame);
             bi.Freeze();
             var picShow = Dispatcher.Invoke(new ThreadStart(delegate { showImage(bi); }));
@@ -207,8 +208,7 @@ namespace LoginPage
                     {
                         case "20220313-N":
                             txtName.Text   = "Namias, Jhon Keneth Ryan B.";
-                            txtCourse.Text = "BSCS";
-                            txtClass.Text  = "2" + "-" + "A";
+                            txtClass.Text  = "BSCS" + "2" + "-" + "A";
                             imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Jhon Keneth Namias.jpg"));
 
                             txtTime.Text = currentDateTime.ToString("h:mm tt");
@@ -217,8 +217,7 @@ namespace LoginPage
 
                         case "20220679-N":
                             txtName.Text   = "Caram II, Mike Rufino J.";
-                            txtCourse.Text = "BSCS";
-                            txtClass.Text  = "2" + "-" + "A";
+                            txtClass.Text = "BSCS" + "2" + "-" + "A";
                             imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/mike.jpg"));
 
                             txtTime.Text = currentDateTime.ToString("h:mm tt");
@@ -227,8 +226,7 @@ namespace LoginPage
 
                         case "20220060-N":
                             txtName.Text   = "Acedo, Mark Relan Gercee";
-                            txtCourse.Text = "BSCS";
-                            txtClass.Text  = "2" + "-" + "A";
+                            txtClass.Text = "BSCS" + "2" + "-" + "A";
                             imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Acedo.jpg"));
 
                             txtTime.Text = currentDateTime.ToString("h:mm tt");
@@ -237,8 +235,7 @@ namespace LoginPage
 
                         case "20220464-N":
                             txtName.Text   = "Miranda, Karl Mathew L.";
-                            txtCourse.Text = "BSCS";
-                            txtClass.Text  = "2" + "-" + "A";
+                            txtClass.Text = "BSCS" + "2" + "-" + "A";
                             imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Miranda.jpg"));
 
                             txtTime.Text = currentDateTime.ToString("h:mm tt");
@@ -248,7 +245,6 @@ namespace LoginPage
                         // Add more cases for other student IDs
                         default:
                             txtName.Text = "Unknown Student";
-                            txtCourse.Text = "Unknown Course";
                             txtClass.Text = "Unknown Class";
                             imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/profile.png"));
                             break;
@@ -295,11 +291,6 @@ namespace LoginPage
         private void camSwitchButton_Click(object sender, RoutedEventArgs e)
         {
             switchCam();
-        }
-
-        private void recordButton_Click(object sender, RoutedEventArgs e)
-        {
-            record = !record;
         }
 
         void switchCam()
