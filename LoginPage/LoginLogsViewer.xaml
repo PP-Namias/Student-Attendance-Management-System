@@ -1,11 +1,16 @@
 ﻿<UserControl     x:Class="LoginPage.LoginLogsViewer"
                  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-                 xmlns:local="clr-namespace:LoginPage"
-                 xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"         
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
                  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                 xmlns:local="clr-namespace:LoginPage"
+                 
+                 
+                 
+                 
+                 
+                 xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"         
                  xmlns:src="http://metro.mahapps.com/winfx/xaml/controls"
                  
                  Background="{DynamicResource MaterialDesignPaper}"
@@ -16,8 +21,10 @@
                  TextOptions.TextFormattingMode="Ideal" 
                  TextOptions.TextRenderingMode="Auto" 
                  
-                 Height="Auto"
-                 Width="Auto"     
+                 Height="800"
+                 Width="1050"     
+                 MinHeight="800" 
+                 MinWidth="1125"
                  Loaded="Window_Loaded">
     <UserControl.Resources>
         <ResourceDictionary>
@@ -61,95 +68,267 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="Auto" />
-            <RowDefinition Height="*" />
-            <RowDefinition Height="100" />
-        </Grid.RowDefinitions>
-        <Grid Grid.Row="1" Name="UserPages" Margin="20,0,20,0"></Grid>
-        <TextBlock Name="TextBlock_TitleName" Grid.Row="0" Margin="10 20 10 10" FontWeight="DemiBold" FontSize="20" >Login Logs Viewer</TextBlock>
+    <Grid Background="#111315">
 
-        <DataGrid Grid.Row="1" Grid.Column="0"    
-                  ScrollViewer.CanContentScroll="True" 
-                  ScrollViewer.VerticalScrollBarVisibility="Auto"
-                  ScrollViewer.HorizontalScrollBarVisibility="Auto"
-                  AutoGenerateColumns="False" 
-                  Height="Auto" 
-                  HorizontalAlignment="Center"
-                  Name="DataGrid" Width="{Binding Path=ActualWidth, ElementName=grid}"
-                  AlternatingRowBackground="LightGray"
-                  CanUserAddRows="False"
-                  IsReadOnly="True"
-                  >
-            <DataGrid.Columns>
-                <DataGridTextColumn Binding="{Binding ID}" Header="ID" Width="Auto" MaxWidth="50" MinWidth="20"  />
-                <DataGridTextColumn Binding="{Binding UserId}" Header="User ID" Width="Auto" MinWidth="20" />
-                <DataGridTextColumn Binding="{Binding Username}" Header="Username" Width="Auto" MinWidth="20" />
-                <DataGridTextColumn Binding="{Binding LoginTime}" Header="Log in Time" Width="Auto" MinWidth="20" />
-                <DataGridTextColumn Binding="{Binding LogoutTime}" Header="Log out Time" Width="Auto" MinWidth="20" />
-                <DataGridTextColumn Binding="{Binding Date, StringFormat=d,ConverterCulture=en-NZ}" Header="Date" Width="Auto" MinWidth="20"/>
-                <DataGridTextColumn Binding="{Binding Role}" Header="Role" Width="Auto" MinWidth="20"/>
-                <DataGridTextColumn Binding="{Binding Remark}" Header="Remark" Width="Auto" MinWidth="20" />
-            </DataGrid.Columns>
-        </DataGrid>
-        <materialDesign:PopupBox
-            Grid.Row="2"
-            Name="PopupBox" PopupMode="Click"
-            Visibility="Visible"
-            Style="{StaticResource MaterialDesignMultiFloatingActionPopupBox}"
-            PlacementMode="LeftAndAlignMiddles"
-            UnfurlOrientation="Horizontal"
-            ToolTip="Manage items"
-            Margin="10 10 30 20"
-            HorizontalAlignment="Right" 
-            VerticalAlignment="Bottom"
-            Background="#093A3E"
-            Foreground="White">
-            <StackPanel Orientation="Horizontal">
-                <Button ToolTip="Add New Log"
+        <Border Canvas.Left="55"
+         Canvas.Top="30"
+         Height="700"
+         VerticalAlignment="Center"
+         BorderBrush="White"
+         BorderThickness="2"
+         CornerRadius="18"
+         Margin="50,0,50,0">
+
+            <StackPanel>
+
+
+                <Grid Grid.Row="1" Name="UserPages" Margin="20,0,20,0" Background="Black"></Grid>
+                <TextBlock Name="Title" Foreground="White" Grid.Row="0" Margin="25" FontWeight="DemiBold" FontSize="48" Width="483" HorizontalAlignment="Left" >LOGIN LOGS VIEWER</TextBlock>
+                <TextBlock x:Name="NumberOfLogs" Foreground="White" FontWeight="DemiBold" FontSize="22" Width="225" Margin="700,-100,0,0" Height="26" ><Run Text="Number of logs: 000"/></TextBlock>
+
+
+
+                <Border  Canvas.Left="55"
+                         Canvas.Top="30"
+                         Height="298"
+                         BorderBrush="White"
+                         BorderThickness="2"
+                         CornerRadius="18"
+                         Margin="50,0,50,0">
+                    <DataGrid  Grid.Row="1"    
+                               ScrollViewer.CanContentScroll="True" 
+                               ScrollViewer.VerticalScrollBarVisibility="Auto"
+                               ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                               AutoGenerateColumns="True" 
+                               Height="263" 
+                               HorizontalAlignment="Center"
+                               Name="DataGrid" Width="885"
+                               AlternatingRowBackground="#111315"
+                               CanUserAddRows="False"
+                               IsReadOnly="True" 
+                               Panel.ZIndex="3"
+                               
+                               >
+                        <DataGrid.Columns>
+                            <DataGridTextColumn Binding="{Binding ID}" Header="ID" Width="Auto" MaxWidth="50" MinWidth="20" />
+                            <DataGridTextColumn Binding="{Binding UserId}" Header="User ID" Width="Auto" MinWidth="20" />
+                            <DataGridTextColumn Binding="{Binding Username}" Header="Username" Width="Auto" MinWidth="20" />
+                            <DataGridTextColumn Binding="{Binding LoginTime}" Header="Log in Time" Width="Auto" MinWidth="20" />
+                            <DataGridTextColumn Binding="{Binding LogoutTime}" Header="Log out Time" Width="Auto" MinWidth="20" />
+                            <DataGridTextColumn Binding="{Binding Date, StringFormat=d,ConverterCulture=en-NZ}" Header="Date" Width="Auto" MinWidth="20"/>
+                            <DataGridTextColumn Binding="{Binding Role}" Header="Role" Width="Auto" MinWidth="20"/>
+                            <DataGridTextColumn Binding="{Binding Remark}" Header="Remark" Width="Auto" MinWidth="20" />
+                        </DataGrid.Columns>
+                    </DataGrid>
+
+
+                </Border>
+
+                <TextBlock Name="Filter" 
+                           Foreground="White"
+                           Grid.Row="0"
+                           Margin="25,25,0,0" 
+                           FontWeight="DemiBold" 
+                           FontSize="20"
+                           Width="257"
+                           HorizontalAlignment="Left">
+                           Filter by:
+                </TextBlock>
+
+                <CheckBox
+                    Name="AllDates" 
+                    Background="#585858"
+                    Foreground="White"
+                    Grid.Row="0"
+                    Margin="50,5,0,0" 
+                    FontSize="20"
+                    Width="257"
+                    HorizontalAlignment="Left"
+                    Content="All Dates"
+                    IsChecked="True"
+                    Style="{StaticResource MaterialDesignFilterChipCheckBox}"
+                      />
+                <CheckBox
+                    Name="DatesSelected" 
+                    Background="#585858"
+                    Foreground="White"
+                    Grid.Row="0"
+                    Margin="50,5,0,0" 
+                    FontSize="20"
+                    Width="257"
+                    HorizontalAlignment="Left"
+                    Content="Date(s) Selected"
+                    Style="{StaticResource MaterialDesignFilterChipCheckBox}"
+                />
+
+                <CheckBox
+                    Name="InputUsername" 
+                    Background="#585858"
+                    Foreground="White"
+                    Grid.Row="0"
+                    Margin="50,5,0,0" 
+                    FontSize="20"
+                    Width="280"
+                    HorizontalAlignment="Left"
+                    Content="Username Inputted Below"
+                    Style="{StaticResource MaterialDesignFilterChipCheckBox}"
+                />
+
+
+
+
+
+
+                <StackPanel Width="250" HorizontalAlignment="Left" Margin="50,0,0,0">
+                    <TextBox x:Name="TextBoxTextCounter"
+                             Height="70"
+                             materialDesign:HintAssist.Hint="Input Username Here"
+                             AcceptsReturn="True"
+                             TextWrapping="Wrap"
+                             VerticalScrollBarVisibility="Auto"
+                             Foreground="White"
+                             FontSize="15"
+                             
+                             materialDesign:TextFieldAssist.HasOutlinedTextField = "True"
+                             materialDesign:TextFieldAssist.TextFieldCornerRadius = "10"
+                             Padding="16, 16, 12, 16"
+                             BorderBrush="White"
+                             BorderThickness="2"
+                             
+                             
+                             
+
+                             
+                             materialDesign:HintAssist.IsFloating = "True"
+                             materialDesign:HintAssist.Background="#111315"
+                             materialDesign:HintAssist.Foreground="White" 
+                             />
+                </StackPanel>
+
+
+                <Border x:Name="CalendarBorder"
+                        BorderBrush="White"
+                        BorderThickness="2"
+                        CornerRadius="13" 
+                        Height="230" 
+                        Width="375" 
+                        Margin="50,-200,0,0">
+
+                        <Calendar
+                          materialDesign:CalendarAssist.HeaderBackground="#111315"
+                          materialDesign:CalendarAssist.HeaderForeground="White"  
+                          materialDesign:CalendarAssist.Orientation="Horizontal"
+                          Background="#111315"
+                          Foreground="White"
+                          BorderBrush="White" 
+                          CalendarButtonStyle="{DynamicResource CustomCalendarButton}"
+                          CalendarDayButtonStyle="{DynamicResource CustomCalendarDayButton}"
+                          BorderThickness="2" 
+                          Margin="0,0,0,0" 
+                          Width="350" Height="217"
+                       />
+
+                </Border>
+
+
+
+
+
+                <Button x:Name="Archive" 
+                        ToolTip="Confirm" 
+                        Background="#0a0a0a" 
+                        materialDesign:ButtonAssist.CornerRadius="10"
+                        Foreground="White" 
+                        FontSize="20" 
+                        Width="218" 
+                        Height="60" 
+                        VerticalContentAlignment="Center"  
+                        Cursor="Hand"  
+                        BorderBrush="DarkGray" 
+                        BorderThickness="2"
+                        FontFamily="Century Gothic" 
+                        FontWeight="Bold" Margin="700,-375,0,0" >
+                    <WrapPanel HorizontalAlignment="Center">
+                        <materialDesign:PackIcon 
+                            Kind="ArchivePlus" 
+                            Width="45" 
+                            Height="45" />
+                        <TextBlock Text="| Archive" 
+                                   VerticalAlignment="Center" 
+                                   FontWeight="SemiBold" 
+                                   Margin="10 0" />
+                    </WrapPanel>
+                </Button>
+
+                <materialDesign:PopupBox
+                        Grid.Row="2"
+                        Name="PopupBox" PopupMode="Click"
+                        Visibility="Visible"
+                        Style="{StaticResource MaterialDesignMultiFloatingActionPopupBox}"
+                        PlacementMode="LeftAndAlignMiddles"
+                        UnfurlOrientation="Horizontal"
+                        ToolTip="Manage items"
+                        Margin="0,20,00,00"
+                        HorizontalAlignment="Right" 
+                        VerticalAlignment="Bottom"
+                        Background="#093A3E"
+                        Foreground="White" Height="56" Width="56">
+                    <StackPanel Orientation="Horizontal">
+                        <Button ToolTip="Add New Log"
                         Click="PopUp_AddNewEmployee">
-                    <Path Data="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
+                            <Path Data="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
                           Stretch="Uniform"
                           Width="15" Height="15"
                           Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}"/>
-                </Button>
-                <Button ToolTip="Modify Log"
+                        </Button>
+                        <Button ToolTip="Modify Log"
                         Click="PopUp_EditEmployee">
-                    <materialDesign:PackIcon Kind="BorderColor" />
-                </Button>
-                <!--<Button ToolTip="Remove selected item"
+                            <materialDesign:PackIcon Kind="BorderColor" />
+                        </Button>
+                        <!--<Button ToolTip="Remove selected item"
                             Command="{Binding RemoveSelectedItemCommand}">
                     <Path Data="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
                               Stretch="Uniform"
                               Width="15" Height="15"
                               Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}"/>
                 </Button>-->
-            </StackPanel>
-        </materialDesign:PopupBox>
-        <materialDesign:PopupBox Grid.Row="2"          
+                    </StackPanel>
+                </materialDesign:PopupBox>
+                <materialDesign:PopupBox Grid.Row="2"          
                                  Name="PopupBoxWithClose" PopupMode="Click"
                                  Visibility="Collapsed" 
                                  Style="{StaticResource MaterialDesignMultiFloatingActionPopupBox}"
                                  PlacementMode="LeftAndAlignMiddles"
                                  UnfurlOrientation="Horizontal"
                                  ToolTip="Manage items"
-                                 Margin="10 10 30 20"
-                                 HorizontalAlignment="Right" VerticalAlignment="Bottom">
-            <StackPanel Orientation="Horizontal">
-                <Button ToolTip="Close"
+                                 Margin="0,0,30,20"
+                                 HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="56" Width="56">
+                    <StackPanel Orientation="Horizontal">
+                        <Button ToolTip="Close"
                         Click="PopUp_Close">
-                    <materialDesign:PackIcon Kind="KeyboardBackspace" />
-                </Button>
-                <!--<Button ToolTip="Remove selected item"
+                            <materialDesign:PackIcon Kind="KeyboardBackspace" />
+                        </Button>
+                        <!--<Button ToolTip="Remove selected item"
                             Command="{Binding RemoveSelectedItemCommand}">
                     <Path Data="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
                               Stretch="Uniform"
                               Width="15" Height="15"
                               Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}"/>
                 </Button>-->
+                    </StackPanel>
+                </materialDesign:PopupBox>
+                <!--End + popupbox-->
             </StackPanel>
-        </materialDesign:PopupBox>
-        <!--End + popupbox-->
+        </Border>
+
+
+
+
+
+
+
+
+
+
     </Grid>
 </UserControl>

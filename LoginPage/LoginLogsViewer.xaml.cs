@@ -67,8 +67,8 @@ namespace LoginPage
             PopupBoxWithClose.Visibility = Visibility.Hidden;
 
             //LoadData();
-            TextBlock_TitleName.Visibility = Visibility.Visible;
-            DataGrid.Visibility = Visibility.Visible;
+            //TextBlock_TitleName.Visibility = Visibility.Visible;
+            //DataGrid.Visibility = Visibility.Visible;
             PopupBox.Visibility = Visibility.Visible;
         }
 
