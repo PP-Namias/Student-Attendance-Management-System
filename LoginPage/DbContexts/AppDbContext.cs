@@ -48,5 +48,10 @@ namespace LoginPage.DbContexts
                 throw; // Rethrow the exception to propagate it further if needed
             }
         }
+
+        internal void SaveLoginLog()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

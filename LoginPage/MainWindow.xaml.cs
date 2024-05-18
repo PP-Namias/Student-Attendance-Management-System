@@ -7,6 +7,7 @@ using System.Net.PeerToPeer;
 using System.Windows;
 using System.Windows.Input;
 using System.Windows.Media;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace LoginPage
 {
@@ -31,6 +32,19 @@ namespace LoginPage
         {
             if (LoginUser(txtUsername.Text, txtPassword.Password) == 1)
             {
+
+                var LoginLogs = new LoginUser()
+                {
+                    Username = txtUsername.Text,
+                    LogInTime = System.DateTime.Now,
+                    Date = System.DateTime.Now,
+                    Role = "User",
+                    Remark = "Login Successfully"
+                };
+                
+                appDbContext.LoginLogs.Add(LoginLogs);
+                appDbContext.SaveLoginLog(LoginLogs);
+
 
                 /*
                  * 

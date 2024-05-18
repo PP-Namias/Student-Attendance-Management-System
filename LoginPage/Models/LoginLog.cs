@@ -12,9 +12,9 @@ namespace LoginPage.Models
         [Required]
         public string Username { get; set; } = string.Empty;
         [Required]
-        public DateTime LoginTime { get; set; }
+        public DateTime LogInTime { get; set; }
         [Required]
-        public DateTime LogoutTime { get; set; }
+        public DateTime LogOutTime { get; set; }
         [Required]
         public DateTime Date { get; set; }
         [Required]
