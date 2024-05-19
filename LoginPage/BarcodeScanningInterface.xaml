@@ -67,7 +67,8 @@
                                 Height="728" 
                                 VerticalAlignment="Top" 
                                 Canvas.Left="10" 
-                                Canvas.Top="12" Width="725">
+                                Canvas.Top="12" 
+                                Width="700">
 
                             <Grid>
                                 <TextBlock x:Name="BarCodeScanner"             
@@ -217,18 +218,18 @@
                                         FontSize="20" 
                                         HorizontalAlignment="Left" 
                                         VerticalAlignment="Top" 
-                                        Width="64" 
+                                        Width="60" 
                                         Height="60" 
                                         Click="helpButton_Click" 
                                         VerticalContentAlignment="Center"  
                                         Cursor="Hand" 
-                                        Canvas.Left="26" 
+                                        Canvas.Left="20" 
                                         Canvas.Top="514"  
                                         BorderBrush="DodgerBlue" 
                                         BorderThickness="2"
                                         FontFamily="Century Gothic" 
                                         FontWeight="Bold" 
-                                        Margin="618,638,0,0" Padding="0,0,0,0">
+                                        Margin="600,638,0,0" Padding="0,0,0,0">
                                     <WrapPanel HorizontalAlignment="Center">
                                         <materialDesign:PackIcon 
                                             Kind="QuestionMarkCircleOutline" 
@@ -266,9 +267,9 @@
                                 HorizontalAlignment="Left" 
                                 Height="725" 
                                 VerticalAlignment="Center" 
-                                Canvas.Left="750" 
+                                Canvas.Left="725" 
                                 Canvas.Top="12" 
-                                Width="330">
+                                Width="350">
 
                             <StackPanel Background="White" 
                                         Canvas.Left="756" 

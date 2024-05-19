@@ -604,7 +604,9 @@ C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.Properties.Resources.resources
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.csproj.GenerateResource.cache
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.csproj.CoreCompileInputs.cache
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.csproj.CopyComplete
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.exe
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.pdb
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\bin\Debug\LoginPage.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\ArchiveLoginLogs.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\ArchiveLoginLogs.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\LoginPage\obj\Debug\LoginPage.csproj.Up2Date

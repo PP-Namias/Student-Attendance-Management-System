@@ -5,11 +5,6 @@
                  xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
                  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
                  xmlns:local="clr-namespace:LoginPage"
-                 
-                 
-                 
-                 
-                 
                  xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"         
                  xmlns:src="http://metro.mahapps.com/winfx/xaml/controls"
                  
@@ -69,30 +64,38 @@
     </UserControl.Resources>
 
     <Grid Background="#111315">
-
         <Border Canvas.Left="55"
          Canvas.Top="30"
          Height="700"
          VerticalAlignment="Center"
-         BorderBrush="White"
-         BorderThickness="2"
+         BorderThickness="1"
          CornerRadius="18"
          Margin="50,0,50,0">
-
+            <Border.BorderBrush>
+                <DrawingBrush Viewport="0,0,8,8" ViewportUnits="Absolute" TileMode="Tile">
+                    <DrawingBrush.Drawing>
+                        <DrawingGroup>
+                            <GeometryDrawing Brush="DarkGray">
+                                <GeometryDrawing.Geometry>
+                                    <GeometryGroup>
+                                        <RectangleGeometry Rect="0,0,50,50" />
+                                        <RectangleGeometry Rect="50,50,50,50" />
+                                    </GeometryGroup>
+                                </GeometryDrawing.Geometry>
+                            </GeometryDrawing>
+                        </DrawingGroup>
+                    </DrawingBrush.Drawing>
+                </DrawingBrush>
+            </Border.BorderBrush>
             <StackPanel>
-
-
                 <Grid Grid.Row="1" Name="UserPages" Margin="20,0,20,0" Background="Black"></Grid>
                 <TextBlock Name="Title" Foreground="White" Grid.Row="0" Margin="25" FontWeight="DemiBold" FontSize="48" Width="483" HorizontalAlignment="Left" >LOGIN LOGS VIEWER</TextBlock>
                 <TextBlock x:Name="NumberOfLogs" Foreground="White" FontWeight="DemiBold" FontSize="22" Width="225" Margin="700,-100,0,0" Height="26" ><Run Text="Number of logs: 000"/></TextBlock>
-
-
-
                 <Border  Canvas.Left="55"
                          Canvas.Top="30"
                          Height="298"
-                         BorderBrush="White"
-                         BorderThickness="2"
+                         BorderBrush="DarkGray"
+                         BorderThickness="1"
                          CornerRadius="18"
                          Margin="50,0,50,0">
                     <DataGrid  Grid.Row="1"    
@@ -106,9 +109,7 @@
                                AlternatingRowBackground="#111315"
                                CanUserAddRows="False"
                                IsReadOnly="True" 
-                               Panel.ZIndex="3"
-                               
-                               >
+                               Panel.ZIndex="3">
                         <DataGrid.Columns>
                             <DataGridTextColumn Binding="{Binding ID}" Header="ID" Width="Auto" MaxWidth="50" MinWidth="20" />
                             <DataGridTextColumn Binding="{Binding UserId}" Header="User ID" Width="Auto" MinWidth="20" />
@@ -120,10 +121,7 @@
                             <DataGridTextColumn Binding="{Binding Remark}" Header="Remark" Width="Auto" MinWidth="20" />
                         </DataGrid.Columns>
                     </DataGrid>
-
-
                 </Border>
-
                 <TextBlock Name="Filter" 
                            Foreground="White"
                            Grid.Row="0"
@@ -134,7 +132,6 @@
                            HorizontalAlignment="Left">
                            Filter by:
                 </TextBlock>
-
                 <CheckBox
                     Name="AllDates" 
                     Background="#585858"
@@ -146,8 +143,7 @@
                     HorizontalAlignment="Left"
                     Content="All Dates"
                     IsChecked="True"
-                    Style="{StaticResource MaterialDesignFilterChipCheckBox}"
-                      />
+                    Style="{StaticResource MaterialDesignFilterChipCheckBox}"/>
                 <CheckBox
                     Name="DatesSelected" 
                     Background="#585858"
@@ -158,9 +154,7 @@
                     Width="257"
                     HorizontalAlignment="Left"
                     Content="Date(s) Selected"
-                    Style="{StaticResource MaterialDesignFilterChipCheckBox}"
-                />
-
+                    Style="{StaticResource MaterialDesignFilterChipCheckBox}"/>
                 <CheckBox
                     Name="InputUsername" 
                     Background="#585858"
@@ -173,12 +167,6 @@
                     Content="Username Inputted Below"
                     Style="{StaticResource MaterialDesignFilterChipCheckBox}"
                 />
-
-
-
-
-
-
                 <StackPanel Width="250" HorizontalAlignment="Left" Margin="50,0,0,0">
                     <TextBox x:Name="TextBoxTextCounter"
                              Height="70"
@@ -192,49 +180,51 @@
                              materialDesign:TextFieldAssist.HasOutlinedTextField = "True"
                              materialDesign:TextFieldAssist.TextFieldCornerRadius = "10"
                              Padding="16, 16, 12, 16"
-                             BorderBrush="White"
-                             BorderThickness="2"
-                             
-                             
-                             
-
+                             BorderBrush="DarkGray"
+                             BorderThickness="1"
                              
                              materialDesign:HintAssist.IsFloating = "True"
                              materialDesign:HintAssist.Background="#111315"
                              materialDesign:HintAssist.Foreground="White" 
                              />
                 </StackPanel>
-
-
                 <Border x:Name="CalendarBorder"
-                        BorderBrush="White"
                         BorderThickness="2"
                         CornerRadius="13" 
                         Height="230" 
                         Width="375" 
                         Margin="50,-200,0,0">
-
-                        <Calendar
+                    <Border.BorderBrush>
+                        <DrawingBrush Viewport="0,0,8,8" ViewportUnits="Absolute" TileMode="Tile">
+                            <DrawingBrush.Drawing>
+                                <DrawingGroup>
+                                    <GeometryDrawing Brush="DarkGray">
+                                        <GeometryDrawing.Geometry>
+                                            <GeometryGroup>
+                                                <RectangleGeometry Rect="0,0,50,50" />
+                                                <RectangleGeometry Rect="50,50,50,50" />
+                                            </GeometryGroup>
+                                        </GeometryDrawing.Geometry>
+                                    </GeometryDrawing>
+                                </DrawingGroup>
+                            </DrawingBrush.Drawing>
+                        </DrawingBrush>
+                    </Border.BorderBrush>
+                    <Calendar x:Name="cldArchive"
                           materialDesign:CalendarAssist.HeaderBackground="#111315"
                           materialDesign:CalendarAssist.HeaderForeground="White"  
                           materialDesign:CalendarAssist.Orientation="Horizontal"
                           Background="#111315"
                           Foreground="White"
-                          BorderBrush="White" 
+                          BorderBrush="DarkGray" 
                           CalendarButtonStyle="{DynamicResource CustomCalendarButton}"
                           CalendarDayButtonStyle="{DynamicResource CustomCalendarDayButton}"
-                          BorderThickness="2" 
+                          BorderThickness="1" 
                           Margin="0,0,0,0" 
                           Width="350" Height="217"
                        />
-
                 </Border>
-
-
-
-
-
-                <Button x:Name="Archive" 
+                <Button x:Name="btnArchive" 
                         ToolTip="Confirm" 
                         Background="#0a0a0a" 
                         materialDesign:ButtonAssist.CornerRadius="10"
@@ -245,7 +235,7 @@
                         VerticalContentAlignment="Center"  
                         Cursor="Hand"  
                         BorderBrush="DarkGray" 
-                        BorderThickness="2"
+                        BorderThickness="1"
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" Margin="700,-375,0,0" >
                     <WrapPanel HorizontalAlignment="Center">
@@ -259,76 +249,7 @@
                                    Margin="10 0" />
                     </WrapPanel>
                 </Button>
-
-                <materialDesign:PopupBox
-                        Grid.Row="2"
-                        Name="PopupBox" PopupMode="Click"
-                        Visibility="Visible"
-                        Style="{StaticResource MaterialDesignMultiFloatingActionPopupBox}"
-                        PlacementMode="LeftAndAlignMiddles"
-                        UnfurlOrientation="Horizontal"
-                        ToolTip="Manage items"
-                        Margin="0,20,00,00"
-                        HorizontalAlignment="Right" 
-                        VerticalAlignment="Bottom"
-                        Background="#093A3E"
-                        Foreground="White" Height="56" Width="56">
-                    <StackPanel Orientation="Horizontal">
-                        <Button ToolTip="Add New Log"
-                        Click="PopUp_AddNewEmployee">
-                            <Path Data="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"
-                          Stretch="Uniform"
-                          Width="15" Height="15"
-                          Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}"/>
-                        </Button>
-                        <Button ToolTip="Modify Log"
-                        Click="PopUp_EditEmployee">
-                            <materialDesign:PackIcon Kind="BorderColor" />
-                        </Button>
-                        <!--<Button ToolTip="Remove selected item"
-                            Command="{Binding RemoveSelectedItemCommand}">
-                    <Path Data="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
-                              Stretch="Uniform"
-                              Width="15" Height="15"
-                              Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}"/>
-                </Button>-->
-                    </StackPanel>
-                </materialDesign:PopupBox>
-                <materialDesign:PopupBox Grid.Row="2"          
-                                 Name="PopupBoxWithClose" PopupMode="Click"
-                                 Visibility="Collapsed" 
-                                 Style="{StaticResource MaterialDesignMultiFloatingActionPopupBox}"
-                                 PlacementMode="LeftAndAlignMiddles"
-                                 UnfurlOrientation="Horizontal"
-                                 ToolTip="Manage items"
-                                 Margin="0,0,30,20"
-                                 HorizontalAlignment="Right" VerticalAlignment="Bottom" Height="56" Width="56">
-                    <StackPanel Orientation="Horizontal">
-                        <Button ToolTip="Close"
-                        Click="PopUp_Close">
-                            <materialDesign:PackIcon Kind="KeyboardBackspace" />
-                        </Button>
-                        <!--<Button ToolTip="Remove selected item"
-                            Command="{Binding RemoveSelectedItemCommand}">
-                    <Path Data="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"
-                              Stretch="Uniform"
-                              Width="15" Height="15"
-                              Fill="{Binding RelativeSource={RelativeSource AncestorType=Button}, Path=Foreground}"/>
-                </Button>-->
-                    </StackPanel>
-                </materialDesign:PopupBox>
-                <!--End + popupbox-->
             </StackPanel>
         </Border>
-
-
-
-
-
-
-
-
-
-
     </Grid>
 </UserControl>
