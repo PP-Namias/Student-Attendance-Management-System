@@ -1,0 +1,130 @@
+﻿<UserControl     x:Class="StudentAttendanceManagementSystem.ReportsandAnalytics"
+                 xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                 xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                 xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                 xmlns:local="clr-namespace:StudentAttendanceManagementSystem"
+                 xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"         
+                 xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+                 xmlns:src="http://metro.mahapps.com/winfx/xaml/controls"
+                 
+                 Background="{DynamicResource MaterialDesignPaper}"
+                 FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
+                 TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+                 TextElement.FontWeight="Regular"
+                 TextElement.FontSize="12"
+                 TextOptions.TextFormattingMode="Ideal" 
+                 TextOptions.TextRenderingMode="Auto" 
+                 
+                 Height="537"
+                 Width="861">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Button.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.Shadows.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.ToggleButton.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.PopupBox.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignThemes.Wpf;component/Themes/MaterialDesignTheme.TextBlock.xaml" />
+                <!-- throw in some extra colour for our floating action button -->
+                <ResourceDictionary Source="pack://application:,,,/MaterialDesignColors;component/Themes/MaterialDesignColor.Green.Named.Primary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="140" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Name="UserPages" Margin="20,0,20,0">
+        </Grid>
+
+        <!-- start top header -->
+        <Grid Name="topgrid" Grid.Row="1"  HorizontalAlignment="Center" VerticalAlignment="Top" Margin="16">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Image Source="/Images/qr-code scanner.png" Stretch="Uniform" Width="80" Height="80" />
+            <StackPanel Grid.Column="1" Margin="24 0 0 0" VerticalAlignment="Center">
+                <!--<TextBlock Style="{StaticResource MaterialDesignDisplay1TextBlock}" TextWrapping="Wrap"><Run Text="Welcome User_Name!"/></TextBlock>-->
+                <TextBlock TextWrapping="Wrap"  Name="WelcomeMessage"/>
+                <Button Style="{StaticResource MaterialDesignFlatButton}" Command="{x:Static materialDesign:DrawerHost.OpenDrawerCommand}">
+                    <StackPanel Orientation="Horizontal">
+                        <materialDesign:PackIcon Kind="Backburger" />
+                        <TextBlock Margin="8 0 0 0"><Run Text="Open Quick Tasks"/></TextBlock>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+        </Grid>
+        <!-- end top bar -->
+        <ScrollViewer Name="mainscrollviewer" Grid.Row="3" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"
+                      HorizontalAlignment="Center"
+                      VerticalAlignment="Top"
+                      Margin="0 0 0 0">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="1" Orientation="Horizontal">
+                    <!-- start  material card -->
+                    <materialDesign:Card Width="686" Margin="4 2 8 16" Height="300">
+                        <Grid VerticalAlignment="Stretch" >
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="*" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="250" />
+                                <ColumnDefinition Width="*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="/Images/Student Attendance Management.png" Grid.RowSpan="5" StretchDirection="Both" Stretch="UniformToFill" Margin="0,0,2,0" />
+                            <TextBlock Grid.Column="1" Margin="16 16 16 2" Text="Reports and Analytics" HorizontalAlignment="Center" FontSize="36"/>
+                            <TextBlock Grid.Column="1" Grid.Row="1" TextWrapping="Wrap" Margin="16 0 16 8" Foreground="DarkGray"
+                                                       VerticalAlignment="Center" Text="Manage all the Reports and Analytics through the below options. " HorizontalAlignment="Center"/>
+                            <Border Grid.Column="1" Grid.Row="2" BorderThickness="0 1 0 0" BorderBrush="{DynamicResource MaterialDesignDivider}" Margin="0 8 0 0">
+                                <Grid Margin="8">
+                                    <Button FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Left" x:Name="AttendanceReports" Click="AttendanceReports_Click">
+                                        <StackPanel Orientation="Horizontal">
+                                            <materialDesign:PackIcon Kind="FileChart" Foreground="#093A3E"/>
+                                            <TextBlock Foreground="#093A3E" Margin="8 0 0 0" VerticalAlignment="Center"><Run Text="Attendance Reports Form"/></TextBlock>
+                                        </StackPanel>
+                                    </Button>
+                                </Grid>
+                            </Border>
+                            <Border Grid.Column="1" Grid.Row="3" BorderThickness="0 1 0 0" BorderBrush="{DynamicResource MaterialDesignDivider}">
+                                <Grid Margin="8">
+                                    <Button FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Left" x:Name="AbsenteeismAnalysisModule" Click="AbsenteeismAnalysisModule_Click">
+                                        <StackPanel Orientation="Horizontal">
+                                            <materialDesign:PackIcon Kind="ChartBoxPlusOutline" Foreground="#093A3E"/>
+                                            <TextBlock Foreground="#093A3E" Margin="8 0 0 0" VerticalAlignment="Center"><Run Text="Absenteeism Analysis Module"/></TextBlock>
+                                        </StackPanel>
+                                    </Button>
+                                </Grid>
+                            </Border>
+                            <Border Grid.Column="1" Grid.Row="4" BorderThickness="0 1 0 0" BorderBrush="{DynamicResource MaterialDesignDivider}">
+                                <Grid Margin="8">
+                                    <Button FontSize="15" Style="{DynamicResource MaterialDesignFlatButton}" HorizontalAlignment="Left" x:Name="ReportList" Click="ReportList_Click">
+                                        <StackPanel Orientation="Horizontal">
+                                            <materialDesign:PackIcon Kind="ListStatus" Foreground="#093A3E"/>
+                                            <TextBlock Foreground="#093A3E" Margin="8 0 0 0" VerticalAlignment="Center"><Run Text="Report List"/></TextBlock>
+                                        </StackPanel>
+                                    </Button>
+                                </Grid>
+                            </Border>
+                        </Grid>
+                    </materialDesign:Card>
+                    <!-- end material card -->
+                </StackPanel>
+            </Grid>
+        </ScrollViewer>
+    </Grid>
+</UserControl>

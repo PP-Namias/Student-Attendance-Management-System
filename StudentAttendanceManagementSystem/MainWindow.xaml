@@ -1,0 +1,135 @@
+﻿<Window x:Class="StudentAttendanceManagementSystem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:StudentAttendanceManagementSystem"
+        mc:Ignorable="d"
+        Title="Login Page" 
+        Height="450" 
+        Width="800" 
+        WindowStartupLocation="CenterScreen" 
+        WindowStyle="None" 
+        ResizeMode="NoResize">
+    
+    <Grid MouseDown="Border_MouseDown">
+        <Grid.Background>
+            <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
+                <GradientStop  Color="#093A3E" Offset="1"/>
+                <GradientStop  Color="#3AAFB9" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Border Height="390" VerticalAlignment="Top" CornerRadius="0 0 180 0" Background="#001011" MouseDown="Border_MouseDown">
+        </Border>
+        <StackPanel Orientation="Horizontal">
+            <StackPanel Width="400">
+                <TextBlock Text="Student Attendance"
+                           Foreground="White"
+                           TextAlignment="Center"
+                           FontSize="30"
+                           FontFamily="Century" Margin="0,20,0,0">
+                </TextBlock>
+                <TextBlock Text="Management System"
+                           Foreground="White"
+                           TextAlignment="Center"
+                           FontSize="30"
+                           FontFamily="Century">
+                </TextBlock>
+                <TextBlock Text="The Student Attendance Management System is designed to modernize"
+                           Foreground="White"
+                           TextAlignment="Center"
+                           FontSize="10"
+                           FontFamily="Century" Margin="0,10,0,0">
+                </TextBlock>
+                <TextBlock Text=" the attendance tracking process in educational institutions."
+                           Foreground="White"
+                           TextAlignment="Center"
+                           FontSize="10"
+                           FontFamily="Century">
+                </TextBlock>
+                <Image Source="/Images/mike.jpg"  Width="250" Height="269" Margin="30" Stretch="Uniform" />
+            </StackPanel>
+            <StackPanel Width="375">
+                <StackPanel Margin="20 40" Width="350">
+                    <TextBlock Text="Login Page" 
+                               Margin="20" 
+                               Foreground="White"
+                               TextAlignment="Center" 
+                               FontSize="38"  
+                               FontFamily="Century"></TextBlock>
+
+
+                    <StackPanel Orientation="Horizontal" Margin="10" >
+                        <materialDesign:PackIcon Kind="User" Width="25" Height="25" Foreground="White" />
+                        <TextBox x:Name="txtUsername" Margin="10 0" materialDesign:HintAssist.Hint="Enter Username" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E" Background="#00000000" FontFamily="Century" />
+                    </StackPanel>
+
+
+                    <StackPanel Orientation="Horizontal" Margin="10" Width="380" >
+                        <materialDesign:PackIcon Kind="Lock" Width="25" Height="25" Foreground="White" />
+
+                        <TextBox x:Name="txtPasswordTextBox" Margin="10 0" Width="0" Visibility="Hidden" TabIndex="1" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E" Background="#00000000" FontFamily="Century" />
+
+                        <PasswordBox x:Name="txtPassword" Margin="-10 0" Width="250" TabIndex="2" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E" Password="" FontFamily="Century"/>
+
+
+                    </StackPanel>
+
+                    <Button Style="{StaticResource MaterialDesignFloatingActionButton}" Background="#FF001011"
+                    ToolTip="Show/Hide Password" x:Name="btnShowPassword" Click="btnShowPassword_Click" BorderBrush="#FF3AAFB9" Width="30" Height="30" Margin="280,-50,0,0">
+                        <materialDesign:PackIcon x:Name="iconShowPassword" Kind="Hide" Foreground="White" Width="18" Height="18" />
+                    </Button>
+
+                    <!--Login page-->
+                    <StackPanel Margin="20 35 150 40" HorizontalAlignment="Center" >
+                        <Button Width="100" Height="35" Style="{StaticResource MaterialDesignRaisedButton}"
+                                materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E" FontFamily="Century" 
+                                Background="#093A3E" Foreground="White" ToolTip="Login" x:Name="btnLogin" Click="btnLogin_Click" Content="Login"/>
+                    </StackPanel>
+
+
+                    <!--Register-->
+                    <StackPanel Margin="130 -74 0 34" HorizontalAlignment="Center">
+                        <Button Width="100" Height="35" Style="{StaticResource MaterialDesignRaisedButton}"
+                                materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E" FontFamily="Century" 
+                                Background="#093A3E" Foreground="White" ToolTip="Registration" x:Name="btnRegister" 
+                                Click="btnRegister_Click" Content="Register">
+                        </Button>
+                    </StackPanel>
+
+
+                    <StackPanel Margin="0,0,0,10" HorizontalAlignment="Center">
+                        <Button Width="125" Height="35" Style="{StaticResource MaterialDesignRaisedButton}"
+                                materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E" FontFamily="Century" 
+                                Background="#093A3E" Foreground="White" ToolTip="MainMenu1" x:Name="btnMainMenu1" 
+                                Click="btnMainMenu1_Click" Content="Main Menu 1">
+                        </Button>
+                    </StackPanel>
+
+
+                    <StackPanel Margin="0 0 0 0" HorizontalAlignment="Center">
+                        <Button Width="125" Height="35" Style="{StaticResource MaterialDesignRaisedButton}"
+                                materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E" FontFamily="Century" 
+                                Background="#093A3E" Foreground="White" ToolTip="MainMenu2" x:Name="btnMainMenu2" 
+                                Click="btnMainMenu2_Click" Content="Main Menu 2">
+
+                        </Button>
+                    </StackPanel>
+
+
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Margin="-100,-380, 0, 0" Width="145" Orientation="Horizontal" VerticalAlignment="Center">
+                <Button Margin="20 30" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                    ToolTip="Minimize" x:Name="btnMinimize" Click="btnMinimize_Click" BorderBrush="#FF3AAFB9" Width="35" Height="35">
+                    <materialDesign:PackIcon Kind="Minimize" Foreground="White" Width="20" Height="20" />
+                </Button>
+                <Button Margin="0 20" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
+                    ToolTip="Close" x:Name="btnExit" Click="btnExit_Click" BorderBrush="#FF3AAFB9" Width="35" Height="35">
+                    <materialDesign:PackIcon Kind="Close" Foreground="White" Width="20" Height="20" />
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>

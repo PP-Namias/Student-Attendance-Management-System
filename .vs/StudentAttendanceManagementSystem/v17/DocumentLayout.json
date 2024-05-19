@@ -1,0 +1,467 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{00000000-0000-0000-0000-000000000000}|\u003CSolution\u003E|StudentAttendanceManagementSystem||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\LoginPage\\Login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LoginPage\\Login.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\LoginPage\\Login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LoginPage\\Login.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\ArchiveLoginLogs.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\LoginLogsViewer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainWindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\LoginLogsViewer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainWindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Dashboard.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu2.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Models\\User.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:1:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\UserManagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\UserManagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Models\\LoginLog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\DbContexts\\AppDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:2:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\App.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu2.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\HoverAnimationResources.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 301,
+          "SelectedChildIndex": 22,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ArchiveLoginLogs.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\ArchiveLoginLogs.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\ArchiveLoginLogs.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\ArchiveLoginLogs.xaml",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\ArchiveLoginLogs.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-19T02:39:03.64Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoginLogsViewer.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\LoginLogsViewer.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\LoginLogsViewer.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\LoginLogsViewer.xaml",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\LoginLogsViewer.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-18T14:44:26.42Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BarcodeScanningInterface.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-12T16:04:04.631Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainWindow.xaml",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-15T04:03:11.949Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Window1.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Window1.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Window1.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Window1.xaml",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Window1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-18T02:05:58.183Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Dashboard.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Dashboard.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Dashboard.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Dashboard.xaml",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Dashboard.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-12T05:05:08.412Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BarcodeScanningInterface.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T08:42:11.143Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LoginLogsViewer.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\LoginLogsViewer.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\LoginLogsViewer.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\LoginLogsViewer.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\LoginLogsViewer.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABcAAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T14:44:32.55Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "MainMenu.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu.xaml",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-10T12:28:06.569Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainWindow.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainWindow.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T16:08:14.204Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Window1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Window1.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Window1.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Window1.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Window1.xaml.cs",
+              "ViewState": "AQIAADUAAAAAAAAAAAAIwGsAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T16:32:58.201Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Home.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-11T07:45:19.114Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Dashboard.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Dashboard.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Dashboard.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Dashboard.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Dashboard.xaml.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAnwFoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T13:12:11.966Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "MainMenu.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu.xaml.cs",
+              "ViewState": "AQIAABUBAAAAAAAAAIA7wB0BAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T15:58:34.535Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainMenu2.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu2.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu2.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu2.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu2.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T07:42:16.926Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Models\\User.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Models\\User.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAYAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T16:35:02.249Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Home.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml.cs",
+              "ViewState": "AQIAAGgAAAAAAAAAAAAAACIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-10T12:38:20.069Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "UserManagement.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\UserManagement.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\UserManagement.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\UserManagement.xaml",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\UserManagement.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-17T03:36:27.152Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "UserManagement.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\UserManagement.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\UserManagement.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\UserManagement.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\UserManagement.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T03:40:11.894Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "LoginLog.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Models\\LoginLog.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Models\\LoginLog.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Models\\LoginLog.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Models\\LoginLog.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-14T11:07:50.204Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\DbContexts\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\DbContexts\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\DbContexts\\AppDbContext.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\DbContexts\\AppDbContext.cs",
+              "ViewState": "AQIAABcAAAAAAAAAAAAowDQAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T12:47:37.906Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BarcodeScanningInterface.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\BarcodeScanningInterface.xaml.cs",
+              "ViewState": "AQIAALYAAAAAAAAAAAAMwMIAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:50:29.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Home.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml.cs",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\Home.xaml.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-19T09:50:29.184Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "StudentAttendanceManagementSystem",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\StudentAttendanceManagementSystem.csproj",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\StudentAttendanceManagementSystem.csproj",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\StudentAttendanceManagementSystem.csproj",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\StudentAttendanceManagementSystem.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-05-19T09:45:36.279Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\App.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\App.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\App.xaml",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-18T15:12:53.97Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "MainMenu2.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu2.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu2.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu2.xaml",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\MainMenu2.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-11T07:33:24.366Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\LoginPage\\Login.xaml.cs",
+              "RelativeDocumentMoniker": "LoginPage\\Login.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\LoginPage\\Login.xaml.cs",
+              "RelativeToolTip": "LoginPage\\Login.xaml.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T12:47:14.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Login.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\LoginPage\\Login.xaml",
+              "RelativeDocumentMoniker": "LoginPage\\Login.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\LoginPage\\Login.xaml",
+              "RelativeToolTip": "LoginPage\\Login.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-12T12:47:58.642Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "HoverAnimationResources.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\HoverAnimationResources.xaml",
+              "RelativeDocumentMoniker": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\HoverAnimationResources.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\HoverAnimationResources.xaml",
+              "RelativeToolTip": "..\\..\\..\\Downloads\\Student-Attendance-Management-System-main (3)\\Student Attendance Management System\\LoginPage\\HoverAnimationResources.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-09T17:06:43.367Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
