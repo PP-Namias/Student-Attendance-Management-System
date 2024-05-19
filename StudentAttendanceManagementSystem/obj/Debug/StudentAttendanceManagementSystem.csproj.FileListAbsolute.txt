@@ -254,3 +254,8 @@ C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAtt
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentA.E2716841.Up2Date
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System.exe
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System.pdb
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentRecord.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentRecord.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\AboutUs.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\AboutUs.baml

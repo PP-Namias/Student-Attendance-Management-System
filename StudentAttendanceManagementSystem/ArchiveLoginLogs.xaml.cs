@@ -27,5 +27,11 @@ namespace StudentAttendanceManagementSystem
             //DataGrid.ItemsSource = LgginLogs;
         }
 
+        private void btnArchive_Click(object sender, RoutedEventArgs e)
+        {
+            LoginLogsViewer x = new LoginLogsViewer();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+        }
     }
 }

@@ -288,7 +288,7 @@ namespace StudentAttendanceManagementSystem
         {
             // Reports and Analytics
 
-            ReportsandAnalytics x = new ReportsandAnalytics();
+            StudentRecord x = new StudentRecord();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
         }

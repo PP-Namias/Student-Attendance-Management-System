@@ -239,31 +239,31 @@
                         <!-- start information links -->
                         <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" Width="75" Background="#3C2A21" >
                             <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
-                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Dashboard"                 Width="75" Height="75" Click="btn_Dashboard_Click">
+                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Dashboard"                 Width="75" Height="75" Click="btn_Dashboard_Click" ToolTip="Home">
                                     <StackPanel Width="50" Height="50">
                                         <materialDesign:PackIcon x:Name="btnHome"           Kind="Home"                  VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 
-                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_StudentAttendance"    Width="75" Height="75" Click="btn_StudentAttendance_Click">
+                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_StudentAttendance"    Width="75" Height="75" Click="btn_StudentAttendance_Click" ToolTip="ID Scanner">
                                     <StackPanel Width="50" Height="50">
                                         <materialDesign:PackIcon x:Name="btnBarcodeScan"    Kind="BarcodeScan"           VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 
-                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_LoginLogs"            Width="75" Height="75" Click="btn_LoginLogs_Click">
+                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_LoginLogs"            Width="75" Height="75" Click="btn_LoginLogs_Click" ToolTip="Login Logs">
                                     <StackPanel Width="50" Height="50">
                                         <materialDesign:PackIcon x:Name="btnLoginLogs"   Kind="LoginVariant"             VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 
-                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Reports"          Width="75" Height="75" Click="btn_Reports_Click">
+                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Reports"          Width="75" Height="75" Click="btn_Reports_Click" ToolTip="Reports &amp; Analysis">
                                     <StackPanel Width="50" Height="50">
                                         <materialDesign:PackIcon x:Name="btnReports"      Kind="ChartLine"               VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 
-                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_SystemAdministration" Width="75" Height="75" Click="btn_SystemAdministration_Click">
+                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_SystemAdministration" Width="75" Height="75" Click="btn_SystemAdministration_Click" ToolTip="User Account Management">
                                     <StackPanel Width="50" Height="50">
                                         <materialDesign:PackIcon x:Name="btnSystemAdministration" Kind="SecurityAccount" VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
                                     </StackPanel>

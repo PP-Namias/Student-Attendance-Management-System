@@ -70,6 +70,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AboutUs.xaml.cs">
+      <DependentUpon>AboutUs.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AddNewLog.xaml.cs">
       <DependentUpon>AddNewLog.xaml</DependentUpon>
     </Compile>
@@ -121,6 +124,9 @@
     <Compile Include="StudentLogs.xaml.cs">
       <DependentUpon>StudentLogs.xaml</DependentUpon>
     </Compile>
+    <Compile Include="StudentRecord.xaml.cs">
+      <DependentUpon>StudentRecord.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SystemAdministration.xaml.cs">
       <DependentUpon>SystemAdministration.xaml</DependentUpon>
     </Compile>
@@ -130,6 +136,10 @@
     <Compile Include="Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
     </Compile>
+    <Page Include="AboutUs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AddNewLog.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -209,6 +219,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="StudentLogs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StudentRecord.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

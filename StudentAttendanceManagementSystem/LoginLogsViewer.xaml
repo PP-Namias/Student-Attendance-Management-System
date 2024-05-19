@@ -88,7 +88,7 @@
                 </DrawingBrush>
             </Border.BorderBrush>
             <StackPanel>
-                <Grid Grid.Row="1" Name="UserPages" Margin="20,0,20,0" Background="Black"></Grid>
+                <Grid Grid.Row="1" Name="UserPages" Margin="-51,-51,20,50" Background="Black"></Grid>
                 <TextBlock Name="Title" Foreground="White" Grid.Row="0" Margin="25" FontWeight="DemiBold" FontSize="48" Width="483" HorizontalAlignment="Left" >LOGIN LOGS VIEWER</TextBlock>
                 <TextBlock x:Name="NumberOfLogs" Foreground="White" FontWeight="DemiBold" FontSize="22" Width="225" Margin="700,-100,0,0" Height="26" ><Run Text="Number of logs: 000"/></TextBlock>
                 <Border  Canvas.Left="55"
@@ -111,14 +111,14 @@
                                IsReadOnly="True" 
                                Panel.ZIndex="3">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Binding="{Binding ID}" Header="ID" Width="Auto" MaxWidth="50" MinWidth="20" />
-                            <DataGridTextColumn Binding="{Binding UserId}" Header="User ID" Width="Auto" MinWidth="20" />
-                            <DataGridTextColumn Binding="{Binding Username}" Header="Username" Width="Auto" MinWidth="20" />
-                            <DataGridTextColumn Binding="{Binding LoginTime}" Header="Log in Time" Width="Auto" MinWidth="20" />
-                            <DataGridTextColumn Binding="{Binding LogoutTime}" Header="Log out Time" Width="Auto" MinWidth="20" />
+                            <DataGridTextColumn Binding="{Binding ID}" Header="ID" Width="Auto" MaxWidth="50"/>
+                            <DataGridTextColumn Binding="{Binding UserId}" Header="User ID" Width="Auto"/>
+                            <DataGridTextColumn Binding="{Binding Username}" Header="Username" Width="Auto"/>
+                            <DataGridTextColumn Binding="{Binding LoginTime}" Header="Log in Time" Width="Auto"/>
+                            <DataGridTextColumn Binding="{Binding LogoutTime}" Header="Log out Time" Width="Auto"/>
                             <DataGridTextColumn Binding="{Binding Date, StringFormat=d,ConverterCulture=en-NZ}" Header="Date" Width="Auto" MinWidth="20"/>
                             <DataGridTextColumn Binding="{Binding Role}" Header="Role" Width="Auto" MinWidth="20"/>
-                            <DataGridTextColumn Binding="{Binding Remark}" Header="Remark" Width="Auto" MinWidth="20" />
+                            <DataGridTextColumn Binding="{Binding Remark}" Header="Remark" Width="Auto"/>
                         </DataGrid.Columns>
                     </DataGrid>
                 </Border>
@@ -165,8 +165,7 @@
                     Width="280"
                     HorizontalAlignment="Left"
                     Content="Username Inputted Below"
-                    Style="{StaticResource MaterialDesignFilterChipCheckBox}"
-                />
+                    Style="{StaticResource MaterialDesignFilterChipCheckBox}"/>
                 <StackPanel Width="250" HorizontalAlignment="Left" Margin="50,0,0,0">
                     <TextBox x:Name="TextBoxTextCounter"
                              Height="70"
@@ -185,8 +184,7 @@
                              
                              materialDesign:HintAssist.IsFloating = "True"
                              materialDesign:HintAssist.Background="#111315"
-                             materialDesign:HintAssist.Foreground="White" 
-                             />
+                             materialDesign:HintAssist.Foreground="White"/>
                 </StackPanel>
                 <Border x:Name="CalendarBorder"
                         BorderThickness="2"
@@ -221,11 +219,10 @@
                           CalendarDayButtonStyle="{DynamicResource CustomCalendarDayButton}"
                           BorderThickness="1" 
                           Margin="0,0,0,0" 
-                          Width="350" Height="217"
-                       />
+                          Width="350" Height="217" IsHitTestVisible="False"/>
                 </Border>
                 <Button x:Name="btnArchive" 
-                        ToolTip="Confirm" 
+                        ToolTip="Archive Login Logs" 
                         Background="#0a0a0a" 
                         materialDesign:ButtonAssist.CornerRadius="10"
                         Foreground="White" 
@@ -237,7 +234,7 @@
                         BorderBrush="DarkGray" 
                         BorderThickness="1"
                         FontFamily="Century Gothic" 
-                        FontWeight="Bold" Margin="700,-375,0,0" >
+                        FontWeight="Bold" Margin="700,-375,0,0" Click="btnArchive_Click" >
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 
                             Kind="ArchivePlus" 

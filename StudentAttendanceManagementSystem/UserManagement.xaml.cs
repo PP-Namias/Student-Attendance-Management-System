@@ -1,10 +1,7 @@
-﻿using System;
+﻿using MaterialDesignThemes.Wpf;
 using System.Collections.Generic;
-using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.ComponentModel;
-using MaterialDesignThemes.Wpf;
 
 namespace StudentAttendanceManagementSystem
 {
@@ -16,6 +13,7 @@ namespace StudentAttendanceManagementSystem
         public UserManagement()
         {
             InitializeComponent();
+            LoadData();
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -23,19 +21,17 @@ namespace StudentAttendanceManagementSystem
 
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        void LoadData()
         {
-
+            //List<LgginLogs> LgginLogs = new LgginLogs().SelectAll();
+            //DataGrid.ItemsSource = LgginLogs;
         }
 
-        private void Button_Click_1(object sender, RoutedEventArgs e)
+        private void btnArchive_Click(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void Button_Click_2(object sender, RoutedEventArgs e)
-        {
-
+            ArchiveLoginLogs x = new ArchiveLoginLogs();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
     }
 }
