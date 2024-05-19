@@ -76,7 +76,7 @@ The Student Attendance Management System is designed to modernize the attendance
 | Id           | SERIAL    | Primary Key, Auto Increment     |
 | Username     | VARCHAR   | Username                        |
 | Passwordhash | VARCHAR   | Password Hash                   |
-| Phonenumber  | VARCHAR   | Phone Number                    |
+| Phonenumber  | VARCHAR   | Phone Number for recovery       |
 | Role         | VARCHAR   | User Role (teacher/admin)       |
 
 ## Table: Students
@@ -84,26 +84,24 @@ The Student Attendance Management System is designed to modernize the attendance
 |-----------------|-----------|------------------------------|
 | Id              | SERIAL    | Primary Key, Auto Increment  |
 | Name            | VARCHAR   | Student Name                 |
-| Class           | VARCHAR   | Class/Grade                  |
-| StudentNumber   | INTEGER   | Foreign Key, Barcodes.Code   |
-| UserId          | INTEGER   | Foreign Key, Users.Id        |
+| Course          | VARCHAR   | Course                       |
+| Year            | VARCHAR   | Year                         |
+| Section         | VARCHAR   | Section                      |
+| StudentId       | Text      | Student Id                   |
 
 ## Table: Attendance
 | Column    | Data Type | Description                                         |
 |-----------|-----------|-----------------------------------------------------|
 | Id        | SERIAL    | Primary Key, Auto Increment                         |
-| Date      | DATE      | Attendance Date                                     |
-| Class     | VARCHAR   | Class/Grade                                         |
+| Name      | VARCHAR   | Attendance Name                                     |
+| Course    | VARCHAR   | Course                                              |
+| Year      | VARCHAR   | Year                                                |
+| Section   | VARCHAR   | Section                                             |
 | Status    | BOOLEAN   | Attendance Status (true=present, false=absent)      |
-| Deleted   | BOOLEAN   | Deleted Status (true=dont show to user, false=show) |
-| StudentId | INTEGER   | Foreign Key, Students.Id                            |
-
-## Table: Barcodes [ Student Number ]
-| Column    | Data Type | Description                        |
-|-----------|-----------|------------------------------------|
-| Id        | SERIAL    | Primary Key, Auto Increment        |
-| Code      | VARCHAR   | Barcode Value                      |
-| StudentId | INTEGER   | Foreign Key, Students.Id           |
+| Archived  | BOOLEAN   | Deleted Status (true=dont show to user, false=show) |
+| Date      | DATE      | Attendance Date                                     |
+| Time      | TIME      | Attendance Time                                     |
+| StudentId | INTEGER   | Foreign Key, Students.StudentId                     |
 
 ## Table: LoginLogs
 | Column     | Data Type | Description                       |
