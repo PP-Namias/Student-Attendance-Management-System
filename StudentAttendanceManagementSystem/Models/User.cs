@@ -11,9 +11,11 @@ namespace StudentAttendanceManagementSystem.Models
         [Required]
         public string UserName { get; set; } = string.Empty;
         [Required]
-        public string PasswordHash { get; set; } = string.Empty; 
+        public string PasswordHash { get; set; } = string.Empty;
         [Required]
         public string PhoneNumber { get; set; } = string.Empty;
+        [Required]
+        public string Role { get; set; } = string.Empty;
     }
 }
    

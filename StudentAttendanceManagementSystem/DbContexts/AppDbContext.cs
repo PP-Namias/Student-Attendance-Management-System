@@ -13,7 +13,7 @@ namespace StudentAttendanceManagementSystem.DbContexts
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            string connectionString = "Host=localhost; port=5432; Database=Database; User Id=postgres; Password=Namias99;";
+            string connectionString = "Host=localhost; port=5432; Database=SAMS; User Id=postgres; Password=Namias99;";
             optionsBuilder.UseNpgsql(connectionString);
         }
 
