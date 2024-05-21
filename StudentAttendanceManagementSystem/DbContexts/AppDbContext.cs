@@ -10,6 +10,8 @@ namespace StudentAttendanceManagementSystem.DbContexts
 
         public DbSet<LoginUser> LoginLogs { get; set; }
 
+        public DbSet<Students> Students { get; set; }
+
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -52,6 +54,21 @@ namespace StudentAttendanceManagementSystem.DbContexts
         internal void SaveLoginLog()
         {
             throw new NotImplementedException();
+        }
+
+        public void SaveStudent(Students student)
+        {
+            try
+            {
+                Students.Add(student);
+                SaveChanges();
+            }
+            catch (DbUpdateException ex)
+            {
+                // Handle any exceptions or logging here
+                Console.WriteLine($"Error saving student: {ex.Message}");
+                throw; // Rethrow the exception to propagate it further if needed
+            }
         }
     }
 }

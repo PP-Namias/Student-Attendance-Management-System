@@ -18,6 +18,8 @@ using System.Linq;
 using System.Windows.Threading;
 using ZXing;
 using Color = System.Drawing.Color;
+using StudentAttendanceManagementSystem.DbContexts;
+using System.Xml.Linq;
 
 
 namespace StudentAttendanceManagementSystem
@@ -27,6 +29,7 @@ namespace StudentAttendanceManagementSystem
     /// </summary>
     public partial class BarcodeScanningInterface : UserControl
     {
+        AppDbContext appDbContext = new AppDbContext();
 
         FilterInfoCollection videoDevices;
         private VideoCaptureDevice videoDevice;
@@ -40,6 +43,7 @@ namespace StudentAttendanceManagementSystem
         public BarcodeScanningInterface()
         {
             InitializeComponent();
+            appDbContext = new AppDbContext();
             // WelcomeMessage.Text = "Welcome " + LoggedInUser.Instance.Info.Name + "!";
         }
 
@@ -188,7 +192,6 @@ namespace StudentAttendanceManagementSystem
             videoFrame.Source = bi;
             return true;
         }
-
         void decodeframe(Bitmap img)
         {
             var barcodeResult = barcodeReader.Decode(img);
@@ -197,83 +200,35 @@ namespace StudentAttendanceManagementSystem
                 DateTime currentDateTime = DateTime.Now;
 
                 decodedCount++;
-                Dispatcher.Invoke(new ThreadStart(delegate { QRTextBlock.Text = barcodeResult.BarcodeFormat.ToString() + " " + barcodeResult.Text; }));
-                Dispatcher.Invoke(new ThreadStart(delegate { txtStudentId.Text = barcodeResult.Text; }));
-                Dispatcher.Invoke(new ThreadStart(delegate { QRCounterTextBlock.Text = "BAR/QR codes decoded: " + decodedCount.ToString(); }));
-
-                Application.Current.Dispatcher.Invoke(() =>
-                {
-                    string studentId = txtStudentId.Text;
-                    switch (studentId)
-                    {
-                        case "20220313-N":
-                            txtName.Text   = "Namias, Jhon Keneth Ryan B.";
-                            txtClass.Text  = "BSCS" + "2" + "-" + "A";
-                            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Jhon Keneth Namias.jpg"));
-
-                            txtTime.Text = currentDateTime.ToString("h:mm tt");
-                            txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
-                            break;
-
-                        case "20220679-N":
-                            txtName.Text   = "Caram II, Mike Rufino J.";
-                            txtClass.Text = "BSCS" + "2" + "-" + "A";
-                            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/mike.jpg"));
-
-                            txtTime.Text = currentDateTime.ToString("h:mm tt");
-                            txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
-                            break;
-
-                        case "20220060-N":
-                            txtName.Text   = "Acedo, Mark Relan Gercee";
-                            txtClass.Text = "BSCS" + "2" + "-" + "A";
-                            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Acedo.jpg"));
-
-                            txtTime.Text = currentDateTime.ToString("h:mm tt");
-                            txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
-                            break;
-
-                        case "20220464-N":
-                            txtName.Text   = "Miranda, Karl Mathew L.";
-                            txtClass.Text = "BSCS" + "2" + "-" + "A";
-                            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/Miranda.jpg"));
-
-                            txtTime.Text = currentDateTime.ToString("h:mm tt");
-                            txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
-                            break;
-
-                        // Add more cases for other student IDs
-                        default:
-                            txtName.Text = "Unknown Student";
-                            txtClass.Text = "Unknown Class";
-                            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/profile.png"));
-                            break;
-                        }
-                    
+                Dispatcher.Invoke(() => {
+                    QRTextBlock.Text = $"{barcodeResult.BarcodeFormat} {barcodeResult.Text}";
+                    QRCounterTextBlock.Text = $"BAR/QR codes decoded: {decodedCount}";
                 });
 
-                // Create an instance of ValidationForm
-                // Result validationForm = new Result();
-                // validationForm.ValidateBarcode(barcodeResult.Text);
-                // validationForm.Show();
-
-                bool result = false;
-
-                if (result == false)
+                using (var appDbContext = new StudentAttendanceManagementSystem.DbContexts.AppDbContext())
                 {
-                    // Create an instance of ValidationForm
-                    //Result Result = new Result();
-                    //Result.Show();
-
-                    //result = true;
+                    var student = appDbContext.Students.SingleOrDefault(s => s.StudentId == barcodeResult.Text);
+                    if (student != null)
+                    {
+                        Dispatcher.Invoke(() => {
+                            txtName.Text = student.Name;
+                            txtStudentId.Text = student.StudentId;
+                            txtClass.Text = student.Course + "-" + student.Year + student.Section ;
+                            //imgProfile.Source = new BitmapImage(new Uri($"pack://application:,,,/Images/{student.ProfileImage}"));
+                            txtTime.Text = currentDateTime.ToString("h:mm tt");
+                            txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
+                        });
+                    }
+                    else
+                    {
+                        Dispatcher.Invoke(() => {
+                            txtName.Text = "Unknown Student";
+                            txtStudentId.Text = "Unknown ID";
+                            txtClass.Text = "Unknown Class";
+                            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/profile.png"));
+                        });
+                    }
                 }
-
-
-
-                // barcodeResult.Text
-                // Result Result = new Result();
-                // Result.Show();
-                // this.Close();
             }
         }
 
@@ -320,6 +275,16 @@ namespace StudentAttendanceManagementSystem
         private void Button_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            txtName.Text = "Name";
+            txtStudentId.Text = "Student ID";
+            txtClass.Text = "Year & Section";
+            txtDate.Text = "Date";
+            txtTime.Text = "Time";
+            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/profile.png"));
         }
 
         private void btnConfirm_Click(object sender, RoutedEventArgs e)

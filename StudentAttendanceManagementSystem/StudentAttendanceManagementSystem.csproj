@@ -111,6 +111,7 @@
       <DependentUpon>20230220024514_n2.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\LoginLog.cs" />
+    <Compile Include="Models\Students.cs" />
     <Compile Include="QRCodeReader.xaml.cs">
       <DependentUpon>QRCodeReader.xaml</DependentUpon>
     </Compile>
@@ -419,6 +420,12 @@
     <Resource Include="Images\graduated.png" />
     <Resource Include="Images\sapiens.png" />
     <Resource Include="Images\woman.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Perez.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Perez.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

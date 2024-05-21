@@ -340,41 +340,76 @@
                                     </Border>
                                 </Grid>
 
-                                <TextBlock x:Name="txtName"      Text="Name"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" LineStackingStrategy="BlockLineHeight" TextWrapping="Wrap"/>
+                                <TextBlock x:Name="txtName"      Text="Name"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" LineStackingStrategy="BlockLineHeight" TextWrapping="Wrap" FontWeight="Bold"/>
                                 <TextBlock x:Name="txtStudentId" Text="Student Id"          FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" TextWrapping="Wrap"/>
                                 <TextBlock x:Name="txtClass"     Text="Year &amp; Section"  FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" TextWrapping="Wrap"/>
                                 <TextBlock x:Name="txtDate"      Text="Date"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" TextWrapping="Wrap"/>
                                 <TextBlock x:Name="txtTime"      Text="Time"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" TextWrapping="Wrap"/>
 
-                                <Button x:Name="btnRefresh" 
-                                        ToolTip="Confirm" 
-                                        Background="LightBlue" 
-                                        materialDesign:ButtonAssist.CornerRadius="10"
-                                        Foreground="Black" 
-                                        FontSize="20" 
-                                        Width="200" 
-                                        Height="60" 
-                                        Click="btnConfirm_Click" 
-                                        VerticalContentAlignment="Center"  
-                                        Cursor="Hand"  
-                                        BorderBrush="DodgerBlue" 
-                                        BorderThickness="2"
-                                        FontFamily="Century Gothic" 
-                                        FontWeight="Bold" 
-                                        VerticalAlignment="Bottom"
-                                        Canvas.Top="100" Margin="0,100,0,0">
-                                    <WrapPanel HorizontalAlignment="Center">
+                                <Canvas Height="75" Width="310">
 
-                                        <TextBlock Text="CONFIRM" 
+                                    <Button x:Name="btnConfirm" 
+                                            ToolTip="Confirm" 
+                                            Background="LightBlue" 
+                                            materialDesign:ButtonAssist.CornerRadius="10"
+                                            Foreground="Black" 
+                                            FontSize="20" 
+                                            Width="200" 
+                                            Height="60" 
+                                            Click="btnConfirm_Click" 
+                                            VerticalContentAlignment="Center"  
+                                            Cursor="Hand"  
+                                            BorderBrush="DodgerBlue" 
+                                            BorderThickness="2"
+                                            FontFamily="Century Gothic" 
+                                            FontWeight="Bold"
+                                            Canvas.Top="100" 
+                                            Canvas.Left="20" 
+                                            VerticalAlignment="Center" 
+                                            HorizontalAlignment="Center" 
+                                            HorizontalContentAlignment="Center" 
+                                            UseLayoutRounding="False" Padding="0,0,0,0" Grid.IsSharedSizeScope="True">
+                                        <WrapPanel HorizontalAlignment="Center">
+
+                                            <TextBlock Text="CONFIRM" 
                                                    VerticalAlignment="Center" 
-                                                   FontWeight="SemiBold" 
-                                                   Margin="10 0" />
-                                        <materialDesign:PackIcon 
+                                                   FontWeight="SemiBold" HorizontalAlignment="Center" />
+                                            <materialDesign:PackIcon 
                                                    Kind="CalendarCheck" 
                                                    Width="45" 
                                                    Height="45" />
-                                    </WrapPanel>
-                                </Button>
+                                        </WrapPanel>
+                                    </Button>
+
+
+                                    <Button x:Name="btnClear" 
+                                            ToolTip="Clear" 
+                                            Background="LightBlue" 
+                                            materialDesign:ButtonAssist.CornerRadius="10"
+                                            Foreground="Black" 
+                                            FontSize="20" 
+                                            Width="60" 
+                                            Height="60" 
+                                            VerticalContentAlignment="Center"  
+                                            Cursor="Hand"  
+                                            BorderBrush="DodgerBlue" 
+                                            BorderThickness="2"
+                                            FontFamily="Century Gothic" 
+                                            FontWeight="Bold"
+                                            Canvas.Top="100" 
+                                            Canvas.Left="230" 
+                                            VerticalAlignment="Center" 
+                                            HorizontalAlignment="Left" 
+                                            HorizontalContentAlignment="Center" 
+                                            UseLayoutRounding="False" Padding="0,0,0,0" Click="btnClear_Click">
+                                        <WrapPanel HorizontalAlignment="Center">
+                                            <materialDesign:PackIcon 
+                                                   Kind="Trash"  
+                                                   Width="45" 
+                                                   Height="45" />
+                                        </WrapPanel>
+                                    </Button>
+                                </Canvas>
 
 
                             </StackPanel>
