@@ -37,7 +37,7 @@ namespace StudentAttendanceManagementSystem
                 {
                     Username = txtUsername.Text,
                     LogInTime = System.DateTime.Now,
-                    Date = System.DateTime.Now,
+                    Date = System.DateTime.Today,
                     Role = "User",
                     Remark = "Login Successfully"
                 };

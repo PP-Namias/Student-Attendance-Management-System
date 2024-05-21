@@ -111,6 +111,7 @@
       <DependentUpon>20230220024514_n2.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\LoginLog.cs" />
+    <Compile Include="Models\Students_Attendance.cs" />
     <Compile Include="Models\Students.cs" />
     <Compile Include="QRCodeReader.xaml.cs">
       <DependentUpon>QRCodeReader.xaml</DependentUpon>

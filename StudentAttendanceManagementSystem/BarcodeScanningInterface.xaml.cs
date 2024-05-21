@@ -20,6 +20,7 @@ using ZXing;
 using Color = System.Drawing.Color;
 using StudentAttendanceManagementSystem.DbContexts;
 using System.Xml.Linq;
+using StudentAttendanceManagementSystem.Models;
 
 
 namespace StudentAttendanceManagementSystem
@@ -96,6 +97,20 @@ namespace StudentAttendanceManagementSystem
         private void StartStopButton_Click(object sender, RoutedEventArgs e)
         {
             onOff();
+        }
+
+        private void Clear(object sender, RoutedEventArgs e)
+        {
+            QRTextBlock.Text = "";
+            QRCounterTextBlock.Text = "BAR/QR codes decoded: 0";
+
+
+            txtName.Text = "Name";
+            txtStudentId.Text = "Student ID";
+            txtClass.Text = "Year & Section";
+            txtDate.Text = "Date";
+            txtTime.Text = "Time";
+            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/profile.png"));
         }
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
@@ -211,10 +226,16 @@ namespace StudentAttendanceManagementSystem
                     if (student != null)
                     {
                         Dispatcher.Invoke(() => {
-                            txtName.Text = student.Name;
+                            txtName.Text      = student.Name;
                             txtStudentId.Text = student.StudentId;
-                            txtClass.Text = student.Course + "-" + student.Year + student.Section ;
+                            txtClass.Text     = student.Course + "-" + student.Year + student.Section ;
+
+                            txtCourse.Text    = student.Course;
+                            txtYear.Text      = student.Year;
+                            txtSection.Text   = student.Section;
+
                             //imgProfile.Source = new BitmapImage(new Uri($"pack://application:,,,/Images/{student.ProfileImage}"));
+
                             txtTime.Text = currentDateTime.ToString("h:mm tt");
                             txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
                         });
@@ -289,10 +310,49 @@ namespace StudentAttendanceManagementSystem
 
         private void btnConfirm_Click(object sender, RoutedEventArgs e)
         {
-            DateTime currentDateTime = DateTime.Now;
+            var student = appDbContext.Students.SingleOrDefault(s => s.StudentId == txtStudentId.Text);
+            if (student != null)
+            {
+                Dispatcher.Invoke(() => {
 
-            txtTime.Text = currentDateTime.ToString("h:mm tt");
-            txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
+                    var studentAttendance = new Students_Attendance()
+                    {
+                        Name = txtName.Text,
+                        Course = txtClass.Text,
+                        Year = txtClass.Text,
+                        Section = txtClass.Text,
+                        StudentId = txtStudentId.Text,
+                        Status = "Present",
+                        Archived = false,
+                        Date = System.DateTime.Today,
+                        Time = System.DateTime.Now
+                    };
+
+                    appDbContext.Attendance.Add(studentAttendance);
+                    appDbContext.SaveStudentAttendance(studentAttendance);
+
+                    MessageBox.Show("Attendance recorded successfully", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                });
+            }
+            else if (student == null)
+            {
+                Dispatcher.Invoke(() =>
+                {
+                    MessageBox.Show("Student not found", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                });
+            }
+            else
+            {
+                Dispatcher.Invoke(() => {
+                    MessageBox.Show("Student not found [ ERROR 101 ]", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                });
+            }
+
+
+
+
+            Clear(sender, e);
+
         }
 
     }

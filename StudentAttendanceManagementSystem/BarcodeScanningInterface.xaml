@@ -340,12 +340,17 @@
                                     </Border>
                                 </Grid>
 
-                                <TextBlock x:Name="txtName"      Text="Name"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" LineStackingStrategy="BlockLineHeight" TextWrapping="Wrap" FontWeight="Bold"/>
-                                <TextBlock x:Name="txtStudentId" Text="Student Id"          FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" TextWrapping="Wrap"/>
-                                <TextBlock x:Name="txtClass"     Text="Year &amp; Section"  FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" TextWrapping="Wrap"/>
-                                <TextBlock x:Name="txtDate"      Text="Date"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" TextWrapping="Wrap"/>
-                                <TextBlock x:Name="txtTime"      Text="Time"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" Width="300" FontSize="30" TextWrapping="Wrap"/>
+                                <TextBlock x:Name="txtName"      Text="Name"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" FontSize="30" TextWrapping="Wrap" Width="300" FontWeight="Bold" LineStackingStrategy="BlockLineHeight"/>
+                                <TextBlock x:Name="txtStudentId" Text="Student Id"          FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" FontSize="30" TextWrapping="Wrap" Width="300"/>
+                                <TextBlock x:Name="txtClass"     Text="Year &amp; Section"  FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" FontSize="30" TextWrapping="Wrap" Width="300"/>
+                                <TextBlock x:Name="txtDate"      Text="Date"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" FontSize="30" TextWrapping="Wrap" Width="300"/>
+                                <TextBlock x:Name="txtTime"      Text="Time"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" FontSize="30" TextWrapping="Wrap" Width="300"/>
 
+                                <TextBlock x:Name="txtCourse"    Text="Course"              FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" FontSize="30" TextWrapping="Wrap" Width="0" Height="0"/>
+                                <TextBlock x:Name="txtYear"      Text="Year"                FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" FontSize="30" TextWrapping="Wrap" Width="0" Height="0"/>
+                                <TextBlock x:Name="txtSection"   Text="Section"             FontFamily="Century Gothic" HorizontalAlignment="Center" TextAlignment="Center" FontSize="30" TextWrapping="Wrap" Width="0" Height="0"/>
+                                
+                                
                                 <Canvas Height="75" Width="310">
 
                                     <Button x:Name="btnConfirm" 

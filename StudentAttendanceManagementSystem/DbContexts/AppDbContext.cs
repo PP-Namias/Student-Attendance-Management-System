@@ -11,6 +11,7 @@ namespace StudentAttendanceManagementSystem.DbContexts
         public DbSet<LoginUser> LoginLogs { get; set; }
 
         public DbSet<Students> Students { get; set; }
+        public DbSet<Students_Attendance> Attendance { get; set; }
 
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
@@ -67,6 +68,21 @@ namespace StudentAttendanceManagementSystem.DbContexts
             {
                 // Handle any exceptions or logging here
                 Console.WriteLine($"Error saving student: {ex.Message}");
+                throw; // Rethrow the exception to propagate it further if needed
+            }
+        }
+
+        public void SaveStudentAttendance(Students_Attendance studentAttendance)
+        {
+            try
+            {
+                Attendance.Add(studentAttendance);
+                SaveChanges();
+            }
+            catch (DbUpdateException ex)
+            {
+                // Handle any exceptions or logging here
+                Console.WriteLine($"Error saving student attendance: {ex.Message}");
                 throw; // Rethrow the exception to propagate it further if needed
             }
         }
