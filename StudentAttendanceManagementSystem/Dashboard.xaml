@@ -23,7 +23,7 @@
             </Style>
         </Grid.Resources>
         <Grid Grid.Column="0" Background="#3C2A21">
-    
+
             <StackPanel Margin="10">
 
                 <WrapPanel HorizontalAlignment="Center" Margin="0,10,0,0">
@@ -70,26 +70,26 @@
                 </WrapPanel>
                 <Border BorderThickness="2" CornerRadius="15" BorderBrush="White" Margin="30 20">
                     <materialDesign:Card UniformCornerRadius="20" Height="296" Background="#1A120B" Foreground="#E5E5CB" BorderBrush="White">
-                    <StackPanel>
-                        <Grid>
-                            <TextBlock Margin="20" HorizontalAlignment="Left"  FontWeight="SemiBold" Text="Students Attendance" FontSize="20"/>
-                            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,21,0">
-                                <TextBlock Text="Present" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="14" Margin="5,0,5,0" />
-                                <TextBlock FontWeight="ExtraBold" FontSize="20" Text="&#xF06C;" FontFamily="wingdings" VerticalAlignment="Center" Foreground="#42A5F4" Margin="0,0,20,0" HorizontalAlignment="Center" />
-                                <TextBlock Text="Absent" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="14" Margin="5,0,5,0" />
-                                <TextBlock FontWeight="ExtraBold" FontSize="20" Text="&#xF06C;" FontFamily="wingdings" VerticalAlignment="Center" Foreground="#F55F54" Margin="0,0,0,0" HorizontalAlignment="Center" />
-                            </StackPanel>
-                        </Grid>
-                        <lvc:CartesianChart Series="{Binding SeriesCollection}" Foreground="Black" Margin="10,-20,10,10" Height="241">
-                            <lvc:CartesianChart.AxisX>
-                                <lvc:Axis Labels="{Binding Labels}" Separator="{x:Static lvc:DefaultAxes.CleanSeparator}" />
-                            </lvc:CartesianChart.AxisX>
-                            <lvc:CartesianChart.AxisY>
-                                <lvc:Axis LabelFormatter="{Binding Formatter}" />
-                            </lvc:CartesianChart.AxisY>
-                        </lvc:CartesianChart>
-                    </StackPanel>
-                </materialDesign:Card>
+                        <StackPanel>
+                            <Grid>
+                                <TextBlock Margin="20" HorizontalAlignment="Left"  FontWeight="SemiBold" Text="Students Attendance" FontSize="20"/>
+                                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,21,0">
+                                    <TextBlock Text="Present" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="14" Margin="5,0,5,0" />
+                                    <TextBlock FontWeight="ExtraBold" FontSize="20" Text="&#xF06C;" FontFamily="wingdings" VerticalAlignment="Center" Foreground="#42A5F4" Margin="0,0,20,0" HorizontalAlignment="Center" />
+                                    <TextBlock Text="Absent" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="14" Margin="5,0,5,0" />
+                                    <TextBlock FontWeight="ExtraBold" FontSize="20" Text="&#xF06C;" FontFamily="wingdings" VerticalAlignment="Center" Foreground="#F55F54" Margin="0,0,0,0" HorizontalAlignment="Center" />
+                                </StackPanel>
+                            </Grid>
+                            <lvc:CartesianChart Series="{Binding SeriesCollection}" Foreground="Black" Margin="10,-20,10,10" Height="241">
+                                <lvc:CartesianChart.AxisX>
+                                    <lvc:Axis Labels="{Binding Labels}" Separator="{x:Static lvc:DefaultAxes.CleanSeparator}" />
+                                </lvc:CartesianChart.AxisX>
+                                <lvc:CartesianChart.AxisY>
+                                    <lvc:Axis LabelFormatter="{Binding Formatter}" />
+                                </lvc:CartesianChart.AxisY>
+                            </lvc:CartesianChart>
+                        </StackPanel>
+                    </materialDesign:Card>
                 </Border>
                 <WrapPanel HorizontalAlignment="Center" Width="708">
                     <Border BorderThickness="2" CornerRadius="15" BorderBrush="White" Margin="10" Background="#1A120B">
@@ -188,7 +188,7 @@
                 </Button>
             </WrapPanel>
              -->
-            <Image Source="Images/sapiens.png"  Stretch="Uniform" Margin="0,10,0,0" Height="247" Width="300"  />
+            <Image Source="Images/SapiensBrown.png"  Stretch="Uniform" Margin="0,10,0,0" Height="242" Width="290"  />
 
 
             <Grid
@@ -244,7 +244,7 @@
                     </TextBlock>
                 </WrapPanel>
             </materialDesign:Card>
-            <materialDesign:Card Margin="20 10" Padding="5" UniformCornerRadius="20" HorizontalAlignment="Center" Background="#3C2A21" Foreground="#E5E5CB">
+            <materialDesign:Card Margin="20 10" Padding="5" UniformCornerRadius="20" HorizontalAlignment="Center" Background="#3C2A21" Foreground="#E5E5CB" MouseLeftButtonDown="Card_MouseLeftButtonDown">
                 <WrapPanel Margin="10" Width="275">
                     <materialDesign:PackIcon Kind="AboutCircleOutline" Foreground="#FFC83D" VerticalAlignment="Center" Margin="10 0"  />
                     <TextBlock Margin="10 0" VerticalAlignment="Center" FontSize="16">

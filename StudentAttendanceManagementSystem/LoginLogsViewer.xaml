@@ -92,7 +92,7 @@
                 <TextBlock x:Name="NumberOfLogs" Foreground="White" FontWeight="DemiBold" FontSize="22" Width="225" Margin="700,-100,0,0" Height="26" ><Run Text="Number of logs: 000"/></TextBlock>
                 <Border  Canvas.Left="55"
                          Canvas.Top="30"
-                         Height="298"
+                         Height="500"
                          BorderBrush="DarkGray"
                          BorderThickness="1"
                          CornerRadius="18"
@@ -103,7 +103,7 @@
                               ScrollViewer.VerticalScrollBarVisibility="Auto"
                               ScrollViewer.HorizontalScrollBarVisibility="Auto"
                               AutoGenerateColumns="True" 
-                              Height="263" 
+                              Height="450" 
                               HorizontalAlignment="Center"
                               Width="885"
                               AlternatingRowBackground="LightGray"
@@ -112,112 +112,9 @@
                               Panel.ZIndex="3"
                               SelectionMode="Single"
                               SelectionUnit="FullRow">
-
                     </DataGrid>
-
-
                 </Border>
-                <TextBlock Name="Filter" 
-                           Foreground="White"
-                           Grid.Row="0"
-                           Margin="25,25,0,0" 
-                           FontWeight="DemiBold" 
-                           FontSize="20"
-                           Width="257"
-                           HorizontalAlignment="Left">
-                           Filter by:
-                </TextBlock>
-                <CheckBox
-                    Name="AllDates" 
-                    Background="#585858"
-                    Foreground="White"
-                    Grid.Row="0"
-                    Margin="50,5,0,0" 
-                    FontSize="20"
-                    Width="257"
-                    HorizontalAlignment="Left"
-                    Content="All Dates"
-                    IsChecked="True"
-                    Style="{StaticResource MaterialDesignFilterChipCheckBox}" Checked="AllDates_Checked"/>
-                <CheckBox
-                    Name="DatesSelected" 
-                    Background="#585858"
-                    Foreground="White"
-                    Grid.Row="0"
-                    Margin="50,5,0,0" 
-                    FontSize="20"
-                    Width="257"
-                    HorizontalAlignment="Left"
-                    Content="Date(s) Selected"
-                    Style="{StaticResource MaterialDesignFilterChipCheckBox}" Checked="DatesSelected_Checked"/>
-                <CheckBox
-                    Name="InputUsername" 
-                    Background="#585858"
-                    Foreground="White"
-                    Grid.Row="0"
-                    Margin="50,5,0,0" 
-                    FontSize="20"
-                    Width="280"
-                    HorizontalAlignment="Left"
-                    Content="Username Inputted Below"
-                    Style="{StaticResource MaterialDesignFilterChipCheckBox}" Checked="InputUsername_Checked"/>
-                <StackPanel Width="250" HorizontalAlignment="Left" Margin="50,0,0,0">
-                    <TextBox x:Name="TextBoxTextCounter"
-                             Height="70"
-                             materialDesign:HintAssist.Hint="Input Username Here"
-                             AcceptsReturn="True"
-                             TextWrapping="Wrap"
-                             VerticalScrollBarVisibility="Auto"
-                             Foreground="White"
-                             FontSize="15"
-                             
-                             materialDesign:TextFieldAssist.HasOutlinedTextField = "True"
-                             materialDesign:TextFieldAssist.TextFieldCornerRadius = "10"
-                             Padding="16, 16, 12, 16"
-                             BorderBrush="DarkGray"
-                             BorderThickness="1"
-                             
-                             materialDesign:HintAssist.IsFloating = "True"
-                             materialDesign:HintAssist.Background="#111315"
-                             materialDesign:HintAssist.Foreground="White"/>
-                </StackPanel>
-                <Border x:Name="CalendarBorder"
-                        BorderThickness="2"
-                        CornerRadius="13" 
-                        Height="230" 
-                        Width="375" 
-                        Margin="50,-200,0,0">
-                    <Border.BorderBrush>
-                        <DrawingBrush Viewport="0,0,8,8" ViewportUnits="Absolute" TileMode="Tile">
-                            <DrawingBrush.Drawing>
-                                <DrawingGroup>
-                                    <GeometryDrawing Brush="DarkGray">
-                                        <GeometryDrawing.Geometry>
-                                            <GeometryGroup>
-                                                <RectangleGeometry Rect="0,0,50,50" />
-                                                <RectangleGeometry Rect="50,50,50,50" />
-                                            </GeometryGroup>
-                                        </GeometryDrawing.Geometry>
-                                    </GeometryDrawing>
-                                </DrawingGroup>
-                            </DrawingBrush.Drawing>
-                        </DrawingBrush>
-                    </Border.BorderBrush>
-                    <Calendar x:Name="cldDates"
-                              materialDesign:CalendarAssist.HeaderBackground="#111315"
-                              materialDesign:CalendarAssist.HeaderForeground="White"  
-                              materialDesign:CalendarAssist.Orientation="Horizontal"
-                              Background="#111315"
-                              Foreground="White"
-                              BorderBrush="DarkGray" 
-                              CalendarButtonStyle="{DynamicResource CustomCalendarButton}"
-                              CalendarDayButtonStyle="{DynamicResource CustomCalendarDayButton}"
-                              BorderThickness="1" 
-                              Margin="0,0,0,0" 
-                              Width="350" 
-                              Height="217" 
-                              IsHitTestVisible="False"/>
-                </Border>
+                
                 <Button x:Name="btnArchive" 
                         ToolTip="Archive Login Logs" 
                         Background="#0a0a0a" 
@@ -232,7 +129,7 @@
                         BorderThickness="1"
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" 
-                        Margin="700,-375,0,0" 
+                        Margin="-475,15,0,0" 
                         Click="btnArchive_Click" >
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 
@@ -260,7 +157,9 @@
                         BorderThickness="1"
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" 
-                        Margin="700,-225,0,0" >
+                        Margin="0,-60,0,0" 
+                        Click="btnRefresh_Click" 
+                        >
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 
                             Kind="RefreshCircle" 
@@ -287,8 +186,9 @@
                         BorderThickness="1"
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" 
-                        Margin="700,-75,0,0" 
-                        Click="btnOpenArchive_Click" Padding="0"  >
+                        Margin="475,-60,0,0" 
+                        Click="btnOpenArchive_Click" 
+                        Padding="0"  >
                     <WrapPanel HorizontalAlignment="Center" Width="218">
                         <materialDesign:PackIcon 
                             Kind="Show" 

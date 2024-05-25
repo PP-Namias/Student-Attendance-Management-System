@@ -1,6 +1,7 @@
 ﻿using LiveCharts;
 using LiveCharts.Defaults;
 using LiveCharts.Wpf;
+using MaterialDesignThemes.Wpf;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -89,6 +90,32 @@ namespace StudentAttendanceManagementSystem
             Formatter = value => value.ToString();
             DataContext = this;
         
+        }
+
+        private void Card_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
+
+            var sMessageDialog = new MessageDialog
+            {
+                //Message = { Text = ((ButtonBase)sender).Content.ToString() }
+                Message = { Text =
+                    "Student Attendance Management System" +
+                    "\nFinal Reports on " +
+                    "\nHCI and Programming Languages" +
+                    "\n" +
+                    "\nMembers:" +
+                    "\nChristian Perez" +
+                    "\nJhon Keneth Ryan B. Namias" +
+                    "\nKarl Miranda" +
+                    "\nMark Acedo" +
+                    "\nMike Caram" +
+                    "\n" +
+
+                    "\nMade with ♡ BSCS 2A"
+                }
+            };
+
+            DialogHost.Show(sMessageDialog, "RootDialog");
         }
     }
 }

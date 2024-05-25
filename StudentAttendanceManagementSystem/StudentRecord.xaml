@@ -8,7 +8,7 @@
                  xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"         
                  xmlns:src="http://metro.mahapps.com/winfx/xaml/controls"
                  
-                 Background="#111315"
+                 Background="#1A120B"
                  FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
                  TextElement.Foreground="{DynamicResource MaterialDesignBody}"
                  TextElement.FontWeight="Regular"
@@ -63,7 +63,7 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid Background="#111315">
+    <Grid Background="#1A120B">
         <Border Canvas.Left="55"
          Canvas.Top="30"
          Height="700"
@@ -97,7 +97,7 @@
                          BorderBrush="DarkGray"
                          BorderThickness="1"
                          CornerRadius="18"
-                         Margin="50,0,50,0">
+                         Margin="50,-15,50,0">
 
                     <DataGrid x:Name="tblStudentRecords" 
                               Grid.Row="1"    
@@ -113,14 +113,14 @@
                               IsReadOnly="False"
                               Panel.ZIndex="3"
                               SelectionMode="Single"
-                              SelectionUnit="Cell">
+                              SelectionUnit="FullRow">
                     </DataGrid>
                 </Border>
 
 
                 <Button x:Name="btnArchive" 
                         ToolTip="Archive Student Records" 
-                        Background="#1B1A55" 
+                        Background="#3C2A21" 
                         materialDesign:ButtonAssist.CornerRadius="10"
                         Foreground="White" 
                         FontSize="20" 
@@ -147,41 +147,12 @@
                 </Button>
 
                 <Button x:Name="btnSave" 
-                        ToolTip="Scanner Student Records" 
-                        Background="#1B1A55" 
+                        ToolTip="Save Student Records" 
+                        Background="#3C2A21" 
                         materialDesign:ButtonAssist.CornerRadius="10"
                         Foreground="White" 
                         FontSize="20" 
-                        Width="218" 
-                        Height="60" 
-                        VerticalContentAlignment="Center"  
-                        Cursor="Hand"  
-                        BorderBrush="DarkGray" 
-                        BorderThickness="1"
-                        FontFamily="Century Gothic" 
-                        FontWeight="Bold" 
-                        Margin="235,-60,0,0" 
-                        Click="btnSave_Click"  >
-                    <WrapPanel HorizontalAlignment="Center">
-                        <materialDesign:PackIcon 
-                            Kind="ContentSave" 
-                            Width="45" 
-                            Height="45" />
-                        <TextBlock Text="| Save" 
-                                   VerticalAlignment="Center" 
-                                   FontWeight="SemiBold" 
-                                   Margin="10 0" />
-                    </WrapPanel>
-                </Button>
-
-
-                <Button x:Name="btnStudentDatabase" 
-                        ToolTip="Scanner Student Records" 
-                        Background="#1B1A55" 
-                        materialDesign:ButtonAssist.CornerRadius="10"
-                        Foreground="White" 
-                        FontSize="20" 
-                        Width="218" 
+                        Width="60" 
                         Height="60" 
                         VerticalContentAlignment="Center"  
                         Cursor="Hand"  
@@ -190,23 +161,18 @@
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" 
                         Margin="700,-60,0,0" 
-                        Padding="0,0,0,0"  >
+                        Click="btnSave_Click" Padding="0,0,0,0"  >
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 
-                            Kind="Database" 
+                            Kind="ContentSave" 
                             Width="45" 
-                            Height="45" Margin="0,0,-10,0" />
-                        <TextBlock Text="| Students Data" 
-                                   VerticalAlignment="Center" 
-                                   FontWeight="SemiBold" 
-                                   Margin="10 0" />
+                            Height="45" />
                     </WrapPanel>
                 </Button>
 
-
-                <Button x:Name="btnRefresh" 
-                        ToolTip="Edit Student Records" 
-                        Background="#1B1A55" 
+                <Button x:Name="btnOpenArchived" 
+                        ToolTip="Show Archived Student Records" 
+                        Background="#3C2A21" 
                         materialDesign:ButtonAssist.CornerRadius="10"
                         Foreground="White" 
                         FontSize="20" 
@@ -219,18 +185,72 @@
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" 
                         Margin="-235,-60,0,0" 
-                        Click="btnRefresh_Click">
+                        Padding="0,0,0,0" Click="btnOpenArchived_Click">
+                    <WrapPanel HorizontalAlignment="Center" Width="202">
+                        <materialDesign:PackIcon 
+                            Kind="Show" 
+                            Width="45" 
+                            Height="45" />
+                        <TextBlock Text="| Open Archive" 
+                                   VerticalAlignment="Center" 
+                                   FontWeight="SemiBold" 
+                                   Margin="0 0" />
+                    </WrapPanel>
+                </Button>
+
+                <Button x:Name="btnStudentDatabase" 
+                        ToolTip="Show Student Database" 
+                        Background="#3C2A21" 
+                        materialDesign:ButtonAssist.CornerRadius="10"
+                        Foreground="White" 
+                        FontSize="20" 
+                        Width="218" 
+                        Height="60" 
+                        VerticalContentAlignment="Center"  
+                        Cursor="Hand"  
+                        BorderBrush="DarkGray" 
+                        BorderThickness="1"
+                        FontFamily="Century Gothic" 
+                        FontWeight="Bold" 
+                        Margin="235,-60,0,0" 
+                        Padding="0,0,0,0" Click="btnStudentDatabase_Click"  >
+                    <WrapPanel HorizontalAlignment="Center" Width="218">
+                        <materialDesign:PackIcon 
+                            Kind="Database" 
+                            Width="45" 
+                            Height="45" Margin="0,0,0,0" />
+                        <TextBlock Text="| Students Data" 
+                                   VerticalAlignment="Center" 
+                                   FontWeight="SemiBold" 
+                                   Margin="0,0,0,0" />
+                    </WrapPanel>
+                </Button>
+
+
+                <Button x:Name="btnRefresh" 
+                        ToolTip="Refresh Student Records" 
+                        Background="#3C2A21" 
+                        materialDesign:ButtonAssist.CornerRadius="10"
+                        Foreground="White" 
+                        FontSize="20" 
+                        Width="60" 
+                        Height="60" 
+                        VerticalContentAlignment="Center"  
+                        Cursor="Hand"  
+                        BorderBrush="DarkGray" 
+                        BorderThickness="1"
+                        FontFamily="Century Gothic" 
+                        FontWeight="Bold" 
+                        Margin="850,-60,0,0" 
+                        Click="btnRefresh_Click" Padding="0,0,0,0">
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 
                             Kind="RefreshCircle" 
                             Width="45" 
                             Height="45" />
-                        <TextBlock Text="| Refresh" 
-                                   VerticalAlignment="Center" 
-                                   FontWeight="SemiBold" 
-                                   Margin="10 0" />
                     </WrapPanel>
                 </Button>
+
             </StackPanel>
         </Border>
     </Grid>

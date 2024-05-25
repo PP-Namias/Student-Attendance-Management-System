@@ -47,34 +47,33 @@ namespace StudentAttendanceManagementSystem
                 MessageBox.Show($"An error occurred while loading data: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
-
         private void btnArchive_Click(object sender, RoutedEventArgs e)
         {
-            var selectedRecord = tblStudentRecords.SelectedItem as AttendanceViewModel;
+            var selectedRecord = tblStudentRecords.SelectedItem as ArchivedAttendanceViewModel;
             if (selectedRecord != null)
             {
                 try
                 {
                     using (var context = new AppDbContext())
                     {
-                        var recordToArchive = context.Attendance.Find(selectedRecord.Id);
-                        if (recordToArchive != null)
+                        var recordToUnarchive = context.Attendance.Find(selectedRecord.Id);
+                        if (recordToUnarchive != null)
                         {
-                            recordToArchive.Archived = true;
+                            recordToUnarchive.Archived = false; // Set Archived to false to unarchive the record
                             context.SaveChanges();
-                            MessageBox.Show("Record archived successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                            MessageBox.Show("Record unarchived successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                         }
                     }
-                    LoadData();
+                    LoadData(); // Reload the data after unarchiving
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"An error occurred while archiving the record: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show($"An error occurred while unarchiving record: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Please select a record to archive.", "No Selection", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Please select a record to unarchive.", "No Selection", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
@@ -174,6 +173,20 @@ namespace StudentAttendanceManagementSystem
             {
                 MessageBox.Show($"An error occurred while saving changes: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+        }
+
+        private void btnStudentDatabase_Click(object sender, RoutedEventArgs e)
+        {
+            StudentsDatabase x = new StudentsDatabase();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+        }
+
+        private void btnOpenArchived_Click(object sender, RoutedEventArgs e)
+        {
+            ArchivedStudentRecord x = new ArchivedStudentRecord();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
     }
 

@@ -76,6 +76,12 @@
     <Compile Include="AddNewLog.xaml.cs">
       <DependentUpon>AddNewLog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ArchivedStudentRecord.xaml.cs">
+      <DependentUpon>ArchivedStudentRecord.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ArchivedStudentsDatabase.xaml.cs">
+      <DependentUpon>ArchivedStudentsDatabase.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ArchiveLoginLogs.xaml.cs">
       <DependentUpon>ArchiveLoginLogs.xaml</DependentUpon>
     </Compile>
@@ -146,6 +152,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddNewLog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ArchivedStudentRecord.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ArchivedStudentsDatabase.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -445,6 +459,12 @@
     <Resource Include="20220464-N.png" />
     <Resource Include="20220679-N.png" />
     <Resource Include="20220844-N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SapiensBrown.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\SapiensBrown.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

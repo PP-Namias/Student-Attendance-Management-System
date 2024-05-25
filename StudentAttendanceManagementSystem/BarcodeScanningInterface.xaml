@@ -88,7 +88,7 @@
                                         BorderBrush="#FF3B5998"
                                         Background="DodgerBlue"
                                         CornerRadius="5"
-                                        Margin="15,74,13,627" Height="7"/>
+                                        Margin="15,63,13,627" Height="7"/>
 
                                 <Border Canvas.Left="55"
                                     Canvas.Top="30"
@@ -230,7 +230,7 @@
                                     BorderBrush="#FF3B5998"
                                     Background="DodgerBlue"
                                     CornerRadius="5"
-                                    Margin="15,489,13,212" RenderTransformOrigin="0.5,0.5" Height="7">
+                                    Margin="15,475,13,212" RenderTransformOrigin="0.5,0.5" Height="7">
                                     <Border.RenderTransform>
                                         <TransformGroup>
                                             <ScaleTransform ScaleY="-1"/>

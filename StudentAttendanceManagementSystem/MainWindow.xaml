@@ -12,43 +12,29 @@
         WindowStartupLocation="CenterScreen" 
         WindowStyle="None" 
         ResizeMode="NoResize">
-    
+
     <Grid MouseDown="Border_MouseDown">
         <Grid.Background>
             <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
-                <GradientStop  Color="#3C2A21" Offset="1"/>
-                <GradientStop  Color="#D5CEA3" Offset="0"/>
+                <GradientStop  Color="#987554" Offset="1"/>
+                <GradientStop  Color="#1A120B" Offset="0"/>
             </LinearGradientBrush>
         </Grid.Background>
         <Border Height="390" VerticalAlignment="Top" CornerRadius="0 0 180 0" Background="#1A120B" MouseDown="Border_MouseDown">
         </Border>
         <StackPanel Orientation="Horizontal">
-            <StackPanel Width="400">
+            <StackPanel Width="350">
                 <TextBlock Text="Student Attendance"
                            Foreground="White"
                            TextAlignment="Center"
                            FontSize="30"
-                           FontFamily="Century" Margin="0,20,0,0">
-                </TextBlock>
+                           FontFamily="Century Gothic" HorizontalAlignment="Center" Margin="0,11,0,0"/>
                 <TextBlock Text="Management System"
                            Foreground="White"
                            TextAlignment="Center"
                            FontSize="30"
-                           FontFamily="Century">
-                </TextBlock>
-                <TextBlock Text="The Student Attendance Management System is designed to modernize"
-                           Foreground="White"
-                           TextAlignment="Center"
-                           FontSize="10"
-                           FontFamily="Century" Margin="0,10,0,0">
-                </TextBlock>
-                <TextBlock Text=" the attendance tracking process in educational institutions."
-                           Foreground="White"
-                           TextAlignment="Center"
-                           FontSize="10"
-                           FontFamily="Century">
-                </TextBlock>
-                <Image Source="/Images/mike.jpg"  Width="250" Height="269" Margin="30" Stretch="Uniform" />
+                           FontFamily="Century Gothic" HorizontalAlignment="Center"/>
+                <Image Source="/SapiensBrown.png"  Width="352" Height="341" Margin="-11,0,0,30" Stretch="Uniform" Panel.ZIndex="-1" />
             </StackPanel>
             <StackPanel Width="375">
                 <StackPanel Margin="20 40" Width="350">
@@ -57,7 +43,7 @@
                                Foreground="White"
                                TextAlignment="Center" 
                                FontSize="38"  
-                               FontFamily="Century"></TextBlock>
+                               FontFamily="Century Gothic"></TextBlock>
 
 
                     <StackPanel Orientation="Horizontal" Margin="10" >
@@ -82,21 +68,39 @@
                     </Button>
 
                     <!--Login page-->
-                    <StackPanel Margin="20 35 150 40" HorizontalAlignment="Center" >
-                        <Button Width="100" Height="35" Style="{StaticResource MaterialDesignRaisedButton}"
-                                materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#3C2A21" FontFamily="Century" 
-                                Background="#3C2A21" Foreground="White" ToolTip="Login" x:Name="btnLogin" Click="btnLogin_Click" Content="Login"/>
+                    <StackPanel Margin="0,50,0,50" HorizontalAlignment="Center" >
+                        <Button x:Name="btnLogin"
+                                ToolTip="Login" 
+                                Background="#3C2A21" 
+                                materialDesign:ButtonAssist.CornerRadius="10"
+                                Foreground="White" 
+                                FontSize="20" 
+                                Width="178" 
+                                Height="60" 
+                                VerticalContentAlignment="Center"  
+                                Cursor="Hand"  
+                                BorderBrush="DarkGray" 
+                                BorderThickness="1"
+                                FontFamily="Century Gothic" 
+                                FontWeight="Bold" 
+                                Click="btnLogin_Click" 
+                                Padding="0" >
+                            <WrapPanel HorizontalAlignment="Center">
+                                <materialDesign:PackIcon 
+                                    Kind="Login" 
+                                    Width="45" 
+                                    Height="45" />
+                                <TextBlock Text="| Login" 
+                                   VerticalAlignment="Center" 
+                                   FontWeight="SemiBold" 
+                                   Margin="0 0" />
+                            </WrapPanel>
+                        </Button>
                     </StackPanel>
 
 
                     <!--Register-->
-                    <StackPanel Margin="130 -74 0 34" HorizontalAlignment="Center">
-                        <Button Width="100" Height="35" Style="{StaticResource MaterialDesignRaisedButton}"
-                                materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#3C2A21" FontFamily="Century" 
-                                Background="#3C2A21" Foreground="White" ToolTip="Registration" x:Name="btnRegister" 
-                                Click="btnRegister_Click" Content="Register">
-                        </Button>
-                    </StackPanel>
+                    <StackPanel Margin="130 -74 0 34" HorizontalAlignment="Center"/>
 
 
                     <StackPanel Margin="0,0,0,10" HorizontalAlignment="Center">
@@ -108,14 +112,7 @@
                     </StackPanel>
 
 
-                    <StackPanel Margin="0 0 0 0" HorizontalAlignment="Center">
-                        <Button Width="125" Height="35" Style="{StaticResource MaterialDesignRaisedButton}"
-                                materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#3C2A21" FontFamily="Century" 
-                                Background="#3C2A21" Foreground="White" ToolTip="MainMenu2" x:Name="btnMainMenu2" 
-                                Click="btnMainMenu2_Click" Content="Main Menu 2">
-
-                        </Button>
-                    </StackPanel>
+                    <StackPanel Margin="0 0 0 0" HorizontalAlignment="Center"/>
 
 
                 </StackPanel>
