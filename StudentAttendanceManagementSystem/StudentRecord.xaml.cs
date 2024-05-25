@@ -4,6 +4,7 @@ using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 using System;
+using System.Collections.Generic;
 
 namespace StudentAttendanceManagementSystem
 {
@@ -77,6 +78,41 @@ namespace StudentAttendanceManagementSystem
             }
         }
 
+        private void btnSaveChanges_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                using (var context = new AppDbContext())
+                {
+                    var modifiedRecords = tblStudentRecords.ItemsSource as List<AttendanceViewModel>;
+                    if (modifiedRecords != null)
+                    {
+                        foreach (var modifiedRecord in modifiedRecords)
+                        {
+                            var recordToUpdate = context.Attendance.Find(modifiedRecord.Id);
+                            if (recordToUpdate != null)
+                            {
+                                recordToUpdate.Name = modifiedRecord.Name;
+                                recordToUpdate.Course = modifiedRecord.Course;
+                                recordToUpdate.Year = modifiedRecord.Year;
+                                recordToUpdate.Section = modifiedRecord.Section;
+                                recordToUpdate.Status = modifiedRecord.Status;
+                                recordToUpdate.Archived = modifiedRecord.Archived;
+                                recordToUpdate.Date = modifiedRecord.Date;
+                                // Update other properties as needed
+                            }
+                        }
+
+                        context.SaveChanges();
+                        MessageBox.Show("Changes saved successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while saving changes: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+        }
         private void btnEdit_Click(object sender, RoutedEventArgs e)
         {
             // Implement edit functionality here
@@ -102,6 +138,42 @@ namespace StudentAttendanceManagementSystem
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
             LoadData();
+        }
+
+        private void btnSave_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                using (var context = new AppDbContext())
+                {
+                    var modifiedRecords = tblStudentRecords.ItemsSource as List<AttendanceViewModel>;
+                    if (modifiedRecords != null)
+                    {
+                        foreach (var modifiedRecord in modifiedRecords)
+                        {
+                            var recordToUpdate = context.Attendance.Find(modifiedRecord.Id);
+                            if (recordToUpdate != null)
+                            {
+                                recordToUpdate.Name = modifiedRecord.Name;
+                                recordToUpdate.Course = modifiedRecord.Course;
+                                recordToUpdate.Year = modifiedRecord.Year;
+                                recordToUpdate.Section = modifiedRecord.Section;
+                                recordToUpdate.Status = modifiedRecord.Status;
+                                recordToUpdate.Archived = modifiedRecord.Archived;
+                                recordToUpdate.Date = modifiedRecord.Date;
+                                // Update other properties as needed
+                            }
+                        }
+
+                        context.SaveChanges();
+                        MessageBox.Show("Changes saved successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred while saving changes: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
     }
 

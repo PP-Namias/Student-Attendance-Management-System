@@ -277,7 +277,7 @@
                     </WrapPanel>
                 </Button>
 
-                <Button x:Name="btnScanner" 
+                <Button x:Name="btnSave" 
                         ToolTip="Scanner Student Records" 
                         Background="#1B1A55" 
                         materialDesign:ButtonAssist.CornerRadius="10"
@@ -292,13 +292,13 @@
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" 
                         Margin="700,-75,0,0" 
-                        Click="btnScanner_Click" >
+                        Click="btnSave_Click"  >
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 
-                            Kind="BarcodeScanner" 
+                            Kind="ContentSave" 
                             Width="45" 
                             Height="45" />
-                        <TextBlock Text="| Scanner" 
+                        <TextBlock Text="| Save" 
                                    VerticalAlignment="Center" 
                                    FontWeight="SemiBold" 
                                    Margin="10 0" />
