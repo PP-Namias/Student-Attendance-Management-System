@@ -74,6 +74,7 @@ namespace StudentAttendanceManagementSystem
 
                         context.SaveChanges();
                         MessageBox.Show("Changes saved successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        LoadData();
                     }
                 }
             }

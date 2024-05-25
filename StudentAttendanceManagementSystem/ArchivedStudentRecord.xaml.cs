@@ -59,21 +59,21 @@ namespace StudentAttendanceManagementSystem
                         var recordToArchive = context.Attendance.Find(selectedRecord.Id);
                         if (recordToArchive != null)
                         {
-                            recordToArchive.Archived = true;
+                            recordToArchive.Archived = false;
                             context.SaveChanges();
-                            MessageBox.Show("Record archived successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                            MessageBox.Show("Record unarchived successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
                         }
                     }
                     LoadData();
                 }
                 catch (Exception ex)
                 {
-                    MessageBox.Show($"An error occurred while archiving record: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                    MessageBox.Show($"An error occurred while unarchiving record: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
                 }
             }
             else
             {
-                MessageBox.Show("Please select a record to archive.", "No Selection", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Please select a record to unarchive.", "No Selection", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
@@ -104,6 +104,7 @@ namespace StudentAttendanceManagementSystem
 
                         context.SaveChanges();
                         MessageBox.Show("Changes saved successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        LoadData();
                     }
                 }
             }
@@ -111,27 +112,6 @@ namespace StudentAttendanceManagementSystem
             {
                 MessageBox.Show($"An error occurred while saving changes: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-        }
-        private void btnEdit_Click(object sender, RoutedEventArgs e)
-        {
-            // Implement edit functionality here
-        }
-
-        private void cmbFilter_ContextMenuClosing(object sender, ContextMenuEventArgs e)
-        {
-            // Implement filter context menu closing logic here
-        }
-
-        private void txtFilter_TextInput(object sender, System.Windows.Input.TextCompositionEventArgs e)
-        {
-            // Implement text input filtering logic here
-        }
-
-        private void btnScanner_Click(object sender, RoutedEventArgs e)
-        {
-            BarcodeScanningInterface x = new BarcodeScanningInterface();
-            UserPages.Children.Clear();
-            UserPages.Children.Add(x);
         }
 
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
@@ -166,6 +146,7 @@ namespace StudentAttendanceManagementSystem
 
                         context.SaveChanges();
                         MessageBox.Show("Changes saved successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        LoadData();
                     }
                 }
             }
@@ -173,13 +154,6 @@ namespace StudentAttendanceManagementSystem
             {
                 MessageBox.Show($"An error occurred while saving changes: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-        }
-
-        private void btnStudentDatabase_Click(object sender, RoutedEventArgs e)
-        {
-            StudentsDatabase x = new StudentsDatabase();
-            UserPages.Children.Clear();
-            UserPages.Children.Add(x);
         }
 
         private void btnOpenArchived_Click(object sender, RoutedEventArgs e)

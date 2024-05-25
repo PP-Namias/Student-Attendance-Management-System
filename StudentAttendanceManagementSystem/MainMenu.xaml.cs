@@ -4,6 +4,7 @@ using MahApps.Metro.Controls;
 using System.Diagnostics;
 using MaterialDesignThemes.Wpf;
 using MahApps.Metro.Controls.Dialogs;
+using StudentAttendanceManagementSystem.Models;
 
 namespace StudentAttendanceManagementSystem
 {
@@ -286,9 +287,18 @@ namespace StudentAttendanceManagementSystem
 
         private void btn_Reports_Click(object sender, RoutedEventArgs e)
         {
-            // Reports and Analytics
+            // Student Record
 
             StudentRecord x = new StudentRecord();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
+        }
+
+        private void btn_Students_Click(object sender, RoutedEventArgs e)
+        {
+            // Student Database
+
+            StudentsDatabase x = new StudentsDatabase();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
         }
@@ -354,9 +364,13 @@ namespace StudentAttendanceManagementSystem
         {
             // Log Out
         }
+
+
         #endregion
 
+        private void TreeItem_BarcodeScan_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
+        {
 
-
+        }
     }
 }

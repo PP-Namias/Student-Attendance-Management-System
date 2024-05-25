@@ -31,14 +31,14 @@ namespace StudentAttendanceManagementSystem
                 using (var context = new AppDbContext())
                 {
                     var studentRecords = context.Students
-                                          .Where(record => !record.Archived)
+                                          .Where(record => record.Archived)
                                           .ToList();
 
                     var studentViewModels = studentRecords
                                              .Select(record => new StudentViewModel(record))
                                              .ToList();
 
-                    tblStudentRecords.ItemsSource = studentViewModels;
+                    tblArchivedStudentRecords.ItemsSource = studentViewModels;
                     NumberOfLogs.Text = $"Number of records: {studentRecords.Count}";
                 }
             }
@@ -54,7 +54,7 @@ namespace StudentAttendanceManagementSystem
             {
                 using (var context = new AppDbContext())
                 {
-                    var modifiedRecords = tblStudentRecords.ItemsSource as List<StudentViewModel>;
+                    var modifiedRecords = tblArchivedStudentRecords.ItemsSource as List<StudentViewModel>;
                     if (modifiedRecords != null)
                     {
                         foreach (var modifiedRecord in modifiedRecords)
@@ -74,42 +74,13 @@ namespace StudentAttendanceManagementSystem
 
                         context.SaveChanges();
                         MessageBox.Show("Changes saved successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        LoadData();
                     }
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"An error occurred while saving changes: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
-
-        private void btnArchive_Click(object sender, RoutedEventArgs e)
-        {
-            var selectedRecord = tblStudentRecords.SelectedItem as StudentViewModel;
-            if (selectedRecord != null)
-            {
-                try
-                {
-                    using (var context = new AppDbContext())
-                    {
-                        var recordToArchive = context.Students.Find(selectedRecord.Id);
-                        if (recordToArchive != null)
-                        {
-                            recordToArchive.Archived = true;
-                            context.SaveChanges();
-                            MessageBox.Show("Record archived successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
-                        }
-                    }
-                    LoadData();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"An error occurred while archiving the record: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
-                }
-            }
-            else
-            {
-                MessageBox.Show("Please select a record to archive.", "No Selection", MessageBoxButton.OK, MessageBoxImage.Warning);
             }
         }
 
@@ -152,6 +123,35 @@ namespace StudentAttendanceManagementSystem
             StudentsDatabase x = new StudentsDatabase();
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
+        }
+        private void btnUnarchive_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedRecord = tblArchivedStudentRecords.SelectedItem as StudentViewModel;
+            if (selectedRecord != null)
+            {
+                try
+                {
+                    using (var context = new AppDbContext())
+                    {
+                        var recordToUnarchive = context.Students.Find(selectedRecord.Id);
+                        if (recordToUnarchive != null)
+                        {
+                            recordToUnarchive.Archived = false; // Set Archived to false to unarchive the record
+                            context.SaveChanges();
+                            MessageBox.Show("Record unarchived successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                        }
+                    }
+                    LoadData(); // Reload the data after unarchiving
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred while unarchiving the record: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please select a record to unarchive.", "No Selection", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
         }
     }
 }

@@ -117,7 +117,7 @@
 
                 </StackPanel>
             </StackPanel>
-            <StackPanel Margin="-100,-380, 0, 0" Width="145" Orientation="Horizontal" VerticalAlignment="Center">
+            <StackPanel Margin="-50,-380,0,0" Width="145" Orientation="Horizontal" VerticalAlignment="Center">
                 <Button Margin="20 30" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
                     ToolTip="Minimize" x:Name="btnMinimize" Click="btnMinimize_Click" BorderBrush="#FFD5CEA3" Width="35" Height="35">
                     <materialDesign:PackIcon Kind="Minimize" Foreground="White" Width="20" Height="20" />

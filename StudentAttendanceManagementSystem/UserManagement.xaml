@@ -19,8 +19,7 @@
                  Height="800"
                  Width="1050"     
                  MinHeight="800" 
-                 MinWidth="1125"
-                 Loaded="Window_Loaded">
+                 MinWidth="1125">
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -93,154 +92,28 @@
                 <TextBlock x:Name="NumberOfLogs" Foreground="White" FontWeight="DemiBold" FontSize="22" Width="252" Margin="700,-100,0,0" Height="26" ><Run Text="Number of accounts: 000"/></TextBlock>
                 <Border  Canvas.Left="55"
                          Canvas.Top="30"
-                         Height="298"
+                         Height="500"
                          BorderBrush="DarkGray"
                          BorderThickness="1"
                          CornerRadius="18"
                          Margin="50,0,50,0">
 
-                    <DataGrid  Grid.Row="1"    
-                               ScrollViewer.CanContentScroll="True" 
-                               ScrollViewer.VerticalScrollBarVisibility="Auto"
-                               ScrollViewer.HorizontalScrollBarVisibility="Auto"
-                               AutoGenerateColumns="True" 
-                               Height="263" 
-                               HorizontalAlignment="Center"
-                               Name="DataGrid" Width="885"
-                               AlternatingRowBackground="#111315"
-                               CanUserAddRows="False"
-                               IsReadOnly="True" 
-                               Panel.ZIndex="3"
-                               SelectionMode="Single"
-                               SelectionUnit="Cell">
-                        <DataGrid.Columns>
-                            <DataGridTextColumn Binding="{Binding ID}"           Header="ID"            Width="Auto"/>
-                            <DataGridTextColumn Binding="{Binding Username}"     Header="Username"      Width="Auto"/>
-                            <DataGridTextColumn Binding="{Binding PasswordHash}" Header="Password Hash"  Width="Auto"/>
-                            <DataGridTextColumn Binding="{Binding PhoneNumber}"  Header="Phone Number"   Width="Auto"/>
-                            <DataGridTextColumn Binding="{Binding Role}"         Header="Role"          Width="Auto"/>
-                        </DataGrid.Columns>
+                    <DataGrid x:Name="tblUserManagement" 
+                              Grid.Row="1"    
+                              ScrollViewer.CanContentScroll="True" 
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                              AutoGenerateColumns="True" 
+                              Height="450" 
+                              HorizontalAlignment="Center"
+                              Width="885"
+                              AlternatingRowBackground="LightGray"
+                              CanUserAddRows="False"
+                              IsReadOnly="False"
+                              Panel.ZIndex="3"
+                              SelectionMode="Single"
+                              SelectionUnit="FullRow">
                     </DataGrid>
-                </Border>
-                <TextBlock Name="Filter" 
-                           Foreground="White"
-                           Grid.Row="0"
-                           Margin="25,25,0,0" 
-                           FontWeight="DemiBold" 
-                           FontSize="20"
-                           Width="257"
-                           HorizontalAlignment="Left">
-                           Select Filters
-                </TextBlock>
-
-
-                <ComboBox
-                    Background="#111315"
-                    Foreground="White"
-                    Grid.Row="0"
-                    Margin="50,5,0,0" 
-                    FontSize="20"
-                    HorizontalAlignment="Left"
-                    Width="256"
-                    
-                    materialDesign:HintAssist.Hint="Filter by:"
-                    materialDesign:TextFieldAssist.HasClearButton="True"
-                    materialDesign:TextFieldAssist.LeadingIcon="AboutCircle"
-                                        
-                    BorderBrush="DarkGray"
-
-                    
-                    materialDesign:HintAssist.IsFloating = "True"
-                    materialDesign:HintAssist.Background="#111315"
-                    materialDesign:HintAssist.Foreground="White">
-
-                    <ComboBoxItem
-                        Background="#111315"
-                        Foreground="White"
-                        Content="ID" />
-                    <ComboBoxItem
-                        Background="#111315"
-                        Foreground="White"
-                        Content="Username" />
-                    <ComboBoxItem
-                        Background="#111315"
-                        Foreground="White"
-                        Content="Password Hash" />
-                    <ComboBoxItem
-                        Background="#111315"
-                        Foreground="White"
-                        Content="Phone Number" />
-                    <ComboBoxItem
-                        Background="#111315"
-                        Foreground="White"
-                        Content="Role" />
-                    
-                    <ComboBox.SelectedItem>
-                        <Binding
-                      Mode="TwoWay"
-                      Path="SelectedValidationOutlined"
-                      UpdateSourceTrigger="PropertyChanged">
-                        </Binding>
-                    </ComboBox.SelectedItem>
-                </ComboBox>
-
-
-                <StackPanel Width="250" HorizontalAlignment="Left" Margin="50,0,0,0">
-                    <TextBox x:Name="TextBoxTextCounter"
-                             Height="54"
-                             materialDesign:HintAssist.Hint="Input Username Here"
-                             AcceptsReturn="True"
-                             TextWrapping="Wrap"
-                             VerticalScrollBarVisibility="Auto"
-                             Foreground="White"
-                             FontSize="15"
-                             
-                             materialDesign:TextFieldAssist.HasOutlinedTextField = "True"
-                             materialDesign:TextFieldAssist.TextFieldCornerRadius = "10"
-                             Padding="16, 16, 12, 16"
-                             BorderBrush="DarkGray"
-                             BorderThickness="1"
-                             
-                             materialDesign:HintAssist.IsFloating = "True"
-                             materialDesign:HintAssist.Background="#111315"
-                             materialDesign:HintAssist.Foreground="White"/>
-                </StackPanel>
-                
-                
-                <Border x:Name="CalendarBorder"
-                        BorderThickness="2"
-                        CornerRadius="13" 
-                        Height="230" 
-                        Width="375" 
-                        Margin="50,-150,0,0">
-                    <Border.BorderBrush>
-                        <DrawingBrush Viewport="0,0,8,8" ViewportUnits="Absolute" TileMode="Tile">
-                            <DrawingBrush.Drawing>
-                                <DrawingGroup>
-                                    <GeometryDrawing Brush="DarkGray">
-                                        <GeometryDrawing.Geometry>
-                                            <GeometryGroup>
-                                                <RectangleGeometry Rect="0,0,50,50" />
-                                                <RectangleGeometry Rect="50,50,50,50" />
-                                            </GeometryGroup>
-                                        </GeometryDrawing.Geometry>
-                                    </GeometryDrawing>
-                                </DrawingGroup>
-                            </DrawingBrush.Drawing>
-                        </DrawingBrush>
-                    </Border.BorderBrush>
-                    <Calendar x:Name="cldArchive"
-                          materialDesign:CalendarAssist.HeaderBackground="#111315"
-                          materialDesign:CalendarAssist.HeaderForeground="White"  
-                          materialDesign:CalendarAssist.Orientation="Horizontal"
-                          Background="#111315"
-                          Foreground="White"
-                          BorderBrush="DarkGray" 
-                          CalendarButtonStyle="{DynamicResource CustomCalendarButton}"
-                          CalendarDayButtonStyle="{DynamicResource CustomCalendarDayButton}"
-                          BorderThickness="1" 
-                          Margin="0,0,0,0" 
-                          Width="350" Height="217" IsHitTestVisible="False"/>
                 </Border>
                 <Button x:Name="btnAdd" 
                         ToolTip="Archive Login Logs" 
@@ -256,7 +129,7 @@
                         BorderThickness="1"
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" 
-                        Margin="700,-375,0,0">
+                        Margin="-475,15,0,0" Click="btnAdd_Click" >
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 
                             Kind="AccountAdd" 
@@ -269,8 +142,8 @@
                     </WrapPanel>
                 </Button>
 
-                <Button x:Name="btnEdit" 
-                        ToolTip="Edit Login Logs" 
+                <Button x:Name="btnSave" 
+                        ToolTip="Save/Edit Login Logs" 
                         Background="#0a0a0a" 
                         materialDesign:ButtonAssist.CornerRadius="10"
                         Foreground="White" 
@@ -283,13 +156,13 @@
                         BorderThickness="1"
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" 
-                        Margin="700,-225,0,0">
+                        Margin="0,-60,0,0" Click="btnSave_Click">
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 
                             Kind="AccountEdit" 
                             Width="45" 
                             Height="45" />
-                        <TextBlock Text="| Edit" 
+                        <TextBlock Text="| Save" 
                                    VerticalAlignment="Center" 
                                    FontWeight="SemiBold" 
                                    Margin="10 0" />
@@ -310,7 +183,7 @@
                         BorderThickness="1"
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" 
-                        Margin="700,-75,0,0">
+                        Margin="475,-60,0,0" Click="btnDelete_Click" >
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 
                             Kind="AccountRemove" 
@@ -320,6 +193,32 @@
                                    VerticalAlignment="Center" 
                                    FontWeight="SemiBold" 
                                    Margin="10 0" />
+                    </WrapPanel>
+                </Button>
+
+
+
+                <Button x:Name="btnRefresh" 
+                        ToolTip="Refresh Student Records" 
+                        Background="#0a0a0a" 
+                        materialDesign:ButtonAssist.CornerRadius="10"
+                        Foreground="White" 
+                        FontSize="20" 
+                        Width="60" 
+                        Height="60" 
+                        VerticalContentAlignment="Center"  
+                        Cursor="Hand"  
+                        BorderBrush="DarkGray" 
+                        BorderThickness="1"
+                        FontFamily="Century Gothic" 
+                        FontWeight="Bold" 
+                        Margin="850,-60,0,0" 
+                        Click="btnRefresh_Click" Padding="0,0,0,0">
+                    <WrapPanel HorizontalAlignment="Center">
+                        <materialDesign:PackIcon 
+                            Kind="RefreshCircle" 
+                            Width="45" 
+                            Height="45" />
                     </WrapPanel>
                 </Button>
             </StackPanel>
