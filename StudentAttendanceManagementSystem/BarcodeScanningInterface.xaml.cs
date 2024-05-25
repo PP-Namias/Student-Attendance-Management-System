@@ -261,9 +261,9 @@ namespace StudentAttendanceManagementSystem
                     var studentAttendance = new Students_Attendance()
                     {
                         Name = txtName.Text,
-                        Course = txtClass.Text,
-                        Year = txtClass.Text,
-                        Section = txtClass.Text,
+                        Course = txtCourse.Text,
+                        Year = txtYear.Text,
+                        Section = txtSection.Text,
                         StudentId = txtStudentId.Text,
                         Status = "Present",
                         Archived = false,

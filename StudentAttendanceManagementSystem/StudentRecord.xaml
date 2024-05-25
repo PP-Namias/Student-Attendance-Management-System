@@ -8,7 +8,7 @@
                  xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"         
                  xmlns:src="http://metro.mahapps.com/winfx/xaml/controls"
                  
-                 Background="#070F2B"
+                 Background="#111315"
                  FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
                  TextElement.Foreground="{DynamicResource MaterialDesignBody}"
                  TextElement.FontWeight="Regular"
@@ -63,7 +63,7 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid Background="#070F2B">
+    <Grid Background="#111315">
         <Border Canvas.Left="55"
          Canvas.Top="30"
          Height="700"
@@ -93,7 +93,7 @@
                 <TextBlock x:Name="NumberOfLogs" Foreground="White" FontWeight="DemiBold" FontSize="22" Width="237" Margin="700,-100,0,0" Height="26" ><Run Text="Number of records: 000"/></TextBlock>
                 <Border  Canvas.Left="55"
                          Canvas.Top="30"
-                         Height="298"
+                         Height="500"
                          BorderBrush="DarkGray"
                          BorderThickness="1"
                          CornerRadius="18"
@@ -105,7 +105,7 @@
                               ScrollViewer.VerticalScrollBarVisibility="Auto"
                               ScrollViewer.HorizontalScrollBarVisibility="Auto"
                               AutoGenerateColumns="True" 
-                              Height="263" 
+                              Height="450" 
                               HorizontalAlignment="Center"
                               Width="885"
                               AlternatingRowBackground="LightGray"
@@ -115,137 +115,6 @@
                               SelectionMode="Single"
                               SelectionUnit="Cell">
                     </DataGrid>
-                </Border>
-                <TextBlock Name="Filter" 
-                           Foreground="White"
-                           Grid.Row="0"
-                           Margin="50,25,0,0" 
-                           FontWeight="DemiBold" 
-                           FontSize="20"
-                           Width="257"
-                           HorizontalAlignment="Left">
-                           Select Filters
-                </TextBlock>
-
-                <ComboBox x:Name="cmbFilter"
-                    Background="#070F2B"
-                    Foreground="White"
-                    Grid.Row="0"
-                    Margin="50,5,0,0" 
-                    FontSize="20"
-                    HorizontalAlignment="Left"
-                    Width="256"
-
-                    
-                    materialDesign:HintAssist.Hint="Filter by:"
-                    materialDesign:TextFieldAssist.HasClearButton="True"
-                    materialDesign:TextFieldAssist.LeadingIcon="AboutCircle"
-                                        
-                    BorderBrush="DarkGray"
-
-                    
-                    materialDesign:HintAssist.IsFloating = "True"
-                    materialDesign:HintAssist.Background="#070F2B"
-                    materialDesign:HintAssist.Foreground="White" ContextMenuClosing="cmbFilter_ContextMenuClosing">
-
-                    <ComboBoxItem
-                        Background="#070F2B"
-                        Foreground="White"
-                        Content="Remark" />
-                    <ComboBoxItem
-                        Background="#070F2B"
-                        Foreground="White"
-                        Content="Name" />
-                    <ComboBoxItem
-                        Background="#070F2B"
-                        Foreground="White"
-                        Content="Student ID" />
-                    <ComboBoxItem
-                        Background="#070F2B"
-                        Foreground="White"
-                        Content="Course" />
-                    <ComboBoxItem
-                        Background="#070F2B"
-                        Foreground="White"
-                        Content="Year" />
-                    <ComboBoxItem
-                        Background="#070F2B"
-                        Foreground="White"
-                        Content="Section" />
-                    <ComboBoxItem
-                        Background="#070F2B"
-                        Foreground="White"
-                        Content="Status" />
-                    <ComboBoxItem
-                        Background="#070F2B"
-                        Foreground="White"
-                        Content="Archived" />
-                    <ComboBoxItem
-                        Background="#070F2B"
-                        Foreground="White"
-                        Content="Date" />
-
-
-
-                </ComboBox>
-
-
-
-
-                <StackPanel Width="250" HorizontalAlignment="Left" Margin="50,0,0,0">
-                    <TextBox x:Name="txtFilter"
-                             Height="70"
-                             materialDesign:HintAssist.Hint="Input Name Here"
-                             AcceptsReturn="True"
-                             TextWrapping="Wrap"
-                             VerticalScrollBarVisibility="Auto"
-                             Foreground="White"
-                             FontSize="15"
-                             
-                             materialDesign:TextFieldAssist.HasOutlinedTextField = "True"
-                             materialDesign:TextFieldAssist.TextFieldCornerRadius = "10"
-                             Padding="16, 16, 12, 16"
-                             BorderBrush="DarkGray"
-                             BorderThickness="1"
-                             
-                             materialDesign:HintAssist.IsFloating = "True"
-                             materialDesign:HintAssist.Background="#070F2B"
-                             materialDesign:HintAssist.Foreground="White" TextInput="txtFilter_TextInput"/>
-                </StackPanel>
-                <Border x:Name="CalendarBorder"
-                        BorderThickness="2"
-                        CornerRadius="13" 
-                        Height="230" 
-                        Width="375" 
-                        Margin="50,-175,0,0">
-                    <Border.BorderBrush>
-                        <DrawingBrush Viewport="0,0,8,8" ViewportUnits="Absolute" TileMode="Tile">
-                            <DrawingBrush.Drawing>
-                                <DrawingGroup>
-                                    <GeometryDrawing Brush="DarkGray">
-                                        <GeometryDrawing.Geometry>
-                                            <GeometryGroup>
-                                                <RectangleGeometry Rect="0,0,50,50" />
-                                                <RectangleGeometry Rect="50,50,50,50" />
-                                            </GeometryGroup>
-                                        </GeometryDrawing.Geometry>
-                                    </GeometryDrawing>
-                                </DrawingGroup>
-                            </DrawingBrush.Drawing>
-                        </DrawingBrush>
-                    </Border.BorderBrush>
-                    <Calendar x:Name="cldArchive"
-                          materialDesign:CalendarAssist.HeaderBackground="#070F2B"
-                          materialDesign:CalendarAssist.HeaderForeground="White"  
-                          materialDesign:CalendarAssist.Orientation="Horizontal"
-                          Background="#070F2B"
-                          Foreground="White"
-                          BorderBrush="DarkGray" 
-                          CalendarButtonStyle="{DynamicResource CustomCalendarButton}"
-                          CalendarDayButtonStyle="{DynamicResource CustomCalendarDayButton}"
-                          BorderThickness="1" 
-                          Margin="0,0,0,0" 
-                          Width="350" Height="217" IsHitTestVisible="False"/>
                 </Border>
 
 
@@ -263,7 +132,7 @@
                         BorderThickness="1"
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" 
-                        Margin="700,-375,0,0" 
+                        Margin="-700,15,0,0" 
                         Click="btnArchive_Click" >
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 
@@ -291,7 +160,7 @@
                         BorderThickness="1"
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" 
-                        Margin="700,-75,0,0" 
+                        Margin="235,-60,0,0" 
                         Click="btnSave_Click"  >
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 
@@ -299,6 +168,35 @@
                             Width="45" 
                             Height="45" />
                         <TextBlock Text="| Save" 
+                                   VerticalAlignment="Center" 
+                                   FontWeight="SemiBold" 
+                                   Margin="10 0" />
+                    </WrapPanel>
+                </Button>
+
+
+                <Button x:Name="btnStudentDatabase" 
+                        ToolTip="Scanner Student Records" 
+                        Background="#1B1A55" 
+                        materialDesign:ButtonAssist.CornerRadius="10"
+                        Foreground="White" 
+                        FontSize="20" 
+                        Width="218" 
+                        Height="60" 
+                        VerticalContentAlignment="Center"  
+                        Cursor="Hand"  
+                        BorderBrush="DarkGray" 
+                        BorderThickness="1"
+                        FontFamily="Century Gothic" 
+                        FontWeight="Bold" 
+                        Margin="700,-60,0,0" 
+                        Padding="0,0,0,0"  >
+                    <WrapPanel HorizontalAlignment="Center">
+                        <materialDesign:PackIcon 
+                            Kind="Database" 
+                            Width="45" 
+                            Height="45" Margin="0,0,-10,0" />
+                        <TextBlock Text="| Students Data" 
                                    VerticalAlignment="Center" 
                                    FontWeight="SemiBold" 
                                    Margin="10 0" />
@@ -320,7 +218,7 @@
                         BorderThickness="1"
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" 
-                        Margin="700,-225,0,0" 
+                        Margin="-235,-60,0,0" 
                         Click="btnRefresh_Click">
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 

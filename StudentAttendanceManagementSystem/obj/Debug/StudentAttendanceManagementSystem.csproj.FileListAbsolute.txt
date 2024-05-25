@@ -258,3 +258,5 @@ C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAtt
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentRecord.baml
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\AboutUs.g.cs
 C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\AboutUs.baml
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentsDatabase.g.cs
+C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentsDatabase.baml
