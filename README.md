@@ -88,6 +88,7 @@ The Student Attendance Management System is designed to modernize the attendance
 | Year            | VARCHAR   | Year                         |
 | Section         | VARCHAR   | Section                      |
 | StudentId       | Text      | Student Id                   |
+| Archived        | bool      | Archived Student             |
 
 ## Table: Attendance
 | Column    | Data Type | Description                                         |
@@ -114,4 +115,5 @@ The Student Attendance Management System is designed to modernize the attendance
 | Date       | Date      | Login Date                        |
 | Role       | VARCHAR   | User Role (teacher/admin)         |
 | Remark     | VARCHAR   | Admins Login Remark               |
+| Archived   | bool      | Archived LoginLogs                |
 ---
