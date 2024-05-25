@@ -40,6 +40,7 @@ namespace StudentAttendanceManagementSystem
                     Date = System.DateTime.Today,
                     Role = "User",
                     Remark = "Login Successfully"
+                    
                 };
                 
                 appDbContext.LoginLogs.Add(LoginLogs);

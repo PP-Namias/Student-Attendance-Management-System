@@ -19,8 +19,7 @@
                  Height="800"
                  Width="1050"     
                  MinHeight="800" 
-                 MinWidth="1125"
-                 Loaded="Window_Loaded">
+                 MinWidth="1125">
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -98,29 +97,25 @@
                          BorderThickness="1"
                          CornerRadius="18"
                          Margin="50,0,50,0">
-                    <DataGrid  Grid.Row="1"    
-                               ScrollViewer.CanContentScroll="True" 
-                               ScrollViewer.VerticalScrollBarVisibility="Auto"
-                               ScrollViewer.HorizontalScrollBarVisibility="Auto"
-                               AutoGenerateColumns="True" 
-                               Height="263" 
-                               HorizontalAlignment="Center"
-                               Name="DataGrid" Width="885"
-                               AlternatingRowBackground="#111315"
-                               CanUserAddRows="False"
-                               IsReadOnly="True" 
-                               Panel.ZIndex="3">
-                        <DataGrid.Columns>
-                            <DataGridTextColumn Binding="{Binding ID}" Header="ID" Width="Auto" MaxWidth="50"/>
-                            <DataGridTextColumn Binding="{Binding UserId}" Header="User ID" Width="Auto"/>
-                            <DataGridTextColumn Binding="{Binding Username}" Header="Username" Width="Auto"/>
-                            <DataGridTextColumn Binding="{Binding LoginTime}" Header="Log in Time" Width="Auto"/>
-                            <DataGridTextColumn Binding="{Binding LogoutTime}" Header="Log out Time" Width="Auto"/>
-                            <DataGridTextColumn Binding="{Binding Date, StringFormat=d,ConverterCulture=en-NZ}" Header="Date" Width="Auto" MinWidth="20"/>
-                            <DataGridTextColumn Binding="{Binding Role}" Header="Role" Width="Auto" MinWidth="20"/>
-                            <DataGridTextColumn Binding="{Binding Remark}" Header="Remark" Width="Auto"/>
-                        </DataGrid.Columns>
+                    <DataGrid x:Name="tblLoginLogs"
+                              Grid.Row="1"    
+                              ScrollViewer.CanContentScroll="True" 
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                              AutoGenerateColumns="True" 
+                              Height="263" 
+                              HorizontalAlignment="Center"
+                              Width="885"
+                              AlternatingRowBackground="LightGray"
+                              CanUserAddRows="False"
+                              IsReadOnly="True" 
+                              Panel.ZIndex="3"
+                              SelectionMode="Single"
+                              SelectionUnit="FullRow">
+
                     </DataGrid>
+
+
                 </Border>
                 <TextBlock Name="Filter" 
                            Foreground="White"
@@ -143,7 +138,7 @@
                     HorizontalAlignment="Left"
                     Content="All Dates"
                     IsChecked="True"
-                    Style="{StaticResource MaterialDesignFilterChipCheckBox}"/>
+                    Style="{StaticResource MaterialDesignFilterChipCheckBox}" Checked="AllDates_Checked"/>
                 <CheckBox
                     Name="DatesSelected" 
                     Background="#585858"
@@ -154,7 +149,7 @@
                     Width="257"
                     HorizontalAlignment="Left"
                     Content="Date(s) Selected"
-                    Style="{StaticResource MaterialDesignFilterChipCheckBox}"/>
+                    Style="{StaticResource MaterialDesignFilterChipCheckBox}" Checked="DatesSelected_Checked"/>
                 <CheckBox
                     Name="InputUsername" 
                     Background="#585858"
@@ -165,7 +160,7 @@
                     Width="280"
                     HorizontalAlignment="Left"
                     Content="Username Inputted Below"
-                    Style="{StaticResource MaterialDesignFilterChipCheckBox}"/>
+                    Style="{StaticResource MaterialDesignFilterChipCheckBox}" Checked="InputUsername_Checked"/>
                 <StackPanel Width="250" HorizontalAlignment="Left" Margin="50,0,0,0">
                     <TextBox x:Name="TextBoxTextCounter"
                              Height="70"
@@ -208,18 +203,20 @@
                             </DrawingBrush.Drawing>
                         </DrawingBrush>
                     </Border.BorderBrush>
-                    <Calendar x:Name="cldArchive"
-                          materialDesign:CalendarAssist.HeaderBackground="#111315"
-                          materialDesign:CalendarAssist.HeaderForeground="White"  
-                          materialDesign:CalendarAssist.Orientation="Horizontal"
-                          Background="#111315"
-                          Foreground="White"
-                          BorderBrush="DarkGray" 
-                          CalendarButtonStyle="{DynamicResource CustomCalendarButton}"
-                          CalendarDayButtonStyle="{DynamicResource CustomCalendarDayButton}"
-                          BorderThickness="1" 
-                          Margin="0,0,0,0" 
-                          Width="350" Height="217" IsHitTestVisible="False"/>
+                    <Calendar x:Name="cldDates"
+                              materialDesign:CalendarAssist.HeaderBackground="#111315"
+                              materialDesign:CalendarAssist.HeaderForeground="White"  
+                              materialDesign:CalendarAssist.Orientation="Horizontal"
+                              Background="#111315"
+                              Foreground="White"
+                              BorderBrush="DarkGray" 
+                              CalendarButtonStyle="{DynamicResource CustomCalendarButton}"
+                              CalendarDayButtonStyle="{DynamicResource CustomCalendarDayButton}"
+                              BorderThickness="1" 
+                              Margin="0,0,0,0" 
+                              Width="350" 
+                              Height="217" 
+                              IsHitTestVisible="False"/>
                 </Border>
                 <Button x:Name="btnArchive" 
                         ToolTip="Archive Login Logs" 
@@ -234,7 +231,9 @@
                         BorderBrush="DarkGray" 
                         BorderThickness="1"
                         FontFamily="Century Gothic" 
-                        FontWeight="Bold" Margin="700,-375,0,0" Click="btnArchive_Click" >
+                        FontWeight="Bold" 
+                        Margin="700,-375,0,0" 
+                        Click="btnArchive_Click" >
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 
                             Kind="ArchivePlus" 
@@ -246,6 +245,64 @@
                                    Margin="10 0" />
                     </WrapPanel>
                 </Button>
+
+                <Button x:Name="btnRefresh" 
+                        ToolTip="Refresh Login Logs" 
+                        Background="#0a0a0a" 
+                        materialDesign:ButtonAssist.CornerRadius="10"
+                        Foreground="White" 
+                        FontSize="20" 
+                        Width="218" 
+                        Height="60" 
+                        VerticalContentAlignment="Center"  
+                        Cursor="Hand"  
+                        BorderBrush="DarkGray" 
+                        BorderThickness="1"
+                        FontFamily="Century Gothic" 
+                        FontWeight="Bold" 
+                        Margin="700,-225,0,0" >
+                    <WrapPanel HorizontalAlignment="Center">
+                        <materialDesign:PackIcon 
+                            Kind="RefreshCircle" 
+                            Width="45" 
+                            Height="45" />
+                        <TextBlock Text="| Refresh" 
+                                   VerticalAlignment="Center" 
+                                   FontWeight="SemiBold" 
+                                   Margin="10 0" />
+                    </WrapPanel>
+                </Button>
+                
+                <Button x:Name="btnOpenArchive" 
+                        ToolTip="Refresh Login Logs" 
+                        Background="#0a0a0a" 
+                        materialDesign:ButtonAssist.CornerRadius="10"
+                        Foreground="White" 
+                        FontSize="20" 
+                        Width="218" 
+                        Height="60" 
+                        VerticalContentAlignment="Center"  
+                        Cursor="Hand"  
+                        BorderBrush="DarkGray" 
+                        BorderThickness="1"
+                        FontFamily="Century Gothic" 
+                        FontWeight="Bold" 
+                        Margin="700,-75,0,0" 
+                        Click="btnOpenArchive_Click" Padding="0"  >
+                    <WrapPanel HorizontalAlignment="Center" Width="218">
+                        <materialDesign:PackIcon 
+                            Kind="Show" 
+                            Width="45" 
+                            Height="45" 
+                            Margin="10,0,0,0" />
+                        <TextBlock Text="| Open Archive" 
+                                   VerticalAlignment="Center" 
+                                   FontWeight="SemiBold" 
+                                   Margin="0 0" />
+                    </WrapPanel>
+                </Button>
+
+
             </StackPanel>
         </Border>
     </Grid>

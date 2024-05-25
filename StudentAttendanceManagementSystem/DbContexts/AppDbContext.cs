@@ -1,25 +1,28 @@
 ﻿using StudentAttendanceManagementSystem.Models;
 using Microsoft.EntityFrameworkCore;
 using System;
+using System.Linq;
 
 namespace StudentAttendanceManagementSystem.DbContexts
 {
     public class AppDbContext : DbContext
     {
         public DbSet<User> Users { get; set; }
-
         public DbSet<LoginUser> LoginLogs { get; set; }
-
         public DbSet<Students> Students { get; set; }
         public DbSet<Students_Attendance> Attendance { get; set; }
-
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             string connectionString = "Host=localhost; port=5432; Database=SAMS; User Id=postgres; Password=Namias99;";
             optionsBuilder.UseNpgsql(connectionString);
         }
-
+        
+        public IQueryable<LoginUser> GetNonArchivedLoginLogs()
+        {
+            return LoginLogs.Where(log => !log.Archived);
+        }
+        
         public void SaveUser(User user)
         {
             try
@@ -29,13 +32,10 @@ namespace StudentAttendanceManagementSystem.DbContexts
             }
             catch (DbUpdateException ex)
             {
-                // Handle any exceptions or logging here
                 Console.WriteLine($"Error saving user: {ex.Message}");
-                throw; // Rethrow the exception to propagate it further if needed
+                throw;
             }
         }
-
-
 
         public void SaveLoginLog(LoginUser loginLog)
         {
@@ -46,15 +46,9 @@ namespace StudentAttendanceManagementSystem.DbContexts
             }
             catch (DbUpdateException ex)
             {
-                // Handle any exceptions or logging here
                 Console.WriteLine($"Error saving login log: {ex.Message}");
-                throw; // Rethrow the exception to propagate it further if needed
+                throw;
             }
-        }
-
-        internal void SaveLoginLog()
-        {
-            throw new NotImplementedException();
         }
 
         public void SaveStudent(Students student)
@@ -66,9 +60,8 @@ namespace StudentAttendanceManagementSystem.DbContexts
             }
             catch (DbUpdateException ex)
             {
-                // Handle any exceptions or logging here
                 Console.WriteLine($"Error saving student: {ex.Message}");
-                throw; // Rethrow the exception to propagate it further if needed
+                throw;
             }
         }
 
@@ -81,10 +74,15 @@ namespace StudentAttendanceManagementSystem.DbContexts
             }
             catch (DbUpdateException ex)
             {
-                // Handle any exceptions or logging here
                 Console.WriteLine($"Error saving student attendance: {ex.Message}");
-                throw; // Rethrow the exception to propagate it further if needed
+                throw;
             }
         }
+        /*
+        public IQueryable<LoginLog> GetNonArchivedLoginLogs()
+        {
+            return LoginLogs.Where(log => !log.Archived);
+        }
+        */
     }
 }

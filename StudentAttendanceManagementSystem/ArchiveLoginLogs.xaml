@@ -19,8 +19,7 @@
                  Height="800"
                  Width="1050"     
                  MinHeight="800" 
-                 MinWidth="1125"
-                 Loaded="Window_Loaded">
+                 MinWidth="1125">
     <UserControl.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
@@ -98,28 +97,23 @@
                          BorderThickness="1"
                          CornerRadius="18"
                          Margin="50,0,50,0">
-                    <DataGrid  Grid.Row="1"    
-                               ScrollViewer.CanContentScroll="True" 
-                               ScrollViewer.VerticalScrollBarVisibility="Auto"
-                               ScrollViewer.HorizontalScrollBarVisibility="Auto"
-                               AutoGenerateColumns="True" 
-                               Height="263" 
-                               HorizontalAlignment="Center"
-                               Name="DataGrid" Width="885"
-                               AlternatingRowBackground="#111315"
-                               CanUserAddRows="False"
-                               IsReadOnly="True" 
-                               Panel.ZIndex="3">
-                        <DataGrid.Columns>
-                            <DataGridTextColumn Binding="{Binding ID}" Header="ID" Width="Auto" MaxWidth="50"/>
-                            <DataGridTextColumn Binding="{Binding UserId}" Header="User ID" Width="Auto"/>
-                            <DataGridTextColumn Binding="{Binding Username}" Header="Username" Width="Auto"/>
-                            <DataGridTextColumn Binding="{Binding LoginTime}" Header="Log in Time" Width="Auto"/>
-                            <DataGridTextColumn Binding="{Binding LogoutTime}" Header="Log out Time" Width="Auto"/>
-                            <DataGridTextColumn Binding="{Binding Date, StringFormat=d,ConverterCulture=en-NZ}" Header="Date" Width="Auto" MinWidth="20"/>
-                            <DataGridTextColumn Binding="{Binding Role}" Header="Role" Width="Auto" MinWidth="20"/>
-                            <DataGridTextColumn Binding="{Binding Remark}" Header="Remark" Width="Auto"/>
-                        </DataGrid.Columns>
+
+                    <DataGrid x:Name="tblArchivedLogs"
+                              Grid.Row="1"    
+                              ScrollViewer.CanContentScroll="True" 
+                              ScrollViewer.VerticalScrollBarVisibility="Auto"
+                              ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                              AutoGenerateColumns="True" 
+                              Height="263" 
+                              HorizontalAlignment="Center"
+                              Width="885"
+                              AlternatingRowBackground="LightGray"
+                              CanUserAddRows="False"
+                              IsReadOnly="True" 
+                              Panel.ZIndex="3"
+                              SelectionMode="Single"
+                              SelectionUnit="FullRow">
+
                     </DataGrid>
                 </Border>
                 <TextBlock Name="Filter" 
@@ -222,7 +216,7 @@
                           Width="350" Height="217" IsHitTestVisible="False" Focusable="False"
                        />
                 </Border>
-                <Button x:Name="btnArchive" 
+                <Button x:Name="btnUnarchive" 
                         ToolTip="Unarchive Login Logs" 
                         Background="#0a0a0a" 
                         materialDesign:ButtonAssist.CornerRadius="10"
@@ -235,7 +229,7 @@
                         BorderBrush="DarkGray" 
                         BorderThickness="1"
                         FontFamily="Century Gothic" 
-                        FontWeight="Bold" Margin="700,-375,0,0" Click="btnArchive_Click" >
+                        FontWeight="Bold" Margin="700,-375,0,0" Click="btnUnarchive_Click" >
                     <WrapPanel HorizontalAlignment="Center">
                         <materialDesign:PackIcon 
                             Kind="ArchiveMinus" 
@@ -247,6 +241,64 @@
                                    Margin="10 0" />
                     </WrapPanel>
                 </Button>
+
+
+                <Button x:Name="btnRefresh" 
+                        ToolTip="Refresh Login Logs" 
+                        Background="#0a0a0a" 
+                        materialDesign:ButtonAssist.CornerRadius="10"
+                        Foreground="White" 
+                        FontSize="20" 
+                        Width="218" 
+                        Height="60" 
+                        VerticalContentAlignment="Center"  
+                        Cursor="Hand"  
+                        BorderBrush="DarkGray" 
+                        BorderThickness="1"
+                        FontFamily="Century Gothic" 
+                        FontWeight="Bold" 
+                        Margin="700,-225,0,0" Click="btnRefresh_Click" >
+                    <WrapPanel HorizontalAlignment="Center">
+                        <materialDesign:PackIcon 
+                            Kind="RefreshCircle" 
+                            Width="45" 
+                            Height="45" />
+                        <TextBlock Text="| Refresh" 
+                                   VerticalAlignment="Center" 
+                                   FontWeight="SemiBold" 
+                                   Margin="10 0" />
+                    </WrapPanel>
+                </Button>
+
+                <Button x:Name="btnOpenArchive" 
+                        ToolTip="Refresh Login Logs" 
+                        Background="#0a0a0a" 
+                        materialDesign:ButtonAssist.CornerRadius="10"
+                        Foreground="White" 
+                        FontSize="20" 
+                        Width="218" 
+                        Height="60" 
+                        VerticalContentAlignment="Center"  
+                        Cursor="Hand"  
+                        BorderBrush="DarkGray" 
+                        BorderThickness="1"
+                        FontFamily="Century Gothic" 
+                        FontWeight="Bold" 
+                        Margin="700,-75,0,0" 
+                        Click="btnOpenArchive_Click" Padding="0"  >
+                    <WrapPanel HorizontalAlignment="Center" >
+                        <materialDesign:PackIcon 
+                            Kind="Show" 
+                            Width="45" 
+                            Height="45" 
+                            Margin="10,0,0,0" />
+                        <TextBlock Text="| Login Logs" 
+                                   VerticalAlignment="Center" 
+                                   FontWeight="SemiBold" 
+                                   Margin="0 0" />
+                    </WrapPanel>
+                </Button>
+
             </StackPanel>
         </Border>
     </Grid>

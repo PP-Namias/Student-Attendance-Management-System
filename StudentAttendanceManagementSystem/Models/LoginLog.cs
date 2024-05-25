@@ -21,6 +21,8 @@ namespace StudentAttendanceManagementSystem.Models
         public string Role { get; set; } = string.Empty;
         [Required]
         public string Remark { get; set; } = string.Empty;
+        [Required]
+        public bool Archived { get; set; } = false;
 
     }
 }

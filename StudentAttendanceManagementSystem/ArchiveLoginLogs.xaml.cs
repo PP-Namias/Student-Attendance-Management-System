@@ -1,12 +1,14 @@
 ﻿using MaterialDesignThemes.Wpf;
-using System.Collections.Generic;
+using StudentAttendanceManagementSystem.DbContexts;
+using StudentAttendanceManagementSystem.Models;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
 
 namespace StudentAttendanceManagementSystem
 {
     /// <summary>
-    /// Interaction logic for LoginLogsArchiveLoginLogsViewer.xaml
+    /// Interaction logic for ArchiveLoginLogs.xaml
     /// </summary>
     public partial class ArchiveLoginLogs : UserControl
     {
@@ -16,22 +18,51 @@ namespace StudentAttendanceManagementSystem
             LoadData();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
+        private void LoadData()
+        {
+            using (var context = new AppDbContext())
+            {
+                var archivedLoginLogs = context.LoginLogs
+                                               .Where(log => log.Archived)
+                                               .ToList();
+                var loginLogViewModels = archivedLoginLogs
+                                         .Select(log => new LoginLogViewModel(log))
+                                         .ToList();
+                tblArchivedLogs.ItemsSource = loginLogViewModels;
+            }
+        }
+
+        private void btnUnarchive_Click(object sender, RoutedEventArgs e)
+        {
+            var selectedLog = tblArchivedLogs.SelectedItem as LoginLogViewModel;
+            if (selectedLog != null)
+            {
+                using (var context = new AppDbContext())
+                {
+                    var logToUnarchive = context.LoginLogs.Find(selectedLog.Id);
+                    if (logToUnarchive != null)
+                    {
+                        logToUnarchive.Archived = false;
+                        context.SaveChanges();
+                        MessageBox.Show("Log entry unarchived successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                    }
+                }
+                LoadData();
+            }
+            else
+            {
+                MessageBox.Show("Please select a log entry to unarchive.", "No Selection", MessageBoxButton.OK, MessageBoxImage.Warning);
+            }
+        }
+
+        private void btnOpenArchive_Click(object sender, RoutedEventArgs e)
         {
 
         }
 
-        void LoadData()
+        private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
-            //List<LgginLogs> LgginLogs = new LgginLogs().SelectAll();
-            //DataGrid.ItemsSource = LgginLogs;
-        }
 
-        private void btnArchive_Click(object sender, RoutedEventArgs e)
-        {
-            LoginLogsViewer x = new LoginLogsViewer();
-            UserPages.Children.Clear();
-            UserPages.Children.Add(x);
         }
     }
 }

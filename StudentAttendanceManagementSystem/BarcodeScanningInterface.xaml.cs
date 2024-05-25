@@ -11,9 +11,6 @@ using System.Threading;
 using System.Windows.Media.Imaging;
 using System.Windows.Media;
 using System;
-
-
-
 using System.Linq;
 using System.Windows.Threading;
 using ZXing;
@@ -48,52 +45,6 @@ namespace StudentAttendanceManagementSystem
             // WelcomeMessage.Text = "Welcome " + LoggedInUser.Instance.Info.Name + "!";
         }
 
-
-        //private void TextBox_MouseDown(object sender, MouseButtonEventArgs e)
-        //{
-        //    this.Hide();
-        //    var obj = new AddProduct();
-        //    obj.Show();
-        //    this.Close();
-        //}
-
-        #region main-buttons
-
-        private void StudentAttendance_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void SystemAdministration_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void LoginLogs_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void ReportsandAnalytics_Click(object sender, RoutedEventArgs e)
-        {
-        }
-
-        private void Logout_Click(object sender, RoutedEventArgs e)
-        {
-        }
-        #endregion
-
-        #region socialbuttons
-
-        // Social Buttons
-        private void GithubButton_OnClick(object sender, RoutedEventArgs e)
-        {
-            Process.Start("https://github.com/PP-Namias/Student-Attendance-Management-System");
-        }
-
-        private void EmailButton_OnClick(object sender, RoutedEventArgs e)
-        {
-            Process.Start("mailto://jkrbn99@gmail.com");
-        }
-        #endregion
-
         private void StartStopButton_Click(object sender, RoutedEventArgs e)
         {
             onOff();
@@ -101,9 +52,8 @@ namespace StudentAttendanceManagementSystem
 
         private void Clear(object sender, RoutedEventArgs e)
         {
-            QRTextBlock.Text = "";
+            QRTextBlock.Text = "Waiting for Bar/QR Code...";
             QRCounterTextBlock.Text = "BAR/QR codes decoded: 0";
-
 
             txtName.Text = "Name";
             txtStudentId.Text = "Student ID";
@@ -173,10 +123,6 @@ namespace StudentAttendanceManagementSystem
 
         private void HandleKeyPress(object sender, KeyEventArgs e)
         {
-            if (e.Key == Key.Escape)
-            {
-                System.Environment.Exit(1);
-            }
             if (e.Key == Key.Space)
             {
                 onOff();
@@ -238,6 +184,8 @@ namespace StudentAttendanceManagementSystem
 
                             txtTime.Text = currentDateTime.ToString("h:mm tt");
                             txtDate.Text = currentDateTime.ToString("MMM dd, yyyy");
+                            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/" + student.StudentId + ".png"));
+
                         });
                     }
                     else
@@ -255,7 +203,7 @@ namespace StudentAttendanceManagementSystem
 
         private void helpButton_Click(object sender, RoutedEventArgs e)
         {
-            string message = "Bar-code Compatible formats : UPC-A, UPC-E, EAN-8, QR, ITF, EAN-13, RSS-14, Data, Matrix, Codabar, PDF, 417, Aztec, PDF417" + Environment.NewLine + Environment.NewLine + "Controls:" + Environment.NewLine + "Start/Stop: Start and stop the video stream." + Environment.NewLine + "Switch Camera: Switch between cameras available in the system." + Environment.NewLine + "Record: record frames into c:\\frames as pngs." + Environment.NewLine + Environment.NewLine + "Keyboard Controls:" + Environment.NewLine + "Space: Start and stop the video stream." + Environment.NewLine + "Shift+S: Switch between cameras available in the system." + Environment.NewLine + "ESC: Exit application.";
+            string message = "Bar-code Compatible formats : UPC-A, UPC-E, EAN-8, QR, ITF, EAN-13, RSS-14, Data, Matrix, Codabar, PDF, 417, Aztec, PDF417" + Environment.NewLine + Environment.NewLine + "Controls:" + Environment.NewLine + "Start/Stop: Start and stop the video stream." + Environment.NewLine + "Switch Camera: Switch between cameras available in the system." + Environment.NewLine + "Record: record frames into c:\\frames as pngs." + Environment.NewLine + Environment.NewLine + "Keyboard Controls:" + Environment.NewLine + "Space: Start and stop the video stream." + Environment.NewLine + "Shift+S: Switch between cameras available in the system.";
             string caption = "About";
             MessageBoxButton buttons = MessageBoxButton.OK;
             MessageBoxImage icon = MessageBoxImage.Asterisk;
@@ -300,12 +248,7 @@ namespace StudentAttendanceManagementSystem
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
         {
-            txtName.Text = "Name";
-            txtStudentId.Text = "Student ID";
-            txtClass.Text = "Year & Section";
-            txtDate.Text = "Date";
-            txtTime.Text = "Time";
-            imgProfile.Source = new BitmapImage(new Uri("pack://application:,,,/Images/profile.png"));
+            Clear(sender, e);
         }
 
         private void btnConfirm_Click(object sender, RoutedEventArgs e)

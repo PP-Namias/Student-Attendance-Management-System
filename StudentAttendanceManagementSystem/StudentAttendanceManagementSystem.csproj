@@ -423,10 +423,21 @@
     <Resource Include="Images\woman.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Images\Perez.png" />
+    <Resource Include="Perez.png" />
   </ItemGroup>
   <ItemGroup>
-    <Resource Include="Perez.png" />
+    <Resource Include="Images\20220060-N.png" />
+    <Resource Include="Images\20220313-N.png" />
+    <Resource Include="Images\20220464-N.png" />
+    <Resource Include="Images\20220679-N.png" />
+    <Resource Include="Images\20220844-N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="20220060-N.png" />
+    <Resource Include="20220313-N.png" />
+    <Resource Include="20220464-N.png" />
+    <Resource Include="20220679-N.png" />
+    <Resource Include="20220844-N.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
