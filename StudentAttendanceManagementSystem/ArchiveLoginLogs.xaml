@@ -285,7 +285,8 @@
                         FontFamily="Century Gothic" 
                         FontWeight="Bold" 
                         Margin="700,-75,0,0" 
-                        Click="btnOpenArchive_Click" Padding="0"  >
+                        Click="btnOpenArchive_Click" 
+                        Padding="0"  >
                     <WrapPanel HorizontalAlignment="Center" >
                         <materialDesign:PackIcon 
                             Kind="Show" 

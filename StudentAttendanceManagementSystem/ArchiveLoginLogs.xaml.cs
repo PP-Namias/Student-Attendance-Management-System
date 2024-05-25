@@ -29,6 +29,7 @@ namespace StudentAttendanceManagementSystem
                                          .Select(log => new LoginLogViewModel(log))
                                          .ToList();
                 tblArchivedLogs.ItemsSource = loginLogViewModels;
+                NumberOfLogs.Text = $"Number of archived logs: {archivedLoginLogs.Count}";
             }
         }
 
@@ -57,11 +58,14 @@ namespace StudentAttendanceManagementSystem
 
         private void btnOpenArchive_Click(object sender, RoutedEventArgs e)
         {
-
+            LoginLogsViewer x = new LoginLogsViewer();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void btnRefresh_Click(object sender, RoutedEventArgs e)
         {
+            LoadData();
 
         }
     }

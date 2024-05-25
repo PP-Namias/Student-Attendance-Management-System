@@ -31,6 +31,7 @@ namespace StudentAttendanceManagementSystem
                                          .Select(log => new LoginLogViewModel(log))
                                          .ToList();
                 tblLoginLogs.ItemsSource = loginLogViewModels;
+                NumberOfLogs.Text = $"Number of logs: {nonArchivedLoginLogs.Count}";
             }
         }
 

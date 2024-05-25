@@ -18,6 +18,8 @@ namespace StudentAttendanceManagementSystem.Models
         public string Section { get; set; } = string.Empty;
         [Required]
         public string StudentId { get; set; } = string.Empty;
+        [Required]
+        public bool Archived { get; set; } = false;
     }
 }
    

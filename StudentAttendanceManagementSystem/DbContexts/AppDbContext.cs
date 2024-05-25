@@ -1,5 +1,5 @@
-﻿using StudentAttendanceManagementSystem.Models;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
+using StudentAttendanceManagementSystem.Models;
 using System;
 using System.Linq;
 
@@ -17,12 +17,23 @@ namespace StudentAttendanceManagementSystem.DbContexts
             string connectionString = "Host=localhost; port=5432; Database=SAMS; User Id=postgres; Password=Namias99;";
             optionsBuilder.UseNpgsql(connectionString);
         }
-        
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            base.OnModelCreating(modelBuilder);
+            // Additional configuration and model customization can be added here
+        }
+
         public IQueryable<LoginUser> GetNonArchivedLoginLogs()
         {
             return LoginLogs.Where(log => !log.Archived);
         }
-        
+
+        public IQueryable<Students> GetNonArchivedStudents()
+        {
+            return Students.Where(student => !student.Archived);
+        }
+
         public void SaveUser(User user)
         {
             try
@@ -78,11 +89,41 @@ namespace StudentAttendanceManagementSystem.DbContexts
                 throw;
             }
         }
-        /*
-        public IQueryable<LoginLog> GetNonArchivedLoginLogs()
+
+        public void ArchiveStudent(int studentId)
         {
-            return LoginLogs.Where(log => !log.Archived);
+            try
+            {
+                var student = Students.Find(studentId);
+                if (student != null)
+                {
+                    student.Archived = true;
+                    SaveChanges();
+                }
+            }
+            catch (DbUpdateException ex)
+            {
+                Console.WriteLine($"Error archiving student: {ex.Message}");
+                throw;
+            }
         }
-        */
+
+        public void ArchiveLoginLog(int loginLogId)
+        {
+            try
+            {
+                var loginLog = LoginLogs.Find(loginLogId);
+                if (loginLog != null)
+                {
+                    loginLog.Archived = true;
+                    SaveChanges();
+                }
+            }
+            catch (DbUpdateException ex)
+            {
+                Console.WriteLine($"Error archiving login log: {ex.Message}");
+                throw;
+            }
+        }
     }
 }
