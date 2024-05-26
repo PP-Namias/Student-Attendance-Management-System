@@ -40,6 +40,8 @@ namespace StudentAttendanceManagementSystem
 
                     tblStudentRecords.ItemsSource = studentViewModels;
                     NumberOfLogs.Text = $"Number of records: {studentRecords.Count}";
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.txtDatabase.Text = studentRecords.Count.ToString();
                 }
             }
             catch (Exception ex)

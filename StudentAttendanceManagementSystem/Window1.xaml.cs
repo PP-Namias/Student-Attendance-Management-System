@@ -49,8 +49,7 @@ namespace StudentAttendanceManagementSystem
 
         }
 
-
-        public int RegisterUser(string username, string password, string phonenumber)
+        public int RegisterUser(string username, string password, string phonenumber, string role)
         {
             //Must be at least 8 characters long
             //At least one number
@@ -60,7 +59,7 @@ namespace StudentAttendanceManagementSystem
 
             if (appDbContext.Users.Any(x => x.UserName == username))
             {
-                return 1; // Username already exist
+                return 1; // Username already exists
             }
 
             else if (password != txtConformPassword.Password)
@@ -102,6 +101,7 @@ namespace StudentAttendanceManagementSystem
                                 UserName = username,
                                 PhoneNumber = phonenumber,
                                 PasswordHash = hashService.GetHash(password),
+                                Role = role // Assign the role
                             };
 
                             appDbContext.Users.Add(user);
@@ -116,26 +116,32 @@ namespace StudentAttendanceManagementSystem
 
         private void btnRegister_Click(object sender, RoutedEventArgs e)
         {
-            int result = RegisterUser(txtUsername.Text, txtPassword.Password, txtPhoneNumber.Text);
+            string role = cmbRole.Text; // Get the selected role from the ComboBox
+            int result = RegisterUser(txtUsername.Text, txtPassword.Password, txtPhoneNumber.Text, role);
             if (result == 1)
             {
-                MessageBox.Show("Username is exist", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+                MessageBox.Show("Username already exists.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
             else if (result == 2)
             {
-                MessageBox.Show("Passwords do not match", "Please enter Login or Password", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Passwords do not match.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-            else if (result == 5)
+            else if (result == 3)
             {
-                MessageBox.Show("Enter Phone Number", "Please enter Login or Password", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("User registered successfully.", "Success", MessageBoxButton.OK, MessageBoxImage.Information);
+                // Clear input fields after successful registration
+                txtUsername.Clear();
+                txtPassword.Clear();
+                txtConformPassword.Clear();
+                txtPhoneNumber.Clear();
             }
             else if (result == 4)
             {
-                MessageBox.Show("Password is wrong", "Please enter Login or Password", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Password must be at least 8 characters long and contain at least one special character and one number.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
-            else
+            else if (result == 5)
             {
-                MessageBox.Show("Register Successfully", "Congratulations", MessageBoxButton.OK, MessageBoxImage.Information);
+                MessageBox.Show("Please enter a phone number.", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 

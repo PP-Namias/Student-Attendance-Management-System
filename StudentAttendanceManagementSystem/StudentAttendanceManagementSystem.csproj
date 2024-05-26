@@ -466,5 +466,29 @@
   <ItemGroup>
     <Resource Include="Images\SapiensBrown.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Overlay_Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Overlay_Login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="OverlayLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\OverlayLog.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="20220629-N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\20220629-N.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="OverlayLogHD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\OverlayLogHD.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

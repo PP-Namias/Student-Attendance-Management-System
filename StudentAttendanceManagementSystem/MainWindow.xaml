@@ -22,37 +22,39 @@
         </Grid.Background>
         <Border Height="390" VerticalAlignment="Top" CornerRadius="0 0 180 0" Background="#1A120B" MouseDown="Border_MouseDown">
         </Border>
+        <Image Source="/OverlayLogHD.png" Stretch="Uniform" Panel.ZIndex="0" Margin="-10,0,0,-71" />
+
         <StackPanel Orientation="Horizontal">
             <StackPanel Width="350">
                 <TextBlock Text="Student Attendance"
                            Foreground="White"
                            TextAlignment="Center"
-                           FontSize="30"
+                           FontSize="25"
                            FontFamily="Century Gothic" HorizontalAlignment="Center" Margin="0,11,0,0"/>
                 <TextBlock Text="Management System"
                            Foreground="White"
                            TextAlignment="Center"
-                           FontSize="30"
+                           FontSize="25"
                            FontFamily="Century Gothic" HorizontalAlignment="Center"/>
-                <Image Source="/SapiensBrown.png"  Width="352" Height="341" Margin="-11,0,0,30" Stretch="Uniform" Panel.ZIndex="-1" />
+                <Image Source="/SapiensBrown.png"  Width="352" Height="341" Margin="-10,3,0,30" Stretch="Uniform" Panel.ZIndex="4" />
             </StackPanel>
-            <StackPanel Width="375">
-                <StackPanel Margin="20 40" Width="350">
-                    <TextBlock Text="Login Page" 
+            <StackPanel Width="390">
+                <StackPanel Margin="20 40" Width="348">
+                    <TextBlock Text="Login" 
                                Margin="20" 
                                Foreground="White"
                                TextAlignment="Center" 
                                FontSize="38"  
-                               FontFamily="Century Gothic"></TextBlock>
+                               FontFamily="Century Gothic" Width="347"></TextBlock>
 
 
-                    <StackPanel Orientation="Horizontal" Margin="10" >
+                    <StackPanel Orientation="Horizontal" Margin="10,33,10,10" Width="289" >
                         <materialDesign:PackIcon Kind="User" Width="25" Height="25" Foreground="White" />
                         <TextBox x:Name="txtUsername" Margin="10 0" materialDesign:HintAssist.Hint="Enter Username" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#3C2A21" SelectionBrush="#3C2A21" Background="#00000000" FontFamily="Century" />
                     </StackPanel>
 
 
-                    <StackPanel Orientation="Horizontal" Margin="10" Width="380" >
+                    <StackPanel Orientation="Horizontal" Margin="21,14,10,10" Width="300" >
                         <materialDesign:PackIcon Kind="Lock" Width="25" Height="25" Foreground="White" />
 
                         <TextBox x:Name="txtPasswordTextBox" Margin="10 0" Width="0" Visibility="Hidden" TabIndex="1" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" BorderBrush="White" CaretBrush="#3C2A21" SelectionBrush="#3C2A21" Background="#00000000" FontFamily="Century" />
@@ -63,7 +65,7 @@
                     </StackPanel>
 
                     <Button Style="{StaticResource MaterialDesignFloatingActionButton}" Background="#FF001011"
-                    ToolTip="Show/Hide Password" x:Name="btnShowPassword" Click="btnShowPassword_Click" BorderBrush="#FFD5CEA3" Width="30" Height="30" Margin="280,-50,0,0">
+                    ToolTip="Show/Hide Password" x:Name="btnShowPassword" Click="btnShowPassword_Click" BorderBrush="#FFD5CEA3" Width="30" Height="30" Margin="316,-50,0,0">
                         <materialDesign:PackIcon x:Name="iconShowPassword" Kind="Hide" Foreground="White" Width="18" Height="18" />
                     </Button>
 
@@ -71,25 +73,27 @@
                     <StackPanel Margin="0,50,0,50" HorizontalAlignment="Center" >
                         <Button x:Name="btnLogin"
                                 ToolTip="Login" 
-                                Background="#3C2A21" 
-                                materialDesign:ButtonAssist.CornerRadius="10"
+                                Background="#453424" 
                                 Foreground="White" 
+                                
+                                materialDesign:ButtonAssist.CornerRadius="25"
+
                                 FontSize="20" 
-                                Width="178" 
-                                Height="60" 
+                                Width="175" 
+                                Height="50" 
                                 VerticalContentAlignment="Center"  
                                 Cursor="Hand"  
-                                BorderBrush="DarkGray" 
-                                BorderThickness="1"
+                                BorderThickness="0"
                                 FontFamily="Century Gothic" 
                                 FontWeight="Bold" 
                                 Click="btnLogin_Click" 
-                                Padding="0" >
+                                Padding="0" Margin="40,-3,0,0">
+
                             <WrapPanel HorizontalAlignment="Center">
                                 <materialDesign:PackIcon 
                                     Kind="Login" 
-                                    Width="45" 
-                                    Height="45" />
+                                    Width="30" 
+                                    Height="30" />
                                 <TextBlock Text="| Login" 
                                    VerticalAlignment="Center" 
                                    FontWeight="SemiBold" 

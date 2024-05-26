@@ -42,14 +42,14 @@
         <materialDesign:DialogHost Identifier="RootDialog" SnackbarMessageQueue="{Binding MessageQueue, ElementName=MainSnackbar}">
             <materialDesign:DrawerHost IsLeftDrawerOpen="{Binding IsChecked, ElementName=MenuToggleButton}">
                 <materialDesign:DrawerHost.LeftDrawerContent>
-                    <DockPanel MinWidth="212" Background="#1A120B" Margin="0,0,0,0">
+                    <DockPanel MinWidth="352" Background="#1A120B" Margin="0,0,0,0">
                         <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" 
                                     DockPanel.Dock="Top"
                                     HorizontalAlignment="Right" Margin="16"
                                     IsChecked="{Binding IsChecked, ElementName=MenuToggleButton, Mode=TwoWay}" 
                                     Cursor="Hand"
                                     Foreground="#E5E5CB"/>
-                        <TreeView MinWidth="220" Foreground="#E5E5CB">
+                        <TreeView MinWidth="220" Foreground="#E5E5CB" FontSize="16">
                             <TreeViewItem Cursor="Hand">
                                 <TreeViewItem.Header >
                                     <StackPanel x:Name="Home" Orientation="Horizontal" Height="35" MouseLeftButtonDown="Home_MouseLeftButtonDown">
@@ -70,31 +70,10 @@
                                     </StackPanel>
                                 </TreeViewItem.Header>
                             </TreeViewItem>
-                            <TreeViewItem IsExpanded="True">
-                                <TreeViewItem.Header>
-                                    <StackPanel x:Name="LoginVariant" Orientation="Horizontal" Height="35" MouseLeftButtonDown="LoginVariant_MouseLeftButtonDown">
-                                        <Viewbox Width="35" Height="35">
-                                            <materialDesign:PackIcon Kind="LoginVariant" VerticalAlignment="Center" />
-                                        </Viewbox>
-                                        <TextBlock Margin="8 0 0 0" VerticalAlignment="Center">Login Logs Management</TextBlock>
-                                    </StackPanel>
-                                </TreeViewItem.Header>
-                                <TreeViewItem Cursor="Hand">
-                                    <TreeViewItem.Header>
-                                        <StackPanel x:Name="ArchiveCheck" Orientation="Horizontal" Height="35" MouseLeftButtonDown="ArchiveCheck_MouseLeftButtonDown">
-                                            <Viewbox Width="35" Height="35">
-                                                <materialDesign:PackIcon Kind="ArchiveCheck" VerticalAlignment="Center" />
-                                            </Viewbox>
-                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_LoginList_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">Login Logs Viewer</TextBlock>
-                                        </StackPanel>
-                                    </TreeViewItem.Header>
-                                </TreeViewItem>
-                            </TreeViewItem>
 
-
-                            <TreeViewItem>
+                            <TreeViewItem  IsExpanded="True">
                                 <TreeViewItem.Header>
-                                    <StackPanel x:Name="AccountStudent" Orientation="Horizontal" Height="35" MouseLeftButtonDown="AccountStudent_MouseLeftButtonDown">
+                                    <StackPanel x:Name="AccountStudent" Orientation="Horizontal" Height="35" MouseLeftButtonDown="AccountStudent_MouseLeftButtonDown" Cursor="Hand">
                                         <Viewbox Width="35" Height="35">
                                             <materialDesign:PackIcon Kind="AccountStudent" VerticalAlignment="Center" />
                                         </Viewbox>
@@ -103,7 +82,7 @@
                                 </TreeViewItem.Header>
                                 <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
-                                        <StackPanel x:Name="AccountStudentOutline" Orientation="Horizontal" Height="35" MouseLeftButtonDown="AccountStudentOutline_MouseLeftButtonDown">
+                                        <StackPanel x:Name="AccountStudentOutline" Orientation="Horizontal" Height="35" MouseLeftButtonDown="AccountStudentOutline_MouseLeftButtonDown" Cursor="Hand">
                                             <Viewbox Width="35" Height="35">
                                                 <materialDesign:PackIcon Kind="AccountStudentOutline" VerticalAlignment="Center" />
                                             </Viewbox>
@@ -115,7 +94,7 @@
 
                             <TreeViewItem>
                                 <TreeViewItem.Header>
-                                    <StackPanel x:Name="DatabaseCog" Orientation="Horizontal" Height="35" MouseLeftButtonDown="DatabaseCog_MouseLeftButtonDown">
+                                    <StackPanel x:Name="DatabaseCog" Orientation="Horizontal" Height="35" MouseLeftButtonDown="DatabaseCog_MouseLeftButtonDown" Cursor="Hand">
                                         <Viewbox Width="35" Height="35">
                                             <materialDesign:PackIcon Kind="DatabaseCog" VerticalAlignment="Center" />
                                         </Viewbox>
@@ -124,7 +103,7 @@
                                 </TreeViewItem.Header>
                                 <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
-                                        <StackPanel x:Name="DatabaseCogOutline" Orientation="Horizontal" Height="35" MouseLeftButtonDown="DatabaseCogOutline_MouseLeftButtonDown">
+                                        <StackPanel x:Name="DatabaseCogOutline" Orientation="Horizontal" Height="35" MouseLeftButtonDown="DatabaseCogOutline_MouseLeftButtonDown" Cursor="Hand">
                                             <Viewbox Width="35" Height="35">
                                                 <materialDesign:PackIcon Kind="DatabaseCogOutline" VerticalAlignment="Center" />
                                             </Viewbox>
@@ -135,9 +114,30 @@
                             </TreeViewItem>
 
 
+                            <TreeViewItem>
+                                <TreeViewItem.Header>
+                                    <StackPanel x:Name="LoginVariant" Orientation="Horizontal" Height="35" MouseLeftButtonDown="LoginVariant_MouseLeftButtonDown" Cursor="Hand">
+                                        <Viewbox Width="35" Height="35">
+                                            <materialDesign:PackIcon Kind="LoginVariant" VerticalAlignment="Center" />
+                                        </Viewbox>
+                                        <TextBlock Margin="8 0 0 0" VerticalAlignment="Center">Login Logs Management</TextBlock>
+                                    </StackPanel>
+                                </TreeViewItem.Header>
+                                <TreeViewItem Cursor="Hand">
+                                    <TreeViewItem.Header>
+                                        <StackPanel x:Name="ArchiveCheck" Orientation="Horizontal" Height="35" MouseLeftButtonDown="ArchiveCheck_MouseLeftButtonDown" Cursor="Hand">
+                                            <Viewbox Width="35" Height="35">
+                                                <materialDesign:PackIcon Kind="ArchiveCheck" VerticalAlignment="Center" />
+                                            </Viewbox>
+                                            <TextBlock  PreviewMouseLeftButtonDown="TreeItem_LoginList_PreviewMouseLeftButtonDown" Margin="8 0 0 0" VerticalAlignment="Center">Login Logs Viewer</TextBlock>
+                                        </StackPanel>
+                                    </TreeViewItem.Header>
+                                </TreeViewItem>
+                            </TreeViewItem>
+
                             <TreeViewItem Cursor="Hand">
                                 <TreeViewItem.Header >
-                                    <StackPanel x:Name="UserAccessControl" Orientation="Horizontal" Height="35" MouseLeftButtonDown="UserAccessControl_MouseLeftButtonDown">
+                                    <StackPanel x:Name="UserAccessControl" Orientation="Horizontal" Height="35" MouseLeftButtonDown="UserAccessControl_MouseLeftButtonDown" Cursor="Hand">
                                         <Viewbox Width="35" Height="35">
                                             <materialDesign:PackIcon Kind="UserAccessControl" VerticalAlignment="Center" />
                                         </Viewbox>
@@ -145,7 +145,7 @@
                                     </StackPanel>
                                 </TreeViewItem.Header>
                             </TreeViewItem>
-                            
+
                         </TreeView>
                     </DockPanel>
                 </materialDesign:DrawerHost.LeftDrawerContent>
@@ -187,12 +187,6 @@
                                     </StackPanel>
                                 </Button>
 
-                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_LoginLogs"            Width="75" Height="75" Click="btn_LoginLogs_Click" ToolTip="Login Logs">
-                                    <StackPanel Width="50" Height="50">
-                                        <materialDesign:PackIcon x:Name="btnLoginLogs"   Kind="LoginVariant"             VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
-                                    </StackPanel>
-                                </Button>
-
                                 <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Reports"          Width="75" Height="75" Click="btn_Reports_Click" ToolTip="Student Record">
                                     <StackPanel Width="50" Height="50">
                                         <materialDesign:PackIcon x:Name="btnReports"      Kind="ChartLine"               VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
@@ -205,6 +199,12 @@
                                     </StackPanel>
                                 </Button>
 
+                                <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_LoginLogs"            Width="75" Height="75" Click="btn_LoginLogs_Click" ToolTip="Login Logs">
+                                    <StackPanel Width="50" Height="50">
+                                        <materialDesign:PackIcon x:Name="btnLoginLogs"   Kind="LoginVariant"             VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
+                                    </StackPanel>
+                                </Button>
+
                                 <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_SystemAdministration" Width="75" Height="75" Click="btn_SystemAdministration_Click" ToolTip="User Account Management">
                                     <StackPanel Width="50" Height="50">
                                         <materialDesign:PackIcon x:Name="btnSystemAdministration" Kind="SecurityAccount" VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
@@ -212,6 +212,30 @@
                                 </Button>
 
                             </StackPanel>
+
+
+                            <StackPanel Grid.Row="1" Margin="0,280,0,10">
+                                <Button x:Name="btn_Logout"  
+                                        Style="{StaticResource MaterialDesignFlatButton}" 
+                                        Width="75" 
+                                        Height="75" 
+                                        Click="btn_Dashboard_Click" 
+                                        ToolTip="Logout" 
+                                        HorizontalAlignment="Right" 
+                                        VerticalAlignment="Top">
+                                    <StackPanel Width="50" Height="50">
+                                        <materialDesign:PackIcon x:Name="btnLogout"           
+                                                                 Kind="Logout"                  
+                                                                 VerticalAlignment="Center" 
+                                                                 Foreground="#E5E5CB" 
+                                                                 Width="40" 
+                                                                 Height="40" />
+                                    </StackPanel>
+                                </Button>
+
+
+                            </StackPanel>
+
                         </StackPanel>
                         <!-- end information links -->
 

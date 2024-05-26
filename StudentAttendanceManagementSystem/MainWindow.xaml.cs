@@ -27,12 +27,12 @@ namespace StudentAttendanceManagementSystem
             appDbContext = new AppDbContext();
         }
 
-        // Login 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (LoginUser(txtUsername.Text, txtPassword.Password) == 1)
-            {
+            string userRole = LoginUser(txtUsername.Text, txtPassword.Password);
 
+            if (userRole == "Teacher")
+            {
                 var LoginLogs = new LoginUser()
                 {
                     Username = txtUsername.Text,
@@ -40,72 +40,36 @@ namespace StudentAttendanceManagementSystem
                     Date = System.DateTime.Today,
                     Role = "User",
                     Remark = "Login Successfully"
-                    
                 };
-                
+
                 appDbContext.LoginLogs.Add(LoginLogs);
                 appDbContext.SaveLoginLog(LoginLogs);
 
+                // Assuming 'dashboard' is an instance of the Dashboard class
+                Dashboard dashboard = new Dashboard();
+                dashboard.txtName.Text = "Logged as " + txtUsername.Text;
 
-                /*
-                 * 
-                 * wtih this code as example
-                var user = new LoginLog()
-                {
-                    UserName = username,
-                    PhoneNumber = phonenumber,
-                    PasswordHash = hashService.GetHash(password),
-                };
+                MainMenu MainMenu = new MainMenu();
+                MainMenu.btn_LoginLogs.Visibility = Visibility.Hidden;
+                MainMenu.btn_SystemAdministration.Visibility = Visibility.Hidden;
 
-                appDbContext.Users.Add(user);
-                appDbContext.SaveChanges();
-
-                make an record for login logs 
-                and save it to the database
-
-                -- Table: LoginLogs
-                CREATE TABLE LoginLogs (
-                    Id SERIAL PRIMARY KEY,
-                    UserId INTEGER REFERENCES Users(Id),
-                    Username VARCHAR,
-                    LoginTime TIMESTAMP,
-                    LogoutTime TIMESTAMP,
-                    Date DATE,
-                    Role VARCHAR,
-                    Remark VARCHAR
-                );
-
-                
-
-
-
-                var LoginLogss = new LoginUser()
-                {
-                    Username = txtUsername.Text,
-                    LoginTime = System.DateTime.Now,
-                    Date = System.DateTime.Now,
-                    Role = "User",
-                    Remark = "Login Successfully"
-                };
-
-                appDbContext.LoginLogs.Add(LoginLogss);
-                appDbContext.SaveLoginLog();
-
-                                */
-
-                //MessageBox.Show("Login Successfully", "Congratulations " + txtUsername.Text, MessageBoxButton.OK, MessageBoxImage.Information);
+                MainMenu.Show();
+                this.Close();
+            }
+            else if (userRole == "Admin") // Assuming you have an Admin role
+            {
                 MainMenu MainMenu = new MainMenu();
                 MainMenu.Show();
                 this.Close();
             }
-            if (LoginUser(txtUsername.Text, txtPassword.Password) == 3)
+            else
             {
                 MessageBox.Show("Username or password is wrong", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
 
 
-        public int LoginUser(string username, string password)
+        public string LoginUser(string username, string password)
         {
             HashService hashService = new HashService();
             password = hashService.GetHash(password);
@@ -113,21 +77,23 @@ namespace StudentAttendanceManagementSystem
             bool name = appDbContext.Users.Any(x => x.UserName == username && username.Length > 4);
             bool passwords = appDbContext.Users.Any(x => x.PasswordHash == password);
 
+            var user = appDbContext.Users.FirstOrDefault(x => x.UserName == username && x.PasswordHash == password);
+
             if (name == true && passwords == true)
             {
-                return 1;
+                return user.Role; // Assuming your User model has a Role property
             }
 
             if (username == null && password == null || username != null && password == null || password != null && username == null)
             {
-                return 2;
+                return "2";
             }
 
             if (name == true && passwords == false || name == false && passwords == true)
             {
-                return 3;
+                return "3";
             }
-            return 3;
+            return "3";
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

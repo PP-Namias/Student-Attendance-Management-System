@@ -10,39 +10,47 @@
     <Grid MouseDown="Border_MouseDown">
         <Grid.Background>
             <LinearGradientBrush StartPoint="0.1,0" EndPoint="0.9,1">
-                <GradientStop  Color="#093A3E" Offset="1"/>
-                <GradientStop  Color="#3AAFB9" Offset="0"/>
+                <GradientStop  Color="#987554" Offset="1"/>
+                <GradientStop  Color="#1A120B" Offset="0"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Border Height="390" VerticalAlignment="Top" CornerRadius="0 0 180 0" Background="#001011" MouseDown="Border_MouseDown">
+        <Border Height="390" VerticalAlignment="Top" CornerRadius="0 0 180 0" Background="#1A120B" MouseDown="Border_MouseDown">
         </Border>
         <StackPanel Orientation="Horizontal">
             <StackPanel Width="350">
-                <Image Source="/Images/planning.jpg"  Width="290" Height="323" Margin="30" Stretch="Uniform" />
+                <Image Source="/Images/SapiensBrown.png"  Width="290" Height="323" Margin="30" Stretch="Uniform" />
             </StackPanel>
             <StackPanel Width="375">
-                <StackPanel Margin="20 30" Height="425">
-                    <TextBlock Text="Registration" Margin="20" Foreground="White"
-                               TextAlignment="Center" FontSize="38"  FontFamily="Century"></TextBlock>
+                <StackPanel Height="425" Margin="0,10,0,0">
+                    <TextBlock Text="Add User" Margin="20" Foreground="White"
+                               TextAlignment="Center" FontSize="38"  FontFamily="Century Gothic"></TextBlock>
                     <StackPanel Orientation="Horizontal" Margin="10" >
                         <materialDesign:PackIcon Kind="User" Width="25" Height="25" Foreground="White" />
-                        <TextBox x:Name="txtUsername" Margin="10 0" materialDesign:HintAssist.Hint="Enter Username" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E" TextChanged="txtUsername_TextChanged"  FontFamily="Century"/>
+                        <TextBox x:Name="txtUsername" Margin="10 0" materialDesign:HintAssist.Hint="Enter Username" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#987554" SelectionBrush="#987554" TextChanged="txtUsername_TextChanged"  FontFamily="Century Gothic"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" Margin="10" >
                         <materialDesign:PackIcon Kind="Phone" Width="25" Height="25" Foreground="White" />
-                        <TextBox x:Name="txtPhoneNumber" Margin="10 0" materialDesign:HintAssist.Hint="Enter Phone Number" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E" TextChanged="txtUsername_TextChanged"  FontFamily="Century"/>
+                        <TextBox x:Name="txtPhoneNumber" Margin="10 0" materialDesign:HintAssist.Hint="Enter Phone Number" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#987554" SelectionBrush="#987554" TextChanged="txtUsername_TextChanged"  FontFamily="Century Gothic"/>
                     </StackPanel>
 
                     <StackPanel Orientation="Horizontal" Margin="10" >
                         <materialDesign:PackIcon Kind="Lock" Width="25" Height="25" Foreground="White" />
-                        <PasswordBox x:Name="txtPassword" Margin="10 0" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E"  FontFamily="Century"/>
+                        <PasswordBox x:Name="txtPassword" Margin="10 0" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#987554" SelectionBrush="#987554"  FontFamily="Century Gothic"/>
                     </StackPanel>
 
 
                     <StackPanel Orientation="Horizontal" Margin="10" >
                         <materialDesign:PackIcon Kind="Lock" Width="25" Height="25" Foreground="White" />
-                        <PasswordBox x:Name="txtConformPassword" Margin="10 0" materialDesign:HintAssist.Hint="Conform Password" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#093A3E" SelectionBrush="#093A3E"  FontFamily="Century"/>
+                        <PasswordBox x:Name="txtConformPassword" Margin="10 0" materialDesign:HintAssist.Hint="Conform Password" Foreground="White" Width="250" BorderBrush="White" CaretBrush="#987554" SelectionBrush="#987554"  FontFamily="Century Gothic"/>
+                    </StackPanel>
+
+                    <StackPanel Orientation="Horizontal" Margin="10" >
+                        <materialDesign:PackIcon Kind="Lock" Width="25" Height="25" Foreground="White" />
+                        <ComboBox x:Name="cmbRole" Margin="10 0" materialDesign:HintAssist.Hint="Select Role" Foreground="White" Width="250" BorderBrush="White" FontFamily="Century Gothic" IsEditable="True">
+                            <ComboBoxItem Content="Admin"/>
+                            <ComboBoxItem Content="Teacher"/>
+                        </ComboBox>
                     </StackPanel>
 
 
@@ -50,8 +58,8 @@
                     <!--Register-->
                     <StackPanel Margin="50 25 0 30" HorizontalAlignment="Left">
                         <Button Width="100" Height="44" Style="{StaticResource MaterialDesignRaisedButton}"
-                    materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#093A3E"  FontFamily="Century"
-                    Background="#093A3E" Foreground="White" ToolTip="Registration" x:Name="btnRegister" 
+                    materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#987554"  FontFamily="Century Gothic"
+                    Background="#987554" Foreground="White" ToolTip="Registration" x:Name="btnRegister" 
                     Click="btnRegister_Click" Content="Register"/>
                     </StackPanel>
 
@@ -61,11 +69,11 @@
 
             <StackPanel Margin="-50,-380, 0, 0" Width="145" Orientation="Horizontal" VerticalAlignment="Center">
                 <Button Margin="20 30" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
-                    ToolTip="Minimize" x:Name="btnMinimize" Click="btnMinimize_Click" BorderBrush="#FF3AAFB9" Width="35" Height="35">
+                    ToolTip="Minimize" x:Name="btnMinimize" Click="btnMinimize_Click" BorderBrush="#FF1A120B" Width="35" Height="35">
                     <materialDesign:PackIcon Kind="Minimize" Foreground="White" Width="20" Height="20" />
                 </Button>
                 <Button Margin="0 20" Style="{StaticResource MaterialDesignFloatingActionButton}" Background="{x:Null}"
-                    ToolTip="Close" x:Name="btnExit" Click="btnExit_Click" BorderBrush="#FF3AAFB9" Width="35" Height="35">
+                    ToolTip="Close" x:Name="btnExit" Click="btnExit_Click" BorderBrush="#FF1A120B" Width="35" Height="35">
                     <materialDesign:PackIcon Kind="Close" Foreground="White" Width="20" Height="20" />
                 </Button>
             </StackPanel>
@@ -77,8 +85,8 @@
         <!--// Go Back-->
         <StackPanel  Margin="380 320 0 30" HorizontalAlignment="Center">
             <Button Width="100" Height="44" Style="{StaticResource MaterialDesignRaisedButton}"
-                    materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#FF093A3E" FontFamily="Century"
-                    Background="#093A3E" Foreground="White" ToolTip="Go Back" x:Name="btnGoBack" 
+                    materialDesign:ButtonAssist.CornerRadius="10" BorderThickness="2" BorderBrush="#FF987554" FontFamily="Century Gothic"
+                    Background="#987554" Foreground="White" ToolTip="Go Back" x:Name="btnGoBack" 
                     Click="btnGoBack_Click" Content="GoBack"/>
         </StackPanel>
 

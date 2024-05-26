@@ -2,96 +2,82 @@
 using LiveCharts.Defaults;
 using LiveCharts.Wpf;
 using MaterialDesignThemes.Wpf;
+using StudentAttendanceManagementSystem.DbContexts;
+using StudentAttendanceManagementSystem.Models;
 using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Text;
+using System.Linq;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace StudentAttendanceManagementSystem
 {
-    /// <summary>
-    /// Interaction logic for Dashboard.xaml
-    /// </summary>
     public partial class Dashboard : UserControl
     {
         public SeriesCollection SeriesCollection { get; set; }
-        public SeriesCollection LastHourSeries { get; set; }
-        public SeriesCollection LastHourSeries1 { get; set; }
         public string[] Labels { get; set; }
         public Func<double, string> Formatter { get; set; }
+
         public Dashboard()
         {
             InitializeComponent();
-            SeriesCollection = new SeriesCollection
+            LoadAttendanceData();
+        }
+
+        private void LoadAttendanceData()
+        {
+            try
             {
-                new StackedColumnSeries
+                using (var context = new AppDbContext())
                 {
-                    Values = new ChartValues<double> {7,6,5,4,3,2,1},
-                    StackMode = StackMode.Values,
-                    DataLabels = true
-                }
-            };
-            LastHourSeries = new SeriesCollection
-            {
-                new LineSeries
-                {
-                    AreaLimit = -10,
-                    Values = new ChartValues<ObservableValue>
+                    // Fetch attendance data from the database
+                    var attendanceData = context.Attendance
+                        .GroupBy(a => a.Date)
+                        .Select(g => new
+                        {
+                            Date = g.Key,
+                            Count = g.Count()
+                        })
+                        .OrderBy(x => x.Date)
+                        .ToList();
+
+                    // Prepare the series collection
+                    SeriesCollection = new SeriesCollection
                     {
-                        new ObservableValue(3),
-                        new ObservableValue(1),
-                        new ObservableValue(9),
-                        new ObservableValue(4),
-                        new ObservableValue(5),
-                        new ObservableValue(3),
-                        new ObservableValue(1),
-                        new ObservableValue(2),
-                        new ObservableValue(3),
-                        new ObservableValue(7),
-                    }
+                        new LineSeries
+                        {
+                            Title = "Attendance",
+                            Values = new ChartValues<ObservableValue>(
+                                attendanceData.Select(x => new ObservableValue(x.Count)).ToList()
+                            ),
+                            DataLabels = true,
+                            Fill = new SolidColorBrush(Color.FromArgb(108, 185,153,118)),  // 50% opacity with hex #3C2A21
+                            Stroke = new SolidColorBrush(Color.FromRgb(185,153,118)),  // Hex #3C2A21
+                            PointGeometry = DefaultGeometries.Circle,
+                            PointGeometrySize = 10
+                        }
+                    };
+
+                    // Prepare the labels
+                    Labels = attendanceData.Select(x => x.Date.ToShortDateString()).ToArray();
+                    Formatter = value => value.ToString();
+
+                    // Set the data context to bind the chart
+                    DataContext = this;
                 }
-            };
-            LastHourSeries1 = new SeriesCollection
+            }
+            catch (Exception ex)
             {
-                new LineSeries
-                {
-                    AreaLimit = -10,
-                    Values = new ChartValues<ObservableValue>
-                    {
-                        new ObservableValue(13),
-                        new ObservableValue(11),
-                        new ObservableValue(9),
-                        new ObservableValue(14),
-                        new ObservableValue(5),
-                        new ObservableValue(3),
-                        new ObservableValue(12),
-                        new ObservableValue(2),
-                        new ObservableValue(3),
-                        new ObservableValue(7),
-                    }
-                }
-            };
-            Labels = new[] { "May 20", "May 21", "May 22", "May 23", "May 24", "May 25", "May 26" };
-            Formatter = value => value.ToString();
-            DataContext = this;
-        
+                MessageBox.Show($"An error occurred while loading attendance data: {ex.Message}", "Error", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
         }
 
         private void Card_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-
             var sMessageDialog = new MessageDialog
             {
-                //Message = { Text = ((ButtonBase)sender).Content.ToString() }
                 Message = { Text =
                     "Student Attendance Management System" +
                     "\nFinal Reports on " +
@@ -104,12 +90,16 @@ namespace StudentAttendanceManagementSystem
                     "\nMark Acedo" +
                     "\nMike Caram" +
                     "\n" +
-
                     "\nMade with ♡ BSCS 2A"
                 }
             };
 
             DialogHost.Show(sMessageDialog, "RootDialog");
+        }
+
+        private void UserControl_Loaded(object sender, RoutedEventArgs e)
+        {
+            // Any additional initialization if needed
         }
     }
 }

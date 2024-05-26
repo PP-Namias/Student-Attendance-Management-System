@@ -3,40 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|c:\\users\\admin\\desktop\\pp namias\\student attendance management system\\studentattendancemanagementsystem\\window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:window1.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|c:\\users\\admin\\desktop\\pp namias\\student attendance management system\\studentattendancemanagementsystem\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\studentsdatabase.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:studentsdatabase.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\usermanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:usermanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\studentrecord.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:studentrecord.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\loginlogsviewer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:loginlogsviewer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\archiveloginlogs.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:archiveloginlogs.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\usermanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:usermanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\barcodescanninginterface.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:barcodescanninginterface.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\archivedstudentsdatabase.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:archivedstudentsdatabase.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\archivedstudentsdatabase.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:archivedstudentsdatabase.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\archivedstudentrecord.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:archivedstudentrecord.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\barcodescanninginterface.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:barcodescanninginterface.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\dashboard.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -51,20 +47,48 @@
       "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:studentrecord.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\studentrecord.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:studentrecord.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\studentsdatabase.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:studentsdatabase.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\studentsdatabase.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:studentsdatabase.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\mainmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:mainmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\loginlogsviewer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:loginlogsviewer.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\archiveloginlogs.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:archiveloginlogs.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\archivedstudentsdatabase.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:archivedstudentsdatabase.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\archivedstudentsdatabase.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:archivedstudentsdatabase.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\archivedstudentrecord.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:archivedstudentrecord.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\models\\students_attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:models\\students_attendance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\barcodescanninginterface.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:barcodescanninginterface.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|c:\\users\\admin\\desktop\\pp namias\\student attendance management system\\studentattendancemanagementsystem\\mainmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:mainmenu.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\archivedstudentrecord.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -74,28 +98,12 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\4c65a3625c6f68258e5c312d7bf5ef7b7079b03aa34de88f96682f2804a1ab1a\\DateTimeAutomationPeer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\mainmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:mainmenu.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\obj\\Debug\\MainMenu.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:obj\\Debug\\MainMenu.g.i.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\usermanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:usermanagement.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\usermanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:usermanagement.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:window1.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\home.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
@@ -122,10 +130,6 @@
       "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:dbcontexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\loginlogsviewer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5589A030-191B-4372-8323-1C0FC36FBA9C}|StudentAttendanceManagementSystem.csproj|solutionrelative:loginlogsviewer.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -149,11 +153,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 30,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "BarcodeScanningInterface.xaml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\BarcodeScanningInterface.xaml",
               "RelativeDocumentMoniker": "BarcodeScanningInterface.xaml",
@@ -166,7 +170,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 16,
               "Title": "LoginLogsViewer.xaml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\LoginLogsViewer.xaml",
               "RelativeDocumentMoniker": "LoginLogsViewer.xaml",
@@ -174,12 +178,11 @@
               "RelativeToolTip": "LoginLogsViewer.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-19T11:09:53.279Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
@@ -192,7 +195,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 17,
               "Title": "ArchiveLoginLogs.xaml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\ArchiveLoginLogs.xaml",
               "RelativeDocumentMoniker": "ArchiveLoginLogs.xaml",
@@ -200,18 +203,17 @@
               "RelativeToolTip": "ArchiveLoginLogs.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-19T11:09:41.866Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 2,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Models\\User.cs",
               "RelativeToolTip": "Models\\User.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T02:19:34.887Z",
               "IsPinned": true,
@@ -219,13 +221,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 7,
               "Title": "BarcodeScanningInterface.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\BarcodeScanningInterface.xaml.cs",
               "RelativeDocumentMoniker": "BarcodeScanningInterface.xaml.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\BarcodeScanningInterface.xaml.cs",
               "RelativeToolTip": "BarcodeScanningInterface.xaml.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAD4vzEAAAAMAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAD4vzcAAABAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T02:51:00.556Z",
               "IsPinned": true,
@@ -233,7 +235,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "LoginLogsViewer.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\LoginLogsViewer.xaml.cs",
               "RelativeDocumentMoniker": "LoginLogsViewer.xaml.cs",
@@ -242,18 +244,17 @@
               "ViewState": "AQIAABkAAAAAAAAAAAApwCMAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T11:10:37.518Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 12,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAKsAAAAAAAAAAAAowM8AAAAAAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAQwDEAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T02:22:27.67Z",
               "IsPinned": true,
@@ -261,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "ArchiveLoginLogs.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\ArchiveLoginLogs.xaml.cs",
               "RelativeDocumentMoniker": "ArchiveLoginLogs.xaml.cs",
@@ -270,12 +271,11 @@
               "ViewState": "AQIAACQAAAAAAAAAAAAowEMAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T11:10:57.756Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Students.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Models\\Students.cs",
               "RelativeDocumentMoniker": "Models\\Students.cs",
@@ -284,12 +284,11 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T04:00:04.483Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 11,
               "Title": "StudentRecord.xaml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\StudentRecord.xaml",
               "RelativeDocumentMoniker": "StudentRecord.xaml",
@@ -302,7 +301,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 22,
               "Title": "ArchivedStudentRecord.xaml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\ArchivedStudentRecord.xaml",
               "RelativeDocumentMoniker": "ArchivedStudentRecord.xaml",
@@ -310,12 +309,11 @@
               "RelativeToolTip": "ArchivedStudentRecord.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-25T19:48:06.728Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 14,
               "Title": "StudentsDatabase.xaml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\StudentsDatabase.xaml",
               "RelativeDocumentMoniker": "StudentsDatabase.xaml",
@@ -328,7 +326,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 18,
               "Title": "ArchivedStudentsDatabase.xaml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\ArchivedStudentsDatabase.xaml",
               "RelativeDocumentMoniker": "ArchivedStudentsDatabase.xaml",
@@ -336,18 +334,17 @@
               "RelativeToolTip": "ArchivedStudentsDatabase.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-25T20:35:57.971Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 10,
               "Title": "StudentRecord.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\StudentRecord.xaml.cs",
               "RelativeDocumentMoniker": "StudentRecord.xaml.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\StudentRecord.xaml.cs",
               "RelativeToolTip": "StudentRecord.xaml.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAAAJAAAAAZAAAA",
+              "ViewState": "AQIAAKQAAAAAAAAAAAAywMgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T12:02:13.226Z",
               "IsPinned": true,
@@ -355,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 20,
               "Title": "ArchivedStudentRecord.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\ArchivedStudentRecord.xaml.cs",
               "RelativeDocumentMoniker": "ArchivedStudentRecord.xaml.cs",
@@ -364,18 +361,17 @@
               "ViewState": "AQIAAKsAAAAAAAAAAIA2wHsAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T19:48:33.97Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "StudentsDatabase.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\StudentsDatabase.xaml.cs",
               "RelativeDocumentMoniker": "StudentsDatabase.xaml.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\StudentsDatabase.xaml.cs",
               "RelativeToolTip": "StudentsDatabase.xaml.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAwwE0AAAAUAAAA",
+              "ViewState": "AQIAABIAAAAAAAAAAAAgwB0AAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T16:39:55.475Z",
               "IsPinned": true,
@@ -383,7 +379,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 19,
               "Title": "ArchivedStudentsDatabase.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\ArchivedStudentsDatabase.xaml.cs",
               "RelativeDocumentMoniker": "ArchivedStudentsDatabase.xaml.cs",
@@ -392,12 +388,11 @@
               "ViewState": "AQIAACkAAAAAAAAAAAAwwE0AAAAUAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T20:37:03.962Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 5,
               "Title": "UserManagement.xaml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\UserManagement.xaml",
               "RelativeDocumentMoniker": "UserManagement.xaml",
@@ -410,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "LoginLog.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Models\\LoginLog.cs",
               "RelativeDocumentMoniker": "Models\\LoginLog.cs",
@@ -419,12 +414,11 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAUAAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T07:51:51.264Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "Home.xaml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Home.xaml",
               "RelativeDocumentMoniker": "Home.xaml",
@@ -432,8 +426,7 @@
               "RelativeToolTip": "Home.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-05-19T11:27:04.996Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -450,7 +443,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Dashboard.xaml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Dashboard.xaml",
               "RelativeDocumentMoniker": "Dashboard.xaml",
@@ -463,7 +456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Home.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Home.xaml.cs",
               "RelativeDocumentMoniker": "Home.xaml.cs",
@@ -472,18 +465,17 @@
               "ViewState": "AQIAAB8AAAAAAAAAAABRwCIAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T11:27:10.717Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 4,
               "Title": "UserManagement.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\UserManagement.xaml.cs",
               "RelativeDocumentMoniker": "UserManagement.xaml.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\UserManagement.xaml.cs",
               "RelativeToolTip": "UserManagement.xaml.cs",
-              "ViewState": "AQIAABIAAAAAAAAAAAAnwBoAAAAqAAAA",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAlwCMAAAA3AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T15:53:16.262Z",
               "IsPinned": true,
@@ -491,7 +483,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 21,
               "Title": "Students_Attendance.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Models\\Students_Attendance.cs",
               "RelativeDocumentMoniker": "Models\\Students_Attendance.cs",
@@ -500,12 +492,11 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T06:52:04.274Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 24,
               "Title": "MainMenu.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\MainMenu.xaml.cs",
               "RelativeDocumentMoniker": "MainMenu.xaml.cs",
@@ -514,18 +505,17 @@
               "ViewState": "AQIAALsBAAAAAAAAAAAuwMsBAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-19T12:04:54.101Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "Dashboard.xaml.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Dashboard.xaml.cs",
               "RelativeDocumentMoniker": "Dashboard.xaml.cs",
               "ToolTip": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Dashboard.xaml.cs",
               "RelativeToolTip": "Dashboard.xaml.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAIAzwCIAAAANAAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAwDcAAABWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-25T18:57:29.198Z",
               "IsPinned": true,
@@ -533,7 +523,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\DbContexts\\AppDbContext.cs",
               "RelativeDocumentMoniker": "DbContexts\\AppDbContext.cs",
@@ -542,12 +532,38 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAqwAkAAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-21T02:19:20.439Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Window1.xaml",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Window1.xaml",
+              "RelativeDocumentMoniker": "Window1.xaml",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Window1.xaml",
+              "RelativeToolTip": "Window1.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-25T23:11:53.502Z",
               "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 0,
+              "Title": "Window1.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Window1.xaml.cs",
+              "RelativeDocumentMoniker": "Window1.xaml.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Window1.xaml.cs",
+              "RelativeToolTip": "Window1.xaml.cs",
+              "ViewState": "AQIAAFYAAAAAAAAAAAAQwGYAAABNAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-26T18:10:26.454Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "DateTimeAutomationPeer.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\AppData\\Local\\Temp\\.vsdbgsrc\\4c65a3625c6f68258e5c312d7bf5ef7b7079b03aa34de88f96682f2804a1ab1a\\DateTimeAutomationPeer.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\4c65a3625c6f68258e5c312d7bf5ef7b7079b03aa34de88f96682f2804a1ab1a\\DateTimeAutomationPeer.cs",
@@ -560,7 +576,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 25,
               "Title": "MainMenu.g.i.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\obj\\Debug\\MainMenu.g.i.cs",
               "RelativeDocumentMoniker": "obj\\Debug\\MainMenu.g.i.cs",
@@ -568,24 +584,11 @@
               "RelativeToolTip": "obj\\Debug\\MainMenu.g.i.cs",
               "ViewState": "AQIAAN0AAAAAAAAAAAApwOwAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-26T00:02:50.396Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-26T00:02:50.396Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Window1.xaml",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Window1.xaml",
-              "RelativeDocumentMoniker": "Window1.xaml",
-              "ToolTip": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Window1.xaml",
-              "RelativeToolTip": "Window1.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2024-05-25T23:11:53.502Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "HashService.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Services\\HashService.cs",
               "RelativeDocumentMoniker": "Services\\HashService.cs",
@@ -593,12 +596,11 @@
               "RelativeToolTip": "Services\\HashService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA2AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T21:59:47.866Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T21:59:47.866Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "IHashService.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\Interfaces\\IHashService.cs",
               "RelativeDocumentMoniker": "Interfaces\\IHashService.cs",
@@ -606,12 +608,11 @@
               "RelativeToolTip": "Interfaces\\IHashService.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-25T21:59:41.313Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-25T21:59:41.313Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "App.xaml",
               "DocumentMoniker": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\App.xaml",
               "RelativeDocumentMoniker": "App.xaml",
