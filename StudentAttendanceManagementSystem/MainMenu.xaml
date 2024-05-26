@@ -42,7 +42,7 @@
         <materialDesign:DialogHost Identifier="RootDialog" SnackbarMessageQueue="{Binding MessageQueue, ElementName=MainSnackbar}">
             <materialDesign:DrawerHost IsLeftDrawerOpen="{Binding IsChecked, ElementName=MenuToggleButton}">
                 <materialDesign:DrawerHost.LeftDrawerContent>
-                    <DockPanel MinWidth="212" Background="#1A120B" Margin="0,0,0,0">
+                    <DockPanel MinWidth="212" Background="#1A120B" Margin="0,0,-500,0">
                         <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" 
                                     DockPanel.Dock="Top"
                                     HorizontalAlignment="Right" Margin="16"
@@ -52,7 +52,7 @@
                         <TreeView MinWidth="220" Foreground="#E5E5CB">
                             <TreeViewItem Cursor="Hand">
                                 <TreeViewItem.Header >
-                                    <StackPanel Orientation="Horizontal" Height="35">
+                                    <StackPanel x:Name="Home" Orientation="Horizontal" Height="35" MouseLeftButtonDown="Home_MouseLeftButtonDown">
                                         <Viewbox Width="35" Height="35">
                                             <materialDesign:PackIcon Kind="Home" VerticalAlignment="Center" />
                                         </Viewbox>
@@ -62,7 +62,7 @@
                             </TreeViewItem>
                             <TreeViewItem Cursor="Hand">
                                 <TreeViewItem.Header >
-                                    <StackPanel Orientation="Horizontal" Height="35">
+                                    <StackPanel x:Name="BarcodeScan" Orientation="Horizontal" Height="35" MouseLeftButtonDown="BarcodeScan_MouseLeftButtonDown">
                                         <Viewbox Width="35" Height="35">
                                             <materialDesign:PackIcon Kind="BarcodeScan" VerticalAlignment="Center" />
                                         </Viewbox>
@@ -72,7 +72,7 @@
                             </TreeViewItem>
                             <TreeViewItem IsExpanded="True">
                                 <TreeViewItem.Header>
-                                    <StackPanel Orientation="Horizontal" Height="35">
+                                    <StackPanel x:Name="LoginVariant" Orientation="Horizontal" Height="35" MouseLeftButtonDown="LoginVariant_MouseLeftButtonDown">
                                         <Viewbox Width="35" Height="35">
                                             <materialDesign:PackIcon Kind="LoginVariant" VerticalAlignment="Center" />
                                         </Viewbox>
@@ -81,7 +81,7 @@
                                 </TreeViewItem.Header>
                                 <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal" Height="35">
+                                        <StackPanel x:Name="ArchiveCheck" Orientation="Horizontal" Height="35" MouseLeftButtonDown="ArchiveCheck_MouseLeftButtonDown">
                                             <Viewbox Width="35" Height="35">
                                                 <materialDesign:PackIcon Kind="ArchiveCheck" VerticalAlignment="Center" />
                                             </Viewbox>
@@ -94,7 +94,7 @@
 
                             <TreeViewItem>
                                 <TreeViewItem.Header>
-                                    <StackPanel Orientation="Horizontal" Height="35">
+                                    <StackPanel x:Name="AccountStudent" Orientation="Horizontal" Height="35" MouseLeftButtonDown="AccountStudent_MouseLeftButtonDown">
                                         <Viewbox Width="35" Height="35">
                                             <materialDesign:PackIcon Kind="AccountStudent" VerticalAlignment="Center" />
                                         </Viewbox>
@@ -103,7 +103,7 @@
                                 </TreeViewItem.Header>
                                 <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal" Height="35">
+                                        <StackPanel x:Name="AccountStudentOutline" Orientation="Horizontal" Height="35" MouseLeftButtonDown="AccountStudentOutline_MouseLeftButtonDown">
                                             <Viewbox Width="35" Height="35">
                                                 <materialDesign:PackIcon Kind="AccountStudentOutline" VerticalAlignment="Center" />
                                             </Viewbox>
@@ -115,7 +115,7 @@
 
                             <TreeViewItem>
                                 <TreeViewItem.Header>
-                                    <StackPanel Orientation="Horizontal" Height="35">
+                                    <StackPanel x:Name="DatabaseCog" Orientation="Horizontal" Height="35" MouseLeftButtonDown="DatabaseCog_MouseLeftButtonDown">
                                         <Viewbox Width="35" Height="35">
                                             <materialDesign:PackIcon Kind="DatabaseCog" VerticalAlignment="Center" />
                                         </Viewbox>
@@ -124,7 +124,7 @@
                                 </TreeViewItem.Header>
                                 <TreeViewItem Cursor="Hand">
                                     <TreeViewItem.Header>
-                                        <StackPanel Orientation="Horizontal" Height="35">
+                                        <StackPanel x:Name="DatabaseCogOutline" Orientation="Horizontal" Height="35" MouseLeftButtonDown="DatabaseCogOutline_MouseLeftButtonDown">
                                             <Viewbox Width="35" Height="35">
                                                 <materialDesign:PackIcon Kind="DatabaseCogOutline" VerticalAlignment="Center" />
                                             </Viewbox>
@@ -137,7 +137,7 @@
 
                             <TreeViewItem Cursor="Hand">
                                 <TreeViewItem.Header >
-                                    <StackPanel Orientation="Horizontal" Height="35">
+                                    <StackPanel x:Name="UserAccessControl" Orientation="Horizontal" Height="35" MouseLeftButtonDown="UserAccessControl_MouseLeftButtonDown">
                                         <Viewbox Width="35" Height="35">
                                             <materialDesign:PackIcon Kind="UserAccessControl" VerticalAlignment="Center" />
                                         </Viewbox>
