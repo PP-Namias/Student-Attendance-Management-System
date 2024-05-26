@@ -269,7 +269,7 @@ namespace StudentAttendanceManagementSystem
 
         private void btn_StudentAttendance_Click(object sender, RoutedEventArgs e)
         {
-            // Student Attendance Management
+            // BarcodeScanningInterface
 
             BarcodeScanningInterface x = new BarcodeScanningInterface();
             UserPages.Children.Clear();
@@ -371,51 +371,98 @@ namespace StudentAttendanceManagementSystem
         private void TreeItem_BarcodeScan_PreviewMouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
+            // BarcodeScanningInterface
+
+            BarcodeScanningInterface x = new BarcodeScanningInterface();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void Home_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            // Dashboard
 
+            Dashboard x = new Dashboard();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void BarcodeScan_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
+            // BarcodeScanningInterface
+
+            BarcodeScanningInterface x = new BarcodeScanningInterface();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void LoginVariant_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
+            // Login Logs Management
+
+            LoginLogsViewer x = new LoginLogsViewer();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void ArchiveCheck_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
+            // Login Logs Management
+
+            ArchiveLoginLogs x = new ArchiveLoginLogs();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void AccountStudent_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
+            // Student Record
+
+            StudentRecord x = new StudentRecord();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void AccountStudentOutline_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
+            // Student Record
+
+            ArchivedStudentRecord x = new ArchivedStudentRecord();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void DatabaseCog_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
 
+            // Student Database
+
+            StudentsDatabase x = new StudentsDatabase();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void DatabaseCogOutline_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            // Student Database
 
+            ArchivedStudentsDatabase x = new ArchivedStudentsDatabase();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
 
         private void UserAccessControl_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
+            // System Administration
 
+            UserManagement x = new UserManagement();
+            UserPages.Children.Clear();
+            UserPages.Children.Add(x);
         }
     }
 }

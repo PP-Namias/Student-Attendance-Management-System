@@ -8,7 +8,7 @@
                  xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"         
                  xmlns:src="http://metro.mahapps.com/winfx/xaml/controls"
                  
-                 Background="#1C1107"
+                 Background="#1A120B"
                  FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
                  TextElement.Foreground="{DynamicResource MaterialDesignBody}"
                  TextElement.FontWeight="Regular"
@@ -63,7 +63,7 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid Background="#1C1107">
+    <Grid Background="#1A120B">
         <Border Canvas.Left="55"
          Canvas.Top="30"
          Height="700"
@@ -109,7 +109,7 @@
                               Width="885"
                               AlternatingRowBackground="LightGray"
                               CanUserAddRows="False"
-                              IsReadOnly="False"
+                              IsReadOnly="True"
                               Panel.ZIndex="3"
                               SelectionMode="Single"
                               SelectionUnit="FullRow">

@@ -42,7 +42,7 @@
         <materialDesign:DialogHost Identifier="RootDialog" SnackbarMessageQueue="{Binding MessageQueue, ElementName=MainSnackbar}">
             <materialDesign:DrawerHost IsLeftDrawerOpen="{Binding IsChecked, ElementName=MenuToggleButton}">
                 <materialDesign:DrawerHost.LeftDrawerContent>
-                    <DockPanel MinWidth="212" Background="#1A120B" Margin="0,0,-500,0">
+                    <DockPanel MinWidth="212" Background="#1A120B" Margin="0,0,0,0">
                         <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" 
                                     DockPanel.Dock="Top"
                                     HorizontalAlignment="Right" Margin="16"
@@ -183,7 +183,7 @@
 
                                 <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_StudentAttendance"    Width="75" Height="75" Click="btn_StudentAttendance_Click" ToolTip="ID Scanner">
                                     <StackPanel Width="50" Height="50">
-                                        <materialDesign:PackIcon x:Name="btnBarcodeScan"    Kind="BarcodeScan"           VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
+                                        <materialDesign:PackIcon x:Name="btnBarcodeScan"    Kind="QrcodeScan"           VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
                                     </StackPanel>
                                 </Button>
 

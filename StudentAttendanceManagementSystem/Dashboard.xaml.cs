@@ -35,13 +35,7 @@ namespace StudentAttendanceManagementSystem
             {
                 new StackedColumnSeries
                 {
-                    Values = new ChartValues<double> {25,52,61,89},
-                    StackMode = StackMode.Values,
-                    DataLabels = true
-                },
-                 new StackedColumnSeries
-                {
-                    Values = new ChartValues<double> {-15,-75,-16,-49},
+                    Values = new ChartValues<double> {7,6,5,4,3,2,1},
                     StackMode = StackMode.Values,
                     DataLabels = true
                 }
@@ -86,7 +80,7 @@ namespace StudentAttendanceManagementSystem
                     }
                 }
             };
-            Labels = new[] { "May 10", "May 11", "May 12", "May 13" };
+            Labels = new[] { "May 20", "May 21", "May 22", "May 23", "May 24", "May 25", "May 26" };
             Formatter = value => value.ToString();
             DataContext = this;
         

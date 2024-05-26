@@ -92,20 +92,20 @@ namespace StudentAttendanceManagementSystem
 
 
                 StartStop.Kind = MaterialDesignThemes.Wpf.PackIconKind.Stop;
-                StartStopButton.Background = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#1e90ff"));
-                StartStopButton.BorderBrush = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#add8e6"));
+                StartStopButton.Background = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#D5CEA3"));
+                StartStopButton.Foreground = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#3C2A21"));
             }
             else
             {
-                StartStopButton.Background = new SolidColorBrush(System.Windows.Media.Color.FromRgb(173, 216, 230));
+                StartStopButton.Background = new SolidColorBrush(System.Windows.Media.Color.FromRgb(60, 42, 33));
                 showFrames = !showFrames;
                 videoDevice.NewFrame -= VideoDevice_NewFrame;
                 videoDevice.SignalToStop();
                 videoDevice = null;
 
                 StartStop.Kind = MaterialDesignThemes.Wpf.PackIconKind.Play;
-                StartStopButton.Background = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#add8e6"));
-                StartStopButton.BorderBrush = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#1e90ff"));
+                StartStopButton.Background = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#3C2A21"));
+                StartStopButton.Foreground = new SolidColorBrush((System.Windows.Media.Color)System.Windows.Media.ColorConverter.ConvertFromString("#D5CEA3"));
             }
         }
 

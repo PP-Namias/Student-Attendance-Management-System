@@ -168,6 +168,7 @@ namespace StudentAttendanceManagementSystem
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
         }
+
     }
 
     public class AttendanceViewModel

@@ -8,7 +8,7 @@
                  xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"         
                  xmlns:src="http://metro.mahapps.com/winfx/xaml/controls"
                  
-                 Background="#1C1107"
+                 Background="#1A120B"
                  FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
                  TextElement.Foreground="{DynamicResource MaterialDesignBody}"
                  TextElement.FontWeight="Regular"
@@ -63,7 +63,7 @@
         </ResourceDictionary>
     </UserControl.Resources>
 
-    <Grid Background="#1C1107">
+    <Grid Background="#1A120B">
         <Border Canvas.Left="55"
          Canvas.Top="30"
          Height="700"
@@ -98,22 +98,23 @@
                          BorderThickness="1"
                          CornerRadius="18"
                          Margin="50,-15,50,0">
-                    <DataGrid x:Name="tblStudentRecords" 
-                              Grid.Row="1"    
-                              ScrollViewer.CanContentScroll="True" 
+                    <DataGrid x:Name="tblStudentRecords"
+                              Grid.Row="1"
+                              ScrollViewer.CanContentScroll="True"
                               ScrollViewer.VerticalScrollBarVisibility="Auto"
                               ScrollViewer.HorizontalScrollBarVisibility="Auto"
-                              AutoGenerateColumns="True" 
-                              Height="450" 
+                              AutoGenerateColumns="True"
+                              Height="450"
                               HorizontalAlignment="Center"
                               Width="885"
                               AlternatingRowBackground="LightGray"
-                              CanUserAddRows="False"
-                              IsReadOnly="False"
+                              CanUserAddRows="True"
+                              IsReadOnly="True"
                               Panel.ZIndex="3"
                               SelectionMode="Single"
                               SelectionUnit="FullRow">
                     </DataGrid>
+
                 </Border>
 
 
