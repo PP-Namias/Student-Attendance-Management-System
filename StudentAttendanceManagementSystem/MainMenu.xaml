@@ -8,9 +8,10 @@
                  xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
                  xmlns:src="http://metro.mahapps.com/winfx/xaml/controls"
                  
-                 Background="#D5CEA3"
+                 Background="#3C2A21"
+                 Foreground="White"
                  FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
-                 TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+                 TextElement.Foreground="White"
                  TextElement.FontWeight="Regular"
                  TextElement.FontSize="12"
                  TextOptions.TextFormattingMode="Ideal" 

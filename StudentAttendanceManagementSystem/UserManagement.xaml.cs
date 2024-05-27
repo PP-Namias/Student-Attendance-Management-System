@@ -30,10 +30,11 @@ namespace StudentAttendanceManagementSystem
                 // Load data from the database
                 var users = _dbContext.Users.ToList(); // Fetch all users from the database
                 tblUserManagement.ItemsSource = users; // Bind the users list to the DataGrid
+                NumberOfLogs.Text = $"Number of accounts: {users.Count}";
             }
 
         }
-            private void btnAdd_Click(object sender, RoutedEventArgs e)
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
             // Open a window/dialog to add a new user
             Window1 addUserWindow = new Window1();

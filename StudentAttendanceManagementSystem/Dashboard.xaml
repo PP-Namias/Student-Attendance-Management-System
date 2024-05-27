@@ -39,8 +39,6 @@
                     </materialDesign:Card>
 
                     <TextBlock Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="40" Text="{Binding CurrentTime}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="250,0,0,0" />
-
-
                 </WrapPanel>
                 <Border BorderThickness="2" CornerRadius="15" BorderBrush="White" Margin="30,2,30,20"  Height="650">
                     <materialDesign:Card UniformCornerRadius="20" Background="#1A120B" Foreground="#E5E5CB" BorderBrush="White" Margin="0,8,0,0" Width="658" Height="640" VerticalAlignment="Top">
@@ -165,16 +163,6 @@
             </WrapPanel>
 
         </StackPanel>
-
-        <Border Canvas.Left="55" 
-         BorderBrush="#FF3B5998"
-         Background="#D5CEA3"
-         Margin="0,-5,0,793" Grid.ColumnSpan="2"/>
-
-        <Border Canvas.Left="55" 
-         BorderBrush="#FF3B5998"
-         Background="#D5CEA3"
-         Margin="0,0,748,0"/>
 
     </Grid>
 </UserControl>

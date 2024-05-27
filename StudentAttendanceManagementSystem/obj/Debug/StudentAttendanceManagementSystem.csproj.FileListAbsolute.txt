@@ -126,143 +126,143 @@ C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main (3)\Student A
 C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main (3)\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System.g.resources
 C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main (3)\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System.exe
 C:\Users\ADMIN\Downloads\Student-Attendance-Management-System-main (3)\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Student Attendance Management System.exe.config
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Student Attendance Management System.exe
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Student Attendance Management System.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\AForge.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\AForge.Imaging.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\AForge.Math.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\AForge.Video.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\AForge.Video.DirectShow.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\BCrypt.Net.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\ControlzEx.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\ControlzEx.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Dragablz.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Dragablz.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\EntityFramework.SqlServer.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\EntityFramework.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\EntityFramework.SqlServerCompact.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\LiveCharts.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\LiveCharts.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\LiveCharts.Wpf.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\LiveCharts.Wpf.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\MahApps.Metro.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\MahApps.Metro.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\de\MahApps.Metro.resources.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\MaterialDesignColors.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\MaterialDesignColors.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\MaterialDesignThemes.Wpf.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\MaterialDesignThemes.Wpf.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\MaterialDesignThemes.MahApps.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\MaterialDesignThemes.MahApps.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Bcl.HashCode.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.EntityFrameworkCore.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Configuration.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Logging.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Options.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Primitives.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Data.SqlServerCe.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Xaml.Behaviors.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Xaml.Behaviors.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Npgsql.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\PresentationFramework.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Buffers.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Collections.Immutable.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.ComponentModel.Annotations.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Configuration.ConfigurationManager.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Diagnostics.DiagnosticSource.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Drawing.Common.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Drawing.Common.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Memory.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Numerics.Vectors.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Security.AccessControl.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Security.Permissions.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Security.Principal.Windows.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Text.Encodings.Web.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Text.Json.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.ValueTuple.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\System.Windows.Forms.Ribbon35.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\zxing.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\zxing.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\zxing.presentation.dll
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\bin\Debug\zxing.presentation.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentAttendanceManagementSystem.csproj.AssemblyReference.cache
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentAttendanceManagementSystem.csproj.SuggestedBindingRedirects.cache
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System.exe.config
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\BarcodeScanningInterface.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\DefineColor.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Developer.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Home.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\HoverAnimationResources.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\MainMenu.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\MessageDialog.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\AddNewLog.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\ArchiveLoginLogs.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\BarcodeScanningInterface.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Dashboard.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Developer.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Home.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\LoginLogs.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\LoginLogsViewer.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\MainMenu.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\MainMenu2.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\MainWindow.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\MessageDialog.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\QRCodeReader.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\ReportsandAnalytics.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentAttendance.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentLogs.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\SystemAdministration.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\UserManagement.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Window1.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\App.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System_MarkupCompile.cache
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System_MarkupCompile.lref
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\App.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\AddNewLog.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\ArchiveLoginLogs.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Dashboard.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\LoginLogs.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\LoginLogsViewer.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\MainMenu2.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\MainWindow.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\QRCodeReader.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\ReportsandAnalytics.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentAttendance.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentLogs.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\SystemAdministration.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\UserManagement.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Window1.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System.g.resources
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentAttendanceManagementSystem.Properties.Resources.resources
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentAttendanceManagementSystem.csproj.GenerateResource.cache
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentAttendanceManagementSystem.csproj.CoreCompileInputs.cache
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentA.E2716841.Up2Date
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System.exe
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System.pdb
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentRecord.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentRecord.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\AboutUs.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\AboutUs.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentsDatabase.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\StudentsDatabase.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\ArchivedStudentRecord.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\ArchivedStudentRecord.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\ArchivedStudentsDatabase.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\ArchivedStudentsDatabase.baml
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\AddStudentsDatabase.g.cs
-C:\Users\ADMIN\Desktop\PP Namias\Student Attendance Management System\StudentAttendanceManagementSystem\obj\Debug\AddStudentsDatabase.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Student Attendance Management System.exe.config
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Student Attendance Management System.exe
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Student Attendance Management System.pdb
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\AForge.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\AForge.Imaging.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\AForge.Math.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\AForge.Video.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\AForge.Video.DirectShow.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\BCrypt.Net.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\ControlzEx.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\ControlzEx.pdb
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Dragablz.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Dragablz.pdb
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\EntityFramework.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\EntityFramework.SqlServerCompact.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\LiveCharts.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\LiveCharts.pdb
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\MahApps.Metro.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\MahApps.Metro.pdb
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\de\MahApps.Metro.resources.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\MaterialDesignColors.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\MaterialDesignColors.pdb
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\MaterialDesignThemes.MahApps.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\MaterialDesignThemes.MahApps.pdb
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Bcl.HashCode.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.EntityFrameworkCore.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Configuration.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Configuration.Binder.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Logging.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Options.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Extensions.Primitives.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Data.SqlServerCe.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Xaml.Behaviors.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Microsoft.Xaml.Behaviors.pdb
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Npgsql.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\PresentationFramework.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Buffers.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Collections.Immutable.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Drawing.Common.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Drawing.Common.pdb
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Memory.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Security.Permissions.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Text.Json.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.ValueTuple.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\System.Windows.Forms.Ribbon35.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\zxing.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\zxing.pdb
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\zxing.presentation.dll
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\bin\Debug\zxing.presentation.pdb
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentAttendanceManagementSystem.csproj.AssemblyReference.cache
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentAttendanceManagementSystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System.exe.config
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\BarcodeScanningInterface.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\DefineColor.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Developer.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Home.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\HoverAnimationResources.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\MainMenu.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\MessageDialog.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\AboutUs.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\AddNewLog.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\AddStudentsDatabase.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\ArchivedStudentRecord.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\ArchivedStudentsDatabase.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\ArchiveLoginLogs.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\BarcodeScanningInterface.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Dashboard.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Developer.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Home.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\LoginLogs.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\LoginLogsViewer.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\MainMenu.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\MainMenu2.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\MainWindow.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\MessageDialog.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\QRCodeReader.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\ReportsandAnalytics.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentAttendance.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentLogs.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentRecord.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentsDatabase.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\SystemAdministration.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\UserManagement.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Window1.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\App.g.cs
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System_MarkupCompile.cache
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System_MarkupCompile.lref
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\App.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\AboutUs.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\AddNewLog.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\AddStudentsDatabase.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\ArchivedStudentRecord.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\ArchivedStudentsDatabase.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\ArchiveLoginLogs.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Dashboard.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\LoginLogs.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\LoginLogsViewer.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\MainMenu2.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\MainWindow.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\QRCodeReader.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\ReportsandAnalytics.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentAttendance.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentLogs.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentRecord.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentsDatabase.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\SystemAdministration.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\UserManagement.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Window1.baml
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System.g.resources
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentAttendanceManagementSystem.Properties.Resources.resources
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentAttendanceManagementSystem.csproj.GenerateResource.cache
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentAttendanceManagementSystem.csproj.CoreCompileInputs.cache
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\StudentA.E2716841.Up2Date
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System.exe
+C:\Users\Mawrk\Documents\GitHub\Student-Attendance-Management-System-main\StudentAttendanceManagementSystem\obj\Debug\Student Attendance Management System.pdb

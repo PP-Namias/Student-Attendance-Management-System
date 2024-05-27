@@ -29,6 +29,17 @@ namespace StudentAttendanceManagementSystem
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+
+            if (txtPassword.Visibility == Visibility.Visible)
+            {
+                txtPasswordTextBox.Text = txtPassword.Password;
+            }
+            else
+            {
+                txtPassword.Password = txtPasswordTextBox.Text;
+            }
+
+
             string userRole = LoginUser(txtUsername.Text, txtPassword.Password);
 
             if (userRole == "Teacher")
@@ -177,6 +188,26 @@ namespace StudentAttendanceManagementSystem
         {
             MainMenu2 MainMenu2 = new MainMenu2();
             MainMenu2.Show();
+        }
+
+        private void txtPasswordTextBox_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            txtPassword.Password = txtPasswordTextBox.Text;
+        }
+
+        private void txtPassword_TextInput(object sender, TextCompositionEventArgs e)
+        {
+            txtPasswordTextBox.Text = txtPassword.Password;
+        }
+
+        private void txtPasswordTextBox_KeyDown(object sender, KeyEventArgs e)
+        {
+            txtPassword.Password = txtPasswordTextBox.Text;
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            txtPasswordTextBox.Text = txtPassword.Password;
         }
     }
 }

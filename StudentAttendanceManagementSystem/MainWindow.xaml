@@ -57,9 +57,9 @@
                     <StackPanel Orientation="Horizontal" Margin="21,14,10,10" Width="300" >
                         <materialDesign:PackIcon Kind="Lock" Width="25" Height="25" Foreground="White" />
 
-                        <TextBox x:Name="txtPasswordTextBox" Margin="10 0" Width="0" Visibility="Hidden" TabIndex="1" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" BorderBrush="White" CaretBrush="#3C2A21" SelectionBrush="#3C2A21" Background="#00000000" FontFamily="Century" />
+                        <TextBox x:Name="txtPasswordTextBox" Margin="10 0" Width="0" Visibility="Hidden" TabIndex="1" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" BorderBrush="White" CaretBrush="#3C2A21" SelectionBrush="#3C2A21" Background="#00000000" FontFamily="Century" TextInput="txtPasswordTextBox_TextInput" KeyDown="txtPasswordTextBox_KeyDown" />
 
-                        <PasswordBox x:Name="txtPassword" Margin="-10 0" Width="250" TabIndex="2" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" BorderBrush="White" CaretBrush="#3C2A21" SelectionBrush="#3C2A21" Password="" FontFamily="Century"/>
+                        <PasswordBox x:Name="txtPassword" Margin="-10 0" Width="250" TabIndex="2" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" BorderBrush="White" CaretBrush="#3C2A21" SelectionBrush="#3C2A21" Password="" FontFamily="Century" TextInput="txtPassword_TextInput" KeyDown="txtPassword_KeyDown"/>
 
 
                     </StackPanel>

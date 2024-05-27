@@ -90,7 +90,7 @@ namespace StudentAttendanceManagementSystem
                     "\n" +
                     "\nMembers:" +
                     "\nJhon Keneth Ryan B. Namias" +
-                    "\nKevin A. Llanes\r\n" +
+                    "\nKevin A. Llanes" +
                     "\nChristian Perez" +
                     "\nKarl Miranda" +
                     "\nMark Acedo" +
