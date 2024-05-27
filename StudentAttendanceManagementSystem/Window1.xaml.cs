@@ -40,7 +40,7 @@ namespace StudentAttendanceManagementSystem
         // Exit
         private void btnExit_Click(object sender, RoutedEventArgs e)
         {
-            Application.Current.Shutdown();
+            this.Close();
         }
 
         // CheckBox 

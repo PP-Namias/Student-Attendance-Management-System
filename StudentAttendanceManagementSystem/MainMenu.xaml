@@ -114,7 +114,7 @@
                             </TreeViewItem>
 
 
-                            <TreeViewItem>
+                            <TreeViewItem x:Name="LoginLogsManagement" >
                                 <TreeViewItem.Header>
                                     <StackPanel x:Name="LoginVariant" Orientation="Horizontal" Height="35" MouseLeftButtonDown="LoginVariant_MouseLeftButtonDown" Cursor="Hand">
                                         <Viewbox Width="35" Height="35">
@@ -135,7 +135,7 @@
                                 </TreeViewItem>
                             </TreeViewItem>
 
-                            <TreeViewItem Cursor="Hand">
+                            <TreeViewItem x:Name="UserAccountManagement" Cursor="Hand">
                                 <TreeViewItem.Header >
                                     <StackPanel x:Name="UserAccessControl" Orientation="Horizontal" Height="35" MouseLeftButtonDown="UserAccessControl_MouseLeftButtonDown" Cursor="Hand">
                                         <Viewbox Width="35" Height="35">
@@ -213,16 +213,16 @@
 
                             </StackPanel>
 
+                            <TextBox x:Name="txtUsername" Margin="10 0" Width="0" TabIndex="1" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" BorderBrush="White" CaretBrush="#3C2A21" SelectionBrush="#3C2A21" Background="#00000000" FontFamily="Century" />
 
-                            <StackPanel Grid.Row="1" Margin="0,280,0,10">
+                            <StackPanel Grid.Row="1" Margin="0,250,0,10">
                                 <Button x:Name="btn_Logout"  
                                         Style="{StaticResource MaterialDesignFlatButton}" 
                                         Width="75" 
                                         Height="75" 
-                                        Click="btn_Dashboard_Click" 
                                         ToolTip="Logout" 
                                         HorizontalAlignment="Right" 
-                                        VerticalAlignment="Top">
+                                        VerticalAlignment="Top" Click="btn_Logout_Click">
                                     <StackPanel Width="50" Height="50">
                                         <materialDesign:PackIcon x:Name="btnLogout"           
                                                                  Kind="Logout"                  

@@ -29,26 +29,29 @@
                 <WrapPanel HorizontalAlignment="Left" Margin="0,10,0,0">
 
 
-                    <materialDesign:Card Margin="20,300,20,10" Padding="5" UniformCornerRadius="20" HorizontalAlignment="Center" Background="#1A120B" Foreground="#E5E5CB">
+                    <materialDesign:Card Margin="20,20,20,10" Padding="5" UniformCornerRadius="20" HorizontalAlignment="Center" Background="#1A120B" Foreground="#E5E5CB">
                         <WrapPanel Margin="10" >
                             <materialDesign:PackIcon Kind="HandWave" Foreground="#FFC83D" VerticalAlignment="Center" Margin="10 0" />
-                            <TextBlock x:Name="txtName" Margin="10 0" VerticalAlignment="Center" FontSize="16">
-                                <TextBlock.Inlines>
-                                    <Run Text="Logged as '{Username}'" FontWeight="SemiBold" FontSize="14" />
-                                </TextBlock.Inlines>
+                            <TextBlock x:Name="txtName" Margin="10 0" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="16">
+                                Welcome!!
                             </TextBlock>
                         </WrapPanel>
                     </materialDesign:Card>
 
+                    <TextBlock Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="40" Text="{Binding CurrentTime}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="250,0,0,0" />
+
+
                 </WrapPanel>
-                <Border BorderThickness="2" CornerRadius="15" BorderBrush="White" Margin="30,2,30,20"  Height="350">
-                    <materialDesign:Card UniformCornerRadius="20" Background="#1A120B" Foreground="#E5E5CB" BorderBrush="White" Margin="0,8,0,0" Width="658" Height="574" VerticalAlignment="Top">
-                        <StackPanel Height="574" VerticalAlignment="Center">
+                <Border BorderThickness="2" CornerRadius="15" BorderBrush="White" Margin="30,2,30,20"  Height="650">
+                    <materialDesign:Card UniformCornerRadius="20" Background="#1A120B" Foreground="#E5E5CB" BorderBrush="White" Margin="0,8,0,0" Width="658" Height="640" VerticalAlignment="Top">
+                        <StackPanel Height="613" VerticalAlignment="Center">
                             <Grid>
-                                <TextBlock Margin="20,33,20,20" HorizontalAlignment="Left"  FontWeight="SemiBold" Text="Students Attendance" FontSize="20"/>
+                                <TextBlock Margin="20,33,20,20" HorizontalAlignment="Left"  FontWeight="SemiBold" Text="Logs" FontSize="20"/>
                                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="0,0,21,0">
-                                    <TextBlock Text="Present" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="14" Margin="5,0,5,0" />
+                                    <TextBlock Text="Attendance" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="14" Margin="5,0,5,0" />
                                     <TextBlock FontWeight="ExtraBold" FontSize="20" Text="&#xF06C;" FontFamily="wingdings" VerticalAlignment="Center" Foreground="#b99976" Margin="0,0,20,0" HorizontalAlignment="Center" />
+                                    <TextBlock Text="Login" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="SemiBold" FontSize="14" Margin="5,0,5,0" />
+                                    <TextBlock FontWeight="ExtraBold" FontSize="20" Text="&#xF06C;" FontFamily="wingdings" VerticalAlignment="Center" Foreground="#ff9c4c " Margin="0,0,20,0" HorizontalAlignment="Center" />
                                 </StackPanel>
                             </Grid>
                             <lvc:CartesianChart Series="{Binding SeriesCollection}" Foreground="Black" Margin="10,10,10,10" Height="251" VerticalAlignment="Top">
@@ -59,6 +62,16 @@
                                     <lvc:Axis Title="Attendance" LabelFormatter="{Binding Formatter}" />
                                 </lvc:CartesianChart.AxisY>
                             </lvc:CartesianChart>
+                            <!-- Login Logs Chart -->
+                            <lvc:CartesianChart Series="{Binding LoginLogsSeriesCollection}" Foreground="Black" Margin="10,10,10,10" Height="251" VerticalAlignment="Top">
+                                <lvc:CartesianChart.AxisX>
+                                    <lvc:Axis Title="Dates" Labels="{Binding LoginLogsLabels}" Separator="{x:Static lvc:DefaultAxes.CleanSeparator}" />
+                                </lvc:CartesianChart.AxisX>
+                                <lvc:CartesianChart.AxisY>
+                                    <lvc:Axis Title="Login Count" LabelFormatter="{Binding Formatter2}" />
+                                </lvc:CartesianChart.AxisY>
+                            </lvc:CartesianChart>
+
                         </StackPanel>
                     </materialDesign:Card>
                 </Border>
@@ -86,7 +99,7 @@
                 </Button>
             </WrapPanel>
              -->
-            <Image Source="Images/SapiensBrown.png"  Stretch="Uniform" Margin="-20,100,0,50" Height="312" Width="346"  />
+            <Image Source="Images/SapiensBrown.png"  Stretch="Uniform" Margin="-20,100,0,20" Height="312" Width="346"  />
 
 
             <Grid
@@ -123,30 +136,30 @@
             <WrapPanel HorizontalAlignment="Center" Margin="0,10,0,0">
                 <Border BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
                     <StackPanel Margin="10" Background="#1A120B" Width="130" Height="110">
-                        <Image Source="Images/graduated.png" Width="40" Height="40" Margin="10 0" x:Name="a11va1tar2" />
-                        <TextBlock x:Name="txtAttendance" Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="25" Text="69" Margin="0,5,0,0" HorizontalAlignment="Center" />
-                        <TextBlock Foreground="#E5E5CB" FontSize="15" Text="Students Attendace" HorizontalAlignment="Center" />
+                        <TextBlock x:Name="txtAttendance" Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="40" Text="69" HorizontalAlignment="Center" />
+                        <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Students" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
+                        <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Attendace" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
                     </StackPanel>
                 </Border>
                 <Border BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
                     <StackPanel Margin="10" Background="#1A120B" Width="130" Height="110">
-                        <Image Source="Images/woman.png" Width="40" Height="40" Margin="10 0" x:Name="a11111vatar2" />
-                        <TextBlock x:Name="txtDatabase" Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="25" Text="96" Margin="0,5,0,0" HorizontalAlignment="Center" />
-                        <TextBlock Foreground="#E5E5CB" FontSize="15" Text="Students Database" HorizontalAlignment="Center" />
+                        <TextBlock x:Name="txtDatabase" Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="40" Text="96" HorizontalAlignment="Center" />
+                        <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Students" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
+                        <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Database" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
                     </StackPanel>
                 </Border>
                 <Border BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
                     <StackPanel Margin="10" Background="#1A120B" Width="130" Height="110">
-                        <Image Source="Images/graduated.png" Width="40" Height="40" Margin="10 0" x:Name="a1v1atar2" />
-                        <TextBlock x:Name="txtLoginLogs" Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="25" Text="420" Margin="0,5,0,0" HorizontalAlignment="Center" />
-                        <TextBlock Foreground="#E5E5CB" FontSize="15" Text="Login Logs" HorizontalAlignment="Center" />
+                        <TextBlock x:Name="txtLoginLogs" Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="40" Text="420" HorizontalAlignment="Center" />
+                        <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Login" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
+                        <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Logs" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
                     </StackPanel>
                 </Border>
                 <Border BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
                     <StackPanel Margin="10" Background="#1A120B" Width="130" Height="110">
-                        <Image Source="Images/absent.png" Width="40" Height="40" Margin="10 0" x:Name="asdsad231" />
-                        <TextBlock x:Name="txtAccounts" Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="25" Text="420" Margin="0,5,0,0" HorizontalAlignment="Center" />
-                        <TextBlock Foreground="#E5E5CB" FontSize="15" Text="User Accounts" HorizontalAlignment="Center" />
+                        <TextBlock x:Name="txtAccounts" Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="40" Text="420" HorizontalAlignment="Center" />
+                        <TextBlock Foreground="#E5E5CB" FontSize="20" Text="User" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
+                        <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Accounts" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
                     </StackPanel>
                 </Border>
             </WrapPanel>

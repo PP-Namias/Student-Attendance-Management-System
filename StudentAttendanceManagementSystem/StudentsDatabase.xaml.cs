@@ -156,5 +156,11 @@ namespace StudentAttendanceManagementSystem
             UserPages.Children.Clear();
             UserPages.Children.Add(x);
         }
+
+        private void btnAddStudent_Click(object sender, RoutedEventArgs e)
+        {
+            AddStudentsDatabase AddStudentsDatabase = new AddStudentsDatabase();
+            AddStudentsDatabase.Show();
+        }
     }
 }

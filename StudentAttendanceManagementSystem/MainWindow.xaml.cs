@@ -45,19 +45,29 @@ namespace StudentAttendanceManagementSystem
                 appDbContext.LoginLogs.Add(LoginLogs);
                 appDbContext.SaveLoginLog(LoginLogs);
 
+
+                MainMenu MainMenu_open = new MainMenu();
+                MainMenu_open.btn_LoginLogs.Visibility = Visibility.Hidden;
+                MainMenu_open.btn_SystemAdministration.Visibility = Visibility.Hidden;
+                MainMenu_open.LoginLogsManagement.Visibility = Visibility.Hidden;
+                MainMenu_open.UserAccountManagement.Visibility = Visibility.Hidden;
+
+
+
+
                 // Assuming 'dashboard' is an instance of the Dashboard class
                 Dashboard dashboard = new Dashboard();
                 dashboard.txtName.Text = "Logged as " + txtUsername.Text;
 
-                MainMenu MainMenu = new MainMenu();
-                MainMenu.btn_LoginLogs.Visibility = Visibility.Hidden;
-                MainMenu.btn_SystemAdministration.Visibility = Visibility.Hidden;
 
-                MainMenu.Show();
+                MainMenu_open.Show();
                 this.Close();
             }
             else if (userRole == "Admin") // Assuming you have an Admin role
             {
+                Dashboard Dashboard = new Dashboard();
+                Dashboard.txtName.Text = "Welcome, " + txtUsername.Text.ToString();
+
                 MainMenu MainMenu = new MainMenu();
                 MainMenu.Show();
                 this.Close();
@@ -168,6 +178,5 @@ namespace StudentAttendanceManagementSystem
             MainMenu2 MainMenu2 = new MainMenu2();
             MainMenu2.Show();
         }
-
     }
 }

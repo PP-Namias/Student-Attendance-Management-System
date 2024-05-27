@@ -76,6 +76,9 @@
     <Compile Include="AddNewLog.xaml.cs">
       <DependentUpon>AddNewLog.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddStudentsDatabase.xaml.cs">
+      <DependentUpon>AddStudentsDatabase.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ArchivedStudentRecord.xaml.cs">
       <DependentUpon>ArchivedStudentRecord.xaml</DependentUpon>
     </Compile>
@@ -152,6 +155,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="AddNewLog.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddStudentsDatabase.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
