@@ -7113,24 +7113,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Mawrk\\.nuget\\packages\\": {},
+    "C:\\Users\\ADMIN\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Mawrk\\Documents\\GitHub\\Student-Attendance-Management-System-main\\StudentAttendanceManagementSystem\\StudentAttendanceManagementSystem.csproj",
+      "projectUniqueName": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\StudentAttendanceManagementSystem.csproj",
       "projectName": "Student Attendance Management System",
-      "projectPath": "C:\\Users\\Mawrk\\Documents\\GitHub\\Student-Attendance-Management-System-main\\StudentAttendanceManagementSystem\\StudentAttendanceManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\Mawrk\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Mawrk\\Documents\\GitHub\\Student-Attendance-Management-System-main\\StudentAttendanceManagementSystem\\obj\\",
+      "projectPath": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\StudentAttendanceManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ADMIN\\Desktop\\PP Namias\\Student Attendance Management System\\StudentAttendanceManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Mawrk\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

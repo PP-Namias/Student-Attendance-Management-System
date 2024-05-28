@@ -38,7 +38,10 @@
                         </WrapPanel>
                     </materialDesign:Card>
 
-                    <TextBlock Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="40" Text="{Binding CurrentTime}" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="250,0,0,0" />
+                    <TextBlock x:Name="Day"  Foreground="#E5E5CB" FontSize="35" FontFamily="Century Gothic" Margin="30,-20,0,0"          HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="Date" Foreground="#E5E5CB" FontSize="25" FontFamily="Century Gothic" Margin="-150,50,20,0"        HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="Time" Foreground="#E5E5CB" FontSize="50" FontFamily="Century Gothic" Text="{Binding CurrentTime}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+               
                 </WrapPanel>
                 <Border BorderThickness="2" CornerRadius="15" BorderBrush="White" Margin="30,2,30,20"  Height="650">
                     <materialDesign:Card UniformCornerRadius="20" Background="#1A120B" Foreground="#E5E5CB" BorderBrush="White" Margin="0,8,0,0" Width="658" Height="640" VerticalAlignment="Top">
@@ -132,28 +135,28 @@
 
 
             <WrapPanel HorizontalAlignment="Center" Margin="0,10,0,0">
-                <Border BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
+                <Border x:Name="StudentAttendance" BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
                     <StackPanel Margin="10" Background="#1A120B" Width="130" Height="110">
                         <TextBlock x:Name="txtAttendance" Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="40" Text="69" HorizontalAlignment="Center" />
                         <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Students" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
-                        <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Attendace" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
+                        <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Attendance" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
                     </StackPanel>
                 </Border>
-                <Border BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
+                <Border x:Name="StudentDatabase" BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
                     <StackPanel Margin="10" Background="#1A120B" Width="130" Height="110">
                         <TextBlock x:Name="txtDatabase" Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="40" Text="96" HorizontalAlignment="Center" />
                         <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Students" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
                         <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Database" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
                     </StackPanel>
                 </Border>
-                <Border BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
+                <Border x:Name="LoginLogs" BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
                     <StackPanel Margin="10" Background="#1A120B" Width="130" Height="110">
                         <TextBlock x:Name="txtLoginLogs" Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="40" Text="420" HorizontalAlignment="Center" />
                         <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Login" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
                         <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Logs" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
                     </StackPanel>
                 </Border>
-                <Border BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
+                <Border x:Name="UserAccounts" BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
                     <StackPanel Margin="10" Background="#1A120B" Width="130" Height="110">
                         <TextBlock x:Name="txtAccounts" Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="40" Text="420" HorizontalAlignment="Center" />
                         <TextBlock Foreground="#E5E5CB" FontSize="20" Text="User" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />

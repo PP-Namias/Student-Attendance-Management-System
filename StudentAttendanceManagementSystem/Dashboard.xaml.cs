@@ -37,6 +37,9 @@ namespace StudentAttendanceManagementSystem
             DataContext = this;
             StartTimer();
 
+            Day.Text  = DateTime.Now.ToString("dddd");
+            Date.Text = DateTime.Now.ToString("MMM dd, yyyy");
+
 
             using (var context = new AppDbContext())
             {
