@@ -57,6 +57,16 @@ namespace StudentAttendanceManagementSystem
                 appDbContext.SaveLoginLog(LoginLogs);
 
 
+                // Assuming 'dashboard' is an instance of the Dashboard class
+                Dashboard dashboard = new Dashboard();
+                dashboard.txtName.Text = "Logged as " + txtUsername.Text;
+
+                dashboard.LoginLogs.Visibility    = Visibility.Hidden;
+                dashboard.UserAccounts.Visibility = Visibility.Hidden;
+
+
+
+
                 MainMenu MainMenu_open = new MainMenu();
                 MainMenu_open.btn_LoginLogs.Visibility = Visibility.Hidden;
                 MainMenu_open.btn_SystemAdministration.Visibility = Visibility.Hidden;
@@ -66,9 +76,6 @@ namespace StudentAttendanceManagementSystem
 
 
 
-                // Assuming 'dashboard' is an instance of the Dashboard class
-                Dashboard dashboard = new Dashboard();
-                dashboard.txtName.Text = "Logged as " + txtUsername.Text;
 
 
                 MainMenu_open.Show();
