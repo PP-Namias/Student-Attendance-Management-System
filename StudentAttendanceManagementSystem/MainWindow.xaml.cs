@@ -6,6 +6,7 @@ using System.Linq;
 using System.Net.PeerToPeer;
 using System.Windows;
 using System.Windows.Input;
+using System.Windows.Interop;
 using System.Windows.Media;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
@@ -29,6 +30,10 @@ namespace StudentAttendanceManagementSystem
 
         private void btnLogin_Click(object sender, RoutedEventArgs e)
         {
+
+            MainMenu MainMenu = new MainMenu();
+            MainMenu.Show();
+            this.Close();
 
             if (txtPassword.Visibility == Visibility.Visible)
             {
@@ -66,15 +71,13 @@ namespace StudentAttendanceManagementSystem
 
 
 
-
+                
                 MainMenu MainMenu_open = new MainMenu();
                 MainMenu_open.btn_LoginLogs.Visibility = Visibility.Hidden;
                 MainMenu_open.btn_SystemAdministration.Visibility = Visibility.Hidden;
                 MainMenu_open.LoginLogsManagement.Visibility = Visibility.Hidden;
                 MainMenu_open.UserAccountManagement.Visibility = Visibility.Hidden;
-
-
-
+                
 
 
 
@@ -86,9 +89,6 @@ namespace StudentAttendanceManagementSystem
                 Dashboard Dashboard = new Dashboard();
                 Dashboard.txtName.Text = "Welcome, " + txtUsername.Text.ToString();
 
-                MainMenu MainMenu = new MainMenu();
-                MainMenu.Show();
-                this.Close();
             }
             else
             {

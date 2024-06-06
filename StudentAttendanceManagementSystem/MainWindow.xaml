@@ -21,6 +21,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <Border Height="390" VerticalAlignment="Top" CornerRadius="0 0 180 0" Background="#1A120B" MouseDown="Border_MouseDown">
+            <Image Source="/Images/bg effects (7).png" Stretch="Uniform" Panel.ZIndex="0" Margin="0,0,0,-227" />
         </Border>
         <Image Source="/OverlayLogHD.png" Stretch="Uniform" Panel.ZIndex="0" Margin="-10,0,0,-71" />
 

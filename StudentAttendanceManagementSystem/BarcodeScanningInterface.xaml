@@ -306,7 +306,7 @@
                                                            HorizontalAlignment="Center" 
                                                            Height="240" 
                                                            Width="240" 
-                                                           Source="/Images/profile.png"/>
+                                                           Source="/Images/profile.jpg"/>
                                                 </StackPanel>
                                             </Grid>
                                         </Border>

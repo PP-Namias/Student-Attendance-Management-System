@@ -17,13 +17,6 @@ namespace StudentAttendanceManagementSystem
     {
         private AppDbContext appDbContext; // Declare appDbContext as a class-level variable
 
-        public MainMenu(string username)
-        {
-            InitializeComponent();
-            appDbContext = new AppDbContext();
-            txtUsername.Text = username; // Set the value of txtUsername.Text
-        }
-
         public MainMenu()
         {
             InitializeComponent();
@@ -480,21 +473,6 @@ namespace StudentAttendanceManagementSystem
 
         private void btn_Logout_Click(object sender, RoutedEventArgs e)
         {
-            // Check if the username exists
-            if (!string.IsNullOrEmpty(txtUsername.Text))
-            {
-                // Username exists, proceed with logout
-
-                // Show a confirmation message
-                MessageBox.Show($"Logout successful for user: {txtUsername.Text}", "Logout", MessageBoxButton.OK, MessageBoxImage.Information);
-
-                // Close the current window and open the login window
-                MainWindow mainWindow = new MainWindow();
-                mainWindow.Show();
-                this.Close();
-            }
-            else
-            {
                 // Username doesn't exist, show an error message
                 MessageBox.Show($"Logout successful", "Logout", MessageBoxButton.OK, MessageBoxImage.Information);
 
@@ -502,7 +480,7 @@ namespace StudentAttendanceManagementSystem
                 MainWindow mainWindow = new MainWindow();
                 mainWindow.Show();
                 this.Close();
-            }
+            
         }
 
     }

@@ -63,6 +63,7 @@
     </UserControl.Resources>
 
     <Grid Background="#1A120B">
+        <Image Source="/Images/bg effects (13).png" Stretch="UniformToFill"  />
         <Border Canvas.Left="55"
          Canvas.Top="30"
          Height="700"

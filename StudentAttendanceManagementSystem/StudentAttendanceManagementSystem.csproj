@@ -497,5 +497,56 @@
   <ItemGroup>
     <Resource Include="Images\OverlayLogHD.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg effects %281%29.png" />
+    <Resource Include="Images\bg effects %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bg effects %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg effects %282%29.png" />
+    <Resource Include="Images\bg effects %283%29.png" />
+    <Resource Include="Images\bg effects %284%29.png" />
+    <Resource Include="Images\bg effects %285%29.png" />
+    <Resource Include="Images\bg effects %286%29.png" />
+    <Resource Include="Images\bg effects %287%29.png" />
+    <Resource Include="Images\bg effects %288%29.png" />
+    <Resource Include="Images\bg effects %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bg effects %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bg effects %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bg effects %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bg effects %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\bg effects %2811%29.png" />
+    <Resource Include="Images\bg effects %2812%29.png" />
+    <Resource Include="Images\bg effects %2813%29.png" />
+    <Resource Include="Images\bg effects %2814%29.png" />
+    <Resource Include="Images\bg effects %2815%29.png" />
+    <Resource Include="Images\bg effects %2816%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="bg effects %2811%29.png" />
+    <Resource Include="bg effects %2812%29.png" />
+    <Resource Include="bg effects %2813%29.png" />
+    <Resource Include="bg effects %2814%29.png" />
+    <Resource Include="bg effects %2815%29.png" />
+    <Resource Include="bg effects %2816%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\profile.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="profile.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

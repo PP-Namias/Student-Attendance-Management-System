@@ -9,9 +9,14 @@
              mc:Ignorable="d" 
              d:DesignHeight="785" d:DesignWidth="1125"
              
-             Background="Black" MinHeight="785" MinWidth="1125" Loaded="UserControl_Loaded"
+             Background="#3C2A21" 
+             
+             MinHeight="785" 
+             MinWidth="1125" 
+             
+             Loaded="UserControl_Loaded"
              >
-    <Grid Background="Gray">
+    <Grid Background="#3C2A21">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="8*" />
             <ColumnDefinition Width="4*" />
@@ -22,7 +27,8 @@
                 <Setter Property="Height" Value="30"></Setter>
             </Style>
         </Grid.Resources>
-        <Grid Grid.Column="0" Background="#3C2A21">
+        <Image Source="/Images/bg effects (13).png" Stretch="UniformToFill"  />
+        <Grid Grid.Column="0">
 
             <StackPanel Margin="10">
 
@@ -38,9 +44,9 @@
                         </WrapPanel>
                     </materialDesign:Card>
 
-                    <TextBlock x:Name="Day"  Foreground="#E5E5CB" FontSize="35" FontFamily="Century Gothic" Margin="30,-20,0,0"          HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <TextBlock x:Name="Date" Foreground="#E5E5CB" FontSize="25" FontFamily="Century Gothic" Margin="-150,50,20,0"        HorizontalAlignment="Center" VerticalAlignment="Center"/>
-                    <TextBlock x:Name="Time" Foreground="#E5E5CB" FontSize="50" FontFamily="Century Gothic" Text="{Binding CurrentTime}" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="Day"  Foreground="#E5E5CB" FontSize="35" FontFamily="Century Gothic" Margin="0,-20,0,0"      HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="Date" Foreground="#E5E5CB" FontSize="25" FontFamily="Century Gothic" Margin="-150,50,20,0"   HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    <TextBlock x:Name="Time" Foreground="#E5E5CB" FontSize="50" FontFamily="Century Gothic" Text="{Binding CurrentTime}"      HorizontalAlignment="Center" VerticalAlignment="Center"/>
                
                 </WrapPanel>
                 <Border BorderThickness="2" CornerRadius="15" BorderBrush="White" Margin="30,2,30,20"  Height="650">
@@ -60,7 +66,7 @@
                                     <lvc:Axis Title="Dates" Labels="{Binding Labels}" Separator="{x:Static lvc:DefaultAxes.CleanSeparator}" />
                                 </lvc:CartesianChart.AxisX>
                                 <lvc:CartesianChart.AxisY>
-                                    <lvc:Axis Title="Attendance" LabelFormatter="{Binding Formatter}" />
+                                    <lvc:Axis Title="Attendance Records" LabelFormatter="{Binding Formatter}" />
                                 </lvc:CartesianChart.AxisY>
                             </lvc:CartesianChart>
                             <!-- Login Logs Chart -->
@@ -69,7 +75,7 @@
                                     <lvc:Axis Title="Dates" Labels="{Binding LoginLogsLabels}" Separator="{x:Static lvc:DefaultAxes.CleanSeparator}" />
                                 </lvc:CartesianChart.AxisX>
                                 <lvc:CartesianChart.AxisY>
-                                    <lvc:Axis Title="Login Count" LabelFormatter="{Binding Formatter2}" />
+                                    <lvc:Axis Title="Login Logs" LabelFormatter="{Binding Formatter2}" />
                                 </lvc:CartesianChart.AxisY>
                             </lvc:CartesianChart>
 
@@ -79,6 +85,7 @@
             </StackPanel>
         </Grid>
         <StackPanel Grid.Column="1" Background="#1A120B">
+            <Image Source="/Images/bg effects (8).png" Stretch="UniformToFill" Height="785" Margin="0,0,0,-785"  />
             <!-- WrapPanel
             
             <WrapPanel VerticalAlignment="Top" Margin="20 20 20 10">
@@ -156,8 +163,8 @@
                         <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Logs" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
                     </StackPanel>
                 </Border>
-                <Border x:Name="UserAccounts" BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
-                    <StackPanel Margin="10" Background="#1A120B" Width="130" Height="110">
+                <Border BorderThickness="2" Margin="10" CornerRadius="15" BorderBrush="White">
+                    <StackPanel x:Name="UserAccounts"  Margin="10" Background="#1A120B" Width="130" Height="110">
                         <TextBlock x:Name="txtAccounts" Foreground="#E5E5CB" FontWeight="SemiBold" FontSize="40" Text="420" HorizontalAlignment="Center" />
                         <TextBlock Foreground="#E5E5CB" FontSize="20" Text="User" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />
                         <TextBlock Foreground="#E5E5CB" FontSize="20" Text="Accounts" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" />

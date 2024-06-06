@@ -12,11 +12,14 @@
                  Foreground="White"
                  FontFamily="pack://application:,,,/MaterialDesignThemes.Wpf;component/Resources/Roboto/#Roboto"
                  TextElement.Foreground="White"
-                 TextElement.FontWeight="Regular"
-                 TextElement.FontSize="12"
+                 TextElement.FontWeight="Normal"
+                 TextElement.FontSize="16"
                  TextOptions.TextFormattingMode="Ideal" 
                  TextOptions.TextRenderingMode="Auto" 
                  GlowBrush="{DynamicResource AccentColorBrush}"
+                 
+                 NonActiveBorderBrush="Blue"
+                 WindowTitleBrush="PapayaWhip"
                  
                  Height="900"
                  Width="1200"
@@ -44,6 +47,7 @@
             <materialDesign:DrawerHost IsLeftDrawerOpen="{Binding IsChecked, ElementName=MenuToggleButton}">
                 <materialDesign:DrawerHost.LeftDrawerContent>
                     <DockPanel MinWidth="352" Background="#1A120B" Margin="0,0,0,0">
+                        <Image Panel.ZIndex="0"  Height="885" StretchDirection="DownOnly" Opacity="0.1" Source="/bg effects (14).png" Stretch="None" Margin="-500,0,-850,0" Width="352"  />
                         <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" 
                                     DockPanel.Dock="Top"
                                     HorizontalAlignment="Right" Margin="16"
@@ -151,11 +155,12 @@
                     </DockPanel>
                 </materialDesign:DrawerHost.LeftDrawerContent>
                 <DockPanel>
-                    <materialDesign:ColorZone Background="#1A120B" Padding="16" Foreground="#E5E5CB" materialDesign:ShadowAssist.ShadowDepth="Depth2" Mode="PrimaryMid" DockPanel.Dock="Top">
-                        <DockPanel>
-                            <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False" x:Name="MenuToggleButton" Checked="MenuToggleButton_Checked" Width="50" Height="48" Cursor="Hand"/>
+                    <materialDesign:ColorZone Background="#1A120B" Padding="0" Foreground="#E5E5CB" materialDesign:ShadowAssist.ShadowDepth="Depth2" Mode="PrimaryMid" DockPanel.Dock="Top">
+                        <DockPanel Height="82">
+                            <Image Source="/Images/bg effects (13).png" Panel.ZIndex="0"  StretchDirection="DownOnly" Opacity="0.5" Margin="0,0,-1200,0" Width="1198" Stretch="UniformToFill"  />
+                            <ToggleButton Style="{StaticResource MaterialDesignHamburgerToggleButton}" IsChecked="False" x:Name="MenuToggleButton" Checked="MenuToggleButton_Checked" Width="50" Height="48" Cursor="Hand" Margin="16,0,0,0"/>
 
-                            <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="#E5E5CB" x:Name="btn_About" DockPanel.Dock="Right" Height="50" Click="MenuPopupAboutButton_OnClick" Width="50" Padding="0">
+                            <Button Style="{StaticResource MaterialDesignFlatButton}" Foreground="#E5E5CB" x:Name="btn_About" DockPanel.Dock="Right" Height="50" Click="MenuPopupAboutButton_OnClick" Width="50" Padding="0" Margin="0,0,16,0">
                                 <StackPanel Orientation="Horizontal" Height="50" HorizontalAlignment="Center" VerticalAlignment="Center">
                                     <materialDesign:PackIcon x:Name="About1" Kind="InformationCircle" Width="50" Height="50" DockPanel.Dock="Right" />
                                 </StackPanel>
@@ -174,8 +179,9 @@
                         </Grid.ColumnDefinitions>
 
                         <!-- start information links -->
-                        <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" Width="75" Background="#3C2A21" >
-                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center">
+                        <StackPanel Grid.Column="0" Orientation="Vertical" HorizontalAlignment="Center" Width="75" Background="#3C2A21" VerticalAlignment="Center" >
+                            <Image Source="/Images/bg effects (1).png" Panel.ZIndex="0"  Height="822" StretchDirection="DownOnly" Stretch="UniformToFill" HorizontalAlignment="Center" Opacity="0.5"  />
+                            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Margin="0,-800,0,0">
                                 <Button Style="{StaticResource MaterialDesignFlatButton}" x:Name="btn_Dashboard"                 Width="75" Height="75" Click="btn_Dashboard_Click" ToolTip="Home">
                                     <StackPanel Width="50" Height="50">
                                         <materialDesign:PackIcon x:Name="btnHome"           Kind="Home"                  VerticalAlignment="Center" Foreground="#E5E5CB" Width="40" Height="40" />
@@ -214,16 +220,15 @@
 
                             </StackPanel>
 
-                            <TextBox x:Name="txtUsername" Margin="10 0" Width="0" TabIndex="1" materialDesign:HintAssist.Hint="Enter Password" Foreground="White" BorderBrush="White" CaretBrush="#3C2A21" SelectionBrush="#3C2A21" Background="#00000000" FontFamily="Century" />
 
-                            <StackPanel Grid.Row="1" Margin="0,250,0,10">
+                            <StackPanel Grid.Row="1" Margin="0,-50,0,0">
                                 <Button x:Name="btn_Logout"  
                                         Style="{StaticResource MaterialDesignFlatButton}" 
                                         Width="75" 
                                         Height="75" 
                                         ToolTip="Logout" 
                                         HorizontalAlignment="Right" 
-                                        VerticalAlignment="Top" Click="btn_Logout_Click">
+                                        VerticalAlignment="Top" Click="btn_Logout_Click" Margin="0,-50,0,0">
                                     <StackPanel Width="50" Height="50">
                                         <materialDesign:PackIcon x:Name="btnLogout"           
                                                                  Kind="Logout"                  
